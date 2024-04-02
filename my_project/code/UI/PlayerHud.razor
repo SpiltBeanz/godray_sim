@@ -1,0 +1,77 @@
+@using Sandbox;
+@using Sandbox.UI;
+@inherits PanelComponent
+
+<root>
+
+	<div class="titles">@("Vitaman Deez™")
+		<p>@("Time spent simulating God Rays")</p>
+	</div>
+
+
+	<div class="vitals">
+		<p>🔆🧴 @Player.Coins</p>
+		<p>⏱️@GetTimeString()</p>
+	</div>
+
+
+	<div class="healthbars">
+		<div class ="healthbar">
+			<div class="inner">
+				<div class="fill" style="width: @(Player.Health / Player.MaxHealth * 100f)%"></div>
+				<p>❤️‍🔥@Player.Health</p>
+			</div>
+		</div>
+
+		<div class ="healthbar armor">
+			<div class="inner">
+				<div class="fill" style="width: @(Player.Armor / Player.MaxArmor * 100f)%"></div>
+				<p>🧴@Player.Armor</p>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="hotbar">
+		@for(int i=0; i<Player.Slots; i++)
+		{
+			<div class="slot @((Player.ActiveSlot == i) ? "active" : "")">
+				@if(i < Player.Items.Count)
+				{
+					<p>@Player.Items[i]</p>
+				}
+
+			</div>
+		}
+	</div>
+
+				
+</root>
+
+@code
+{
+	[Property] PlayerMovement Player { get; set; }
+
+	@* Panel ArmorFill { get; set; }
+
+	protected override void OnUpdate()
+	{
+		base.OnUpdate();
+
+		ArmorFill.Style.Width = Length.Percent( Player.Armor / Player.MaxArmor * 100f );
+	} *@
+	
+	string GetTimeString()
+	{
+		var time = Player.TimeAlive;
+		var minutes = (int)time / 60;
+		var seconds = (int)time % 60;
+		return $"{minutes:00}:{seconds:00}";
+	}
+
+
+	protected override int BuildHash()
+	{
+		return System.HashCode.Combine( Player.Coins, GetTimeString(), Player.Health, Player.Armor, Player.ActiveSlot, "Vitamin Deez™", "Time spent simulating God Rays" );
+	} 
+}

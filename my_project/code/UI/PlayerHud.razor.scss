@@ -1,0 +1,138 @@
+PlayerHud
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	font-family: Poppins;
+	font-size: 24px;
+	
+	>.titles
+	{
+		left: 32px;
+		position: absolute;
+		font-weight: bold;
+		text-stroke: 4px black;
+		color: white;
+		flex-direction: column;
+		gap: 60px;
+	}	
+
+	> .vitals
+	{
+		position: absolute;
+		top: 32px;
+		left: 26px;
+		font-size: 48px;
+		font-weight: bold;
+		text-stroke: 8px black;
+		color: white;
+		flex-direction: column;
+		gap: 24px;
+
+	}
+
+	> .healthbars
+	{
+		position: absolute;
+		bottom: 32px;
+		left: 32px;
+		flex-direction: column;
+		gap: 8px;
+
+		> .healthbar
+		{
+			width: 500px;
+			height: 64px;
+			background-color: rgb(0, 0, 0);
+			padding: 8px;
+
+			> .inner
+			{
+				background-color: rgb(56, 56, 56);
+				flex-grow: 1;
+				> .fill
+				{
+					height: 100%;
+					background-color: red;
+
+				}
+
+				> p
+				{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-stroke: 4px black;
+					color: white;
+					font-size: 24px;
+					font-weight: bold;
+				}
+			}
+
+			&.armor
+			{
+				height: 48px;
+				> .inner
+				{
+					> .fill
+					{
+						background-color: rgb(77, 77, 250);
+					}
+
+					> p
+					{
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					text-stroke: 4px black;
+					color: white;
+					font-size: 24px;
+					font-weight: bold;
+					}
+				}
+
+
+			}
+		}
+
+	}
+
+	> .hotbar
+	{
+		position: absolute;
+		bottom: 32px;
+		width: 100%;
+		z-index: 1;
+		gap: 8px;
+		justify-content: center;
+		align-items: flex-end;
+
+		> .slot
+		{
+			width: 64px;
+			height: 64px;
+			background-color: rgba(87, 227, 255, 0.339);
+			border-radius: 16px;
+			transition: all 0.2s ease;
+			font-size: 16px;
+			text-stroke: 4px black;
+			color: white;
+
+			&.active
+			{
+				background-color: rgb(34, 54, 58);
+				width: 128px;
+				height: 128px;
+				font-size: 64px;
+				text-stroke: 4px black;
+				color: white;
+				
+			}
+			
+		}
+	}
+}

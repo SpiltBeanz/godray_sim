@@ -1,0 +1,64 @@
+PauseMenu
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: rgba(black, 0.9);
+	pointer-events: all;
+	color: white;
+	font-family: Poppins;
+	font-size: 64px;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	transition: opacity .25s ease;
+
+	> h2
+	{
+		font-size: 128px;
+		font-weight: bolder;
+	}
+
+	> .options
+	{
+		flex-direction: column;
+		align-items: center;
+		gap: 16px;
+
+		> .button
+		{
+			background-color: rgb(255, 204, 0);
+			color: black;
+			padding: 8px;
+			border-radius: 32px;
+			transition: all 0.1s ease;
+
+			&:hover
+			{
+				sound-in: ui.button.over;
+				background-color: white;
+				transform: scale(1.1);
+			}
+
+			&:active
+			{
+				sound-in: ui.button.press;
+			}
+
+			&.sfx
+			{
+				&:active
+				{
+					sound-in: fart;
+				}
+			}
+		}
+	}
+
+	&.hide
+	{
+		opacity: 0;
+	}
+}
