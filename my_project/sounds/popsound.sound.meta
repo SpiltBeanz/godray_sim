@@ -1,0 +1,24 @@
+{
+  "publish": {
+    "Allowed": true,
+    "Enabled": false,
+    "ProjectConfig": {
+      "Title": "popsound",
+      "Type": "sound",
+      "Org": "scrat",
+      "Ident": "scrats_sounds",
+      "Tags": "pop sound sfx ui",
+      "Schema": 0,
+      "HasAssets": false,
+      "AssetsPath": null,
+      "Resources": null,
+      "HasCode": false,
+      "CodePath": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "sounds/popsound.sound"
+      }
+    }
+  }
+}

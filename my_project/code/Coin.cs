@@ -13,7 +13,7 @@ public sealed class Coin : Component, Component.ITriggerListener
 			player.Armor += Amount;
 			player.Armor = Math.Clamp( player.Armor, 0, player.MaxArmor );
 			GameObject.Destroy();
-			Sound.Play("sounds/kenney/ui/ui.button.press.sound");
+			Sound.Play("sounds/popsound.sound");
 		}
 
 	}

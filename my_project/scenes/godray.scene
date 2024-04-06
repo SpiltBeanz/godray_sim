@@ -244,1231 +244,6 @@
       ]
     },
     {
-      "__guid": "1d3a079c-d628-4530-9691-18b924ad013b",
-      "Name": "Coins",
-      "Position": "-1105.323,321.0494,7.658325",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "Children": [
-        {
-          "__guid": "25604864-7ca0-4d35-99ba-6c75a8dbf09e",
-          "Name": "Sunscreen",
-          "Position": "-63.37036,141.824,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "ff6193e9-554f-498a-a22d-63835870c490",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "b97fd442-ca6d-4f55-a9cf-db68bf101233",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "372a472b-09a1-430a-b618-7811a3cca220",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "d888fa82-0aea-46a3-a564-4affcd8e000c",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "67981740-f2d5-4537-b845-937a8f748867",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "45b6a551-6f08-4d9f-b998-3c314cd348fb",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "c6066821-e43b-44fc-acdd-4aee4e117a06",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "b90a03ea-bd14-4b46-8685-a946c2fa36f0",
-          "Name": "Sunscreen",
-          "Position": "-1662.677,142.3873,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "e7f7a77e-1648-42ba-826d-8ecc6e26349c",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "9d27d045-538b-46a0-80d3-cf7a53960bb4",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "56f71ed2-c952-4f0d-9394-5f054a99dd87",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "3d4d382d-dd17-4fe8-a8b4-f78b9e33f53f",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "91d7d78f-0b5d-40f2-9901-46138fb9e8f3",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "0641ca51-f1a0-4f1d-aa12-391f85a6879b",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "ff561138-3bdf-43cf-a89c-52463bba713b",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "5d6ca0ca-bb6c-45c5-9fda-2fb6ee8fbb35",
-          "Name": "Sunscreen",
-          "Position": "1313.323,-241.6127,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "dc161d1e-e737-4b2d-8628-5e5d9afd0695",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "375cc902-3611-4ac8-a87e-177db47d1f5d",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "8df59a93-003a-48da-97c1-ebde7e028b55",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "f8e661a1-194c-49ec-80fc-a51f69b9f18b",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "2a9f6986-9155-4729-ba50-de813fffa4d9",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "98750d25-0bc6-41bc-afdd-3760628fd095",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "1b609557-5c6b-427f-85ff-6bb23eceea3b",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "454801ea-b5b4-42ee-b9e8-f7157db396c5",
-          "Name": "Sunscreen",
-          "Position": "-318.677,-305.6127,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "a9f03f60-a3b2-4edf-920d-84c158222c27",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "0e37ff85-1a33-4d2c-9218-9f14965f7627",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "02eb914d-a8fd-4bba-8547-af66f0df3688",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "a181ae27-4ec7-4620-be11-c2c511472aa9",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "bb998a90-0b8e-4246-8042-21982f590581",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "d10333fa-792f-4096-86e7-1d756c365ffb",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "48f14f6f-8afd-4d71-b8f4-987e9f316e97",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "c2924c34-f61f-47e1-beb8-ff1bca656a99",
-          "Name": "Sunscreen",
-          "Position": "-63.37036,174.9506,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "9144cd12-8919-4508-bcb7-95fc2c336b1c",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "551df9b2-0e46-4f35-9ea4-e181c9887f00",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "de167453-8100-49bb-8765-58b55078f66e",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "634c2434-ac65-4ea8-ab84-d7d8c0c1a436",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "167d8e88-d088-4821-a68a-22d88d51f266",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "0356edd5-1f9d-4fb9-870d-944117e171ff",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "06b429e0-94c4-49f7-a676-781594415b8d",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "b6805860-3447-4024-9fea-8d8681dcfcbd",
-          "Name": "Sunscreen",
-          "Position": "-1662.677,175.5139,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "9fc98dc7-10d7-422e-a189-aa7a75f4a558",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "d49718d1-9a71-4826-b2ed-cc402d6f9ce9",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "45775240-7fc8-47cf-a917-921c85b0dc0b",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "d2ee5500-1347-4da4-8367-1ce8c8ebf537",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "8857e301-f8ad-4352-a067-079a7147457c",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "96c3f8ee-cba9-4e9d-953c-ca7934d8e3f0",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "6f466dd6-146c-472b-862e-dcfd63ed7542",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "9ee575bd-1e45-4186-9b82-b7b8403daafb",
-          "Name": "Sunscreen",
-          "Position": "1313.323,-208.4861,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "6da9f3e1-274f-4e51-9354-e9a0bbe50d8d",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "f8268d2b-c687-4be6-ad66-3e4ac642ed8d",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "1c688d07-7257-4e25-bf8d-ae48374e0260",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "f9464590-05c2-410c-a783-46a29169be2d",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "b2b1da13-5049-49d5-948d-c014b85770c6",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "5c05dfc3-8eb8-4461-bd17-1b789f43af63",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "0457bccd-4c29-46bd-85a2-06b12ecd4bc9",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "aa1e29a8-8ffd-4be0-bdbf-8faf3bb6c4d5",
-          "Name": "Sunscreen",
-          "Position": "-318.677,-272.4861,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "cd3fe602-2f19-425c-983a-7d87772e247f",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "e48cb3bb-2037-4930-850b-41a1dfb8741f",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "0475890f-431b-46df-8076-4060eb8a5d13",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "95852e07-45d8-483a-8895-5dfb7d4ec6f7",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "ee37198c-5142-48d7-a900-196506825a41",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "aa7ecf6c-88e3-4348-9abe-2d490efe5176",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "5384d86b-8e52-409e-a55b-f6d1faa92971",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "15f0033a-711a-4102-9d1f-a9b680da2da8",
-          "Name": "Sunscreen",
-          "Position": "-63.37036,206.9506,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "29d602b4-a048-48f6-a666-e65016605c6c",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "0575aaba-c33b-4027-a119-3b261a41fca6",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "70336719-5447-4c25-8034-7a23eec6eb03",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "7e8e3b3d-7ee6-429a-bc5e-983dfbc47101",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "175cc09e-7e78-4f3b-9baa-6569d2e01b75",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "31d7bcdb-a345-4107-b90d-7772970d1d06",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "44e14e86-695b-4713-88f7-2bf134df5c8e",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "754b496f-d430-4547-9d6a-3c047792d54e",
-          "Name": "Sunscreen",
-          "Position": "-1662.677,207.5139,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "484f35a3-2c70-4ee3-82fa-3eb0c2c7ae58",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "7c084e20-d09f-4358-80f6-25279b6955a4",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "1fce1be0-00f6-46d6-90a9-60b4fe0a0d2c",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "52a54924-1d12-4cce-b288-81770b3428a5",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "8a8489a4-ba0f-4c4b-b555-ce7bda832771",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "57372633-d4fc-4f78-8ba9-3253fef20086",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "31dda0a9-7769-47a1-bd3c-3537925869ce",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "ea2b32da-6a17-42b6-99de-a91e913cea30",
-          "Name": "Sunscreen",
-          "Position": "1313.323,-176.4861,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "dc35fbf9-42e2-4219-93e5-a7fd9cbea0d8",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "a430ce4b-783e-4d3a-b910-aa94c96a9c30",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "3fff466f-921f-4be8-bcea-524dddbd8ae6",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "f537381d-d9d9-4e65-a62f-ced1c462ddbd",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "acbab2fb-2ab1-48b9-89ea-88b827b48b1c",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "3219902b-b39b-4503-be59-e154b26e0a22",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "1851ec3b-f4ff-4c4e-af45-7381806269b8",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "5ab6d82c-ce0c-4715-a733-b89867c6da7f",
-          "Name": "Sunscreen",
-          "Position": "-318.677,-240.4861,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "86988e76-fb9c-4139-b365-13d86ea0d999",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "e31666b6-82e1-47f3-a769-7c58b3ff9848",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "8d6a5744-978d-4f23-b313-ed9df47b9acf",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "58bfdfe0-3e55-4611-b974-1db443a4be36",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "c68af372-8581-432a-9d3d-77271ec4ef6d",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "cbef57a5-3870-459e-87c1-a036445ac4c1",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "0b9ccab4-4781-4a3e-a1ef-822b97090b1f",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "be2ce374-0623-4da4-8dd9-627cd1b9d4f6",
-          "Name": "Sunscreen",
-          "Position": "-63.37036,238.9506,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "14835aac-5635-423e-beb2-967995687002",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "4bde70f3-4713-4ff6-8893-dcc7589b14f4",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "c12d6ce8-ae42-42bd-80e7-1e12440c6564",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "e7911c3b-9623-4802-a47f-96b8a0f87cbb",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "7c3b77c7-9f82-4e08-afc1-01d0fbfe5b1f",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "13cee76d-a43f-4978-905f-aa0956ead5e7",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "1ea5ff65-9cb9-408e-852f-d43329825940",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "ece3d37f-7405-4066-a7b0-e566cff392a2",
-          "Name": "Sunscreen",
-          "Position": "-1662.677,239.5139,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "9d42afb0-29f9-4b63-a59b-3c94d744ebe0",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "bf88c9f7-06de-4084-a5a5-536aae75b046",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "a4f28520-bb2f-4531-87bb-adf6d7b0e80c",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "980a027c-a871-4227-bb2a-685bbb6c5bc8",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "2d98fcc0-c8d8-4344-9f06-424f9c429c0f",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "bd440f7b-430e-43de-83db-66a297f63fbd",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "38a07a7d-2e36-459f-9e1a-fa040bd05c19",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "6fa04e79-1f62-4e10-8274-062cdd35ca4d",
-          "Name": "Sunscreen",
-          "Position": "1313.323,-144.4861,120.3417",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "f9586d09-ce45-4bd5-afa5-6574ad17a920",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "1eedfe28-7b14-4a3d-973d-b1d3302f73bb",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "997d3b1c-322a-48e3-b91a-0e9a488c9be3",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "a986fcb4-2615-4813-9459-a8088d43502d",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "506b8dfd-fa5d-4edc-aba4-be223db450b9",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "f00c7c52-d91d-45d7-a02a-7eaf355464c2",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "3ca63e2d-c577-472a-a161-c3208a116db8",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "8ca96a8f-7db1-4dff-b627-20dfcc7b4eab",
-          "Name": "Sunscreen",
-          "Position": "-318.677,-208.4861,24.34167",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "ModelRenderer",
-              "__guid": "9f0e315f-03ba-4275-928f-cad651a35ffc",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-              "Model": "models/spray2.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "BoxCollider",
-              "__guid": "7baab83e-4b58-4d46-aa99-ea84a4d8000f",
-              "Center": "0,0,11.3",
-              "IsTrigger": true,
-              "Scale": "10.49999,11.29998,22.69997",
-              "Static": false
-            },
-            {
-              "__type": "Coin",
-              "__guid": "21569c97-2fe2-4661-9a75-9f66850c97b6",
-              "Amount": 10
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "d3f194b2-187e-4751-8605-10a1f3df4b85",
-              "Name": "Decal",
-              "Position": "-3.841187,0,7.644661",
-              "Scale": "0.1,0.1,0.1",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "52518968-929d-4162-835b-9924c3983c57",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            },
-            {
-              "__guid": "2aba31bf-8a53-4ab2-be86-294a447190f1",
-              "Name": "Decal",
-              "Position": "3.279175,-0.3637085,6.525238",
-              "Rotation": "0,0,-1,0.00000008940697",
-              "Scale": "0.1,0.15,0.15",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "Components": [
-                {
-                  "__type": "DecalRenderer",
-                  "__guid": "ff18de49-b597-49c7-bf17-5b49cee685bd",
-                  "CutoffAngle": 60,
-                  "CutoffAngleSoftness": 5,
-                  "Material": "materials/decals/default.vmat",
-                  "Mod2XBlending": false,
-                  "Size": "64,64,32",
-                  "TintColor": "1,1,1,1",
-                  "TriPlanar": false
-                }
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    {
       "__guid": "38bdf089-c888-4227-8bbc-63731be476fe",
       "Name": "Triggers",
       "Position": "-1163.482,289.0203,84.51519",
@@ -1688,6 +463,1231 @@
                   "__type": "BouncePad",
                   "__guid": "9beaac73-01fc-4323-88e7-893b5e7b175a",
                   "Bounciness": 400
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "1d3a079c-d628-4530-9691-18b924ad013b",
+          "Name": "Coins",
+          "Position": "58.15906,32.02911,-76.85686",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Children": [
+            {
+              "__guid": "25604864-7ca0-4d35-99ba-6c75a8dbf09e",
+              "Name": "Sunscreen",
+              "Position": "-63.37036,141.824,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "ff6193e9-554f-498a-a22d-63835870c490",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "b97fd442-ca6d-4f55-a9cf-db68bf101233",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "372a472b-09a1-430a-b618-7811a3cca220",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d888fa82-0aea-46a3-a564-4affcd8e000c",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "67981740-f2d5-4537-b845-937a8f748867",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "45b6a551-6f08-4d9f-b998-3c314cd348fb",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "c6066821-e43b-44fc-acdd-4aee4e117a06",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "b90a03ea-bd14-4b46-8685-a946c2fa36f0",
+              "Name": "Sunscreen",
+              "Position": "-1662.677,142.3873,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "e7f7a77e-1648-42ba-826d-8ecc6e26349c",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "9d27d045-538b-46a0-80d3-cf7a53960bb4",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "56f71ed2-c952-4f0d-9394-5f054a99dd87",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "3d4d382d-dd17-4fe8-a8b4-f78b9e33f53f",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "91d7d78f-0b5d-40f2-9901-46138fb9e8f3",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "0641ca51-f1a0-4f1d-aa12-391f85a6879b",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "ff561138-3bdf-43cf-a89c-52463bba713b",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "5d6ca0ca-bb6c-45c5-9fda-2fb6ee8fbb35",
+              "Name": "Sunscreen",
+              "Position": "1313.323,-241.6127,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "dc161d1e-e737-4b2d-8628-5e5d9afd0695",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "375cc902-3611-4ac8-a87e-177db47d1f5d",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "8df59a93-003a-48da-97c1-ebde7e028b55",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "f8e661a1-194c-49ec-80fc-a51f69b9f18b",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "2a9f6986-9155-4729-ba50-de813fffa4d9",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "98750d25-0bc6-41bc-afdd-3760628fd095",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "1b609557-5c6b-427f-85ff-6bb23eceea3b",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "454801ea-b5b4-42ee-b9e8-f7157db396c5",
+              "Name": "Sunscreen",
+              "Position": "-318.677,-305.6127,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "a9f03f60-a3b2-4edf-920d-84c158222c27",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "0e37ff85-1a33-4d2c-9218-9f14965f7627",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "02eb914d-a8fd-4bba-8547-af66f0df3688",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "a181ae27-4ec7-4620-be11-c2c511472aa9",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "bb998a90-0b8e-4246-8042-21982f590581",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "d10333fa-792f-4096-86e7-1d756c365ffb",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "48f14f6f-8afd-4d71-b8f4-987e9f316e97",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "c2924c34-f61f-47e1-beb8-ff1bca656a99",
+              "Name": "Sunscreen",
+              "Position": "-63.37036,174.9506,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "9144cd12-8919-4508-bcb7-95fc2c336b1c",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "551df9b2-0e46-4f35-9ea4-e181c9887f00",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "de167453-8100-49bb-8765-58b55078f66e",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "634c2434-ac65-4ea8-ab84-d7d8c0c1a436",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "167d8e88-d088-4821-a68a-22d88d51f266",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "0356edd5-1f9d-4fb9-870d-944117e171ff",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "06b429e0-94c4-49f7-a676-781594415b8d",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "b6805860-3447-4024-9fea-8d8681dcfcbd",
+              "Name": "Sunscreen",
+              "Position": "-1662.677,175.5139,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "9fc98dc7-10d7-422e-a189-aa7a75f4a558",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "d49718d1-9a71-4826-b2ed-cc402d6f9ce9",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "45775240-7fc8-47cf-a917-921c85b0dc0b",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d2ee5500-1347-4da4-8367-1ce8c8ebf537",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "8857e301-f8ad-4352-a067-079a7147457c",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "96c3f8ee-cba9-4e9d-953c-ca7934d8e3f0",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "6f466dd6-146c-472b-862e-dcfd63ed7542",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "9ee575bd-1e45-4186-9b82-b7b8403daafb",
+              "Name": "Sunscreen",
+              "Position": "1313.323,-208.4861,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "6da9f3e1-274f-4e51-9354-e9a0bbe50d8d",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "f8268d2b-c687-4be6-ad66-3e4ac642ed8d",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "1c688d07-7257-4e25-bf8d-ae48374e0260",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "f9464590-05c2-410c-a783-46a29169be2d",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "b2b1da13-5049-49d5-948d-c014b85770c6",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "5c05dfc3-8eb8-4461-bd17-1b789f43af63",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "0457bccd-4c29-46bd-85a2-06b12ecd4bc9",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "aa1e29a8-8ffd-4be0-bdbf-8faf3bb6c4d5",
+              "Name": "Sunscreen",
+              "Position": "-318.677,-272.4861,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "cd3fe602-2f19-425c-983a-7d87772e247f",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "e48cb3bb-2037-4930-850b-41a1dfb8741f",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "0475890f-431b-46df-8076-4060eb8a5d13",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "95852e07-45d8-483a-8895-5dfb7d4ec6f7",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "ee37198c-5142-48d7-a900-196506825a41",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "aa7ecf6c-88e3-4348-9abe-2d490efe5176",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "5384d86b-8e52-409e-a55b-f6d1faa92971",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "15f0033a-711a-4102-9d1f-a9b680da2da8",
+              "Name": "Sunscreen",
+              "Position": "-63.37036,206.9506,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "29d602b4-a048-48f6-a666-e65016605c6c",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "0575aaba-c33b-4027-a119-3b261a41fca6",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "70336719-5447-4c25-8034-7a23eec6eb03",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "7e8e3b3d-7ee6-429a-bc5e-983dfbc47101",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "175cc09e-7e78-4f3b-9baa-6569d2e01b75",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "31d7bcdb-a345-4107-b90d-7772970d1d06",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "44e14e86-695b-4713-88f7-2bf134df5c8e",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "754b496f-d430-4547-9d6a-3c047792d54e",
+              "Name": "Sunscreen",
+              "Position": "-1662.677,207.5139,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "484f35a3-2c70-4ee3-82fa-3eb0c2c7ae58",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "7c084e20-d09f-4358-80f6-25279b6955a4",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "1fce1be0-00f6-46d6-90a9-60b4fe0a0d2c",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "52a54924-1d12-4cce-b288-81770b3428a5",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "8a8489a4-ba0f-4c4b-b555-ce7bda832771",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "57372633-d4fc-4f78-8ba9-3253fef20086",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "31dda0a9-7769-47a1-bd3c-3537925869ce",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "ea2b32da-6a17-42b6-99de-a91e913cea30",
+              "Name": "Sunscreen",
+              "Position": "1313.323,-176.4861,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "dc35fbf9-42e2-4219-93e5-a7fd9cbea0d8",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "a430ce4b-783e-4d3a-b910-aa94c96a9c30",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "3fff466f-921f-4be8-bcea-524dddbd8ae6",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "f537381d-d9d9-4e65-a62f-ced1c462ddbd",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "acbab2fb-2ab1-48b9-89ea-88b827b48b1c",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "3219902b-b39b-4503-be59-e154b26e0a22",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "1851ec3b-f4ff-4c4e-af45-7381806269b8",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "5ab6d82c-ce0c-4715-a733-b89867c6da7f",
+              "Name": "Sunscreen",
+              "Position": "-318.677,-240.4861,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "86988e76-fb9c-4139-b365-13d86ea0d999",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "e31666b6-82e1-47f3-a769-7c58b3ff9848",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "8d6a5744-978d-4f23-b313-ed9df47b9acf",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "58bfdfe0-3e55-4611-b974-1db443a4be36",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "c68af372-8581-432a-9d3d-77271ec4ef6d",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "cbef57a5-3870-459e-87c1-a036445ac4c1",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "0b9ccab4-4781-4a3e-a1ef-822b97090b1f",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "be2ce374-0623-4da4-8dd9-627cd1b9d4f6",
+              "Name": "Sunscreen",
+              "Position": "-63.37036,238.9506,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "14835aac-5635-423e-beb2-967995687002",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "4bde70f3-4713-4ff6-8893-dcc7589b14f4",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "c12d6ce8-ae42-42bd-80e7-1e12440c6564",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "e7911c3b-9623-4802-a47f-96b8a0f87cbb",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "7c3b77c7-9f82-4e08-afc1-01d0fbfe5b1f",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "13cee76d-a43f-4978-905f-aa0956ead5e7",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "1ea5ff65-9cb9-408e-852f-d43329825940",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "ece3d37f-7405-4066-a7b0-e566cff392a2",
+              "Name": "Sunscreen",
+              "Position": "-1662.677,239.5139,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "9d42afb0-29f9-4b63-a59b-3c94d744ebe0",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "bf88c9f7-06de-4084-a5a5-536aae75b046",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "a4f28520-bb2f-4531-87bb-adf6d7b0e80c",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "980a027c-a871-4227-bb2a-685bbb6c5bc8",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "2d98fcc0-c8d8-4344-9f06-424f9c429c0f",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "bd440f7b-430e-43de-83db-66a297f63fbd",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "38a07a7d-2e36-459f-9e1a-fa040bd05c19",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "6fa04e79-1f62-4e10-8274-062cdd35ca4d",
+              "Name": "Sunscreen",
+              "Position": "1313.323,-144.4861,120.3417",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "f9586d09-ce45-4bd5-afa5-6574ad17a920",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "1eedfe28-7b14-4a3d-973d-b1d3302f73bb",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "997d3b1c-322a-48e3-b91a-0e9a488c9be3",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "a986fcb4-2615-4813-9459-a8088d43502d",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "506b8dfd-fa5d-4edc-aba4-be223db450b9",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "f00c7c52-d91d-45d7-a02a-7eaf355464c2",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "3ca63e2d-c577-472a-a161-c3208a116db8",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "8ca96a8f-7db1-4dff-b627-20dfcc7b4eab",
+              "Name": "Sunscreen",
+              "Position": "-318.677,-208.4861,24.34167",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "ModelRenderer",
+                  "__guid": "9f0e315f-03ba-4275-928f-cad651a35ffc",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "BoxCollider",
+                  "__guid": "7baab83e-4b58-4d46-aa99-ea84a4d8000f",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "21569c97-2fe2-4661-9a75-9f66850c97b6",
+                  "Amount": 10
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d3f194b2-187e-4751-8605-10a1f3df4b85",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "52518968-929d-4162-835b-9924c3983c57",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "2aba31bf-8a53-4ab2-be86-294a447190f1",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "DecalRenderer",
+                      "__guid": "ff18de49-b597-49c7-bf17-5b49cee685bd",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
                 }
               ]
             }
@@ -2566,7 +2566,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-06T00:29:39.1888682-04:00",
+  "LastSaved": "2024-04-06T03:15:19.8561262-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

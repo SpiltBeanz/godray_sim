@@ -1,5 +1,5 @@
 {
-  "__guid": "d8ca9549-cb4e-4f7c-8b44-4ef333694dec",
+  "__guid": "0f81862c-1b94-45cf-aed1-7846b994093d",
   "GameObjects": [
     {
       "__guid": "3ea151bf-4b5c-411b-a8c0-ce38cb451335",
@@ -74,7 +74,7 @@
         {
           "__guid": "5b21b5fd-a043-4808-8d11-c123893f9a3a",
           "Name": "Fake Sun",
-          "Position": "1773.349,972.8629,179.9738",
+          "Position": "1773.349,956.8629,83.97379",
           "Rotation": "0,0,-1,0.0000001947072",
           "Tags": "particles",
           "Enabled": true,
@@ -96,44 +96,48 @@
               "Particles": "particles/bomb_explosion_smoke.vpcf",
               "PlaybackSpeed": 0.39
             }
-          ]
-        },
-        {
-          "__guid": "1d3fd8b7-305c-4d16-9eab-ddf366f66637",
-          "Name": "Point Light",
-          "Position": "1677.35,860.8622,131.9738",
-          "Tags": "light_point,light",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
+          ],
+          "Children": [
             {
-              "__type": "PointLight",
-              "__guid": "2b94ab35-5db0-45ac-a06f-aef2d4786511",
-              "Attenuation": 0,
-              "FogMode": "Enabled",
-              "FogStrength": 1,
-              "LightColor": "0.91373,0.98039,1,1",
-              "Radius": 400,
-              "Shadows": true
-            }
-          ]
-        },
-        {
-          "__guid": "57484f57-d348-4a62-a8ed-e4a7facf22c3",
-          "Name": "Volumetric Fog",
-          "Position": "1709.35,1068.862,163.9738",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
+              "__guid": "1d3fd8b7-305c-4d16-9eab-ddf366f66637",
+              "Name": "Point Light",
+              "Position": "63.99938,-15.99929,0",
+              "Rotation": "0,0,1,0.0000001947072",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "PointLight",
+                  "__guid": "2b94ab35-5db0-45ac-a06f-aef2d4786511",
+                  "Attenuation": 0,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.91373,0.98039,1,1",
+                  "Radius": 400,
+                  "Shadows": true
+                }
+              ]
+            },
             {
-              "__type": "VolumetricFogVolume",
-              "__guid": "43612eb4-2832-4718-b46e-ab6987921941",
-              "Bounds": {
-                "Mins": "-670.0961,-648.9987,-501.4",
-                "Maxs": "767.2003,958.4026,743.3997"
-              },
-              "FalloffExponent": 1,
-              "Strength": 1
+              "__guid": "57484f57-d348-4a62-a8ed-e4a7facf22c3",
+              "Name": "Volumetric Fog",
+              "Position": "63.99899,-95.99917,-16",
+              "Rotation": "0,0,1,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "VolumetricFogVolume",
+                  "__guid": "43612eb4-2832-4718-b46e-ab6987921941",
+                  "Bounds": {
+                    "Mins": "-670.0961,-648.9987,-501.4",
+                    "Maxs": "767.2003,958.4026,743.3997"
+                  },
+                  "FalloffExponent": 1,
+                  "Strength": 1
+                }
+              ]
             }
           ]
         },
@@ -153,7 +157,7 @@
                 "Maxs": "1500,1500,807.7031"
               },
               "FalloffExponent": 1,
-              "Strength": 1
+              "Strength": 2
             }
           ]
         },
@@ -173,7 +177,7 @@
                 "Maxs": "1500,1500,807.7031"
               },
               "FalloffExponent": 1,
-              "Strength": 1
+              "Strength": 2
             }
           ]
         },
@@ -308,7 +312,7 @@
   },
   "Title": "mainmenu",
   "Description": "",
-  "LastSaved": "2024-04-06T00:26:21.8790513-04:00",
+  "LastSaved": "2024-04-06T03:17:58.8098063-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
