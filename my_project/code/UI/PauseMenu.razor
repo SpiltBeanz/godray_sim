@@ -11,6 +11,9 @@
 		<div class="button sfx">
 			Play Sound
 		</div>
+		<div class="button menu" onclick=@ReturntoMenu>
+			Return to Main Menu
+		</div>
 	</div>
 </root>
 
@@ -34,6 +37,11 @@
 	void OnResume()
 	{
 		IsPaused = false;
+	}
+
+	void ReturntoMenu ()
+	{
+		Scene.LoadFromFile("scenes/mainmenu.scene");
 	}
 
 

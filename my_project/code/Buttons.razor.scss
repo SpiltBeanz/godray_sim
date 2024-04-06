@@ -1,26 +1,26 @@
-PauseMenu
+Buttons
 {
 	position: absolute;
 	top: 0;
 	left: 0;
 	right: 0;
 	bottom: 0;
-	background-color: rgba(black, 0.7);
+	background-color: rgba(0, 0, 0, 0);
 	pointer-events: all;
-	color: rgb(132, 134, 254);
+	color: white;
 	font-family: Poppins;
 	font-size: 64px;
-	font-weight: bold;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
 	transition: opacity .25s ease;
 
-	> h2
+	> h
 	{
 		font-size: 128px;
-		text-stroke: 10px black;
 		font-weight: bolder;
+		color: rgb(132, 134, 254);
+		text-stroke: 10px black;
 	}
 
 	> .options
@@ -32,29 +32,17 @@ PauseMenu
 		> .button
 		{
 			background-color: rgb(255, 204, 0);
-			color: rgb(200, 200, 200);
-			text-stroke: 6px black;
+			color: black;
 			padding: 8px;
 			border-radius: 32px;
 			transition: all 0.1s ease;
 
-			&.menu
-			{
-				background-color: rgb(255, 0, 0);
-				&:active
-				{
-					sound-in: fart;
-				}
-			}
-
 			&:hover
 			{
 				sound-in: ui.button.over;
-				background-color: rgb(166, 166, 166);
+				background-color: white;
 				transform: scale(1.1);
 				cursor: pointer;
-				color: rgb(0, 0, 0);
-				text-stroke: 6px rgb(255, 255, 255);
 			}
 
 			&:active
@@ -64,18 +52,13 @@ PauseMenu
 
 			&.sfx
 			{
+				background-color: rgb(255, 0, 0);
 				&:active
 				{
 					sound-in: fart;
 				}
 			}
-
-			
 		}
 	}
 
-	&.hide
-	{
-		opacity: 0;
-	}
 }

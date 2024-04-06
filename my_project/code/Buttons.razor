@@ -1,0 +1,30 @@
+@using Sandbox;
+@using Sandbox.UI;
+
+@inherits PanelComponent
+
+<root 
+	class= "buttons">
+	<h>GAMEMODE</h>
+	<div class= "options">
+		<div class="button" onclick=@StartdaGame>
+			Speedrun⏱️
+		</div>
+		<div class="button sfx">
+			Survival🔜 
+		</div>
+		<div class="button sfx">
+			Explore🔜
+		</div>
+	</div>
+</root>
+
+@code
+{
+	
+	 void StartdaGame()
+	{
+        Scene.LoadFromFile("scenes/godray.scene");
+	}
+	
+}

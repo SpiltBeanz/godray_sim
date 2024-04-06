@@ -1735,14 +1735,21 @@
             {
               "__type": "EnvmapProbe",
               "__guid": "ea1ab7e5-d63e-40e5-94dd-04b3749135ec",
+              "Texture": "textures/cubemaps/default2.vtex",
               "Bounds": {
                 "Mins": "-512,-512,-512",
                 "Maxs": "512,512,512"
               },
+              "DelayBetweenUpdates": 0.1,
               "Feathering": 0.02,
+              "FrameInterval": 5,
+              "MaxDistance": 512,
               "Projection": "Sphere",
-              "Texture": "textures/cubemaps/default2.vtex",
-              "TintColor": "1,1,1,1"
+              "RenderDynamically": false,
+              "TintColor": "1,1,1,1",
+              "UpdateStrategy": "OnEnabled",
+              "ZFar": 4096,
+              "ZNear": 16
             }
           ]
         },
@@ -2502,6 +2509,36 @@
               ]
             }
           ]
+        },
+        {
+          "__guid": "1c56a303-d5f8-434a-b000-939e04be840e",
+          "Name": "Background Music",
+          "Position": "44.52234,234.1324,-103.185",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SoundPointComponent",
+              "__guid": "e3ef6fd7-835e-47ca-8515-1444c3b39c61",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sounds/lovelydayloopcarson.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "Volume": 1
+            }
+          ]
         }
       ]
     }
@@ -2529,7 +2566,7 @@
   },
   "Title": "minimal",
   "Description": "",
-  "LastSaved": "2024-04-01T04:22:45.0210457-04:00",
+  "LastSaved": "2024-04-05T23:19:31.3700118-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

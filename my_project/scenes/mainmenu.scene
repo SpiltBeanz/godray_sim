@@ -1,0 +1,319 @@
+{
+  "__guid": "d8ca9549-cb4e-4f7c-8b44-4ef333694dec",
+  "GameObjects": [
+    {
+      "__guid": "3ea151bf-4b5c-411b-a8c0-ce38cb451335",
+      "Name": "Camera",
+      "Position": "149.995,149.995,-212.125",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Components": [
+        {
+          "__type": "CameraComponent",
+          "__guid": "2fab79b3-c7fb-4bf3-9445-4b6cc6ed06df",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 60,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "05780fcf-dcc0-42a3-933f-e233fe020d21",
+      "Name": "Menu Environment",
+      "Position": "146.6504,179.1378,76.02621",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "8017ad9f-46a1-484f-81f9-e5f87e9d667b",
+          "Name": "2D Skybox",
+          "Position": "3.344604,-29.14284,-288.1512",
+          "Tags": "skybox",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SkyBox2D",
+              "__guid": "20209cd5-1dee-4ef7-9aa4-2249b01b3466",
+              "SkyMaterial": "materials/sky/sky_005.vmat",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "50816f6b-882a-417b-906c-c307ea137abf",
+          "Name": "Sun",
+          "Position": "653.3496,-494.0674,-45.06638",
+          "Rotation": "0.5196104,0.4065713,-0.5848736,0.4718345",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "DirectionalLight",
+              "__guid": "26c71e5a-2792-4b72-a348-e9776983042d",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.91373,0.98039,1,1",
+              "Shadows": true,
+              "SkyColor": "0.05882,0.07451,0.08235,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5b21b5fd-a043-4808-8d11-c123893f9a3a",
+          "Name": "Fake Sun",
+          "Position": "1773.349,972.8629,179.9738",
+          "Rotation": "0,0,-1,0.0000001947072",
+          "Tags": "particles",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "ModelRenderer",
+              "__guid": "08cbed2d-bafe-4972-b456-7e4c58062dd0",
+              "BodyGroups": 1,
+              "Model": "models/props_skybox/sunnoon.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "LegacyParticleSystem",
+              "__guid": "08fbef5f-67a2-4276-a124-7bc5bf5adde3",
+              "ControlPoints": [],
+              "Looped": true,
+              "Particles": "particles/bomb_explosion_smoke.vpcf",
+              "PlaybackSpeed": 0.39
+            }
+          ]
+        },
+        {
+          "__guid": "1d3fd8b7-305c-4d16-9eab-ddf366f66637",
+          "Name": "Point Light",
+          "Position": "1677.35,860.8622,131.9738",
+          "Tags": "light_point,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "PointLight",
+              "__guid": "2b94ab35-5db0-45ac-a06f-aef2d4786511",
+              "Attenuation": 0,
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.91373,0.98039,1,1",
+              "Radius": 400,
+              "Shadows": true
+            }
+          ]
+        },
+        {
+          "__guid": "57484f57-d348-4a62-a8ed-e4a7facf22c3",
+          "Name": "Volumetric Fog",
+          "Position": "1709.35,1068.862,163.9738",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "VolumetricFogVolume",
+              "__guid": "43612eb4-2832-4718-b46e-ab6987921941",
+              "Bounds": {
+                "Mins": "-670.0961,-648.9987,-501.4",
+                "Maxs": "767.2003,958.4026,743.3997"
+              },
+              "FalloffExponent": 1,
+              "Strength": 1
+            }
+          ]
+        },
+        {
+          "__guid": "7c893080-15cf-49e4-825b-5681e123a755",
+          "Name": "Volumetric Fog (1)",
+          "Position": "867.3256,-435.1378,-300.0262",
+          "Rotation": "-0.1305262,0,0,0.9914449",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "VolumetricFogVolume",
+              "__guid": "c70a27b8-cc57-4526-849a-4e63680edb42",
+              "Bounds": {
+                "Mins": "1043.903,1214.101,-630.2013",
+                "Maxs": "1500,1500,807.7031"
+              },
+              "FalloffExponent": 1,
+              "Strength": 1
+            }
+          ]
+        },
+        {
+          "__guid": "5a45d211-c137-4f61-ba34-7c2c85f0a8a2",
+          "Name": "Volumetric Fog",
+          "Position": "867.3256,-1091.138,-300.0262",
+          "Rotation": "-0.1722514,0,0,0.9850532",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "VolumetricFogVolume",
+              "__guid": "79a58d1d-9f36-4f70-b66a-d5e0519c656d",
+              "Bounds": {
+                "Mins": "1043.903,1374,-630.2013",
+                "Maxs": "1500,1500,807.7031"
+              },
+              "FalloffExponent": 1,
+              "Strength": 1
+            }
+          ]
+        },
+        {
+          "__guid": "0bb30cc5-4a6e-4304-8049-a523cc3e507b",
+          "Name": "Music",
+          "Position": "1018.667,240.6041,66.80482",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "SoundPointComponent",
+              "__guid": "ac088418-6f1d-4f6f-b5f2-98f9c1c45259",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": false,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sounds/menusong.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "Volume": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "c54b5134-68e4-4058-a2ae-6256a6091c2a",
+      "Name": "UI",
+      "Position": "328.7384,105.9405,-225.1542",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "Children": [
+        {
+          "__guid": "c6a21755-ec91-4239-b65d-ada81fd4fd57",
+          "Name": "Screen UI",
+          "Position": "-178.7434,44.0545,13.02921",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "Components": [
+            {
+              "__type": "ScreenPanel",
+              "__guid": "0f5253bf-22b1-4d47-9100-7d451b2e1366",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 99
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "2ea840b8-907b-435b-a276-7a203e9df774",
+              "Name": "Main Menu",
+              "Position": "0,0,0",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "Components": [
+                {
+                  "__type": "MainMenuPanel",
+                  "__guid": "5f0178eb-7373-46b8-91d4-629a3ea1a207"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "98dfcac6-56f7-48ab-ba66-73fe209ed9cb",
+                  "Name": "Button Panel",
+                  "Position": "52.88271,-19.60219,51.6403",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "Components": [
+                    {
+                      "__type": "ScreenPanel",
+                      "__guid": "1af7927d-4b90-4376-90aa-a93a4b2fb5c3",
+                      "AutoScreenScale": true,
+                      "Opacity": 1,
+                      "Scale": 1,
+                      "ZIndex": 100
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "dac7b628-8f9c-4254-9c91-0ef7d1cc1ac6",
+                      "Name": "Buttons",
+                      "Position": "0,0,0",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "Components": [
+                        {
+                          "__type": "Buttons",
+                          "__guid": "197830df-8dad-4d0e-b810-de6aa7873f67"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "Lerping": true,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "mainmenu",
+  "Description": "",
+  "LastSaved": "2024-04-05T23:19:19.7731158-04:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": [
+    "caro.sky_001",
+    "fish.bomb_explosion_smoke",
+    "tfassets.sunnoon"
+  ]
+}

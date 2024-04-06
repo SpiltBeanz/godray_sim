@@ -25,10 +25,9 @@
     "PerMapRanking": false,
     "LeaderboardType": "None",
     "CsProjName": "",
-    "StartupScene": "scenes/godray.scene",
+    "StartupScene": "scenes/mainmenu.scene",
     "ProjectTemplate": null,
     "ParentPackage": "",
-    "MapStartupScene": "scenes/godray.scene",
     "LaunchMode": "Normal",
     "ControlModes": {},
     "InputSettings": {
