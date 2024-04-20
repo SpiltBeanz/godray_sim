@@ -10,6 +10,7 @@ Buttons
 	color: white;
 	font-family: Poppins;
 	font-size: 64px;
+	font-weight: bold;
 	justify-content: center;
 	align-items: center;
 	flex-direction: column;
@@ -32,23 +33,11 @@ Buttons
 		> .button
 		{
 			background-color: rgb(255, 204, 0);
-			color: black;
+			color: rgb(200, 200, 200);
+			text-stroke: 6px black;
 			padding: 8px;
 			border-radius: 32px;
 			transition: all 0.1s ease;
-
-			&:hover
-			{
-				sound-in: ui.button.over;
-				background-color: white;
-				transform: scale(1.1);
-				cursor: pointer;
-			}
-
-			&:active
-			{
-				sound-in: ui.button.press;
-			}
 
 			&.sfx
 			{
@@ -58,6 +47,25 @@ Buttons
 					sound-in: fart;
 				}
 			}
+
+			&:hover
+			{
+				sound-in: ui.button.over;
+				background-color: rgb(166, 166, 166);
+				transform: scale(1.1);
+				cursor: pointer;
+				color: rgb(0, 0, 0);
+				text-stroke: 6px rgb(255, 255, 255);
+			}
+
+			&:active
+			{
+				sound-in: ui.button.press;
+			}
+
+			
+
+			
 		}
 	}
 

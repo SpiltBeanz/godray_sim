@@ -2,6 +2,7 @@ using Sandbox;
 using System;
 
 public sealed class HealthTrigger : Component, Component.ITriggerListener
+
 {
 	[Property] float Amount { get; set; } = 10f;
 

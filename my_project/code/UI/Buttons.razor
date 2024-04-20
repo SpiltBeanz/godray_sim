@@ -7,11 +7,11 @@
 	class= "buttons">
 	<h>GAMEMODE</h>
 	<div class= "options">
-		<div class="button" onclick=@StartdaGame>
-			Speedrun⏱️
+		<div class="button" onclick=@StartdaGame1>
+			Survival⏱️
 		</div>
-		<div class="button sfx">
-			Survival🔜 
+		<div class="button speedrun" onclick=@StartdaGame2>
+			Speedrun(WIP)🔜 
 		</div>
 		<div class="button sfx">
 			Explore🔜
@@ -22,9 +22,14 @@
 @code
 {
 	
-	 void StartdaGame()
+	 void StartdaGame1()
 	{
         Scene.LoadFromFile("scenes/godray.scene");
+	}
+	
+	 void StartdaGame2()
+	{
+        Scene.LoadFromFile("scenes/godray2.scene");
 	}
 	
 }

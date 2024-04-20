@@ -1,11 +1,12 @@
 {
   "UI": true,
-  "Volume": "1.00,1.00,0",
+  "Volume": "0.50,1.00,0",
   "Pitch": "1.00,1.00,0",
   "Decibels": 70,
   "SelectionMode": "Random",
   "Sounds": [
-    "sounds/the_s\u0026box_song.vsnd"
+    "sounds/rocky_road.sound",
+    "sounds/pressing_matters.sound"
   ],
   "Occlusion": true,
   "Reflections": false,
@@ -16,6 +17,7 @@
   "ResourceVersion": 0,
   "__version": 0,
   "__references": [
-    "mungus.the_sbox_song"
+    "carsonk.mus_pressing_matters",
+    "carsonk.mus_rocky_road"
   ]
 }

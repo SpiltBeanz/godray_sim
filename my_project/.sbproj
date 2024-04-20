@@ -5,11 +5,7 @@
   "Ident": "my_project",
   "Tags": "god ray simulator fog explore",
   "Schema": 1,
-  "HasAssets": true,
-  "AssetsPath": "",
   "Resources": null,
-  "HasCode": true,
-  "CodePath": "/code/",
   "PackageReferences": [],
   "EditorReferences": null,
   "Metadata": {

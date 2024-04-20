@@ -10,7 +10,7 @@
       "NetworkMode": 2,
       "Components": [
         {
-          "__type": "CameraComponent",
+          "__type": "Sandbox.CameraComponent",
           "__guid": "2fab79b3-c7fb-4bf3-9445-4b6cc6ed06df",
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
@@ -44,7 +44,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "SkyBox2D",
+              "__type": "Sandbox.SkyBox2D",
               "__guid": "20209cd5-1dee-4ef7-9aa4-2249b01b3466",
               "SkyMaterial": "materials/sky/sky_005.vmat",
               "Tint": "1,1,1,1"
@@ -61,7 +61,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "DirectionalLight",
+              "__type": "Sandbox.DirectionalLight",
               "__guid": "26c71e5a-2792-4b72-a348-e9776983042d",
               "FogMode": "Enabled",
               "FogStrength": 1,
@@ -81,7 +81,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "ModelRenderer",
+              "__type": "Sandbox.ModelRenderer",
               "__guid": "08cbed2d-bafe-4972-b456-7e4c58062dd0",
               "BodyGroups": 1,
               "Model": "models/props_skybox/sunnoon.vmdl",
@@ -89,7 +89,7 @@
               "Tint": "1,1,1,1"
             },
             {
-              "__type": "LegacyParticleSystem",
+              "__type": "Sandbox.LegacyParticleSystem",
               "__guid": "08fbef5f-67a2-4276-a124-7bc5bf5adde3",
               "ControlPoints": [],
               "Looped": true,
@@ -108,7 +108,7 @@
               "NetworkMode": 2,
               "Components": [
                 {
-                  "__type": "PointLight",
+                  "__type": "Sandbox.PointLight",
                   "__guid": "2b94ab35-5db0-45ac-a06f-aef2d4786511",
                   "Attenuation": 0,
                   "FogMode": "Enabled",
@@ -128,7 +128,7 @@
               "NetworkMode": 2,
               "Components": [
                 {
-                  "__type": "VolumetricFogVolume",
+                  "__type": "Sandbox.VolumetricFogVolume",
                   "__guid": "43612eb4-2832-4718-b46e-ab6987921941",
                   "Bounds": {
                     "Mins": "-670.0961,-648.9987,-501.4",
@@ -150,7 +150,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "VolumetricFogVolume",
+              "__type": "Sandbox.VolumetricFogVolume",
               "__guid": "c70a27b8-cc57-4526-849a-4e63680edb42",
               "Bounds": {
                 "Mins": "1043.903,1214.101,-630.2013",
@@ -170,7 +170,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "VolumetricFogVolume",
+              "__type": "Sandbox.VolumetricFogVolume",
               "__guid": "79a58d1d-9f36-4f70-b66a-d5e0519c656d",
               "Bounds": {
                 "Mins": "1043.903,1374,-630.2013",
@@ -189,7 +189,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "SoundPointComponent",
+              "__type": "Sandbox.SoundPointComponent",
               "__guid": "ac088418-6f1d-4f6f-b5f2-98f9c1c45259",
               "DistanceAttenuation": false,
               "DistanceAttenuationOverride": false,
@@ -228,7 +228,7 @@
           "NetworkMode": 2,
           "Components": [
             {
-              "__type": "ScreenPanel",
+              "__type": "Sandbox.ScreenPanel",
               "__guid": "0f5253bf-22b1-4d47-9100-7d451b2e1366",
               "AutoScreenScale": true,
               "Opacity": 1,
@@ -258,7 +258,7 @@
                   "NetworkMode": 2,
                   "Components": [
                     {
-                      "__type": "ScreenPanel",
+                      "__type": "Sandbox.ScreenPanel",
                       "__guid": "1af7927d-4b90-4376-90aa-a93a4b2fb5c3",
                       "AutoScreenScale": true,
                       "Opacity": 1,
@@ -312,7 +312,7 @@
   },
   "Title": "mainmenu",
   "Description": "",
-  "LastSaved": "2024-04-06T03:17:58.8098063-04:00",
+  "LastSaved": "2024-04-14T20:00:08.7555793-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
