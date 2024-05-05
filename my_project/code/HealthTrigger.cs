@@ -14,7 +14,14 @@ public sealed class HealthTrigger : Component, Component.ITriggerListener
 			player.Health += Amount;
 			player.Health = Math.Clamp( player.Health, 0, player.MaxHealth );
 			Sound.Play("sounds/hurt.sound");
+
+			if ( player.Health <= player.MinHealth )
+			{
+				Scene.LoadFromFile("scenes/mainmenu.scene"); 
+				Sound.Play("sounds/fart.sound");
+			}
 		}
+		
 	}
 
 	public void OnTriggerExit( Collider other )

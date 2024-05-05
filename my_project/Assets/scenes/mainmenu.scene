@@ -8,6 +8,7 @@
       "Tags": "maincamera",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.CameraComponent",
@@ -34,6 +35,7 @@
       "Position": "146.6504,179.1378,76.02621",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "8017ad9f-46a1-484f-81f9-e5f87e9d667b",
@@ -42,6 +44,7 @@
           "Tags": "skybox",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SkyBox2D",
@@ -59,6 +62,7 @@
           "Tags": "light_directional,light",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.DirectionalLight",
@@ -79,6 +83,7 @@
           "Tags": "particles",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -106,6 +111,7 @@
               "Tags": "light_point,light",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.PointLight",
@@ -126,6 +132,7 @@
               "Rotation": "0,0,1,0.0000001947072",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.VolumetricFogVolume",
@@ -148,6 +155,7 @@
           "Rotation": "-0.1305262,0,0,0.9914449",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.VolumetricFogVolume",
@@ -168,6 +176,7 @@
           "Rotation": "-0.1722514,0,0,0.9850532",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.VolumetricFogVolume",
@@ -187,6 +196,7 @@
           "Position": "1018.667,240.6041,66.80482",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SoundPointComponent",
@@ -207,6 +217,10 @@
               "SoundEvent": "sounds/menusong.sound",
               "SoundOverride": false,
               "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
               "Volume": 1
             }
           ]
@@ -219,6 +233,7 @@
       "Position": "328.7384,105.9405,-225.1542",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "c6a21755-ec91-4239-b65d-ada81fd4fd57",
@@ -226,6 +241,7 @@
           "Position": "-178.7434,44.0545,13.02921",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -243,6 +259,7 @@
               "Position": "0,0,0",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "MainMenuPanel",
@@ -256,6 +273,7 @@
                   "Position": "52.88271,-19.60219,51.6403",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ScreenPanel",
@@ -273,6 +291,7 @@
                       "Position": "0,0,0",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Buttons",
@@ -291,9 +310,9 @@
   ],
   "SceneProperties": {
     "FixedUpdateFrequency": 50,
-    "Lerping": true,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
     "ThreadedAnimation": true,
     "TimeScale": 1,
     "UseFixedUpdate": true,
@@ -312,7 +331,7 @@
   },
   "Title": "mainmenu",
   "Description": "",
-  "LastSaved": "2024-04-14T20:00:08.7555793-04:00",
+  "LastSaved": "2024-05-04T02:25:06.5158878-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [

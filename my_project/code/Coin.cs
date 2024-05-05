@@ -6,6 +6,10 @@ public sealed class Coin : Component, Component.ITriggerListener
 
 	public void OnTriggerEnter( Collider other )
 	{
+		
+
+		
+
 		var player = other.Components.Get<PlayerMovement>();
 		if ( player != null )
 		{
@@ -14,7 +18,12 @@ public sealed class Coin : Component, Component.ITriggerListener
 			player.Armor = Math.Clamp( player.Armor, 0, player.MaxArmor );
 			GameObject.Destroy();
 			Sound.Play("sounds/popsound.sound");
+			
+			Sandbox.Services.Stats.Increment( "bottles-collected", 1 );
+			Log.Info("Bottle collected!");
 		}
+
+		
 
 	}
 

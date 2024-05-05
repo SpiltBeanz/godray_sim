@@ -8,6 +8,7 @@ public sealed class PlayerMovement : Component
 	//Variables
 	[Property] public float Health { get; set; } = 100f;
 	[Property] public float MaxHealth { get; set; } = 100f;
+	[Property] public float MinHealth { get; set; } = 0f;
 	[Property] public float Armor { get; set; } = 0f;
 	[Property] public float MaxArmor { get; set; } = 100f;
 	[Property] public int Coins { get; set; } = 0;
@@ -85,6 +86,13 @@ public sealed class PlayerMovement : Component
 	{
 		BuildWishVelocity();
 		Move();
+
+		// var player = Components.Get<PlayerMovement>();
+		// if ( player.Health == player.MinHealth )
+		// {
+		// 	// Sound.Play("sounds/hurt.sound");  test
+		// }
+
 	}
 
 	void BuildWishVelocity()

@@ -8,6 +8,7 @@
       "Tags": "player",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.CharacterController",
@@ -70,6 +71,7 @@
           "MaxArmor": 100,
           "MaxForce": 50,
           "MaxHealth": 100,
+          "MinHealth": 0,
           "RunSpeed": 290,
           "Speed": 160
         },
@@ -101,6 +103,7 @@
           "Tags": "body",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SkinnedModelRenderer",
@@ -121,6 +124,7 @@
               "Rotation": "-0.4999993,-0.4999994,-0.5000004,0.5000009",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Children": [
                 {
                   "__guid": "bccd36d5-2144-4287-b733-98c37077562c",
@@ -129,6 +133,7 @@
                   "Rotation": "0.0002581775,-0.0000002980232,-0.00005638599,1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Children": [
                     {
                       "__guid": "4c31db8e-47c7-4de6-bd6f-6bc32065dd43",
@@ -137,6 +142,7 @@
                       "Rotation": "-0.000396952,0.0000002086163,0.0002739429,0.9999998",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Children": [
                         {
                           "__guid": "a89456f9-1e87-4c00-9266-3d9dbefc7297",
@@ -145,6 +151,7 @@
                           "Rotation": "0.0002120286,-0.0002525151,0.0000910759,1",
                           "Enabled": true,
                           "NetworkMode": 2,
+                          "NetworkInterpolation": true,
                           "Children": [
                             {
                               "__guid": "d90e1677-b3a4-4356-bb58-04817cadfb02",
@@ -153,6 +160,7 @@
                               "Rotation": "0.0000821203,-0.000251025,0.01994136,-0.9998012",
                               "Enabled": true,
                               "NetworkMode": 2,
+                              "NetworkInterpolation": true,
                               "Children": [
                                 {
                                   "__guid": "bb3079d9-e366-4dab-93a4-4456d134deb5",
@@ -161,6 +169,7 @@
                                   "Rotation": "0.0000001192093,-0.00000007450581,0.01963396,0.9998072",
                                   "Enabled": true,
                                   "NetworkMode": 2,
+                                  "NetworkInterpolation": true,
                                   "Children": [
                                     {
                                       "__guid": "1e9af8dd-34a3-4bcd-adfc-035c44ff90da",
@@ -168,7 +177,8 @@
                                       "Position": "6.90887,5.14046,3.234669",
                                       "Rotation": "-0.707108,-0.7071056,-0.000003516674,0.000004142523",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "1f3971ba-0d78-495e-a6f7-8d4735585a08",
@@ -176,7 +186,8 @@
                                       "Position": "6.908859,5.140506,-3.234599",
                                       "Rotation": "-0.707108,-0.7071056,-0.000003516674,0.000004142523",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "9e12c339-78b4-44af-808f-7b63b06d337e",
@@ -184,7 +195,8 @@
                                       "Position": "6.908821,5.140506,-3.234568",
                                       "Rotation": "-0.3386923,0.9305478,-0.1307779,-0.04759897",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "d80a360f-53a1-4ff4-b169-405e82a7b3dd",
@@ -192,7 +204,8 @@
                                       "Position": "6.908897,5.14046,3.234669",
                                       "Rotation": "0.3386921,-0.9305472,-0.1307825,-0.04760015",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "bed2881b-2aaa-4e24-a6b0-95de74f7ed57",
@@ -200,7 +213,8 @@
                                       "Position": "6.908885,5.14046,3.234669",
                                       "Rotation": "-0.8974878,-0.4185047,-0.05881736,0.1261353",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "077b93bb-96b1-456f-926b-a83a47b334c0",
@@ -208,7 +222,8 @@
                                       "Position": "6.908875,5.140506,-3.234599",
                                       "Rotation": "-0.8974884,-0.4185048,0.05881578,-0.1261319",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "aa5a9a91-b29d-4e0d-8110-cfa72fdb6c46",
@@ -216,7 +231,8 @@
                                       "Position": "5.621449,-0.415379,-5.929158",
                                       "Rotation": "0.04624295,-0.6935213,0.1379467,-0.7055925",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "240d2775-5e33-4927-bf8b-420579feddb0",
@@ -224,7 +240,8 @@
                                       "Position": "5.621478,-0.4154624,5.929085",
                                       "Rotation": "-0.7055932,0.1379533,-0.6935186,0.04625109",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     }
                                   ]
                                 }
@@ -237,6 +254,7 @@
                               "Rotation": "-0.08115548,0.6811197,0.08690505,-0.7224523",
                               "Enabled": true,
                               "NetworkMode": 2,
+                              "NetworkInterpolation": true,
                               "Children": [
                                 {
                                   "__guid": "8d6ebdd4-04d8-4e22-8271-b6172dfa98c9",
@@ -245,6 +263,7 @@
                                   "Rotation": "-0.02770683,-0.3880896,0.06826707,0.9186722",
                                   "Enabled": true,
                                   "NetworkMode": 2,
+                                  "NetworkInterpolation": true,
                                   "Children": [
                                     {
                                       "__guid": "03dbf8eb-ccb2-4a48-8d3b-7fbddb8fef0d",
@@ -253,6 +272,7 @@
                                       "Rotation": "0.00000004470348,0.0000004693866,0.1484236,0.9889238",
                                       "Enabled": true,
                                       "NetworkMode": 2,
+                                      "NetworkInterpolation": true,
                                       "Children": [
                                         {
                                           "__guid": "68945fd1-f7de-4187-aec8-11b1b0105eff",
@@ -261,6 +281,7 @@
                                           "Rotation": "0.09163112,-0.03309625,0.03967814,0.9944518",
                                           "Enabled": true,
                                           "NetworkMode": 2,
+                                          "NetworkInterpolation": true,
                                           "Children": [
                                             {
                                               "__guid": "070e5358-5d38-4f60-a2e0-3ce043c90bed",
@@ -268,7 +289,8 @@
                                               "Position": "5.361058,0.6217334,3.394411",
                                               "Rotation": "-0.6958921,-0.170415,-0.392899,0.5764749",
                                               "Enabled": true,
-                                              "NetworkMode": 2
+                                              "NetworkMode": 2,
+                                              "NetworkInterpolation": true
                                             },
                                             {
                                               "__guid": "f250db22-2131-499f-8bf4-5d928fd1cd3f",
@@ -277,6 +299,7 @@
                                               "Rotation": "0.5684277,0.1216941,0.4117243,0.7018287",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "e0547a42-0aa7-458e-9099-b51435a34ea4",
@@ -285,6 +308,7 @@
                                                   "Rotation": "-0.0000006342307,-0.1627616,0.000004276633,0.9866654",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "732dda3f-6edd-4f05-b49c-c502b505d7a7",
@@ -292,7 +316,8 @@
                                                       "Position": "2.136334,-0.00004148482,-0.0001296401",
                                                       "Rotation": "0.0000002533197,-0.08419369,-0.00000004842877,0.9964494",
                                                       "Enabled": true,
-                                                      "NetworkMode": 2
+                                                      "NetworkMode": 2,
+                                                      "NetworkInterpolation": true
                                                     }
                                                   ]
                                                 }
@@ -305,6 +330,7 @@
                                               "Rotation": "0.06037846,0.04580591,0.1049121,0.9915894",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "229bdc4e-18bc-4b0a-8b70-95e2a4499324",
@@ -313,6 +339,7 @@
                                                   "Rotation": "-0.00339286,-0.2652392,-0.06862513,0.9617316",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "9f3f7840-71c3-4b46-ac3e-204337cc9700",
@@ -321,6 +348,7 @@
                                                       "Rotation": "-0.000001147389,-0.2335206,0.000003024936,0.972352",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
+                                                      "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "35a1a099-4c9a-4b8f-ac4a-686e5292ff78",
@@ -328,7 +356,8 @@
                                                           "Position": "1.594389,-0.00008235868,-0.0001654028",
                                                           "Rotation": "-0.000004693866,-0.01375909,0.000002592802,0.9999053",
                                                           "Enabled": true,
-                                                          "NetworkMode": 2
+                                                          "NetworkMode": 2,
+                                                          "NetworkInterpolation": true
                                                         }
                                                       ]
                                                     }
@@ -343,6 +372,7 @@
                                               "Rotation": "0.00896778,0.03486501,-0.01934981,0.9991645",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "2127d202-1d57-4b8e-8532-681848b2f554",
@@ -351,6 +381,7 @@
                                                   "Rotation": "0.0008723736,-0.2335085,0.001296833,0.9723535",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "a413bb47-9efe-4104-9423-a3ac0844a24a",
@@ -359,6 +390,7 @@
                                                       "Rotation": "-0.000004440546,-0.2322974,0.00004120171,0.9726449",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
+                                                      "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "d747e96e-d836-4528-b33d-14d8e7efcba7",
@@ -366,7 +398,8 @@
                                                           "Position": "1.683017,0.000007241962,-0.0001681586",
                                                           "Rotation": "-0.00001375377,-0.04821886,-0.00003314018,0.9988368",
                                                           "Enabled": true,
-                                                          "NetworkMode": 2
+                                                          "NetworkMode": 2,
+                                                          "NetworkInterpolation": true
                                                         }
                                                       ]
                                                     }
@@ -381,6 +414,7 @@
                                               "Rotation": "-0.06376523,-0.02919634,-0.1306909,0.9889396",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "e94e1647-168e-436e-905e-18fe0a12be00",
@@ -389,6 +423,7 @@
                                                   "Rotation": "0.004531637,-0.1855573,0.05619837,0.9810146",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "aa634970-11c5-4bce-8151-72d82823f809",
@@ -397,6 +432,7 @@
                                                       "Rotation": "-0.00004592538,-0.2566091,-0.00006532669,0.9665152",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
+                                                      "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "1a9bf5b4-e58a-405f-be69-367a7bb19c5b",
@@ -404,7 +440,8 @@
                                                           "Position": "1.535353,0.0000297129,-0.0001625567",
                                                           "Rotation": "-0.00001230836,-0.05038811,0.000008925796,0.9987297",
                                                           "Enabled": true,
-                                                          "NetworkMode": 2
+                                                          "NetworkMode": 2,
+                                                          "NetworkInterpolation": true
                                                         }
                                                       ]
                                                     }
@@ -418,7 +455,8 @@
                                               "Position": "-28.15186,11.30969,27.26417",
                                               "Rotation": "-0.2772723,-0.6901741,-0.00000002980232,0.6684159",
                                               "Enabled": true,
-                                              "NetworkMode": 2
+                                              "NetworkMode": 2,
+                                              "NetworkInterpolation": true
                                             }
                                           ]
                                         },
@@ -427,14 +465,16 @@
                                           "Name": "arm_lower_L_twist0",
                                           "Position": "0.00001805022,0.000007885898,-0.00007370728",
                                           "Enabled": true,
-                                          "NetworkMode": 2
+                                          "NetworkMode": 2,
+                                          "NetworkInterpolation": true
                                         },
                                         {
                                           "__guid": "5968c9dd-e942-4e39-9743-23125fae744d",
                                           "Name": "arm_lower_L_twist1",
                                           "Position": "3.853335,0.00001305341,-0.00006365772",
                                           "Enabled": true,
-                                          "NetworkMode": 2
+                                          "NetworkMode": 2,
+                                          "NetworkInterpolation": true
                                         },
                                         {
                                           "__guid": "8733d5a7-9c42-42d7-94f2-6f2308095176",
@@ -442,7 +482,8 @@
                                           "Position": "-0.000007119717,0.00001202846,-0.00005652627",
                                           "Rotation": "0.0000003278255,-0.00000005960464,-0.7577646,0.6525283",
                                           "Enabled": true,
-                                          "NetworkMode": 2
+                                          "NetworkMode": 2,
+                                          "NetworkInterpolation": true
                                         }
                                       ]
                                     },
@@ -451,14 +492,16 @@
                                       "Name": "arm_upper_L_twist0",
                                       "Position": "0.00001510155,0.000005137287,-0.00002842252",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "f46210e5-fc51-4a3d-86ac-04453620388a",
                                       "Name": "arm_upper_L_twist1",
                                       "Position": "5.022599,0.00002607702,-0.00001692771",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     }
                                   ]
                                 }
@@ -471,6 +514,7 @@
                               "Rotation": "-0.08130813,0.6814711,-0.08696642,0.7220963",
                               "Enabled": true,
                               "NetworkMode": 2,
+                              "NetworkInterpolation": true,
                               "Children": [
                                 {
                                   "__guid": "67787b8f-15bc-4af3-a85b-5a40264020cf",
@@ -479,6 +523,7 @@
                                   "Rotation": "0.0277065,0.3880895,0.06826836,0.918672",
                                   "Enabled": true,
                                   "NetworkMode": 2,
+                                  "NetworkInterpolation": true,
                                   "Children": [
                                     {
                                       "__guid": "85c14d6c-51fd-4149-a2be-a64a17eba370",
@@ -487,6 +532,7 @@
                                       "Rotation": "-0.0000000372529,0.0000001937151,0.1484233,0.9889239",
                                       "Enabled": true,
                                       "NetworkMode": 2,
+                                      "NetworkInterpolation": true,
                                       "Children": [
                                         {
                                           "__guid": "f50ec4a6-17f5-4bd8-99d9-5505e895d574",
@@ -495,6 +541,7 @@
                                           "Rotation": "-0.09163144,0.03309621,0.03967842,0.9944515",
                                           "Enabled": true,
                                           "NetworkMode": 2,
+                                          "NetworkInterpolation": true,
                                           "Children": [
                                             {
                                               "__guid": "773c7e7c-5a17-46ff-b7e0-2a6661d3a4c5",
@@ -502,7 +549,8 @@
                                               "Position": "5.361065,0.6218716,-3.394512",
                                               "Rotation": "-0.576474,0.3928988,0.1704146,0.695893",
                                               "Enabled": true,
-                                              "NetworkMode": 2
+                                              "NetworkMode": 2,
+                                              "NetworkInterpolation": true
                                             },
                                             {
                                               "__guid": "1d1830a0-c16f-4c58-a1be-47f857f7a1c3",
@@ -511,6 +559,7 @@
                                               "Rotation": "-0.5684255,-0.1216944,0.4117284,0.7018281",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "7a4b3b90-9b41-4695-a989-56d4f0667cdc",
@@ -519,6 +568,7 @@
                                                   "Rotation": "0.00000147149,0.1627604,-0.000003732741,0.9866656",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "92670cf1-b8e3-4efb-bd7d-7df2299c3ad7",
@@ -526,7 +576,8 @@
                                                       "Position": "2.136337,0.000043869,-0.00005054471",
                                                       "Rotation": "0.0000000782311,0.08420044,0.0000005532056,0.9964489",
                                                       "Enabled": true,
-                                                      "NetworkMode": 2
+                                                      "NetworkMode": 2,
+                                                      "NetworkInterpolation": true
                                                     }
                                                   ]
                                                 }
@@ -539,6 +590,7 @@
                                               "Rotation": "-0.0603777,-0.04580308,0.1049159,0.9915892",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "5e7f4404-98b4-4876-bfd3-e766382422a7",
@@ -547,6 +599,7 @@
                                                   "Rotation": "0.003392495,0.2652348,-0.06862299,0.9617328",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "0e1058ee-158f-4e19-8824-d31814549361",
@@ -555,6 +608,7 @@
                                                       "Rotation": "0.000002712011,0.2335185,-0.000001698732,0.9723523",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
+                                                      "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "b2cb56d3-058a-4649-8069-729d22049e46",
@@ -562,7 +616,8 @@
                                                           "Position": "1.59442,0.00004084408,-0.0001178067",
                                                           "Rotation": "0.000004738569,0.01376472,0.0000004470348,0.9999053",
                                                           "Enabled": true,
-                                                          "NetworkMode": 2
+                                                          "NetworkMode": 2,
+                                                          "NetworkInterpolation": true
                                                         }
                                                       ]
                                                     }
@@ -577,6 +632,7 @@
                                               "Rotation": "-0.008967884,-0.03486186,-0.01934614,0.9991646",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "440d3742-9fd4-4b3d-9beb-3c536e9ac85d",
@@ -585,6 +641,7 @@
                                                   "Rotation": "-0.0008731559,0.2335047,0.001300201,0.9723544",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "4a1d2b04-067a-4859-8744-950a44e3d463",
@@ -593,6 +650,7 @@
                                                       "Rotation": "0.000005975366,0.2322946,0.00003750622,0.9726455",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
+                                                      "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "e0aa843c-d80e-4a60-a5c3-847cff21cd52",
@@ -600,7 +658,8 @@
                                                           "Position": "1.683014,0.00007838009,-0.000102831",
                                                           "Rotation": "0.00001381338,0.04822427,-0.00003582239,0.9988364",
                                                           "Enabled": true,
-                                                          "NetworkMode": 2
+                                                          "NetworkMode": 2,
+                                                          "NetworkInterpolation": true
                                                         }
                                                       ]
                                                     }
@@ -615,6 +674,7 @@
                                               "Rotation": "0.06376481,0.02919935,-0.1306878,0.9889399",
                                               "Enabled": true,
                                               "NetworkMode": 2,
+                                              "NetworkInterpolation": true,
                                               "Children": [
                                                 {
                                                   "__guid": "86c47279-2a41-409a-812c-11d7ab773e6f",
@@ -623,6 +683,7 @@
                                                   "Rotation": "-0.004531965,0.185554,0.0562013,0.9810151",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
+                                                  "NetworkInterpolation": true,
                                                   "Children": [
                                                     {
                                                       "__guid": "f1494d58-dc14-4dc4-93ba-d02fadc0eab5",
@@ -631,6 +692,7 @@
                                                       "Rotation": "0.00004531443,0.2566069,-0.00006809831,0.9665158",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
+                                                      "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "28e46653-d3cd-4371-8547-352e6ad9d84a",
@@ -638,7 +700,8 @@
                                                           "Position": "1.53535,0.0000576973,-0.0001150668",
                                                           "Rotation": "0.00001199543,0.05039279,0.000008508563,0.9987295",
                                                           "Enabled": true,
-                                                          "NetworkMode": 2
+                                                          "NetworkMode": 2,
+                                                          "NetworkInterpolation": true
                                                         }
                                                       ]
                                                     }
@@ -652,7 +715,8 @@
                                               "Position": "-28.15177,11.30991,-27.26431",
                                               "Rotation": "0.2772729,0.6901738,0.000000372529,0.6684158",
                                               "Enabled": true,
-                                              "NetworkMode": 2
+                                              "NetworkMode": 2,
+                                              "NetworkInterpolation": true
                                             }
                                           ]
                                         },
@@ -661,7 +725,8 @@
                                           "Name": "arm_lower_R_twist1",
                                           "Position": "3.853324,0.00001037121,-0.0000488758",
                                           "Enabled": true,
-                                          "NetworkMode": 2
+                                          "NetworkMode": 2,
+                                          "NetworkInterpolation": true
                                         },
                                         {
                                           "__guid": "42cad313-f3f3-4f37-8a13-14d2637da91d",
@@ -669,6 +734,7 @@
                                           "Position": "-0.00001363779,-0.000001632969,-0.00003123294",
                                           "Enabled": true,
                                           "NetworkMode": 2,
+                                          "NetworkInterpolation": true,
                                           "Children": [
                                             {
                                               "__guid": "7d9c88e3-49f4-412c-a6f2-c3532b37ab95",
@@ -676,7 +742,8 @@
                                               "Position": "-0.000006718542,-0.000005098192,-0.00003966404",
                                               "Rotation": "-0.0000007376075,0.0000002682209,0.7577677,-0.6525244",
                                               "Enabled": true,
-                                              "NetworkMode": 2
+                                              "NetworkMode": 2,
+                                              "NetworkInterpolation": true
                                             }
                                           ]
                                         }
@@ -687,14 +754,16 @@
                                       "Name": "arm_upper_R_twist0",
                                       "Position": "0.0000001618464,-0.000007700086,-0.00004528476",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     },
                                     {
                                       "__guid": "ba4ffe28-c592-4e15-82b7-b4015251838b",
                                       "Name": "arm_upper_R_twist1",
                                       "Position": "5.02259,0.00002896785,-0.00004649161",
                                       "Enabled": true,
-                                      "NetworkMode": 2
+                                      "NetworkMode": 2,
+                                      "NetworkInterpolation": true
                                     }
                                   ]
                                 }
@@ -706,7 +775,8 @@
                               "Position": "5.820021,-0.09343954,-0.002972884",
                               "Rotation": "0.0000821203,-0.000251025,0.01994136,-0.9998012",
                               "Enabled": true,
-                              "NetworkMode": 2
+                              "NetworkMode": 2,
+                              "NetworkInterpolation": true
                             }
                           ]
                         }
@@ -721,6 +791,7 @@
                   "Rotation": "-0.000001549721,1,0.0000001788139,-0.000000923872",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Children": [
                     {
                       "__guid": "0c0e19a2-4fab-4841-90b8-20e97ec4900e",
@@ -729,6 +800,7 @@
                       "Rotation": "-0.000001326203,0.0000001043081,-0.01828091,0.9998329",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Children": [
                         {
                           "__guid": "48a66d68-8da4-4633-9d0e-b7cd9ffc4d11",
@@ -737,6 +809,7 @@
                           "Rotation": "0.0000006258488,-0.000001043081,0.3914976,0.9201791",
                           "Enabled": true,
                           "NetworkMode": 2,
+                          "NetworkInterpolation": true,
                           "Children": [
                             {
                               "__guid": "4ce9ec82-12bc-484e-ab5e-215e8369167b",
@@ -744,7 +817,8 @@
                               "Position": "4.42915,0.00002980233,0.00001552231",
                               "Rotation": "-0.0000005032102,0.000001490116,0.3907284,0.920506",
                               "Enabled": true,
-                              "NetworkMode": 2
+                              "NetworkMode": 2,
+                              "NetworkInterpolation": true
                             }
                           ]
                         },
@@ -753,14 +827,16 @@
                           "Name": "leg_lower_R_twist1",
                           "Position": "6.257761,0.00001965463,-0.000002268609",
                           "Enabled": true,
-                          "NetworkMode": 2
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true
                         },
                         {
                           "__guid": "a3df3bde-b953-4baa-a515-523ff5138518",
                           "Name": "leg_lower_R_twist0",
                           "Position": "-0.000005718221,-0.0000002091941,-0.00000000002660272",
                           "Enabled": true,
-                          "NetworkMode": 2
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true
                         },
                         {
                           "__guid": "ca3cc2b1-966a-4afb-a196-e9d188687033",
@@ -768,7 +844,8 @@
                           "Position": "0.000001906074,0.00000006973136,0.000000000008867574",
                           "Rotation": "0.0000009241048,-0.000001251698,0.7135268,0.7006278",
                           "Enabled": true,
-                          "NetworkMode": 2
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true
                         }
                       ]
                     },
@@ -777,7 +854,8 @@
                       "Name": "leg_upper_R_twist1",
                       "Position": "7.235195,0.0000258751,0.0000005325128",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     },
                     {
                       "__guid": "7fd9641f-d7e4-4ce1-90f1-61bb7d05ef3b",
@@ -785,7 +863,8 @@
                       "Position": "0.000007629525,0.00000000005638867,-0.00003051755",
                       "Rotation": "-0.00000005960464,0,0.000003039837,1",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     },
                     {
                       "__guid": "b9d6ced9-8c6c-4b77-9f65-128c264467c4",
@@ -793,7 +872,8 @@
                       "Position": "0.00002098097,0.0000000001041371,-0.00003051749",
                       "Rotation": "-0.000001056968,-0.0000006258488,-0.7071052,0.7071084",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     }
                   ]
                 },
@@ -804,6 +884,7 @@
                   "Rotation": "-0.000001549721,1,0.0000001788139,-0.000001162291",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Children": [
                     {
                       "__guid": "b44f7cdb-ddb8-4d17-bd80-aa7df96c1077",
@@ -812,6 +893,7 @@
                       "Rotation": "-0.000003024936,-0.0000004023314,-0.01828231,0.9998329",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Children": [
                         {
                           "__guid": "47b034dc-6930-40d4-9c73-f91ec919ea0c",
@@ -820,6 +902,7 @@
                           "Rotation": "0.000003278255,-0.0000009536743,0.3914973,0.9201792",
                           "Enabled": true,
                           "NetworkMode": 2,
+                          "NetworkInterpolation": true,
                           "Children": [
                             {
                               "__guid": "87cd2143-7563-4c2f-b176-92e9375c71a2",
@@ -827,7 +910,8 @@
                               "Position": "4.429154,0.00004124641,-0.00001482594",
                               "Rotation": "-0.0000004862416,0.000001206994,0.3907294,0.9205056",
                               "Enabled": true,
-                              "NetworkMode": 2
+                              "NetworkMode": 2,
+                              "NetworkInterpolation": true
                             }
                           ]
                         },
@@ -836,14 +920,16 @@
                           "Name": "leg_lower_L_twist1",
                           "Position": "6.257758,0.00003696978,-0.000007145983",
                           "Enabled": true,
-                          "NetworkMode": 2
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true
                         },
                         {
                           "__guid": "46a1fa61-0ec6-41cc-b322-9dca68d749e8",
                           "Name": "leg_lower_L_twist0",
                           "Position": "-0.000007624293,-0.0000002789466,-0.00000000003046808",
                           "Enabled": true,
-                          "NetworkMode": 2
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true
                         },
                         {
                           "__guid": "8c9ec7df-a394-4dfe-99d4-f73384bd39f8",
@@ -851,7 +937,8 @@
                           "Position": "-0.00001524859,-0.0000005578932,-0.00000000006093615",
                           "Rotation": "-0.000003013527,-0.00000166893,0.7135276,0.700627",
                           "Enabled": true,
-                          "NetworkMode": 2
+                          "NetworkMode": 2,
+                          "NetworkInterpolation": true
                         }
                       ]
                     },
@@ -860,14 +947,16 @@
                       "Name": "leg_upper_L_twist1",
                       "Position": "7.235189,0.00002587508,0.000003982495",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     },
                     {
                       "__guid": "e6a0b980-8bd8-4c00-abd2-0ddfd356db0f",
                       "Name": "leg_upper_L_twist0",
                       "Position": "0.000007629395,0.00000000002728484,0.00000000003637979",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     },
                     {
                       "__guid": "93591f96-9dd0-4688-8da3-ac37ed2b4c4f",
@@ -875,7 +964,8 @@
                       "Position": "0.00001907349,0.0000000000682121,0.00000000009094947",
                       "Rotation": "-0.000001011624,-0.0000006854534,-0.7071055,0.707108",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     }
                   ]
                 }
@@ -887,6 +977,7 @@
               "Position": "1.266602,0,0",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Children": [
                 {
                   "__guid": "293106b1-fc5f-4e4c-9d04-849ab00e776d",
@@ -894,7 +985,8 @@
                   "Position": "0.6939679,-20.39471,39.24799",
                   "Rotation": "0.2871271,0.2142481,-0.5281312,0.7698917",
                   "Enabled": true,
-                  "NetworkMode": 2
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true
                 },
                 {
                   "__guid": "62579d0b-de51-494c-af62-404aa93a13ee",
@@ -902,7 +994,8 @@
                   "Position": "0.694096,20.39468,39.24792",
                   "Rotation": "0.7698929,0.5281296,-0.2142482,0.2871266",
                   "Enabled": true,
-                  "NetworkMode": 2
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true
                 },
                 {
                   "__guid": "255f5ce5-9d46-44bd-98d0-0f3c1a8161e5",
@@ -910,13 +1003,15 @@
                   "Position": "4.638916,-0.0000006912522,9.8425",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Children": [
                     {
                       "__guid": "71feb642-840b-457e-824d-c700be77b6d9",
                       "Name": "aim_matrix_02b",
                       "Position": "3.937012,-0.0000000000002519786,-0.000001430209",
                       "Enabled": true,
-                      "NetworkMode": 2
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true
                     }
                   ]
                 },
@@ -925,7 +1020,8 @@
                   "Name": "aim_matrix_01",
                   "Position": "4.638916,-0.0000006912522,11.811",
                   "Enabled": true,
-                  "NetworkMode": 2
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true
                 },
                 {
                   "__guid": "fe130b8d-a081-44e5-9ff0-990c76ee6df9",
@@ -933,7 +1029,8 @@
                   "Position": "-0.8840337,-4.427399,3.807913",
                   "Rotation": "0.6508947,0.2762884,-0.2762876,0.6508964",
                   "Enabled": true,
-                  "NetworkMode": 2
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true
                 },
                 {
                   "__guid": "f971f68e-f456-401e-bafc-a89dce6da62e",
@@ -941,7 +1038,8 @@
                   "Position": "-0.8840324,4.427399,3.807924",
                   "Rotation": "0.650896,0.276287,-0.2762895,0.6508948",
                   "Enabled": true,
-                  "NetworkMode": 2
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true
                 }
               ]
             },
@@ -952,6 +1050,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -977,6 +1076,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -1002,6 +1102,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -1027,6 +1128,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -1052,6 +1154,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -1077,6 +1180,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -1102,6 +1206,7 @@
               "Tags": "clothing",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.SkinnedModelRenderer",
@@ -1128,7 +1233,8 @@
           "Position": "0,0,64",
           "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
           "Enabled": true,
-          "NetworkMode": 2
+          "NetworkMode": 2,
+          "NetworkInterpolation": true
         },
         {
           "__guid": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2",
@@ -1137,6 +1243,7 @@
           "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.CameraComponent",
@@ -1182,6 +1289,7 @@
           "Position": "0,0,32",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SphereCollider",
@@ -1196,17 +1304,23 @@
         {
           "__guid": "869d6f24-bbfa-4f83-816f-e24c235e8ae7",
           "Name": "Pusher",
-          "Position": "0,0,0",
+          "Position": "1.781372,0,31.95875",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
-              "__type": "Sandbox.SphereCollider",
-              "__guid": "fc45f5a4-f422-4fd6-a744-b4f0f88e0a3a",
-              "Center": "0,0,12.5",
+              "__type": "Sandbox.HullCollider",
+              "__guid": "a937dd53-1310-401c-97c6-686fdccaca2a",
+              "BoxSize": "40,40,26.10005",
+              "Center": "0,0,-19.2",
+              "Height": 50,
               "IsTrigger": false,
-              "Radius": 22.999996,
-              "Static": false
+              "Radius": 25,
+              "Radius2": 0,
+              "Slices": 16,
+              "Static": false,
+              "Type": "Box"
             }
           ]
         }
@@ -1218,6 +1332,7 @@
       "Position": "-2048.923,340.9395,70.50276",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "1b4823e6-c486-4b01-956c-96d376b32066",
@@ -1226,6 +1341,7 @@
           "Tags": "player",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -1253,6 +1369,7 @@
           "Position": "0,0,0",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -1276,6 +1393,7 @@
       "Position": "-1163.482,289.0203,84.51519",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "9f9ac5b5-c85f-4a25-a532-71254f26b504",
@@ -1285,6 +1403,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1317,6 +1436,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1349,6 +1469,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1381,6 +1502,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1414,6 +1536,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1447,6 +1570,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1479,6 +1603,7 @@
           "Tags": "triggerinvis",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1510,6 +1635,7 @@
           "Scale": "1.599999,0.6000006,0.09999993",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1537,6 +1663,7 @@
               "Tags": "trigger",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1571,6 +1698,7 @@
           "Scale": "1.6,0.6,0.1",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -1598,6 +1726,7 @@
               "Tags": "trigger",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1630,6 +1759,7 @@
           "Position": "58.15906,32.02911,-76.85686",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Children": [
             {
               "__guid": "b90a03ea-bd14-4b46-8685-a946c2fa36f0",
@@ -1637,6 +1767,7 @@
               "Position": "-1662.677,142.3873,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1669,6 +1800,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1691,6 +1823,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1713,6 +1846,7 @@
               "Position": "1313.323,-241.6127,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1745,6 +1879,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1767,6 +1902,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1789,6 +1925,7 @@
               "Position": "-318.677,-305.6127,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1821,6 +1958,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1843,6 +1981,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1865,6 +2004,7 @@
               "Position": "-63.37036,174.9506,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1897,6 +2037,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1919,6 +2060,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1941,6 +2083,7 @@
               "Position": "-63.37036,142.9506,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -1973,6 +2116,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -1995,6 +2139,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2017,6 +2162,7 @@
               "Position": "-63.37036,110.9506,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2049,6 +2195,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2071,6 +2218,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2093,6 +2241,7 @@
               "Position": "-1662.677,175.5139,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2125,6 +2274,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2147,6 +2297,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2169,6 +2320,7 @@
               "Position": "-1646.677,175.5139,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2201,6 +2353,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2223,6 +2376,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2245,6 +2399,7 @@
               "Position": "1313.323,-208.4861,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2277,6 +2432,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2299,6 +2455,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2321,6 +2478,7 @@
               "Position": "1297.323,-208.4861,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2353,6 +2511,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2375,6 +2534,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2397,6 +2557,7 @@
               "Position": "-318.677,-272.4861,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2429,6 +2590,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2451,6 +2613,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2473,6 +2636,7 @@
               "Position": "-63.37036,206.9506,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2505,6 +2669,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2527,6 +2692,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2549,6 +2715,7 @@
               "Position": "-1662.677,207.5139,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2581,6 +2748,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2603,6 +2771,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2625,6 +2794,7 @@
               "Position": "-1646.677,207.5139,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2657,6 +2827,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2679,6 +2850,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2701,6 +2873,7 @@
               "Position": "1313.323,-176.4861,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2733,6 +2906,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2755,6 +2929,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2777,6 +2952,7 @@
               "Position": "1297.323,-176.4861,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2809,6 +2985,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2831,6 +3008,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2853,6 +3031,7 @@
               "Position": "-318.677,-240.4861,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2885,6 +3064,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2907,6 +3087,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2929,6 +3110,7 @@
               "Position": "-63.37036,238.9506,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -2961,6 +3143,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -2983,6 +3166,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3005,6 +3189,7 @@
               "Position": "-1662.677,239.5139,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -3037,6 +3222,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3059,6 +3245,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3081,6 +3268,7 @@
               "Position": "1313.323,-144.4861,120.3417",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -3113,6 +3301,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3135,6 +3324,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3157,6 +3347,7 @@
               "Position": "-318.677,-208.4861,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -3189,6 +3380,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3211,6 +3403,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3233,6 +3426,7 @@
               "Position": "-318.677,-177.0494,24.34167",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
@@ -3265,6 +3459,7 @@
                   "Scale": "0.1,0.1,0.1",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3287,6 +3482,7 @@
                   "Scale": "0.1,0.15,0.15",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.DecalRenderer",
@@ -3313,6 +3509,7 @@
       "Position": "-1163.482,289.0203,84.51519",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "6ac1cb1b-7599-4980-90a0-862901c446ba",
@@ -3320,6 +3517,7 @@
           "Position": "0,0,0",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.MapInstance",
@@ -3337,11 +3535,12 @@
           "Tags": "skybox",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SkyBox2D",
               "__guid": "f4bbb142-0a53-49ed-bbf3-e4f4bbebfe85",
-              "SkyMaterial": "materials/skybox/light_test_sky_sunny03.vmat",
+              "SkyMaterial": "materials/error.vmat",
               "Tint": "1,1,1,1"
             },
             {
@@ -3372,6 +3571,7 @@
           "Tags": "particles",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.LegacyParticleSystem",
@@ -3389,6 +3589,7 @@
               "Position": "224,0,160",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.LegacyParticleSystem",
@@ -3406,6 +3607,7 @@
               "Position": "128,0,96",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.LegacyParticleSystem",
@@ -3427,6 +3629,7 @@
           "Tags": "light_directional,light",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.DirectionalLight",
@@ -3445,6 +3648,7 @@
           "Position": "-1132.558,249.4547,-16.20835",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Children": [
             {
               "__guid": "cfdab911-27c0-4864-b830-b44b4c2ae01a",
@@ -3453,6 +3657,7 @@
               "Tags": "light_point,light",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.PointLight",
@@ -3472,6 +3677,7 @@
               "Position": "2163.829,-359.0092,-35.1717",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Children": [
                 {
                   "__guid": "c3c37389-87e3-4b1c-8f24-d218a43f2ad2",
@@ -3480,6 +3686,7 @@
                   "Rotation": "0,0,-0.7071067,0.7071068",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3499,6 +3706,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3521,6 +3729,7 @@
                       "Tags": "light_point,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.PointLight",
@@ -3543,6 +3752,7 @@
                   "Rotation": "0,0,-0.7071067,0.7071068",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3562,6 +3772,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3584,6 +3795,7 @@
                       "Tags": "light_point,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.PointLight",
@@ -3606,6 +3818,7 @@
                   "Rotation": "0,0,-0.7071067,0.7071068",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3625,6 +3838,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3647,6 +3861,7 @@
                       "Tags": "light_point,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.PointLight",
@@ -3669,6 +3884,7 @@
                   "Rotation": "0,0,-0.7071069,-0.7071066",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3688,6 +3904,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3712,6 +3929,7 @@
                   "Rotation": "0,0,-0.7071069,-0.7071066",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3731,6 +3949,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3755,6 +3974,7 @@
                   "Rotation": "0,0,-0.7071069,-0.7071066",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3774,6 +3994,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3799,6 +4020,7 @@
               "Position": "-11.96021,25.52515,-35.1717",
               "Enabled": true,
               "NetworkMode": 2,
+              "NetworkInterpolation": true,
               "Children": [
                 {
                   "__guid": "c4cefb08-1d8d-4fe4-9529-9d8d35b064be",
@@ -3807,6 +4029,7 @@
                   "Rotation": "0,0,-0.7071067,0.7071068",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3826,6 +4049,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3848,6 +4072,7 @@
                       "Tags": "light_point,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.PointLight",
@@ -3870,6 +4095,7 @@
                   "Rotation": "0,0,-0.7071067,0.7071068",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3889,6 +4115,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3911,6 +4138,7 @@
                       "Tags": "light_point,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.PointLight",
@@ -3933,6 +4161,7 @@
                   "Rotation": "0,0,-0.7071067,0.7071068",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -3952,6 +4181,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -3974,6 +4204,7 @@
                       "Tags": "light_point,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.PointLight",
@@ -3996,6 +4227,7 @@
                   "Rotation": "0,0,-0.7071069,-0.7071066",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -4015,6 +4247,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -4039,6 +4272,7 @@
                   "Rotation": "0,0,-0.7071069,-0.7071066",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -4058,6 +4292,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -4082,6 +4317,7 @@
                   "Rotation": "0,0,-0.7071069,-0.7071066",
                   "Enabled": true,
                   "NetworkMode": 2,
+                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ModelRenderer",
@@ -4101,6 +4337,7 @@
                       "Tags": "light_spot,light",
                       "Enabled": true,
                       "NetworkMode": 2,
+                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Sandbox.SpotLight",
@@ -4128,6 +4365,7 @@
           "Position": "44.52234,234.1324,-103.185",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SoundPointComponent",
@@ -4148,6 +4386,10 @@
               "SoundEvent": "sounds/lovelydayloopcarson.sound",
               "SoundOverride": false,
               "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
               "Volume": 0.1
             }
           ]
@@ -4160,6 +4402,7 @@
       "Position": "-79.48947,-745.1481,392.139",
       "Enabled": true,
       "NetworkMode": 2,
+      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "dcd8c344-2901-419e-9c0b-1be36f4fb2d1",
@@ -4169,6 +4412,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4208,6 +4452,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4247,6 +4492,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4286,6 +4532,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4325,6 +4572,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4364,6 +4612,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4403,6 +4652,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4442,6 +4692,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4481,6 +4732,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4520,6 +4772,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4559,6 +4812,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4598,6 +4852,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4637,6 +4892,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4676,6 +4932,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4715,6 +4972,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4754,6 +5012,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4793,6 +5052,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4832,6 +5092,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4871,6 +5132,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4910,6 +5172,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4949,6 +5212,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -4988,6 +5252,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5027,6 +5292,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5066,6 +5332,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5105,6 +5372,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5144,6 +5412,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5183,6 +5452,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5222,6 +5492,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5261,6 +5532,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5300,6 +5572,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5339,6 +5612,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5378,6 +5652,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5417,6 +5692,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5456,6 +5732,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5495,6 +5772,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5534,6 +5812,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5573,6 +5852,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5612,6 +5892,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5651,6 +5932,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5690,6 +5972,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5729,6 +6012,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5768,6 +6052,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5807,6 +6092,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5846,6 +6132,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5885,6 +6172,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5924,6 +6212,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -5963,6 +6252,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6002,6 +6292,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6041,6 +6332,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6080,6 +6372,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6111,17 +6404,18 @@
           ]
         },
         {
-          "__guid": "ebe66813-a004-47cc-bdc3-8ce8d4491eab",
+          "__guid": "c1fa8c9e-38b9-4452-9b3f-3b2bfc154b40",
           "Name": "Soccer Ball",
-          "Position": "291.9498,937.1481,-408.139",
+          "Position": "333.2574,873.1487,-440.1391",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
-              "__guid": "642c1c2a-3ae0-45eb-98bf-e1cd8254889b",
+              "__guid": "ecb3639a-e571-4c1a-8a8a-c473f89f3826",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
               "RenderType": "On",
@@ -6129,7 +6423,7 @@
             },
             {
               "__type": "Sandbox.Rigidbody",
-              "__guid": "5cb7dc81-84db-46c3-ab17-bc22c0bdca99",
+              "__guid": "c3d67670-ab21-463b-8529-a4219458bb31",
               "AngularDamping": 0,
               "Gravity": true,
               "LinearDamping": 0,
@@ -6141,7 +6435,7 @@
             },
             {
               "__type": "Sandbox.ModelCollider",
-              "__guid": "c3dbdbd2-e05b-4e23-b747-e79c73a4f9d5",
+              "__guid": "e8cd9d5e-f269-433f-98ed-79c29286641f",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false
@@ -6149,17 +6443,18 @@
           ]
         },
         {
-          "__guid": "6d3a32bd-b1e8-40d1-95cd-80e64a341e72",
+          "__guid": "78952e3b-a992-49ef-8b2a-a90d091a1809",
           "Name": "Soccer Ball",
-          "Position": "287.4895,937.1481,-440.139",
+          "Position": "333.2574,873.1487,-376.139",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
-              "__guid": "37038c4f-83c3-43da-8108-524767ecafea",
+              "__guid": "4a4a3fba-2d91-45ff-8e39-9fbffe6e9eda",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
               "RenderType": "On",
@@ -6167,7 +6462,7 @@
             },
             {
               "__type": "Sandbox.Rigidbody",
-              "__guid": "39d0f862-58d5-407e-9b38-4a7131c0be64",
+              "__guid": "2ab0b623-6db9-4a27-ab69-4198bacc11dc",
               "AngularDamping": 0,
               "Gravity": true,
               "LinearDamping": 0,
@@ -6179,7 +6474,7 @@
             },
             {
               "__type": "Sandbox.ModelCollider",
-              "__guid": "91b60a0d-2b80-4a66-9974-4243bef09b9e",
+              "__guid": "93a342bc-dae3-45b0-8967-ed56baf0713f",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false
@@ -6187,17 +6482,18 @@
           ]
         },
         {
-          "__guid": "215cf798-9d1a-4bc3-81cb-9706a22d2a24",
+          "__guid": "4811c4c7-a503-430b-a4cd-80309aabbfb2",
           "Name": "Soccer Ball",
-          "Position": "291.9498,905.1481,-408.139",
+          "Position": "381.2575,873.1494,-440.1393",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
-              "__guid": "38daf1ac-4df0-401e-b1b6-b3ae84c19c26",
+              "__guid": "164ab309-92a6-4042-b458-91d9f8f10359",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
               "RenderType": "On",
@@ -6205,7 +6501,7 @@
             },
             {
               "__type": "Sandbox.Rigidbody",
-              "__guid": "0d025d0e-840d-4362-80d6-f645f15fdf03",
+              "__guid": "6bbec901-de2d-4a6a-9491-7f5ba0d07159",
               "AngularDamping": 0,
               "Gravity": true,
               "LinearDamping": 0,
@@ -6217,7 +6513,7 @@
             },
             {
               "__type": "Sandbox.ModelCollider",
-              "__guid": "d863333b-3047-4a47-8156-ff0c249b2d82",
+              "__guid": "01039133-908d-4330-92ae-80ee2e644a9a",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false
@@ -6225,17 +6521,18 @@
           ]
         },
         {
-          "__guid": "8ddbb6d4-6df7-4780-8716-7124713399d9",
+          "__guid": "b670bda4-b00f-43d7-bacc-6e139a8b7953",
           "Name": "Soccer Ball",
-          "Position": "287.4895,905.1481,-440.139",
+          "Position": "381.2575,873.1494,-376.1391",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
-              "__guid": "4ff584f9-551f-4a77-80cc-4a9c509c8f3f",
+              "__guid": "53321059-a24a-4002-9c84-3aebf09cfa29",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
               "RenderType": "On",
@@ -6243,7 +6540,7 @@
             },
             {
               "__type": "Sandbox.Rigidbody",
-              "__guid": "61f34225-5512-4bbf-b551-b5678b8f6e80",
+              "__guid": "c219dd98-3e4c-42fc-9102-2a342c3add7b",
               "AngularDamping": 0,
               "Gravity": true,
               "LinearDamping": 0,
@@ -6255,83 +6552,7 @@
             },
             {
               "__type": "Sandbox.ModelCollider",
-              "__guid": "5b30310d-24b2-46ca-a8bd-e714d40ddc86",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "cc2f7f28-0e71-4489-80e3-59930fab28ea",
-          "Name": "Soccer Ball",
-          "Position": "291.9498,873.1481,-408.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "57b8e5e1-c781-4521-b29f-72d8dc3c3185",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "9fda57a7-c9cf-4232-b9b7-c966481770af",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "5309147e-4d96-4cbb-a980-fa3a907aa5ff",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "579e615e-27b0-434c-ada6-8f1fcc310438",
-          "Name": "Soccer Ball",
-          "Position": "287.4895,873.1481,-440.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "07e765b2-35ee-4001-b4ca-96ba26b9190c",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "35f4f7c5-6407-48a4-b63c-ea8d9ad91d40",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "f50af43f-c55e-44c6-bc25-8e726863a7aa",
+              "__guid": "b5160549-441e-4763-8dc3-6b4c6c60c305",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false
@@ -6346,6 +6567,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6377,6 +6599,201 @@
           ]
         },
         {
+          "__guid": "8a7a8dae-6b14-4c7d-b213-8b93d8e8415a",
+          "Name": "Soccer Ball",
+          "Position": "291.9498,841.1481,-344.1389",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "2d1d87ef-4db1-4426-b2f1-c9604c90bd97",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "fd934b92-d85a-4372-91d7-a4570c1ad1ea",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "ec1a3fad-a9ac-4c0c-9736-aad6b9ff11e0",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "cc6d3471-c208-41c2-a484-444d96f17f69",
+          "Name": "Soccer Ball",
+          "Position": "337.7177,841.1487,-408.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "44265a96-4625-4a73-8bda-951836fdae1c",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "d0ecec28-fb00-4123-a965-0c02442c0bbc",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "609e90b5-15c0-49d8-abd0-767c9767b921",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "807d9b7e-95a8-4e38-aaa2-83a07a353752",
+          "Name": "Soccer Ball",
+          "Position": "337.7177,841.1487,-344.139",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a4709c1d-ebd7-4333-824d-5dab3e261941",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "4f4f4642-9eab-49e9-acd6-92c6986a7b5b",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "56aa7d80-34d6-4094-b5f9-c61ee57b0f82",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "7ddbb188-acd0-4565-bffc-c84a0d5f126d",
+          "Name": "Soccer Ball",
+          "Position": "385.7177,841.1494,-408.1393",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ea86564e-0d39-4b19-9b14-d853fecc13c3",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "8b38a52a-9a4d-44a0-81a6-a8f829597c6f",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "75a483da-093f-44a6-a888-a2cf9be67da3",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "938d1e8d-72dc-40cc-9ec0-aa7899d7198a",
+          "Name": "Soccer Ball",
+          "Position": "385.7177,841.1494,-344.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "da4786ae-a4f5-4bdb-8631-61af8112b403",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "d6b21788-6010-49dd-9a60-020a68663870",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "69c08ddb-0610-4e99-8e21-43c5c2da0714",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
           "__guid": "88fe7d5f-b490-4aa8-9247-d548eba6cd06",
           "Name": "Soccer Ball",
           "Position": "287.4895,841.1481,-440.139",
@@ -6384,6 +6801,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6415,6 +6833,201 @@
           ]
         },
         {
+          "__guid": "601edaa0-8a24-4a98-bca4-b56667767647",
+          "Name": "Soccer Ball",
+          "Position": "287.4895,841.1481,-376.1389",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "91ea7b18-dac5-4963-89fd-ba770c5fdcd3",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "6460f407-ad25-408f-8d1e-16cad29d11f4",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "445db0cd-7ce6-48e6-8ba6-ff0c37a6c24c",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "bef121d9-ba41-44ad-a99b-518b532d41f1",
+          "Name": "Soccer Ball",
+          "Position": "333.2574,841.1487,-440.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "6a254d7d-9345-46c7-9dd9-b0973f9ce796",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "28230ca6-8014-4451-89f8-aba298512788",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "fbf8683b-d4cd-4ed9-8d61-cb8ba6e802a1",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "bebd93df-262f-44af-a4f5-2f30a054c073",
+          "Name": "Soccer Ball",
+          "Position": "333.2574,841.1487,-376.139",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fabcd497-eaf9-404b-b7db-977b1bee66f9",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "b5a9340a-29cb-4b30-b046-c6bf21fa935d",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d54a6a39-ded3-4dbe-ac8a-58c10ded4cf1",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "3eb4cc49-2bb4-4bb9-8a10-f143f22a85dd",
+          "Name": "Soccer Ball",
+          "Position": "381.2575,841.1494,-440.1393",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f3ee7d79-a11c-4108-87b7-9f3053acc1d1",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "777f0bf2-31c6-4cba-96b4-849c02ab082e",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "69dcb647-a23e-4c14-a653-d84269ab0681",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "5fe45af6-b058-49e6-b100-ce14890cdb72",
+          "Name": "Soccer Ball",
+          "Position": "381.2575,841.1494,-376.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a8ab3b51-30a2-465b-b51d-b1802c03fe5e",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "d8d86d16-4725-4366-a968-d9158cdeadea",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "824eafbd-989d-4ded-bee6-1a30e48a62cb",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
           "__guid": "b4448798-e660-4405-a594-16facddbdb66",
           "Name": "Soccer Ball",
           "Position": "291.9498,809.1481,-408.139",
@@ -6422,6 +7035,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6453,6 +7067,201 @@
           ]
         },
         {
+          "__guid": "8639a213-920e-4701-b990-ce36b69378c9",
+          "Name": "Soccer Ball",
+          "Position": "291.9498,809.1481,-344.1389",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "ac2781bf-77f0-4adf-bc6a-b9b7eb302923",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "61d85293-8c5a-45fe-a7e5-1c3ef8866fc9",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "ea8322eb-6d8c-457a-a739-05590555847c",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "45abe279-385a-4c26-80e6-9e4b33d62a7a",
+          "Name": "Soccer Ball",
+          "Position": "337.7177,809.1487,-408.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "cb44a9ac-6c85-460c-ac32-3a9c574f129b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "6a065f28-a135-4c1c-835a-a91ced265458",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "d0907878-5182-4ec3-8026-82c15d94d64b",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "6a880367-6cc4-4086-99e3-046ed3bca92d",
+          "Name": "Soccer Ball",
+          "Position": "337.7177,809.1487,-344.139",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "2d5dae31-c412-48d7-902d-0c771542e5d0",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "ae5e2496-eee8-4698-9318-0e47c97e6771",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "af303ddc-f4f1-4860-ac6c-7cf80c5d92b7",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "9757d3e2-7d87-4380-b3c1-20c393ec0f27",
+          "Name": "Soccer Ball",
+          "Position": "385.7177,809.1494,-408.1393",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "8a2ab413-0053-4bed-be30-5a26ac339e52",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "8e78d8c7-8468-4042-be57-ae66f8995a4e",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "6bc66c83-ae2f-4afd-9f14-ef3ba6aa94d7",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "e1647278-e51f-4dcb-83dd-f450ba0589fa",
+          "Name": "Soccer Ball",
+          "Position": "385.7177,809.1494,-344.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "1e6b45cd-980a-4bf2-868e-f26f2fc9d430",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "554fb8c3-8e11-418d-90df-4824d84004ed",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "4da37d94-c22d-461e-bbe4-7c408f723f44",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
           "__guid": "20dbd0e8-d3e4-4ac0-83e3-a11416617c8d",
           "Name": "Soccer Ball",
           "Position": "287.4895,809.1481,-440.139",
@@ -6460,6 +7269,7 @@
           "Scale": "2,2,2",
           "Enabled": true,
           "NetworkMode": 2,
+          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -6489,15 +7299,248 @@
               "Static": false
             }
           ]
+        },
+        {
+          "__guid": "3d4dad24-62e3-4119-a9c7-d2bc836e2f41",
+          "Name": "Soccer Ball",
+          "Position": "287.4895,809.1481,-376.1389",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fc59c534-0643-4e74-99eb-701fc16f87a8",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "e8f34ae3-259f-438c-86b9-c9a9d22ed9b7",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "c4f8dec9-ba90-43a6-86a0-4d5980947d8f",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "edd6616f-522f-4117-9ccd-2beefdcf5e0c",
+          "Name": "Soccer Ball",
+          "Position": "333.2574,809.1487,-440.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "f00a009b-ae11-45ef-a66a-fc63d5b0ced4",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "aa2b459a-cf13-4cdc-bc9a-9361559067a6",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "0e57a126-9854-4cf6-a112-22b7bc94cb7b",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "5f856d80-6157-47a1-b580-c8e07f15449b",
+          "Name": "Soccer Ball",
+          "Position": "333.2574,809.1487,-376.139",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e7789bf3-cf15-413e-bd61-f9284efb3d44",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "37288660-2112-4c37-bfff-b450495b3c5c",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "168cd1ad-b3c1-4cd2-899a-26ebac69c9be",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "8223a422-4bc7-46d4-b5cd-54ac86d1b59f",
+          "Name": "Soccer Ball",
+          "Position": "381.2575,809.1494,-440.1393",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "e6ab6c6b-ea27-4e7f-8eb5-8e6c9004bc25",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "84e8202e-614f-4306-8a4f-f4f86066ad33",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "8aa2b5e2-222e-499d-a866-f0aae9190601",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "978527f4-fbd0-411f-ae65-fad28b11bdab",
+          "Name": "Soccer Ball",
+          "Position": "381.2575,809.1494,-376.1391",
+          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
+          "Scale": "2,2,2",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "27ed6337-4681-4f54-a983-df67898f93b7",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/soccerball.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.Rigidbody",
+              "__guid": "41a8c87b-d964-4c47-9010-b3d2ee3aaf1a",
+              "AngularDamping": 0,
+              "Gravity": true,
+              "LinearDamping": 0,
+              "Locking": {},
+              "MassOverride": 0,
+              "MotionEnabled": true,
+              "RigidbodyFlags": 0,
+              "StartAsleep": false
+            },
+            {
+              "__type": "Sandbox.ModelCollider",
+              "__guid": "f2df178d-8bdf-4110-99df-db0f3fc3eda5",
+              "IsTrigger": false,
+              "Model": "models/soccerball.vmdl",
+              "Static": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "a0a9c071-4cef-4d71-b1d5-88249da9c5db",
+      "Name": "Object",
+      "Position": "-1127.733,233.6732,16",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "e548be87-6509-424f-a001-e66357eede25",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/companioncube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "6c40798d-d997-47ca-b4ab-655ea8d1695b",
+          "AngularDamping": 5,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "af631628-532f-4b09-9c60-0402fd503418",
+          "IsTrigger": false,
+          "Model": "models/companioncube.vmdl",
+          "Static": false,
+          "Surface": "surfaces/concrete.surface"
         }
       ]
     }
   ],
   "SceneProperties": {
     "FixedUpdateFrequency": 50,
-    "Lerping": true,
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
+    "NetworkInterpolation": true,
     "ThreadedAnimation": true,
     "TimeScale": 0,
     "UseFixedUpdate": true,
@@ -6516,7 +7559,7 @@
   },
   "Title": "Godray",
   "Description": "",
-  "LastSaved": "2024-04-15T02:55:17.8230549-04:00",
+  "LastSaved": "2024-05-05T01:38:01.96955-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
@@ -6524,6 +7567,7 @@
     "ele.dev_measure_blue",
     "jodiscontent.spray2",
     "sundayservice.dustmotes",
+    "synthlestudios.companioncube",
     "tridge.walllight01"
   ]
 }

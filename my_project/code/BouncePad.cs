@@ -14,12 +14,12 @@ public sealed class BouncePad : Component, Component.ICollisionListener
 
 	public void OnCollisionUpdate(Collision other)
 	{
-		Log.Info(other);
+		
 	}
 
 	public void OnCollisionStop(CollisionStop other)
 	{
-		Log.Info(other);
+		
 	}
 
 }

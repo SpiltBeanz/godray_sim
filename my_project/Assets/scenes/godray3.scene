@@ -4,7 +4,7 @@
     {
       "__guid": "c5bafb56-f677-45a3-955e-964023d5d32b",
       "Name": "Player",
-      "Position": "-1344,352,0.04125",
+      "Position": "-1360,352,-16",
       "Tags": "player",
       "Enabled": true,
       "NetworkMode": 2,
@@ -129,7 +129,7 @@
                 {
                   "__guid": "bccd36d5-2144-4287-b733-98c37077562c",
                   "Name": "spine_0",
-                  "Position": "3.921825,-0.002443276,-0.000112251",
+                  "Position": "3.921827,-0.002443276,-0.000112251",
                   "Rotation": "0.0002581775,-0.0000002980232,-0.00005638599,1",
                   "Enabled": true,
                   "NetworkMode": 2,
@@ -156,7 +156,7 @@
                             {
                               "__guid": "d90e1677-b3a4-4356-bb58-04817cadfb02",
                               "Name": "neck_0",
-                              "Position": "5.820021,-0.09343954,-0.002972884",
+                              "Position": "5.820017,-0.09343954,-0.002972882",
                               "Rotation": "0.0000821203,-0.000251025,0.01994136,-0.9998012",
                               "Enabled": true,
                               "NetworkMode": 2,
@@ -286,7 +286,7 @@
                                             {
                                               "__guid": "070e5358-5d38-4f60-a2e0-3ce043c90bed",
                                               "Name": "hold_L",
-                                              "Position": "5.361058,0.6217334,3.394411",
+                                              "Position": "5.361057,0.6217337,3.394409",
                                               "Rotation": "-0.6958921,-0.170415,-0.392899,0.5764749",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -304,7 +304,7 @@
                                                 {
                                                   "__guid": "e0547a42-0aa7-458e-9099-b51435a34ea4",
                                                   "Name": "finger_thumb_1_L",
-                                                  "Position": "1.906542,-0.00001892447,-0.00004994867",
+                                                  "Position": "1.906543,-0.00001817941,-0.00004845856",
                                                   "Rotation": "-0.0000006342307,-0.1627616,0.000004276633,0.9866654",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
@@ -313,7 +313,7 @@
                                                     {
                                                       "__guid": "732dda3f-6edd-4f05-b49c-c502b505d7a7",
                                                       "Name": "finger_thumb_2_L",
-                                                      "Position": "2.136334,-0.00004148482,-0.0001296401",
+                                                      "Position": "2.136333,-0.00004220007,-0.0001307725",
                                                       "Rotation": "0.0000002533197,-0.08419369,-0.00000004842877,0.9964494",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
@@ -326,7 +326,7 @@
                                             {
                                               "__guid": "3a8294aa-7afb-4a12-bc79-c1d6f248c5f5",
                                               "Name": "finger_index_meta_L",
-                                              "Position": "2.075304,1.204095,0.3774638",
+                                              "Position": "2.075302,1.204095,0.3774623",
                                               "Rotation": "0.06037846,0.04580591,0.1049121,0.9915894",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -344,7 +344,7 @@
                                                     {
                                                       "__guid": "9f3f7840-71c3-4b46-ac3e-204337cc9700",
                                                       "Name": "finger_index_1_L",
-                                                      "Position": "2.28329,-0.000006526705,-0.0001565217",
+                                                      "Position": "2.283288,-0.000006228682,-0.0001573562",
                                                       "Rotation": "-0.000001147389,-0.2335206,0.000003024936,0.972352",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
@@ -353,7 +353,7 @@
                                                         {
                                                           "__guid": "35a1a099-4c9a-4b8f-ac4a-686e5292ff78",
                                                           "Name": "finger_index_2_L",
-                                                          "Position": "1.594389,-0.00008235868,-0.0001654028",
+                                                          "Position": "1.594387,-0.00008209046,-0.0001653749",
                                                           "Rotation": "-0.000004693866,-0.01375909,0.000002592802,0.9999053",
                                                           "Enabled": true,
                                                           "NetworkMode": 2,
@@ -368,7 +368,7 @@
                                             {
                                               "__guid": "2bc11b65-a359-4420-91b7-79f98b960e86",
                                               "Name": "finger_middle_meta_L",
-                                              "Position": "2.100671,-0.1590365,0.2858171",
+                                              "Position": "2.100669,-0.1590361,0.2858157",
                                               "Rotation": "0.00896778,0.03486501,-0.01934981,0.9991645",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -377,7 +377,7 @@
                                                 {
                                                   "__guid": "2127d202-1d57-4b8e-8532-681848b2f554",
                                                   "Name": "finger_middle_0_L",
-                                                  "Position": "2.999213,-0.00004068016,-0.00008916852",
+                                                  "Position": "2.999212,-0.00004035233,-0.00009059903",
                                                   "Rotation": "0.0008723736,-0.2335085,0.001296833,0.9723535",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
@@ -395,7 +395,7 @@
                                                         {
                                                           "__guid": "d747e96e-d836-4528-b33d-14d8e7efcba7",
                                                           "Name": "finger_middle_2_L",
-                                                          "Position": "1.683017,0.000007241962,-0.0001681586",
+                                                          "Position": "1.683016,0.000007390973,-0.0001681502",
                                                           "Rotation": "-0.00001375377,-0.04821886,-0.00003314018,0.9988368",
                                                           "Enabled": true,
                                                           "NetworkMode": 2,
@@ -428,7 +428,7 @@
                                                     {
                                                       "__guid": "aa634970-11c5-4bce-8151-72d82823f809",
                                                       "Name": "finger_ring_1_L",
-                                                      "Position": "2.197984,-0.00003588197,-0.0001518129",
+                                                      "Position": "2.197985,-0.00003629921,-0.0001510977",
                                                       "Rotation": "-0.00004592538,-0.2566091,-0.00006532669,0.9665152",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
@@ -437,7 +437,7 @@
                                                         {
                                                           "__guid": "1a9bf5b4-e58a-405f-be69-367a7bb19c5b",
                                                           "Name": "finger_ring_2_L",
-                                                          "Position": "1.535353,0.0000297129,-0.0001625567",
+                                                          "Position": "1.535352,0.00002992151,-0.0001624375",
                                                           "Rotation": "-0.00001230836,-0.05038811,0.000008925796,0.9987297",
                                                           "Enabled": true,
                                                           "NetworkMode": 2,
@@ -510,7 +510,7 @@
                             {
                               "__guid": "c6220fd1-7dea-4159-b5e5-6016f1660824",
                               "Name": "clavicle_R",
-                              "Position": "4.036985,0.2749306,-1.108149",
+                              "Position": "4.036982,0.2749306,-1.108149",
                               "Rotation": "-0.08130813,0.6814711,-0.08696642,0.7220963",
                               "Enabled": true,
                               "NetworkMode": 2,
@@ -537,7 +537,7 @@
                                         {
                                           "__guid": "f50ec4a6-17f5-4bd8-99d9-5505e895d574",
                                           "Name": "hand_R",
-                                          "Position": "7.706645,0.00003051757,-0.00004696845",
+                                          "Position": "7.706646,0.00002992153,-0.00004839896",
                                           "Rotation": "-0.09163144,0.03309621,0.03967842,0.9944515",
                                           "Enabled": true,
                                           "NetworkMode": 2,
@@ -546,7 +546,7 @@
                                             {
                                               "__guid": "773c7e7c-5a17-46ff-b7e0-2a6661d3a4c5",
                                               "Name": "hold_R",
-                                              "Position": "5.361065,0.6218716,-3.394512",
+                                              "Position": "5.361066,0.6218712,-3.394514",
                                               "Rotation": "-0.576474,0.3928988,0.1704146,0.695893",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -555,7 +555,7 @@
                                             {
                                               "__guid": "1d1830a0-c16f-4c58-a1be-47f857f7a1c3",
                                               "Name": "finger_thumb_0_R",
-                                              "Position": "1.127913,1.648677,-0.8668945",
+                                              "Position": "1.127914,1.648676,-0.866896",
                                               "Rotation": "-0.5684255,-0.1216944,0.4117284,0.7018281",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -564,7 +564,7 @@
                                                 {
                                                   "__guid": "7a4b3b90-9b41-4695-a989-56d4f0667cdc",
                                                   "Name": "finger_thumb_1_R",
-                                                  "Position": "1.90659,0.00001111626,-0.00004392861",
+                                                  "Position": "1.906589,0.0000103712,-0.00004237889",
                                                   "Rotation": "0.00000147149,0.1627604,-0.000003732741,0.9866656",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
@@ -573,7 +573,7 @@
                                                     {
                                                       "__guid": "92670cf1-b8e3-4efb-bd7d-7df2299c3ad7",
                                                       "Name": "finger_thumb_2_R",
-                                                      "Position": "2.136337,0.000043869,-0.00005054471",
+                                                      "Position": "2.136336,0.00004315374,-0.00004935262",
                                                       "Rotation": "0.0000000782311,0.08420044,0.0000005532056,0.9964489",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
@@ -595,7 +595,7 @@
                                                 {
                                                   "__guid": "5e7f4404-98b4-4876-bfd3-e766382422a7",
                                                   "Name": "finger_index_0_R",
-                                                  "Position": "3.068883,0.00002801418,-0.00003325939",
+                                                  "Position": "3.068882,0.00002849102,-0.00003170967",
                                                   "Rotation": "0.003392495,0.2652348,-0.06862299,0.9617328",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
@@ -628,7 +628,7 @@
                                             {
                                               "__guid": "0e9ea9b8-75be-4bb0-84ed-9fb3443757b9",
                                               "Name": "finger_middle_meta_R",
-                                              "Position": "2.10066,-0.159024,-0.2859289",
+                                              "Position": "2.100659,-0.1590236,-0.2859275",
                                               "Rotation": "-0.008967884,-0.03486186,-0.01934614,0.9991646",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -646,7 +646,7 @@
                                                     {
                                                       "__guid": "4a1d2b04-067a-4859-8744-950a44e3d463",
                                                       "Name": "finger_middle_1_R",
-                                                      "Position": "2.560966,0.00003847479,-0.00005716084",
+                                                      "Position": "2.560964,0.00003880261,-0.00005632637",
                                                       "Rotation": "0.000005975366,0.2322946,0.00003750622,0.9726455",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
@@ -655,7 +655,7 @@
                                                         {
                                                           "__guid": "e0aa843c-d80e-4a60-a5c3-847cff21cd52",
                                                           "Name": "finger_middle_2_R",
-                                                          "Position": "1.683014,0.00007838009,-0.000102831",
+                                                          "Position": "1.683012,0.00007873771,-0.0001028469",
                                                           "Rotation": "0.00001381338,0.04822427,-0.00003582239,0.9988364",
                                                           "Enabled": true,
                                                           "NetworkMode": 2,
@@ -679,7 +679,7 @@
                                                 {
                                                   "__guid": "86c47279-2a41-409a-812c-11d7ab773e6f",
                                                   "Name": "finger_ring_0_R",
-                                                  "Position": "2.824263,0.00002026557,-0.00002121925",
+                                                  "Position": "2.824265,0.00002002715,-0.00002253055",
                                                   "Rotation": "-0.004531965,0.185554,0.0562013,0.9810151",
                                                   "Enabled": true,
                                                   "NetworkMode": 2,
@@ -688,7 +688,7 @@
                                                     {
                                                       "__guid": "f1494d58-dc14-4dc4-93ba-d02fadc0eab5",
                                                       "Name": "finger_ring_1_R",
-                                                      "Position": "2.198027,0.00005739927,-0.00004583596",
+                                                      "Position": "2.198029,0.00005698203,-0.00004655122",
                                                       "Rotation": "0.00004531443,0.2566069,-0.00006809831,0.9665158",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
@@ -697,7 +697,7 @@
                                                         {
                                                           "__guid": "28e46653-d3cd-4371-8547-352e6ad9d84a",
                                                           "Name": "finger_ring_2_R",
-                                                          "Position": "1.53535,0.0000576973,-0.0001150668",
+                                                          "Position": "1.535351,0.00005748869,-0.0001149476",
                                                           "Rotation": "0.00001199543,0.05039279,0.000008508563,0.9987295",
                                                           "Enabled": true,
                                                           "NetworkMode": 2,
@@ -712,7 +712,7 @@
                                             {
                                               "__guid": "06941609-8a73-432b-b38e-6313d6aa504b",
                                               "Name": "hand_L_to_R_ikrule",
-                                              "Position": "-28.15177,11.30991,-27.26431",
+                                              "Position": "-28.15178,11.30991,-27.26431",
                                               "Rotation": "0.2772729,0.6901738,0.000000372529,0.6684158",
                                               "Enabled": true,
                                               "NetworkMode": 2,
@@ -731,7 +731,7 @@
                                         {
                                           "__guid": "42cad313-f3f3-4f37-8a13-14d2637da91d",
                                           "Name": "arm_lower_R_twist0",
-                                          "Position": "-0.00001363779,-0.000001632969,-0.00003123294",
+                                          "Position": "-0.00001248458,-0.000002210507,-0.00003263813",
                                           "Enabled": true,
                                           "NetworkMode": 2,
                                           "NetworkInterpolation": true,
@@ -760,7 +760,7 @@
                                     {
                                       "__guid": "ba4ffe28-c592-4e15-82b7-b4015251838b",
                                       "Name": "arm_upper_R_twist1",
-                                      "Position": "5.02259,0.00002896785,-0.00004649161",
+                                      "Position": "5.022589,0.00002917647,-0.0000450611",
                                       "Enabled": true,
                                       "NetworkMode": 2,
                                       "NetworkInterpolation": true
@@ -772,7 +772,7 @@
                             {
                               "__guid": "9e2c98b1-f522-4696-8802-72d5c095895b",
                               "Name": "neck_clothing",
-                              "Position": "5.820021,-0.09343954,-0.002972884",
+                              "Position": "5.820017,-0.09343954,-0.002972882",
                               "Rotation": "0.0000821203,-0.000251025,0.01994136,-0.9998012",
                               "Enabled": true,
                               "NetworkMode": 2,
@@ -787,7 +787,7 @@
                 {
                   "__guid": "aee3e947-70db-4884-be75-61dda9a4da5f",
                   "Name": "leg_upper_R",
-                  "Position": "-0.2881514,-0.4263941,-4.427369",
+                  "Position": "-0.2881523,-0.4263941,-4.427369",
                   "Rotation": "-0.000001549721,1,0.0000001788139,-0.000000923872",
                   "Enabled": true,
                   "NetworkMode": 2,
@@ -814,7 +814,7 @@
                             {
                               "__guid": "4ce9ec82-12bc-484e-ab5e-215e8369167b",
                               "Name": "ball_R",
-                              "Position": "4.42915,0.00002980233,0.00001552231",
+                              "Position": "4.42915,0.00003027916,0.0000155223",
                               "Rotation": "-0.0000005032102,0.000001490116,0.3907284,0.920506",
                               "Enabled": true,
                               "NetworkMode": 2,
@@ -833,7 +833,7 @@
                         {
                           "__guid": "a3df3bde-b953-4baa-a515-523ff5138518",
                           "Name": "leg_lower_R_twist0",
-                          "Position": "-0.000005718221,-0.0000002091941,-0.00000000002660272",
+                          "Position": "-0.000005539527,-0.0000002026568,-0.00000000002577139",
                           "Enabled": true,
                           "NetworkMode": 2,
                           "NetworkInterpolation": true
@@ -841,7 +841,7 @@
                         {
                           "__guid": "ca3cc2b1-966a-4afb-a196-e9d188687033",
                           "Name": "leg_knee_helper_R",
-                          "Position": "0.000001906074,0.00000006973136,0.000000000008867574",
+                          "Position": "0.000002084768,0.00000007626868,0.000000000009698909",
                           "Rotation": "0.0000009241048,-0.000001251698,0.7135268,0.7006278",
                           "Enabled": true,
                           "NetworkMode": 2,
@@ -926,7 +926,7 @@
                         {
                           "__guid": "46a1fa61-0ec6-41cc-b322-9dca68d749e8",
                           "Name": "leg_lower_L_twist0",
-                          "Position": "-0.000007624293,-0.0000002789466,-0.00000000003046808",
+                          "Position": "-0.000007505163,-0.0000002745881,-0.00000000002999201",
                           "Enabled": true,
                           "NetworkMode": 2,
                           "NetworkInterpolation": true
@@ -934,7 +934,7 @@
                         {
                           "__guid": "8c9ec7df-a394-4dfe-99d4-f73384bd39f8",
                           "Name": "leg_knee_helper_L",
-                          "Position": "-0.00001524859,-0.0000005578932,-0.00000000006093615",
+                          "Position": "-0.00001515924,-0.0000005546243,-0.0000000000605791",
                           "Rotation": "-0.000003013527,-0.00000166893,0.7135276,0.700627",
                           "Enabled": true,
                           "NetworkMode": 2,
@@ -1008,7 +1008,7 @@
                     {
                       "__guid": "71feb642-840b-457e-824d-c700be77b6d9",
                       "Name": "aim_matrix_02b",
-                      "Position": "3.937012,-0.0000000000002519786,-0.000001430209",
+                      "Position": "3.937012,-0.0000000000001799782,-0.0000009533715",
                       "Enabled": true,
                       "NetworkMode": 2,
                       "NetworkInterpolation": true
@@ -1035,7 +1035,7 @@
                 {
                   "__guid": "f971f68e-f456-401e-bafc-a89dce6da62e",
                   "Name": "foot_L_IK_target",
-                  "Position": "-0.8840324,4.427399,3.807924",
+                  "Position": "-0.8840324,4.427399,3.807923",
                   "Rotation": "0.650896,0.276287,-0.2762895,0.6508948",
                   "Enabled": true,
                   "NetworkMode": 2,
@@ -1364,7 +1364,7 @@
           "Children": [
             {
               "__guid": "003d2ab2-cc6d-49f0-9ed2-c1c36f0449a0",
-              "Name": "Death Plane",
+              "Name": "Death Plane 2",
               "Position": "0,0,-975.8848",
               "Scale": "1000,1000,1",
               "Tags": "trigger",
@@ -1390,8 +1390,8 @@
                   "Static": true
                 },
                 {
-                  "__type": "DeathTrigger",
-                  "__guid": "daaf48a2-bb7a-4d05-8113-3e9f0e0fcc35"
+                  "__type": "DeathTrigger2",
+                  "__guid": "03091468-08b0-4307-a7fc-a26536763538"
                 }
               ]
             }
@@ -1466,6 +1466,74 @@
           ]
         },
         {
+          "__guid": "69efca19-fbe4-4d66-9e22-efbde63ef98d",
+          "Name": "Heal Cube",
+          "Position": "3548.632,62.97974,-100.5153",
+          "Rotation": "-0.00000005711168,0.9238796,-0.00000005711167,0.3826833",
+          "Scale": "1.5,2.999999,30.60003",
+          "Tags": "triggerinvis",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d001e3a8-cadb-453d-ac0c-459be6bcaed1",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "Off",
+              "Tint": "0.03333,1,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "94bcedfb-aff5-437e-aa05-5810ff62b9df",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "HealthTrigger",
+              "__guid": "c8d58ba9-0eb8-4183-843f-49e09f727ca6",
+              "Amount": 10
+            }
+          ]
+        },
+        {
+          "__guid": "fda2b679-3c2f-4875-a066-4401faba330e",
+          "Name": "Hurt Cube",
+          "Position": "3764.392,63.22241,-409.1859",
+          "Rotation": "0,0,0.7071067,0.7071068",
+          "Scale": "3,1,1",
+          "Tags": "triggerinvis",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0d4eb826-a2d6-4a18-915f-bc57e67046b4",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "Off",
+              "Tint": "1,0,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "1a891e07-c1fb-41c3-8815-90e84e17343a",
+              "Center": "0,0,0",
+              "IsTrigger": true,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "HealthTrigger",
+              "__guid": "09b82887-4484-4ab7-9023-5901d8f2155c",
+              "Amount": -20
+            }
+          ]
+        },
+        {
           "__guid": "1d3a079c-d628-4530-9691-18b924ad013b",
           "Name": "Coins",
           "Position": "58.15906,32.02911,-76.85686",
@@ -1473,6 +1541,85 @@
           "NetworkMode": 2,
           "NetworkInterpolation": true,
           "Children": [
+            {
+              "__guid": "9ed2f56e-9da5-48c7-af96-f3823820e4ff",
+              "Name": "Sunscreen",
+              "Position": "4418.473,30.95059,-423.6583",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "587cba0d-96e7-4ba9-95f2-3d26ba41afcd",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "b9da1a8d-01c0-4531-ab2c-421701bb86d7",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "112b70c5-8d95-4cb0-b4ae-7811756f0d2a",
+                  "Amount": 5
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "e132c218-d9ca-4d4b-8d1f-35d75b7905d2",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "f7737fd8-a516-4891-8a43-cd4a66ff0ae9",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8d1a446d-d49e-4827-b298-f27e1deacf1d",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "2284c3d3-0ebb-410e-8b53-90f2e30c7f36",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
             {
               "__guid": "b90a03ea-bd14-4b46-8685-a946c2fa36f0",
               "Name": "Sunscreen",
@@ -1553,9 +1700,246 @@
               ]
             },
             {
+              "__guid": "0604c156-58a2-4531-923f-b230458b0dfc",
+              "Name": "Sunscreen",
+              "Position": "2401.323,30.95059,-231.6583",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "c0c580f8-f83b-4d9b-b232-53218fdb7df8",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "91bc1855-c30e-4770-b1e3-fbf9bd1da321",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "8ecffb39-b2f6-44e4-a701-12771f7c6610",
+                  "Amount": 5
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "61221be9-578b-401b-962e-9f75ba8d6417",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "ce335e4c-bcf1-4368-a3f9-5a919fb218f9",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "9cf85688-5917-4256-8e1f-45db8b3e6e84",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "590b6ae9-572f-4acc-89e8-9ab8497590c1",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "f77270c1-9cc1-455c-aa55-3f7657594c1e",
+              "Name": "Sunscreen",
+              "Position": "2577.323,30.95059,-231.6583",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d1cd7db2-3232-4bd9-a6f6-e5f2db9008eb",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "6e91bbd0-6ac1-4428-a384-f6a3c7bb313e",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "f6445a8f-0704-49a7-8d33-e04ab7fe148e",
+                  "Amount": 5
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "7ce9f16b-3381-4ffc-a3e7-7ce71ca5a40b",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "69552dd7-216d-44de-9b39-374053c0834b",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "99737bb7-1fac-40de-a1d6-230283bc7ddf",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "ca41f747-6d7e-4c02-8d71-1a4783a106a5",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "d6d03179-7442-4ded-ab7a-d525a3d00d6b",
+              "Name": "Sunscreen",
+              "Position": "2577.323,222.9506,-231.6583",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "cb419547-7a6b-4dd0-9d83-f422b109e8ac",
+                  "BodyGroups": 18446744073709551615,
+                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
+                  "Model": "models/spray2.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "eac7e800-c841-4afa-ac89-8f1330fdf0ba",
+                  "Center": "0,0,11.3",
+                  "IsTrigger": true,
+                  "Scale": "10.49999,11.29998,22.69997",
+                  "Static": false
+                },
+                {
+                  "__type": "Coin",
+                  "__guid": "b4c151dd-88f8-4400-85cf-4ecd2b8cbc90",
+                  "Amount": 5
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "1e24252f-37c5-444e-8551-9c1e8d2dee6e",
+                  "Name": "Decal",
+                  "Position": "-3.841187,0,7.644661",
+                  "Scale": "0.1,0.1,0.1",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "4d90d126-fbc9-4a66-a0af-052bb02c0fa9",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                },
+                {
+                  "__guid": "d1370653-f081-43a7-b50d-25004e140678",
+                  "Name": "Decal",
+                  "Position": "3.279175,-0.3637085,6.525238",
+                  "Rotation": "0,0,-1,0.00000008940697",
+                  "Scale": "0.1,0.15,0.15",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.DecalRenderer",
+                      "__guid": "0b2cabce-2dc6-4f67-aaf7-6e4376788e06",
+                      "CutoffAngle": 60,
+                      "CutoffAngleSoftness": 5,
+                      "Material": "materials/decals/default.vmat",
+                      "Mod2XBlending": false,
+                      "Size": "64,64,32",
+                      "TintColor": "1,1,1,1",
+                      "TriPlanar": false
+                    }
+                  ]
+                }
+              ]
+            },
+            {
               "__guid": "8074c67c-7885-4cfb-b708-b0fcc984cacc",
               "Name": "Sunscreen",
-              "Position": "1681.323,142.9506,-279.6583",
+              "Position": "2385.323,222.9506,-231.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -1630,243 +2014,6 @@
                   ]
                 }
               ]
-            },
-            {
-              "__guid": "dd898ad4-055d-4fed-9625-dabc6987c71f",
-              "Name": "Sunscreen",
-              "Position": "1681.323,-17.04941,-327.6583",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "98614a1d-4f2d-4663-bc22-ff97857a142a",
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-                  "Model": "models/spray2.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                },
-                {
-                  "__type": "Sandbox.BoxCollider",
-                  "__guid": "430d27de-392a-4b42-bac7-b88202cff228",
-                  "Center": "0,0,11.3",
-                  "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
-                  "Static": false
-                },
-                {
-                  "__type": "Coin",
-                  "__guid": "d400bc92-10fa-4945-88ea-007406e97e5b",
-                  "Amount": 5
-                }
-              ],
-              "Children": [
-                {
-                  "__guid": "b4c5b3c7-807d-44d0-a7c5-c071e4ba03e3",
-                  "Name": "Decal",
-                  "Position": "-3.841187,0,7.644661",
-                  "Scale": "0.1,0.1,0.1",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.DecalRenderer",
-                      "__guid": "0b427a94-3f77-49d0-963d-ae20df679391",
-                      "CutoffAngle": 60,
-                      "CutoffAngleSoftness": 5,
-                      "Material": "materials/decals/default.vmat",
-                      "Mod2XBlending": false,
-                      "Size": "64,64,32",
-                      "TintColor": "1,1,1,1",
-                      "TriPlanar": false
-                    }
-                  ]
-                },
-                {
-                  "__guid": "a80836bd-e99a-45a3-98ce-20021a07c9e0",
-                  "Name": "Decal",
-                  "Position": "3.279175,-0.3637085,6.525238",
-                  "Rotation": "0,0,-1,0.00000008940697",
-                  "Scale": "0.1,0.15,0.15",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.DecalRenderer",
-                      "__guid": "34786081-d675-4524-a814-2c2ad0cc3b50",
-                      "CutoffAngle": 60,
-                      "CutoffAngleSoftness": 5,
-                      "Material": "materials/decals/default.vmat",
-                      "Mod2XBlending": false,
-                      "Size": "64,64,32",
-                      "TintColor": "1,1,1,1",
-                      "TriPlanar": false
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "__guid": "d4ad9852-27e6-4ec6-a638-2cb82bb195e2",
-              "Name": "Sunscreen",
-              "Position": "1553.323,-33.04941,-343.6583",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "cfb1f49f-a769-4fa2-a3f7-2353d74993cb",
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-                  "Model": "models/spray2.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                },
-                {
-                  "__type": "Sandbox.BoxCollider",
-                  "__guid": "d65729d4-af78-4968-bb40-e8cb5283822b",
-                  "Center": "0,0,11.3",
-                  "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
-                  "Static": false
-                },
-                {
-                  "__type": "Coin",
-                  "__guid": "5e82f69c-50ff-42c7-834c-4cbf291db81d",
-                  "Amount": 5
-                }
-              ],
-              "Children": [
-                {
-                  "__guid": "7a4c5c44-ed3c-41ac-899a-7434a535966c",
-                  "Name": "Decal",
-                  "Position": "-3.841187,0,7.644661",
-                  "Scale": "0.1,0.1,0.1",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.DecalRenderer",
-                      "__guid": "b9dba559-5fe7-4410-93b8-45bd23ff0872",
-                      "CutoffAngle": 60,
-                      "CutoffAngleSoftness": 5,
-                      "Material": "materials/decals/default.vmat",
-                      "Mod2XBlending": false,
-                      "Size": "64,64,32",
-                      "TintColor": "1,1,1,1",
-                      "TriPlanar": false
-                    }
-                  ]
-                },
-                {
-                  "__guid": "7d517e8e-8219-4be3-9c7d-24dd10cb94fb",
-                  "Name": "Decal",
-                  "Position": "3.279175,-0.3637085,6.525238",
-                  "Rotation": "0,0,-1,0.00000008940697",
-                  "Scale": "0.1,0.15,0.15",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.DecalRenderer",
-                      "__guid": "bb46c164-2e99-4be4-b14c-f318d54ca3ab",
-                      "CutoffAngle": 60,
-                      "CutoffAngleSoftness": 5,
-                      "Material": "materials/decals/default.vmat",
-                      "Mod2XBlending": false,
-                      "Size": "64,64,32",
-                      "TintColor": "1,1,1,1",
-                      "TriPlanar": false
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "__guid": "2a0d489a-e444-40b2-8c84-e48c8aa6a6c8",
-              "Name": "Sunscreen",
-              "Position": "1553.323,222.9506,-391.6583",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.ModelRenderer",
-                  "__guid": "6fa0858c-be8d-4323-a7a7-3b4c94ac90e0",
-                  "BodyGroups": 18446744073709551615,
-                  "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
-                  "Model": "models/spray2.vmdl",
-                  "RenderType": "On",
-                  "Tint": "1,1,1,1"
-                },
-                {
-                  "__type": "Sandbox.BoxCollider",
-                  "__guid": "9a561e35-a963-4503-9433-5951ac383597",
-                  "Center": "0,0,11.3",
-                  "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
-                  "Static": false
-                },
-                {
-                  "__type": "Coin",
-                  "__guid": "b0ef7dfa-c28c-4297-8854-e56721bb1bcb",
-                  "Amount": 5
-                }
-              ],
-              "Children": [
-                {
-                  "__guid": "2a4ff05a-77f7-4e5f-a2f2-918880f7893e",
-                  "Name": "Decal",
-                  "Position": "-3.841187,0,7.644661",
-                  "Scale": "0.1,0.1,0.1",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.DecalRenderer",
-                      "__guid": "4cde8674-d41d-4e78-a4f3-215df2f1a40d",
-                      "CutoffAngle": 60,
-                      "CutoffAngleSoftness": 5,
-                      "Material": "materials/decals/default.vmat",
-                      "Mod2XBlending": false,
-                      "Size": "64,64,32",
-                      "TintColor": "1,1,1,1",
-                      "TriPlanar": false
-                    }
-                  ]
-                },
-                {
-                  "__guid": "c44f3279-4c2a-41f9-ac33-f54a142ec693",
-                  "Name": "Decal",
-                  "Position": "3.279175,-0.3637085,6.525238",
-                  "Rotation": "0,0,-1,0.00000008940697",
-                  "Scale": "0.1,0.15,0.15",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.DecalRenderer",
-                      "__guid": "789ef9c1-7654-4bc6-9991-67c0a1c99413",
-                      "CutoffAngle": 60,
-                      "CutoffAngleSoftness": 5,
-                      "Material": "materials/decals/default.vmat",
-                      "Mod2XBlending": false,
-                      "Size": "64,64,32",
-                      "TintColor": "1,1,1,1",
-                      "TriPlanar": false
-                    }
-                  ]
-                }
-              ]
             }
           ]
         }
@@ -1880,6 +2027,138 @@
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "Children": [
+        {
+          "__guid": "8f37085e-6ab0-4244-b47c-a8b3cc2485c3",
+          "Name": "Bounce Pad",
+          "Position": "2297.235,1074.078,-375.6628",
+          "Scale": "0.5999987,0.6000006,0.09999993",
+          "Tags": "trigger",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "829dc5e5-d893-44b5-b208-658c9ac673d6",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.18333,1,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "a8819418-d52b-479c-ba18-29fc02508504",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "BouncePad",
+              "__guid": "3e387cdd-cdea-442f-8e13-1a6cdb09f370",
+              "Bounciness": 1000
+            }
+          ]
+        },
+        {
+          "__guid": "b2bf9ee1-c10a-444e-9ded-ca94b44fc00c",
+          "Name": "Bounce Pad",
+          "Position": "3337.235,978.0779,-167.6628",
+          "Scale": "0.5999987,0.6000006,0.09999993",
+          "Tags": "trigger",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "325660cd-79e6-4e82-bdbe-b236c9dc619d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.63333,1,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "978b3598-1d4e-4e67-a452-6aa5f976680d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "BouncePad",
+              "__guid": "b3bc5f84-2508-483d-8c3c-e04f31b0cc7f",
+              "Bounciness": 2000
+            }
+          ]
+        },
+        {
+          "__guid": "dff44758-d15b-4255-be94-4d86c8232f64",
+          "Name": "Bounce Pad",
+          "Position": "4458.385,1090.078,-375.6628",
+          "Scale": "0.5999987,0.6000006,0.09999993",
+          "Tags": "trigger",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c53b4abf-79d5-450f-9fc2-a1c04493376f",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.18333,1,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "b6eb253d-0691-42b2-9cd3-8d42e2ebfd91",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "BouncePad",
+              "__guid": "589e3777-033c-42c1-9fd2-cf3b186781d2",
+              "Bounciness": 1000
+            }
+          ]
+        },
+        {
+          "__guid": "826d2f6c-6444-4c9c-ac7d-cab5583ca9a3",
+          "Name": "Bounce Pad",
+          "Position": "3450.386,978.0779,-471.6628",
+          "Scale": "0.5999987,0.6000006,0.09999993",
+          "Tags": "trigger",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "eb0ea1cc-ce83-4edf-a256-9f8625e06e94",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.18333,1,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "23db9101-9817-4f99-b214-cd511293439a",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "BouncePad",
+              "__guid": "41c483b5-e272-44f1-9f55-da5117d5a1e2",
+              "Bounciness": 1000
+            }
+          ]
+        },
         {
           "__guid": "7caf3f0f-2abd-4c37-934d-2d43dcd69758",
           "Name": "Bounce Pad",
@@ -1917,7 +2196,7 @@
           "__guid": "e466c328-2bc5-4deb-bafb-242f0b333026",
           "Name": "Bounce Pad",
           "Position": "1465.235,1090.078,-375.6628",
-          "Scale": "0.6999987,0.7000006,0.09999993",
+          "Scale": "0.5999987,0.6000006,0.09999993",
           "Tags": "trigger",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1989,6 +2268,141 @@
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "Children": [
+        {
+          "__guid": "4c0f55da-f7c9-4277-8447-639bf379e441",
+          "Name": "Small Plat",
+          "Position": "5018.917,-81.74268,-459.7368",
+          "Scale": "1,1,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "7c3aa801-9afa-4e02-9902-3925415f9ab0",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "1066ff38-378e-423f-bc00-68f2fcfb4035",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "3fbc70cb-882f-4126-a1bc-308386863cc5",
+          "Name": "Small Plat",
+          "Position": "5049.767,-241.7427,-507.7368",
+          "Scale": "1,1,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "7640587f-a6e2-40f0-87b0-be7b304dba4d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "c36e043d-8c7b-4a2c-96bb-fc0e349ad97d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "1cc34c9a-58ca-4451-b7cb-358b6d467fcb",
+          "Name": "Small Plat",
+          "Position": "3993.767,-193.7427,-203.7368",
+          "Scale": "1,1,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "9c13180c-ac10-47d4-b3aa-46605f9a3096",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "2cfe80a9-9cd8-44c4-8906-57b287475cde",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "05a3b994-b32a-46b9-bb29-e7925fcd0291",
+          "Name": "Small Plat",
+          "Position": "3785.767,-193.7427,-203.7368",
+          "Scale": "1,1,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "516370d1-01ee-4fcc-9750-22af65a186d5",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "d48c52cf-6eb6-4d5d-a5b7-ce7e62a437dd",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "f5e6978b-508c-43b8-bb66-2257e5ff4684",
+          "Name": "Small Plat",
+          "Position": "3657.767,-81.74268,-203.7368",
+          "Scale": "1,1,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "9c1b5c39-425d-4737-8af3-54a535014d3b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "eb20720d-db79-4895-a8ca-77e8cd41cfbf",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
         {
           "__guid": "9477dcba-df77-4334-bb6d-20125cea53a4",
           "Name": "Small Plat",
@@ -2241,6 +2655,168 @@
               "Static": false
             }
           ]
+        },
+        {
+          "__guid": "197dfa69-4a84-4a35-ba02-f84e0b0b3e4b",
+          "Name": "Large Plat",
+          "Position": "3945.767,-193.7427,-411.7368",
+          "Scale": "2,3,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "df2fa6e8-0771-4b6b-93fc-667420bac6be",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "3f567aec-7d22-450f-af37-3dac1867bad3",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "6aaad3f9-0ade-4c8e-b7a5-530fcc2cb338",
+          "Name": "Large Plat",
+          "Position": "4074.917,-193.7427,-523.7368",
+          "Scale": "2,3,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "12b2b27c-255e-47ff-b3a8-c143df480238",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "f60ec970-95a4-4dc1-9ddb-9654710fe30b",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "43d4d6a5-00a9-46b1-9dbf-40a8a495e6d0",
+          "Name": "Large Plat",
+          "Position": "4746.917,-193.7427,-603.7368",
+          "Scale": "2,3,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0c676806-9495-4a23-bf75-53466a34f1ae",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "ad110779-9787-4489-bed6-4c67dc2e979d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "dff4f5c3-0a6e-43cb-93c5-185f4e120159",
+          "Name": "Large Plat",
+          "Position": "3465.767,-145.7427,-187.7368",
+          "Scale": "2,3,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "6b2837c4-71b1-4d68-944c-60f97c0b6e14",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "e459e609-e1c6-44cb-9ed9-263fbdebcf2d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "fdeeeac8-27ea-4d58-80cc-eeb4e5527988",
+          "Name": "Large Plat",
+          "Position": "4890.917,14.25732,-571.7368",
+          "Scale": "2,3,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "5d671b82-aa98-4463-a601-9afcb8bd2066",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "70b668d2-8648-4eba-8fc6-f42b873ef290",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "dedaf73d-0438-41b3-9057-b487259190f9",
+          "Name": "Large Plat",
+          "Position": "4890.917,-273.7427,-523.7368",
+          "Scale": "2,3,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "27df5994-1516-40b5-8a54-347acf34b051",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "0.46512,0.46512,0.46512,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "efc6d29f-1851-4dce-9540-a4fbb31ee9f9",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
         }
       ]
     },
@@ -2257,7 +2833,6 @@
           "Name": "Large Plat",
           "Position": "952.5341,-452.4214,-55.87613",
           "Scale": "5,5,0.09999993",
-          "Tags": "trigger",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -2268,7 +2843,7 @@
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "On",
-              "Tint": "1,0.93333,0,1"
+              "Tint": "1,1,1,1"
             },
             {
               "__type": "Sandbox.BoxCollider",
@@ -2277,10 +2852,38 @@
               "IsTrigger": false,
               "Scale": "50,50,50",
               "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "a64b4b3a-e67c-4661-810a-cbfc40a62b7d",
+          "Name": "Win Plat",
+          "Position": "3945.684,-452.4214,-55.87613",
+          "Scale": "5,5,0.09999993",
+          "Tags": "trigger",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "005b623a-fad6-4ec8-8e24-42053c5b7945",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.93333,0,1"
             },
             {
-              "__type": "gr3loader",
-              "__guid": "c25f3475-260c-43db-b238-d546590cb6a1"
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "39b32747-55b9-4304-943d-005855e5c8fc",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            },
+            {
+              "__type": "Wintrigger",
+              "__guid": "eb2d2aa3-3d63-4743-8eb3-f8883f66b0af"
             }
           ]
         }
@@ -2315,6 +2918,27 @@
             {
               "__type": "Sandbox.VolumetricFogVolume",
               "__guid": "00f4cd32-70c4-4131-a62c-d0e662331e03",
+              "Bounds": {
+                "Mins": "100,-1857.8,0",
+                "Maxs": "200,2149.305,227"
+              },
+              "FalloffExponent": 1,
+              "Strength": 1
+            }
+          ]
+        },
+        {
+          "__guid": "61bd8940-6a41-4cd0-bdda-fb9e720ebaa6",
+          "Name": "Volumetric Fog",
+          "Position": "2594.956,1606.94,176.1151",
+          "Rotation": "0.2705981,0.6532815,-0.6532814,0.2705982",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.VolumetricFogVolume",
+              "__guid": "6d52e603-9a89-4c46-9193-b8f3c73d721d",
               "Bounds": {
                 "Mins": "100,-1857.8,0",
                 "Maxs": "200,2149.305,227"
@@ -2381,44 +3005,6 @@
           ]
         }
       ]
-    },
-    {
-      "__guid": "76e76446-4bf1-4bde-ab61-ad96dcc827a2",
-      "Name": "ball",
-      "Position": "-1142.365,384,80",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "56ef4a0d-ae7a-4ceb-b13b-71dad1c6934d",
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/soccerball.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1"
-        },
-        {
-          "__type": "Sandbox.SphereCollider",
-          "__guid": "5f8322c6-cc3e-4d88-8aca-6357feb457cf",
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Radius": 4.6000013,
-          "Static": false
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "219f1547-bfb5-4ed6-a070-1b587b0206a3",
-          "AngularDamping": 0,
-          "Gravity": true,
-          "LinearDamping": 0,
-          "Locking": {},
-          "MassOverride": 0,
-          "MotionEnabled": true,
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
-        }
-      ]
     }
   ],
   "SceneProperties": {
@@ -2444,11 +3030,10 @@
   },
   "Title": "Godray2",
   "Description": "Platformer",
-  "LastSaved": "2024-05-04T02:25:04.8249594-04:00",
+  "LastSaved": "2024-05-04T02:25:02.3447193-04:00",
   "ResourceVersion": 1,
   "__version": 1,
   "__references": [
-    "baik.soccerball",
     "ele.dev_measure_blue",
     "jodiscontent.spray2",
     "wujekfoliarz.skyboxnowy"

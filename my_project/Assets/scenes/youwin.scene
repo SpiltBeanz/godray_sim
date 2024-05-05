@@ -1,0 +1,193 @@
+{
+  "__guid": "0265b158-10f5-4d86-8f25-d8ffda5888c2",
+  "GameObjects": [
+    {
+      "__guid": "492b7235-eec9-4193-8059-d83ca7c4f7ab",
+      "Name": "Pause Menu",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "4774a881-ff18-48a9-9010-4322e30a54a0",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "PauseMenu",
+          "__guid": "95865292-9651-4a54-940a-936433a0172a"
+        }
+      ]
+    },
+    {
+      "__guid": "7d04301b-8d6b-4d99-94ef-da2c3d147121",
+      "Name": "You Win Panel",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "264790cd-ff6c-418d-b94a-eb2f63410ba4",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 99
+        },
+        {
+          "__type": "Youwin",
+          "__guid": "68482e2c-f114-4710-8384-6af22bb29711"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "ac1a4278-acfa-400e-bc48-422837ccedff",
+          "Name": "Main Menu Panel",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "7c1518a6-c59a-4a9e-8bcd-45528e8192d0",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 99
+            },
+            {
+              "__type": "MainMenuPanel",
+              "__guid": "5e892134-a5e9-40af-9ed7-222b47628d60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "22b22358-2be3-4bee-b2e5-585026ee110e",
+      "Name": "Environment",
+      "Position": "558.3217,2026.744,66.72817",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Children": [
+        {
+          "__guid": "795f370d-44d2-4648-98a6-7d248e5ccc7d",
+          "Name": "Sun",
+          "Position": "0,0,0",
+          "Rotation": "0,0.7071067,0,0.7071068",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "e0f437e2-bcf7-4639-b25d-5a120362aba9",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.91373,0.98039,1,1",
+              "Shadows": true,
+              "SkyColor": "0.05882,0.07451,0.08235,1"
+            }
+          ]
+        },
+        {
+          "__guid": "62edd42e-1b0d-42be-8653-6c8895ce633d",
+          "Name": "2D Skybox",
+          "Position": "0,0,0",
+          "Tags": "skybox",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkyBox2D",
+              "__guid": "5b5f2cb7-ab61-4c1e-ba66-b742d2746d9d",
+              "SkyMaterial": "materials/bluecloudskybox.vmat",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "e3d043d6-a6af-4dee-b47f-b73d167f0ff1",
+      "Name": "Camera",
+      "Position": "791.0394,1783.489,150.4066",
+      "Rotation": "0,-0.5,0,0.8660254",
+      "Tags": "maincamera",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.CameraComponent",
+          "__guid": "322901b8-af7b-475b-9f37-332cc92b62b0",
+          "BackgroundColor": "0.33333,0.46275,0.52157,1",
+          "ClearFlags": "All",
+          "FieldOfView": 120,
+          "IsMainCamera": true,
+          "Orthographic": false,
+          "OrthographicHeight": 1204,
+          "Priority": 1,
+          "RenderExcludeTags": "",
+          "RenderTags": "",
+          "TargetEye": "None",
+          "Viewport": "0,0,1,1",
+          "ZFar": 10000,
+          "ZNear": 10
+        }
+      ]
+    },
+    {
+      "__guid": "4afeb83e-9ee1-4a21-a6e1-cb5c499f09bf",
+      "Name": "Win Counter",
+      "Position": "-16617.3,3226.064,3011.111",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "WinCounter",
+          "__guid": "31e819da-e73f-4907-876a-7714bd03c505"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "youwin",
+  "Description": "",
+  "LastSaved": "2024-05-03T23:58:34.2004676-04:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": [
+    "carsonk.talker"
+  ]
+}
