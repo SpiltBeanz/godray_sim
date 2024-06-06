@@ -3,6 +3,7 @@
   "GameObjects": [
     {
       "__guid": "3ea151bf-4b5c-411b-a8c0-ce38cb451335",
+      "Flags": 0,
       "Name": "Camera",
       "Position": "149.995,149.995,-212.125",
       "Tags": "maincamera",
@@ -31,6 +32,7 @@
     },
     {
       "__guid": "05780fcf-dcc0-42a3-933f-e233fe020d21",
+      "Flags": 0,
       "Name": "Menu Environment",
       "Position": "146.6504,179.1378,76.02621",
       "Enabled": true,
@@ -39,6 +41,7 @@
       "Children": [
         {
           "__guid": "8017ad9f-46a1-484f-81f9-e5f87e9d667b",
+          "Flags": 0,
           "Name": "2D Skybox",
           "Position": "3.344604,-29.14284,-288.1512",
           "Tags": "skybox",
@@ -56,6 +59,7 @@
         },
         {
           "__guid": "50816f6b-882a-417b-906c-c307ea137abf",
+          "Flags": 0,
           "Name": "Sun",
           "Position": "653.3496,-494.0674,-45.06638",
           "Rotation": "0.5196104,0.4065713,-0.5848736,0.4718345",
@@ -77,6 +81,7 @@
         },
         {
           "__guid": "5b21b5fd-a043-4808-8d11-c123893f9a3a",
+          "Flags": 0,
           "Name": "Fake Sun",
           "Position": "1773.349,956.8629,83.97379",
           "Rotation": "0,0,-1,0.0000001947072",
@@ -105,6 +110,7 @@
           "Children": [
             {
               "__guid": "1d3fd8b7-305c-4d16-9eab-ddf366f66637",
+              "Flags": 0,
               "Name": "Point Light",
               "Position": "63.99938,-15.99929,0",
               "Rotation": "0,0,1,0.0000001947072",
@@ -127,6 +133,7 @@
             },
             {
               "__guid": "57484f57-d348-4a62-a8ed-e4a7facf22c3",
+              "Flags": 0,
               "Name": "Volumetric Fog",
               "Position": "63.99899,-95.99917,-16",
               "Rotation": "0,0,1,0.0000001947072",
@@ -150,6 +157,7 @@
         },
         {
           "__guid": "7c893080-15cf-49e4-825b-5681e123a755",
+          "Flags": 0,
           "Name": "Volumetric Fog (1)",
           "Position": "867.3256,-435.1378,-300.0262",
           "Rotation": "-0.1305262,0,0,0.9914449",
@@ -171,6 +179,7 @@
         },
         {
           "__guid": "5a45d211-c137-4f61-ba34-7c2c85f0a8a2",
+          "Flags": 0,
           "Name": "Volumetric Fog",
           "Position": "867.3256,-1091.138,-300.0262",
           "Rotation": "-0.1722514,0,0,0.9850532",
@@ -192,6 +201,7 @@
         },
         {
           "__guid": "0bb30cc5-4a6e-4304-8049-a523cc3e507b",
+          "Flags": 0,
           "Name": "Music",
           "Position": "1018.667,240.6041,66.80482",
           "Enabled": true,
@@ -229,6 +239,7 @@
     },
     {
       "__guid": "c54b5134-68e4-4058-a2ae-6256a6091c2a",
+      "Flags": 0,
       "Name": "UI",
       "Position": "328.7384,105.9405,-225.1542",
       "Enabled": true,
@@ -237,6 +248,7 @@
       "Children": [
         {
           "__guid": "c6a21755-ec91-4239-b65d-ada81fd4fd57",
+          "Flags": 0,
           "Name": "Screen UI",
           "Position": "-178.7434,44.0545,13.02921",
           "Enabled": true,
@@ -255,6 +267,7 @@
           "Children": [
             {
               "__guid": "2ea840b8-907b-435b-a276-7a203e9df774",
+              "Flags": 0,
               "Name": "Main Menu",
               "Position": "0,0,0",
               "Enabled": true,
@@ -269,6 +282,7 @@
               "Children": [
                 {
                   "__guid": "98dfcac6-56f7-48ab-ba66-73fe209ed9cb",
+                  "Flags": 0,
                   "Name": "Button Panel",
                   "Position": "52.88271,-19.60219,51.6403",
                   "Enabled": true,
@@ -287,6 +301,7 @@
                   "Children": [
                     {
                       "__guid": "dac7b628-8f9c-4254-9c91-0ef7d1cc1ac6",
+                      "Flags": 0,
                       "Name": "Buttons",
                       "Position": "0,0,0",
                       "Enabled": true,
@@ -331,12 +346,12 @@
   },
   "Title": "mainmenu",
   "Description": "",
-  "LastSaved": "2024-05-04T02:25:06.5158878-04:00",
+  "LastSaved": "2024-05-22T22:57:43.9507813-04:00",
   "ResourceVersion": 1,
-  "__version": 1,
   "__references": [
     "caro.sky_001",
     "fish.bomb_explosion_smoke",
     "tfassets.sunnoon"
-  ]
+  ],
+  "__version": 1
 }

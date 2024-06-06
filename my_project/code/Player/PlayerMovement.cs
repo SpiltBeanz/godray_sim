@@ -22,7 +22,6 @@ public sealed class PlayerMovement : Component
 	};
 
 	public int ActiveSlot = 0;
-
 	public int Slots => 9;
 
 	// Movement Properties

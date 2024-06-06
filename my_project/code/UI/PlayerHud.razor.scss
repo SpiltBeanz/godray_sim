@@ -116,7 +116,7 @@ PlayerHud
 			width: 64px;
 			height: 64px;
 			background-color: rgba(87, 227, 255, 0.339);
-			border-radius: 16px;
+			// border-radius: 16px;
 			transition: all 0.2s ease;
 			font-size: 16px;
 			text-stroke: 4px black;
@@ -124,9 +124,13 @@ PlayerHud
 
 			&.active
 			{
-				background-color: rgb(34, 54, 58);
-				width: 128px;
-				height: 128px;
+				
+				width: 120px;
+				height: 120px;
+				border-radius: 16px;
+				background-image: url( "UI/images/FW.png" );
+				// background-position: center;
+				background-size: 100%, 100%;
 				font-size: 64px;
 				text-stroke: 4px black;
 				color: white;

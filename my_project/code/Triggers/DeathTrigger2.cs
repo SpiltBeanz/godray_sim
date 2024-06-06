@@ -8,6 +8,8 @@ public sealed class DeathTrigger2 : Component, Component.ICollisionListener
 	private async void SceneLoad3()
     {
         await Task.DelaySeconds(.01f);
+		Sandbox.Services.Stats.Increment( "died", 1 );
+		Log.Info("You Diead!");
         Scene.LoadFromFile("scenes/godray3.scene");
 		Sound.Play("sounds/fart.sound");
     }

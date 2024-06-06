@@ -6,7 +6,7 @@ public sealed class CameraMovement : Component
 	[Property] public PlayerMovement Player { get; set; }
 	[Property] public GameObject Body { get; set; }
 	[Property] public GameObject Head { get; set; }
-	[Property] public float Distance { get; set; } = 0f;
+	[Property, Range (0f, 1000f, 0f)] public float Distance { get; set; } = 0f;
 
 	// Variables
 
@@ -36,6 +36,23 @@ public sealed class CameraMovement : Component
 		CurrentOffset = Vector3.Lerp( CurrentOffset, targetOffset, Time.Delta * 10f );
 
 		// Set the position of the camera
+		if (Input.MouseWheel.y < 0 )
+		{
+			if (Distance == 1000f) return;
+			Distance += 50f;
+			if (Body.Components.TryGet<SkinnedModelRenderer>( out var model ))
+					{
+						var clothing = ClothingContainer.CreateFromLocalUser();
+						clothing.Apply(model);
+					}
+		}
+		else if (Input.MouseWheel.y > 0 )
+			{
+				if (Distance <= 0) return;
+				Distance -= 50f;
+			}
+		
+
 		if(Camera is not null)
 		{
 			var camPos = Head.Transform.Position + CurrentOffset;

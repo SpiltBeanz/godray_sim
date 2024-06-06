@@ -17,7 +17,7 @@ public sealed class HealthTrigger : Component, Component.ITriggerListener
 
 			if ( player.Health <= player.MinHealth )
 			{
-				Scene.LoadFromFile("scenes/mainmenu.scene"); 
+				Scene.LoadFromFile("scenes/youdied.scene"); 
 				Sound.Play("sounds/fart.sound");
 			}
 		}

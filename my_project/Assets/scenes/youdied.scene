@@ -1,0 +1,118 @@
+{
+  "__guid": "0265b158-10f5-4d86-8f25-d8ffda5888c2",
+  "GameObjects": [
+    {
+      "__guid": "492b7235-eec9-4193-8059-d83ca7c4f7ab",
+      "Flags": 0,
+      "Name": "Pause Menu",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "4774a881-ff18-48a9-9010-4322e30a54a0",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 100
+        },
+        {
+          "__type": "PauseMenu",
+          "__guid": "95865292-9651-4a54-940a-936433a0172a"
+        }
+      ]
+    },
+    {
+      "__guid": "7d04301b-8d6b-4d99-94ef-da2c3d147121",
+      "Flags": 0,
+      "Name": "You Died Panel",
+      "Position": "149.995,149.995,-212.125",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ScreenPanel",
+          "__guid": "264790cd-ff6c-418d-b94a-eb2f63410ba4",
+          "AutoScreenScale": true,
+          "Opacity": 1,
+          "Scale": 1,
+          "ZIndex": 99
+        },
+        {
+          "__type": "Youdied",
+          "__guid": "864271bb-b6e7-41c2-8d10-6c9468ee3d99"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "ac1a4278-acfa-400e-bc48-422837ccedff",
+          "Flags": 0,
+          "Name": "Main Menu Panel",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "7c1518a6-c59a-4a9e-8bcd-45528e8192d0",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 1,
+              "ZIndex": 99
+            },
+            {
+              "__type": "MainMenuPanel",
+              "__guid": "5e892134-a5e9-40af-9ed7-222b47628d60"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "4afeb83e-9ee1-4a21-a6e1-cb5c499f09bf",
+      "Flags": 0,
+      "Name": "Death Counter",
+      "Position": "-16617.3,3226.064,3011.111",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "DeathCounter",
+          "__guid": "12418973-759a-4d71-ae33-f6681eae84fe"
+        }
+      ]
+    }
+  ],
+  "SceneProperties": {
+    "FixedUpdateFrequency": 50,
+    "MaxFixedUpdates": 5,
+    "NetworkFrequency": 30,
+    "NetworkInterpolation": true,
+    "ThreadedAnimation": true,
+    "TimeScale": 1,
+    "UseFixedUpdate": true,
+    "NavMesh": {
+      "Enabled": false,
+      "IncludeStaticBodies": true,
+      "IncludeKeyframedBodies": true,
+      "EditorAutoUpdate": true,
+      "AgentHeight": 64,
+      "AgentRadius": 16,
+      "AgentStepSize": 18,
+      "AgentMaxSlope": 40,
+      "ExcludedBodies": "",
+      "IncludedBodies": ""
+    }
+  },
+  "Title": "youwin",
+  "Description": "",
+  "LastSaved": "2024-05-12T02:09:09.7784945-04:00",
+  "ResourceVersion": 1,
+  "__version": 1,
+  "__references": []
+}
