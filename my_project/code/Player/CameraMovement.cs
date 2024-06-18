@@ -40,11 +40,7 @@ public sealed class CameraMovement : Component
 		{
 			if (Distance == 1000f) return;
 			Distance += 50f;
-			if (Body.Components.TryGet<SkinnedModelRenderer>( out var model ))
-					{
-						var clothing = ClothingContainer.CreateFromLocalUser();
-						clothing.Apply(model);
-					}
+			GiveClothes();
 		}
 		else if (Input.MouseWheel.y > 0 )
 			{
@@ -92,6 +88,15 @@ public sealed class CameraMovement : Component
 			Camera.Transform.Position = camPos;
 			Camera.Transform.Rotation = eyeAngles.ToRotation();
 
+		}
+	}
+	void GiveClothes()
+	{
+		// Give player clothes for Mom
+		if (Body.Components.TryGet<SkinnedModelRenderer>( out var model ))
+		{
+			var clothing = ClothingContainer.CreateFromLocalUser();
+			clothing.Apply(model);
 		}
 	}
 }

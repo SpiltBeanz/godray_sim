@@ -2,25 +2,19 @@ using Sandbox;
 using System;
 
 
-public sealed class gr3loader : Component, Component.ICollisionListener
+public sealed class NextLevelTrigger : Component, Component.ICollisionListener
 
 {
-	private async void SceneLoad2()
-    {
-        await Task.DelaySeconds(.01f);
-        Scene.LoadFromFile("scenes/godray3.scene");
-		Sound.Play("sounds/fart.sound");
-    }
+	[Property] SceneFile nextscene { get; set; }
+
 	public void OnCollisionStart(Collision other)
 	{
 		 if(other.Other.GameObject.Tags.Has("player"))
         {
         Log.Warning(other.Other.GameObject.Name);
-        // Scene.LoadFromFile("scenes/mainmenu.scene");
-        SceneLoad2();
+        NextLevel();
         }
 		
-
 	}
 
 	public void OnCollisionUpdate(Collision other)
@@ -32,5 +26,12 @@ public sealed class gr3loader : Component, Component.ICollisionListener
 	{
 		Log.Info(other);
 	}
+
+	private async void NextLevel()
+    {
+        await Task.DelaySeconds(.01f);
+        Scene.Load(nextscene);
+		Sound.Play("sounds/fart.sound");
+    }
 
 }

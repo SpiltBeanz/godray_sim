@@ -1,0 +1,33 @@
+Worldpanel1
+{
+	position: absolute;
+    top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+    white-space: nowrap;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    flex-direction: row;
+  
+
+	.title
+	{
+        
+		font-size: 64px;
+		font-family: Poppins;
+		color: #00ff21;
+        background-color: #0008;
+        flex-direction: column;
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 10px 20px;
+        justify-content: center;
+        align-items: center;
+        //backdrop-filter: blur( 2px ); - doesn't work on world panels!?!?!?
+        gap: 20px;
+		
+		
+	}
+}

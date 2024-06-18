@@ -5,8 +5,8 @@
       "__guid": "c5bafb56-f677-45a3-955e-964023d5d32b",
       "Flags": 0,
       "Name": "Player",
-      "Position": "-1344,352,0.04125",
-      "Tags": "player",
+      "Position": "-1344,352,0",
+      "Tags": "player,noblockaudio",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -74,6 +74,12 @@
           "MaxForce": 50,
           "MaxHealth": 100,
           "MinHealth": 0,
+          "rb": {
+            "_type": "component",
+            "component_id": "c2c0b478-4fc8-4c99-8b42-93b3c91ad75f",
+            "go": "0d38d646-b68f-43fd-8b0c-541a4543ea2b",
+            "component_type": "Rigidbody"
+          },
           "RunSpeed": 290,
           "Speed": 160
         },
@@ -4634,6 +4640,41 @@
               "Volume": 0.1
             }
           ]
+        },
+        {
+          "__guid": "44273cba-bf8a-4772-9192-c26eabc1b2be",
+          "Flags": 0,
+          "Name": "Plane",
+          "Position": "348.4739,1703.172,-161.2177",
+          "Scale": "1000,1000,0.1",
+          "Tags": "trigger,triggerinvis",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "0acba164-ecab-42ed-8373-b3a56cd8d360",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/default/white.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.66667,1,1"
+            },
+            {
+              "__type": "Sandbox.PlaneCollider",
+              "__guid": "327f1dd9-9eed-432d-ae88-2819627658c7",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50",
+              "Static": true
+            },
+            {
+              "__type": "DeathTrigger",
+              "__guid": "77889ab3-2786-4a0b-997f-beeb8bf6e9fe",
+              "activescene": "scenes/godray.scene"
+            }
+          ]
         }
       ]
     },
@@ -7856,6 +7897,82 @@
           "Surface": "surfaces/concrete.surface"
         }
       ]
+    },
+    {
+      "__guid": "0d38d646-b68f-43fd-8b0c-541a4543ea2b",
+      "Flags": 0,
+      "Name": "PhysicsPlatform",
+      "Position": "-1264,528,32",
+      "Scale": "2,2,0.09999993",
+      "Tags": "solid",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f83a0746-cc37-4ba4-890e-a45e25ab7018",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.9,0,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "4194e2a4-6b1d-431c-bbdc-a9f4e3fed0f8",
+          "__enabled": false,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "c2c0b478-4fc8-4c99-8b42-93b3c91ad75f",
+          "__enabled": false,
+          "AngularDamping": 0,
+          "Gravity": false,
+          "LinearDamping": 0,
+          "Locking": {
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassOverride": 0,
+          "MotionEnabled": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "RigidBodyController",
+          "__guid": "18ba9f3e-8a17-4b40-a55d-83629984dc95",
+          "__enabled": false,
+          "rb": {
+            "_type": "component",
+            "component_id": "c2c0b478-4fc8-4c99-8b42-93b3c91ad75f",
+            "go": "0d38d646-b68f-43fd-8b0c-541a4543ea2b",
+            "component_type": "Rigidbody"
+          },
+          "rbVector": "1,0,0",
+          "speed": 5000,
+          "TimeAlive": 0.1
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "9b435dcb-c249-42ee-bdbe-17530f3d72a2",
+          "__enabled": false,
+          "Center": "-0.000001385808,0,55.99997",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false
+        },
+        {
+          "__type": "Rbtrigger",
+          "__guid": "896ad8ec-bffb-4699-af8a-523404179c5a",
+          "__enabled": false
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -7881,7 +7998,7 @@
   },
   "Title": "Godray",
   "Description": "",
-  "LastSaved": "2024-06-02T03:50:39.3531737-04:00",
+  "LastSaved": "2024-06-12T21:05:20.6633198-04:00",
   "ResourceVersion": 1,
   "__references": [
     "baik.soccerball",

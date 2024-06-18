@@ -43,6 +43,6 @@ public sealed class PlayerFootsteps : Component
 		if ( sound is null ) return;
 
 		var handle = Sound.Play( sound, tr.HitPosition + tr.Normal * 5 );
-		handle.Volume *= e.Volume * 20;
+		handle.Volume = e.Volume * 3;
 	}
 }
