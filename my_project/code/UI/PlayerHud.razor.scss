@@ -47,7 +47,7 @@ PlayerHud
 			height: 64px;
 			background-color: rgb(0, 0, 0);
 			padding: 8px;
-
+			position: relative;
 			> .inner
 			{
 				background-color: rgb(56, 56, 56);
@@ -75,6 +75,7 @@ PlayerHud
 			&.armor
 			{
 				height: 48px;
+				
 				> .inner
 				{
 					> .fill

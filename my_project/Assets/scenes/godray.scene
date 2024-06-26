@@ -5,7 +5,7 @@
       "__guid": "c5bafb56-f677-45a3-955e-964023d5d32b",
       "Flags": 0,
       "Name": "Player",
-      "Position": "-1344,352,0",
+      "Position": "-1344,352,32",
       "Tags": "player,noblockaudio",
       "Enabled": true,
       "NetworkMode": 2,
@@ -76,8 +76,8 @@
           "MinHealth": 0,
           "rb": {
             "_type": "component",
-            "component_id": "c2c0b478-4fc8-4c99-8b42-93b3c91ad75f",
-            "go": "0d38d646-b68f-43fd-8b0c-541a4543ea2b",
+            "component_id": "d0b967fa-3d45-4517-bbfa-34d2cac91e3e",
+            "go": "62b8ae5f-cb02-4d1c-ba3e-672fe40bd234",
             "component_type": "Rigidbody"
           },
           "RunSpeed": 290,
@@ -101,6 +101,21 @@
             "go": "da358ca3-7ac1-4414-8caf-9d6651b338c0",
             "component_type": "SkinnedModelRenderer"
           }
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "0c132de1-50d9-4801-b823-7d057804cdd2",
+          "__enabled": false,
+          "Locking": {},
+          "Model": "models/citizen/citizen.vmdl",
+          "MotionEnabled": false,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "8d30d798-5d4e-4b9e-ad1a-72b131e2d2ac",
+            "go": "da358ca3-7ac1-4414-8caf-9d6651b338c0",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
         }
       ],
       "Children": [
@@ -117,7 +132,7 @@
             {
               "__type": "Sandbox.SkinnedModelRenderer",
               "__guid": "8d30d798-5d4e-4b9e-ad1a-72b131e2d2ac",
-              "BodyGroups": 65,
+              "BodyGroups": 341,
               "CreateBoneObjects": true,
               "MaterialGroup": "default",
               "Model": "models/citizen/citizen.vmdl",
@@ -1381,7 +1396,7 @@
               "TargetEye": "None",
               "Viewport": "0,0,1,1",
               "ZFar": 10000,
-              "ZNear": 0.1
+              "ZNear": 1
             },
             {
               "__type": "CameraMovement",
@@ -1400,6 +1415,22 @@
                 "component_id": "1ab8ecd5-973f-49b2-a99e-5ea3237bf350",
                 "go": "c5bafb56-f677-45a3-955e-964023d5d32b",
                 "component_type": "PlayerMovement"
+              }
+            },
+            {
+              "__type": "Sandbox.AmbientOcclusion",
+              "__guid": "f3dde9b1-fba5-439f-89a6-1c189d0d6c2a",
+              "__enabled": false,
+              "Intensity": 10,
+              "Quality": "High",
+              "Radius": 32
+            },
+            {
+              "__type": "InfoRay",
+              "__guid": "222892ca-70cf-4a98-9ca7-b94faf13f808",
+              "Camera": {
+                "_type": "gameobject",
+                "go": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2"
               }
             }
           ]
@@ -1525,7 +1556,7 @@
         {
           "__guid": "9f9ac5b5-c85f-4a25-a532-71254f26b504",
           "Flags": 0,
-          "Name": "Hurt Cube",
+          "Name": "Hurt Trigger",
           "Position": "-1556.518,14.97971,-52.51519",
           "Scale": "3,1,1",
           "Tags": "triggerinvis",
@@ -1536,6 +1567,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "b0870163-0d89-41b8-b348-7249df75d618",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1559,7 +1591,7 @@
         {
           "__guid": "64c32c76-68e5-4081-823c-dff0e34e6323",
           "Flags": 0,
-          "Name": "Hurt Cube",
+          "Name": "Hurt Trigger",
           "Position": "1323.482,-369.0203,-52.5171",
           "Scale": "3,1,1",
           "Tags": "triggerinvis",
@@ -1570,6 +1602,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "ef086fa4-94f0-4115-b016-641128a93be6",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1593,7 +1626,7 @@
         {
           "__guid": "982c4cb2-7809-406b-b75d-a0f8e9ecabe5",
           "Flags": 0,
-          "Name": "Hurt Cube",
+          "Name": "Hurt Trigger",
           "Position": "1323.482,46.97971,-52.5171",
           "Scale": "3,1,1",
           "Tags": "triggerinvis",
@@ -1604,6 +1637,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "75b5076e-b772-4fcb-98b0-f105f361f800",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1627,7 +1661,7 @@
         {
           "__guid": "3eb4c6e4-8ec2-4342-9e72-44c2487867e3",
           "Flags": 0,
-          "Name": "Hurt Cube",
+          "Name": "Hurt Trigger",
           "Position": "-1556.518,430.9797,-52.51519",
           "Scale": "3,1,1",
           "Tags": "triggerinvis",
@@ -1638,6 +1672,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "06298cc2-0ab9-4de9-a592-f735f71a19fa",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1661,7 +1696,7 @@
         {
           "__guid": "fb6b6e78-897d-44b4-9e4e-55c88b79a489",
           "Flags": 0,
-          "Name": "Hurt Cube",
+          "Name": "Hurt Trigger",
           "Position": "-692.5184,220.5219,59.48426",
           "Rotation": "0,-0.7071068,0,0.7071068",
           "Scale": "6,7.4,10",
@@ -1673,6 +1708,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "6a80584b-1354-479c-8b51-0c880e57d43d",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1696,7 +1732,7 @@
         {
           "__guid": "fbdd0f26-7f78-4ff0-a3ef-5da1333266e3",
           "Flags": 0,
-          "Name": "Heal Cube",
+          "Name": "Heal Trigger",
           "Position": "383.2946,-161.0203,16.84986",
           "Rotation": "-0.00000005711168,0.9238795,-0.00000005711168,-0.3826835",
           "Scale": "1.600001,2.5,7.399995",
@@ -1708,6 +1744,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "7360fb69-5b47-4141-8acb-e0b9e7ea722f",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1731,7 +1768,7 @@
         {
           "__guid": "b1cc2eb4-433f-497e-a96a-1a572b97da4e",
           "Flags": 0,
-          "Name": "Heal Cube",
+          "Name": "Heal Trigger",
           "Position": "-248.502,-1.020294,-5.77755",
           "Scale": "7.399996,16.80001,5.399997",
           "Tags": "triggerinvis",
@@ -1742,6 +1779,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "0543b017-ac89-407d-b671-10c0dc5f29c3",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
               "RenderType": "Off",
@@ -1894,7 +1932,7 @@
         {
           "__guid": "1d3a079c-d628-4530-9691-18b924ad013b",
           "Flags": 0,
-          "Name": "Coins",
+          "Name": "Sunscreen",
           "Position": "58.15906,32.02911,-76.85686",
           "Enabled": true,
           "NetworkMode": 2,
@@ -1923,7 +1961,7 @@
                   "__guid": "9d27d045-538b-46a0-80d3-cf7a53960bb4",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2005,7 +2043,7 @@
                   "__guid": "375cc902-3611-4ac8-a87e-177db47d1f5d",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2087,7 +2125,7 @@
                   "__guid": "0e37ff85-1a33-4d2c-9218-9f14965f7627",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2169,7 +2207,7 @@
                   "__guid": "551df9b2-0e46-4f35-9ea4-e181c9887f00",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2251,7 +2289,7 @@
                   "__guid": "f52e4314-3529-4c96-b3db-8327444350b7",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2333,7 +2371,7 @@
                   "__guid": "80d65863-1f7b-4a87-b9ca-f93cb6ad45f5",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2415,7 +2453,7 @@
                   "__guid": "d49718d1-9a71-4826-b2ed-cc402d6f9ce9",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2497,7 +2535,7 @@
                   "__guid": "84bd1d8e-d32c-4b1a-8a03-be4d42e9020c",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2579,7 +2617,7 @@
                   "__guid": "f8268d2b-c687-4be6-ad66-3e4ac642ed8d",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2661,7 +2699,7 @@
                   "__guid": "ed722665-f75d-4c7e-aeb3-90a1e458f83c",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2743,7 +2781,7 @@
                   "__guid": "e48cb3bb-2037-4930-850b-41a1dfb8741f",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2825,7 +2863,7 @@
                   "__guid": "0575aaba-c33b-4027-a119-3b261a41fca6",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2907,7 +2945,7 @@
                   "__guid": "7c084e20-d09f-4358-80f6-25279b6955a4",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -2989,7 +3027,7 @@
                   "__guid": "46e9e1fd-53b0-490c-b0a3-d966bcb220d6",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3071,7 +3109,7 @@
                   "__guid": "a430ce4b-783e-4d3a-b910-aa94c96a9c30",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3153,7 +3191,7 @@
                   "__guid": "94e2516b-c38c-4a61-ab9d-e496b9d55ce1",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3235,7 +3273,7 @@
                   "__guid": "e31666b6-82e1-47f3-a769-7c58b3ff9848",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3317,7 +3355,7 @@
                   "__guid": "4bde70f3-4713-4ff6-8893-dcc7589b14f4",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3399,7 +3437,7 @@
                   "__guid": "bf88c9f7-06de-4084-a5a5-536aae75b046",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3481,7 +3519,7 @@
                   "__guid": "1eedfe28-7b14-4a3d-973d-b1d3302f73bb",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3563,7 +3601,7 @@
                   "__guid": "7baab83e-4b58-4d46-aa99-ea84a4d8000f",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3645,7 +3683,7 @@
                   "__guid": "75c13f70-9092-4282-bb1f-27072fd62602",
                   "Center": "0,0,11.3",
                   "IsTrigger": true,
-                  "Scale": "10.49999,11.29998,22.69997",
+                  "Scale": "12,15.9,22.69997",
                   "Static": false
                 },
                 {
@@ -3703,976 +3741,6 @@
                   ]
                 }
               ]
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "__guid": "ceb83eea-2e91-4f1c-90f9-120b89b8f889",
-      "Flags": 0,
-      "Name": "Environment",
-      "Position": "-1163.482,289.0203,84.51519",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Children": [
-        {
-          "__guid": "6ac1cb1b-7599-4980-90a0-862901c446ba",
-          "Flags": 0,
-          "Name": "Map Instance",
-          "Position": "0,0,0",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.MapInstance",
-              "__guid": "a70678eb-3c19-4c31-8e2e-3c48aeca3326",
-              "MapName": "testmapsbox",
-              "UseMapFromLaunch": false
-            }
-          ],
-          "Children": []
-        },
-        {
-          "__guid": "00344a8c-fa5e-45ae-b12a-10bb781a1dc3",
-          "Flags": 0,
-          "Name": "2D Skybox",
-          "Position": "667.4822,-209.0203,-36.51519",
-          "Tags": "skybox",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.SkyBox2D",
-              "__guid": "f4bbb142-0a53-49ed-bbf3-e4f4bbebfe85",
-              "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.EnvmapProbe",
-              "__guid": "ea1ab7e5-d63e-40e5-94dd-04b3749135ec",
-              "Texture": "textures/cubemaps/default2.vtex",
-              "Bounds": {
-                "Mins": "-512,-512,-512",
-                "Maxs": "512,512,512"
-              },
-              "DelayBetweenUpdates": 0.1,
-              "Feathering": 0.02,
-              "FrameInterval": 5,
-              "MaxDistance": 512,
-              "Projection": "Sphere",
-              "RenderDynamically": false,
-              "TintColor": "1,1,1,1",
-              "UpdateStrategy": "OnEnabled",
-              "ZFar": 4096,
-              "ZNear": 16
-            }
-          ]
-        },
-        {
-          "__guid": "917a2bfa-acd6-441e-ab18-42f1ba4de7f2",
-          "Flags": 0,
-          "Name": "DustMotes",
-          "Position": "363.4822,-161.0203,11.48481",
-          "Tags": "particles",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.LegacyParticleSystem",
-              "__guid": "7391441b-004e-4c1f-9949-06b34bf0b2e3",
-              "ControlPoints": [],
-              "Looped": false,
-              "Particles": "particles/dust_motes/dustmotes.vpcf",
-              "PlaybackSpeed": 1
-            }
-          ],
-          "Children": [
-            {
-              "__guid": "0863bd87-c626-4715-8ea7-a52d7e1bb72e",
-              "Flags": 0,
-              "Name": "DustMotes (1)",
-              "Position": "224,0,160",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.LegacyParticleSystem",
-                  "__guid": "11b58bc5-836d-4b42-a934-0d4565dd7c32",
-                  "ControlPoints": [],
-                  "Looped": false,
-                  "Particles": "particles/dust_motes/dustmotes.vpcf",
-                  "PlaybackSpeed": 1
-                }
-              ]
-            },
-            {
-              "__guid": "7530fef2-2233-4801-a66c-a899a64cb194",
-              "Flags": 0,
-              "Name": "DustMotes (2)",
-              "Position": "128,0,96",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.LegacyParticleSystem",
-                  "__guid": "b24ddd8b-265e-4106-83fe-8978fb3bc309",
-                  "ControlPoints": [],
-                  "Looped": false,
-                  "Particles": "particles/dust_motes/dustmotes.vpcf",
-                  "PlaybackSpeed": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "6082b55b-9268-47bb-802a-686fa4d47f7e",
-          "Flags": 0,
-          "Name": "Sun",
-          "Position": "523.4822,-157.8275,-52.51519",
-          "Rotation": "0,0.9238796,0,0.3826834",
-          "Tags": "light_directional,light",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.DirectionalLight",
-              "__guid": "ddf418f6-26a0-42ca-8198-16b3e3dcf45a",
-              "FogMode": "Enabled",
-              "FogStrength": 1,
-              "LightColor": "0.91373,0.98039,1,1",
-              "Shadows": true,
-              "SkyColor": "0.64749,0.85149,0.95349,1"
-            }
-          ]
-        },
-        {
-          "__guid": "461b9d1e-f35d-4ec2-8a83-ffb5bb65aff6",
-          "Flags": 0,
-          "Name": "Lights",
-          "Position": "-1132.558,249.4547,-16.20835",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Children": [
-            {
-              "__guid": "cfdab911-27c0-4864-b830-b44b4c2ae01a",
-              "Flags": 0,
-              "Name": "Point Light(godray)",
-              "Position": "1784.04,-410.4749,283.6932",
-              "Tags": "light_point,light",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.PointLight",
-                  "__guid": "205b31d4-bff6-4378-9825-7cb48d199726",
-                  "Attenuation": 1.06,
-                  "FogMode": "Enabled",
-                  "FogStrength": 1,
-                  "LightColor": "0.91373,0.98039,1,1",
-                  "Radius": 1000,
-                  "Shadows": false
-                }
-              ]
-            },
-            {
-              "__guid": "d57c8978-f221-457d-9549-2676c9d55b70",
-              "Flags": 0,
-              "Name": "Hallway Lights",
-              "Position": "2163.829,-359.0092,-35.1717",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Children": [
-                {
-                  "__guid": "c3c37389-87e3-4b1c-8f24-d218a43f2ad2",
-                  "Flags": 0,
-                  "Name": "LightModel",
-                  "Position": "-59.78909,2.566635,90.91666",
-                  "Rotation": "0,0,-0.7071067,0.7071068",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "4a168f7b-9994-4a5d-a921-fe5c3d5c67f3",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "0e9e94e5-5e8a-46b8-a340-bb859ea1fc31",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "0901e6fd-9086-41fa-b839-7538162e6206",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "bd7cc4a2-f9ea-4c74-8666-a3651c6f8fad",
-                      "Flags": 0,
-                      "Name": "Point Light",
-                      "Position": "58.03237,-156,-64.0518",
-                      "Tags": "light_point,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.PointLight",
-                          "__guid": "83044b3b-0cd3-48da-bb74-d0af2701762d",
-                          "Attenuation": 10,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 105.099304,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "465b4039-92a2-4b49-b2d7-4663cf8ff4cd",
-                  "Flags": 0,
-                  "Name": "LightModel (1)",
-                  "Position": "-207.7891,2.566635,90.91666",
-                  "Rotation": "0,0,-0.7071067,0.7071068",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "6b546656-079c-48ae-be64-af4801641597",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "99f7e3a3-fbf0-4fbe-8495-45932db256ad",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "c621efa2-18b2-4a03-ab16-017d2190d3d9",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "17a5613b-2e0f-4416-a23a-7dd7ae31ee46",
-                      "Flags": 0,
-                      "Name": "Point Light",
-                      "Position": "58.03242,147.9999,-64.0518",
-                      "Tags": "light_point,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.PointLight",
-                          "__guid": "692cccc7-a209-408c-b2d1-d5ed2f865fea",
-                          "Attenuation": 10,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 105.099304,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "d39afa20-a042-4aff-b1b0-21192afdba34",
-                  "Flags": 0,
-                  "Name": "LightModel (2)",
-                  "Position": "96.21085,2.566635,90.91666",
-                  "Rotation": "0,0,-0.7071067,0.7071068",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "29752306-e544-4800-b303-1fda27119159",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "7c69c93c-f193-44a6-b1e5-bcefdb768f85",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "90c8c8a8-1699-46b2-981e-e25634f1fb44",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "95266a05-67ed-40c7-a6c5-a54b986c51de",
-                      "Flags": 0,
-                      "Name": "Point Light",
-                      "Position": "58.03236,-8.00004,-64.0518",
-                      "Tags": "light_point,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.PointLight",
-                          "__guid": "2bea50c5-5f1f-4713-9b40-4d2923e5ba37",
-                          "Attenuation": 10,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 105.099304,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "5591f923-296e-4082-921e-4e8bee025b41",
-                  "Flags": 0,
-                  "Name": "LightModel (3)",
-                  "Position": "-215.7891,-105.6251,90.91666",
-                  "Rotation": "0,0,-0.7071069,-0.7071066",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "f07d081c-b16c-4762-b530-ac6da83c3ec4",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "8701b74f-dbbb-4d28-a5b0-8e995cfeb9f3",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "44c80a07-d11a-4153-8612-312354b3f95f",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "66bd7986-402d-4631-90c3-0005fc2845ac",
-                  "Flags": 0,
-                  "Name": "LightModel (4)",
-                  "Position": "-59.78912,-105.6251,90.91666",
-                  "Rotation": "0,0,-0.7071069,-0.7071066",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "b02ac12e-5961-468d-bd67-3049b52942ca",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "e78236df-a807-41e7-8cef-b59fa006a0b8",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "2b8a6cf2-4e03-46e0-81f9-2e6539dea9be",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "c63d701c-f5e5-4c39-ae64-a49d99108e1b",
-                  "Flags": 0,
-                  "Name": "LightModel (5)",
-                  "Position": "88.21088,-105.625,90.91666",
-                  "Rotation": "0,0,-0.7071069,-0.7071066",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "afb0c5c2-7037-416f-9f89-11b3f6d19c98",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "73fc6d2f-cd59-449b-8958-69fed2fc5d8b",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "b8f1a135-36a2-4c07-a586-d98c2f9a4e08",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "__guid": "bf765168-acd7-4c0f-87bb-e46adb513f6e",
-              "Flags": 0,
-              "Name": "Hallway Lights (1)",
-              "Position": "-11.96021,25.52515,-35.1717",
-              "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
-              "Children": [
-                {
-                  "__guid": "c4cefb08-1d8d-4fe4-9529-9d8d35b064be",
-                  "Flags": 0,
-                  "Name": "LightModel",
-                  "Position": "-59.78909,2.566635,90.91666",
-                  "Rotation": "0,0,-0.7071067,0.7071068",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "ad5f3825-b77a-4b78-97fd-a375fd50984e",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "69a1e3ea-009d-467e-b2a7-49ad6b12d5ba",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "ad72cd06-6888-43d7-99a9-22d4692cbdf1",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "6445fa5b-2b97-40ce-baca-96236fbb63e3",
-                      "Flags": 0,
-                      "Name": "Point Light",
-                      "Position": "58.03237,-156,-64.0518",
-                      "Tags": "light_point,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.PointLight",
-                          "__guid": "00359c26-6a97-4d35-a250-dadbbadc4fee",
-                          "Attenuation": 10,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 105.099304,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "954c48a2-049d-493e-8255-41987e6eafc9",
-                  "Flags": 0,
-                  "Name": "LightModel (1)",
-                  "Position": "-207.7891,2.56665,90.91666",
-                  "Rotation": "0,0,-0.7071067,0.7071068",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "3671bf2d-bd42-4e6f-972d-aa54a79ca85e",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "567e4ba9-274a-4847-8c1a-aa565cc04456",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "fe873a11-f1c8-4b5f-bc87-0363a5fcfd75",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "a4b19648-ff6e-4919-b36a-0a8ee5f849a5",
-                      "Flags": 0,
-                      "Name": "Point Light",
-                      "Position": "58.03242,147.9999,-64.0518",
-                      "Tags": "light_point,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.PointLight",
-                          "__guid": "a40c511b-6b56-4028-bbc3-2c41d42ae575",
-                          "Attenuation": 10,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 105.099304,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "b1abe4e6-c053-4424-9abb-e20340636b04",
-                  "Flags": 0,
-                  "Name": "LightModel (2)",
-                  "Position": "96.21085,2.566635,90.91666",
-                  "Rotation": "0,0,-0.7071067,0.7071068",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "cdb98367-2d9d-4169-aff8-8dd1c1c1940d",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "8890f6c0-62de-4193-af5f-67c167ea5ebe",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "b7f9c659-9b9a-416c-8640-5c2ab77e5fe7",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    },
-                    {
-                      "__guid": "49e5269d-e078-4d3e-8442-f149f771c37c",
-                      "Flags": 0,
-                      "Name": "Point Light",
-                      "Position": "58.03236,-8.00004,-64.0518",
-                      "Tags": "light_point,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.PointLight",
-                          "__guid": "4d57589d-0681-4f56-ace0-5d1f244d9617",
-                          "Attenuation": 10,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 105.099304,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "d4757e80-5cca-4fc6-b1db-8a87942631bb",
-                  "Flags": 0,
-                  "Name": "LightModel (3)",
-                  "Position": "-215.7891,-105.6251,90.91666",
-                  "Rotation": "0,0,-0.7071069,-0.7071066",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "77f3b4be-aaa3-45ac-abe2-29859363308a",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "2af201ba-4aa4-442d-bd8b-8eda5ee0aa58",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "e47b949d-4972-4008-a12a-1f1b33b8fcf4",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "e7a71daa-f929-4188-9650-36b4618859eb",
-                  "Flags": 0,
-                  "Name": "LightModel (4)",
-                  "Position": "-59.78912,-105.6251,90.91666",
-                  "Rotation": "0,0,-0.7071069,-0.7071066",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "94dea6b4-b33b-419c-81ab-2200c990ba9b",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "b205bea2-d77b-4384-ad9d-02657323fd5a",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "fd5e36f9-e6df-4f5b-9de1-a1394e745ffd",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                },
-                {
-                  "__guid": "675bc915-8bce-406a-a2a7-2f21c7d555d0",
-                  "Flags": 0,
-                  "Name": "LightModel (5)",
-                  "Position": "88.21088,-105.625,90.91666",
-                  "Rotation": "0,0,-0.7071069,-0.7071066",
-                  "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
-                  "Components": [
-                    {
-                      "__type": "Sandbox.ModelRenderer",
-                      "__guid": "2c2d5972-f728-4d74-935c-dc7f424914c1",
-                      "BodyGroups": 18446744073709551615,
-                      "Model": "models/foreguard/lighting/walllight01.vmdl",
-                      "RenderType": "Off",
-                      "Tint": "1,1,1,1"
-                    }
-                  ],
-                  "Children": [
-                    {
-                      "__guid": "5744fa83-7a7d-470a-939c-797e9f798ed4",
-                      "Flags": 0,
-                      "Name": "Spot Light",
-                      "Position": "0,0,-8.051804",
-                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
-                      "Tags": "light_spot,light",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SpotLight",
-                          "__guid": "ba889b72-6223-4217-9398-ae1a984025ce",
-                          "Attenuation": 1.5,
-                          "ConeInner": 15,
-                          "ConeOuter": 45,
-                          "FogMode": "Enabled",
-                          "FogStrength": 1,
-                          "LightColor": "0.91373,0.98039,1,1",
-                          "Radius": 500,
-                          "Shadows": false
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "__guid": "1c56a303-d5f8-434a-b000-939e04be840e",
-          "Flags": 0,
-          "Name": "Background Music",
-          "Position": "44.52234,234.1324,-103.185",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.SoundPointComponent",
-              "__guid": "e3ef6fd7-835e-47ca-8515-1444c3b39c61",
-              "DistanceAttenuation": false,
-              "DistanceAttenuationOverride": false,
-              "Force2d": true,
-              "MaxRepeatTime": 1,
-              "MinRepeatTime": 1,
-              "Occlusion": false,
-              "OcclusionOverride": false,
-              "OcclusionRadius": 32,
-              "Pitch": 1,
-              "PlayOnStart": true,
-              "ReflectionOverride": false,
-              "Reflections": false,
-              "Repeat": true,
-              "SoundEvent": "sounds/lovelydayloopcarson.sound",
-              "SoundOverride": false,
-              "StopOnNew": false,
-              "TargetMixer": {
-                "Name": "unknown",
-                "Id": "00000000-0000-0000-0000-000000000000"
-              },
-              "Volume": 0.1
-            }
-          ]
-        },
-        {
-          "__guid": "44273cba-bf8a-4772-9192-c26eabc1b2be",
-          "Flags": 0,
-          "Name": "Plane",
-          "Position": "348.4739,1703.172,-161.2177",
-          "Scale": "1000,1000,0.1",
-          "Tags": "trigger,triggerinvis",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "0acba164-ecab-42ed-8373-b3a56cd8d360",
-              "BodyGroups": 18446744073709551615,
-              "MaterialOverride": "materials/default/white.vmat",
-              "Model": "models/dev/plane.vmdl",
-              "RenderType": "On",
-              "Tint": "0,0.66667,1,1"
-            },
-            {
-              "__type": "Sandbox.PlaneCollider",
-              "__guid": "327f1dd9-9eed-432d-ae88-2819627658c7",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50",
-              "Static": true
-            },
-            {
-              "__type": "DeathTrigger",
-              "__guid": "77889ab3-2786-4a0b-997f-beeb8bf6e9fe",
-              "activescene": "scenes/godray.scene"
             }
           ]
         }
@@ -6733,7 +5801,8 @@
               "__guid": "9dfc7cfd-e1f6-43ab-a729-74638aea28d0",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -6773,7 +5842,8 @@
               "__guid": "e8cd9d5e-f269-433f-98ed-79c29286641f",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -6813,7 +5883,8 @@
               "__guid": "93a342bc-dae3-45b0-8967-ed56baf0713f",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -6853,7 +5924,8 @@
               "__guid": "01039133-908d-4330-92ae-80ee2e644a9a",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -6893,7 +5965,8 @@
               "__guid": "b5160549-441e-4763-8dc3-6b4c6c60c305",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -6933,7 +6006,8 @@
               "__guid": "c3842e06-7003-4821-b5cb-d8b4a58ef0f0",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -6973,7 +6047,8 @@
               "__guid": "ec1a3fad-a9ac-4c0c-9736-aad6b9ff11e0",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7013,7 +6088,8 @@
               "__guid": "609e90b5-15c0-49d8-abd0-767c9767b921",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7053,7 +6129,8 @@
               "__guid": "56aa7d80-34d6-4094-b5f9-c61ee57b0f82",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7093,7 +6170,8 @@
               "__guid": "75a483da-093f-44a6-a888-a2cf9be67da3",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7133,7 +6211,8 @@
               "__guid": "69c08ddb-0610-4e99-8e21-43c5c2da0714",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7173,7 +6252,8 @@
               "__guid": "e7d969e0-4700-4859-aa8b-5359956ef03d",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7213,7 +6293,8 @@
               "__guid": "445db0cd-7ce6-48e6-8ba6-ff0c37a6c24c",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7253,7 +6334,8 @@
               "__guid": "fbf8683b-d4cd-4ed9-8d61-cb8ba6e802a1",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7293,7 +6375,8 @@
               "__guid": "d54a6a39-ded3-4dbe-ac8a-58c10ded4cf1",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7333,7 +6416,8 @@
               "__guid": "69dcb647-a23e-4c14-a653-d84269ab0681",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7373,7 +6457,8 @@
               "__guid": "824eafbd-989d-4ded-bee6-1a30e48a62cb",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7413,7 +6498,8 @@
               "__guid": "751e0ce7-3a95-4bdc-98c6-104159351a7a",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7453,7 +6539,8 @@
               "__guid": "ea8322eb-6d8c-457a-a739-05590555847c",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7493,7 +6580,8 @@
               "__guid": "d0907878-5182-4ec3-8026-82c15d94d64b",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7533,7 +6621,8 @@
               "__guid": "af303ddc-f4f1-4860-ac6c-7cf80c5d92b7",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7573,7 +6662,8 @@
               "__guid": "6bc66c83-ae2f-4afd-9f14-ef3ba6aa94d7",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7613,7 +6703,8 @@
               "__guid": "4da37d94-c22d-461e-bbe4-7c408f723f44",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7653,7 +6744,8 @@
               "__guid": "197911b9-c1cc-4301-90c2-e8d751163921",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7693,7 +6785,8 @@
               "__guid": "c4f8dec9-ba90-43a6-86a0-4d5980947d8f",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7733,7 +6826,8 @@
               "__guid": "0e57a126-9854-4cf6-a112-22b7bc94cb7b",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7773,7 +6867,8 @@
               "__guid": "168cd1ad-b3c1-4cd2-899a-26ebac69c9be",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7813,7 +6908,8 @@
               "__guid": "8aa2b5e2-222e-499d-a866-f0aae9190601",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         },
@@ -7853,17 +6949,1137 @@
               "__guid": "f2df178d-8bdf-4110-99df-db0f3fc3eda5",
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
-              "Static": false
+              "Static": false,
+              "Surface": "surfaces/default.surface"
             }
           ]
         }
       ]
     },
     {
+      "__guid": "bb86f58f-73cd-4545-8af0-9ef18d9c367c",
+      "Flags": 0,
+      "Name": "Environment",
+      "Position": "-1163.482,289.0203,84.51519",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Children": [
+        {
+          "__guid": "0e1175e9-ced6-4a1a-87ca-5f54139836ce",
+          "Flags": 0,
+          "Name": "2D Skybox",
+          "Position": "667.4822,-209.0203,-36.51519",
+          "Tags": "skybox",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SkyBox2D",
+              "__guid": "231e9467-7cda-4760-8432-edd7d0ecbc32",
+              "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
+              "Tint": "1,1,1,1"
+            },
+            {
+              "__type": "Sandbox.EnvmapProbe",
+              "__guid": "1c213f7c-bb2a-4e10-928f-9f14d164058d",
+              "Texture": "textures/cubemaps/default2.vtex",
+              "Bounds": {
+                "Mins": "-512,-512,-512",
+                "Maxs": "512,512,512"
+              },
+              "DelayBetweenUpdates": 0.1,
+              "Feathering": 0.02,
+              "FrameInterval": 5,
+              "MaxDistance": 512,
+              "Projection": "Sphere",
+              "RenderDynamically": false,
+              "TintColor": "1,1,1,1",
+              "UpdateStrategy": "OnEnabled",
+              "ZFar": 4096,
+              "ZNear": 16
+            }
+          ]
+        },
+        {
+          "__guid": "8424b411-f21a-4a35-b088-5611c5bee822",
+          "Flags": 0,
+          "Name": "DustMotes",
+          "Position": "363.4822,-161.0203,11.48481",
+          "Tags": "particles",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.LegacyParticleSystem",
+              "__guid": "211a06d1-2e5d-4159-ac00-4ffcb11303e9",
+              "ControlPoints": [],
+              "Looped": false,
+              "Particles": "particles/dust_motes/dustmotes.vpcf",
+              "PlaybackSpeed": 1
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "124a63c0-21ab-4f7f-9749-74fd9318b942",
+              "Flags": 0,
+              "Name": "DustMotes (1)",
+              "Position": "224,0,160",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.LegacyParticleSystem",
+                  "__guid": "4893c4f8-1b14-42a1-a662-a29eccc240fc",
+                  "ControlPoints": [],
+                  "Looped": false,
+                  "Particles": "particles/dust_motes/dustmotes.vpcf",
+                  "PlaybackSpeed": 1
+                }
+              ]
+            },
+            {
+              "__guid": "0f78e54f-aafd-4f7c-bac2-8c04fb9824c1",
+              "Flags": 0,
+              "Name": "DustMotes (2)",
+              "Position": "128,0,96",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.LegacyParticleSystem",
+                  "__guid": "d6c792dd-270e-414a-b930-2d8fd6e5b7a2",
+                  "ControlPoints": [],
+                  "Looped": false,
+                  "Particles": "particles/dust_motes/dustmotes.vpcf",
+                  "PlaybackSpeed": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "097080c6-bcc4-4c4f-a203-652529ddab31",
+          "Flags": 0,
+          "Name": "Sun",
+          "Position": "523.4822,-157.8275,-52.51519",
+          "Rotation": "0,0.9238796,0,0.3826834",
+          "Tags": "light_directional,light",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.DirectionalLight",
+              "__guid": "8f1d429a-9ef6-4bfd-91af-ca58ceeb7daf",
+              "FogMode": "Enabled",
+              "FogStrength": 1,
+              "LightColor": "0.91373,0.98039,1,1",
+              "Shadows": true,
+              "SkyColor": "0.64749,0.85149,0.95349,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e3409059-f8a3-450b-927d-79e6a1ad4e4d",
+          "Flags": 0,
+          "Name": "Lights",
+          "Position": "-1132.558,249.4547,-16.20835",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Children": [
+            {
+              "__guid": "2173762c-0580-4e7d-a469-9714fa220dae",
+              "Flags": 0,
+              "Name": "Point Light(godray)",
+              "Position": "1784.04,-410.4749,283.6932",
+              "Tags": "light_point,light",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.PointLight",
+                  "__guid": "f5097211-b1bb-464e-9b2e-bbf776d09ffe",
+                  "Attenuation": 1.06,
+                  "FogMode": "Enabled",
+                  "FogStrength": 1,
+                  "LightColor": "0.91373,0.98039,1,1",
+                  "Radius": 1000,
+                  "Shadows": false
+                }
+              ]
+            },
+            {
+              "__guid": "16215717-5e90-40bf-8e90-c63c2280bc1f",
+              "Flags": 0,
+              "Name": "Hallway Lights",
+              "Position": "2163.829,-359.0092,-35.1717",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Children": [
+                {
+                  "__guid": "76572e06-d0c0-4702-ae48-0aff84ac34b3",
+                  "Flags": 0,
+                  "Name": "LightModel",
+                  "Position": "-59.78909,2.566635,90.91666",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "dcb70e46-6be1-4b8b-8655-b7b43a7758dd",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "f7bac55b-ab08-43d5-ad5d-02f402b57c09",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "cb1c742e-7923-4379-a1c2-ae43facd388d",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "96f123ac-edd5-427b-a8ad-0699321ec7b8",
+                      "Flags": 0,
+                      "Name": "Point Light",
+                      "Position": "58.03237,-156,-64.0518",
+                      "Tags": "light_point,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.PointLight",
+                          "__guid": "dd70cab5-6e22-41d5-a8dd-b4e634d1592c",
+                          "Attenuation": 10,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 105.099304,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "6fdcb5f5-059e-4468-b118-021f45572cc1",
+                  "Flags": 0,
+                  "Name": "LightModel (1)",
+                  "Position": "-207.7891,2.566635,90.91666",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "fbcb309f-d5d0-4a04-ae3e-7b8e9cf49b11",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "fe39f16e-f1b7-4174-a84c-0a9b92e1e477",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "d0208203-93b5-41a8-9150-343b5578fdcd",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "e0fc8e3c-bee6-46e3-b04a-e6433a0cdc50",
+                      "Flags": 0,
+                      "Name": "Point Light",
+                      "Position": "58.03242,147.9999,-64.0518",
+                      "Tags": "light_point,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.PointLight",
+                          "__guid": "7df4febb-c631-48db-8b83-582a1a71521c",
+                          "Attenuation": 10,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 105.099304,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "16141d27-3606-4d89-8e77-39edd65c40b9",
+                  "Flags": 0,
+                  "Name": "LightModel (2)",
+                  "Position": "96.21085,2.566635,90.91666",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "76a1d1fa-1c93-4f47-a585-bc000207b507",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "74330b13-e4da-4ffb-9fae-85938ec208b8",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "fe512f3c-def3-4f47-ae27-256f53362b23",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "358477ca-c4a1-43d8-89e7-e2e1e97630c3",
+                      "Flags": 0,
+                      "Name": "Point Light",
+                      "Position": "58.03236,-8.00004,-64.0518",
+                      "Tags": "light_point,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.PointLight",
+                          "__guid": "f808aa27-b580-47e5-9e57-e59ca2539fe3",
+                          "Attenuation": 10,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 105.099304,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "7bff9753-5e67-48ee-bf5b-efcae672fee0",
+                  "Flags": 0,
+                  "Name": "LightModel (3)",
+                  "Position": "-215.7891,-105.6251,90.91666",
+                  "Rotation": "0,0,-0.7071069,-0.7071066",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "8ab057f7-fe12-4b2d-8a6f-02ce1ae4a21d",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "4cb946bb-e3ec-45c1-98e3-a7bff2d0aed7",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "c0db274b-7c2b-413e-bb61-ed4843ad110a",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ebcb3669-c8fd-48f3-9703-447e9d562745",
+                  "Flags": 0,
+                  "Name": "LightModel (4)",
+                  "Position": "-59.78912,-105.6251,90.91666",
+                  "Rotation": "0,0,-0.7071069,-0.7071066",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "36770ed8-66fe-4232-a9a3-ac23c770af18",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "b2e5b18a-4ec0-4ba4-b6cf-fda361f7a2a1",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "5ff1767e-1cff-49ae-8008-6ab19bcb5463",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "e7ca3bf1-e931-4ff8-a0b1-318b32ca7324",
+                  "Flags": 0,
+                  "Name": "LightModel (5)",
+                  "Position": "88.21088,-105.625,90.91666",
+                  "Rotation": "0,0,-0.7071069,-0.7071066",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "117e2579-4785-4fee-8cee-972bd1f2ce9c",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "f09d1177-b5e6-4b84-9860-ac718042f090",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "d5498d30-fd7f-40d3-b6d9-50200bd57a64",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "657d13e5-7814-4208-ac8d-b8d14e4308ee",
+              "Flags": 0,
+              "Name": "Hallway Lights (1)",
+              "Position": "-11.96021,25.52515,-35.1717",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Children": [
+                {
+                  "__guid": "0134396d-5e2d-48e4-a51e-60bbb183c07b",
+                  "Flags": 0,
+                  "Name": "LightModel",
+                  "Position": "-59.78909,2.566635,90.91666",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "34594df5-80b3-4eb7-89aa-b07a0eb82158",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "3023bf95-a245-4333-a3f6-1df1bb8ac28c",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "bbcbf3db-0b01-4b12-a5ec-7b4ea1a09ba7",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "c1356f18-5adb-4eaf-aa37-289c7ce7e6e0",
+                      "Flags": 0,
+                      "Name": "Point Light",
+                      "Position": "58.03237,-156,-64.0518",
+                      "Tags": "light_point,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.PointLight",
+                          "__guid": "26576e89-51bd-4cd9-9683-9dec499bc4c7",
+                          "Attenuation": 10,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 105.099304,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "edbe3ee2-feee-42ac-b304-3e7f9960a6b5",
+                  "Flags": 0,
+                  "Name": "LightModel (1)",
+                  "Position": "-207.7891,2.56665,90.91666",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "77e97d77-0a28-40d9-a137-9b829c9b2d76",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "d18cd1fe-0b31-4341-9fab-6e98eec4f3ee",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "eccb2476-96b7-480e-9968-b00001d3b636",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "c0c43df7-fd15-45c4-8529-0738d296738d",
+                      "Flags": 0,
+                      "Name": "Point Light",
+                      "Position": "58.03242,147.9999,-64.0518",
+                      "Tags": "light_point,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.PointLight",
+                          "__guid": "06d373c1-01e5-4c13-846a-ecef008c715c",
+                          "Attenuation": 10,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 105.099304,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "6937e713-c450-467f-93a0-b91e7c487f70",
+                  "Flags": 0,
+                  "Name": "LightModel (2)",
+                  "Position": "96.21085,2.566635,90.91666",
+                  "Rotation": "0,0,-0.7071067,0.7071068",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "5b1c8b83-c998-4de6-93fd-decfdc6b4264",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "9063233f-c1ec-4a6a-9e2e-5f9e5efcca8a",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "7e2ccce4-04c7-4cdd-a0c1-f97b3bcc4913",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "6f74db4b-616e-4d7f-a8d2-fb843c51c3a5",
+                      "Flags": 0,
+                      "Name": "Point Light",
+                      "Position": "58.03236,-8.00004,-64.0518",
+                      "Tags": "light_point,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.PointLight",
+                          "__guid": "0fb82b94-2d1e-4a82-8c17-a15e65fe1738",
+                          "Attenuation": 10,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 105.099304,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1c6e36f9-cb45-4f0c-8652-6dd513fc1fb8",
+                  "Flags": 0,
+                  "Name": "LightModel (3)",
+                  "Position": "-215.7891,-105.6251,90.91666",
+                  "Rotation": "0,0,-0.7071069,-0.7071066",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "26667f57-768c-4136-90c5-de70b3cc6672",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "ccc7a949-efef-4b8d-b509-a30da47ce04e",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "2c76aa53-97d5-4a1f-92f1-aaf482d75f64",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "bee97309-3e0f-4ad6-a15f-6308eef9d71f",
+                  "Flags": 0,
+                  "Name": "LightModel (4)",
+                  "Position": "-59.78912,-105.6251,90.91666",
+                  "Rotation": "0,0,-0.7071069,-0.7071066",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "012fcf4f-6425-4512-ad1c-b48f578cae02",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "a2690934-acba-43df-8d76-5270b63d064a",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "b28e25a2-d7ef-4805-accb-c5f0995ca186",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "__guid": "4784afe8-7d0d-40a6-ab8a-b581bbf89d0d",
+                  "Flags": 0,
+                  "Name": "LightModel (5)",
+                  "Position": "88.21088,-105.625,90.91666",
+                  "Rotation": "0,0,-0.7071069,-0.7071066",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "07701ffa-7403-492a-bfc9-09157bfea82d",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1"
+                    }
+                  ],
+                  "Children": [
+                    {
+                      "__guid": "b38246e6-c40e-4811-acd7-d16fd4cf67c1",
+                      "Flags": 0,
+                      "Name": "Spot Light",
+                      "Position": "0,0,-8.051804",
+                      "Rotation": "0.00000008940697,0.7071067,-0.00000005960464,0.7071067",
+                      "Tags": "light_spot,light",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SpotLight",
+                          "__guid": "1917da30-de25-4661-9dd6-539dfb3bd703",
+                          "Attenuation": 1.5,
+                          "ConeInner": 15,
+                          "ConeOuter": 45,
+                          "FogMode": "Enabled",
+                          "FogStrength": 1,
+                          "LightColor": "0.91373,0.98039,1,1",
+                          "Radius": 500,
+                          "Shadows": false
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "3e8e5422-424e-463c-a7d4-857ad4719d04",
+          "Flags": 0,
+          "Name": "Background Music",
+          "Position": "44.52234,234.1324,-103.185",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SoundPointComponent",
+              "__guid": "8803fdf5-0b8d-45f6-bf8b-e4aa0f992479",
+              "DistanceAttenuation": false,
+              "DistanceAttenuationOverride": false,
+              "Force2d": true,
+              "MaxRepeatTime": 1,
+              "MinRepeatTime": 1,
+              "Occlusion": false,
+              "OcclusionOverride": false,
+              "OcclusionRadius": 32,
+              "Pitch": 1,
+              "PlayOnStart": true,
+              "ReflectionOverride": false,
+              "Reflections": false,
+              "Repeat": true,
+              "SoundEvent": "sounds/lovelydayloopcarson.sound",
+              "SoundOverride": false,
+              "StopOnNew": false,
+              "TargetMixer": {
+                "Name": "unknown",
+                "Id": "00000000-0000-0000-0000-000000000000"
+              },
+              "Volume": 0.1
+            }
+          ]
+        },
+        {
+          "__guid": "108356e5-b7c7-475b-aa4a-0a7e497bf30f",
+          "Flags": 0,
+          "Name": "Plane",
+          "Position": "348.4739,1703.172,-161.2177",
+          "Scale": "1000,1000,0.1",
+          "Tags": "trigger,triggerinvis",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "737ffd1d-a523-4803-9a1e-783a4df931e7",
+              "BodyGroups": 18446744073709551615,
+              "MaterialOverride": "materials/default/white.vmat",
+              "Model": "models/dev/plane.vmdl",
+              "RenderType": "On",
+              "Tint": "0,0.66667,1,1"
+            },
+            {
+              "__type": "Sandbox.PlaneCollider",
+              "__guid": "1eece61a-85ad-4e67-98f0-acd03221ab7f",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50",
+              "Static": true
+            },
+            {
+              "__type": "DeathTrigger",
+              "__guid": "8a0464db-888c-447a-93c8-39f8e1e6a597",
+              "activescene": "scenes/godray.scene"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "6ac1cb1b-7599-4980-90a0-862901c446ba",
+      "Flags": 0,
+      "Name": "Map Instance",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "a70678eb-3c19-4c31-8e2e-3c48aeca3326",
+          "MapName": "testmapsbox",
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
+    },
+    {
+      "__guid": "c7468e6d-f610-4f81-8db9-2ca815cc10bd",
+      "Flags": 0,
+      "Name": "platinum",
+      "Position": "-495.9999,0.00006866462,55.23772",
+      "Rotation": "0,0,0.7071069,-0.7071066",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "b8e6c5e0-27ad-414c-9f8d-f496b7ae8f17",
+          "BodyGroups": 2796203,
+          "CreateBoneObjects": false,
+          "Model": "models/platinum.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "2aaa060d-c6bf-4a14-99aa-543ba9610c64",
+          "Locking": {},
+          "Model": "models/platinum.vmdl",
+          "MotionEnabled": false,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "b8e6c5e0-27ad-414c-9f8d-f496b7ae8f17",
+            "go": "c7468e6d-f610-4f81-8db9-2ca815cc10bd",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
+        }
+      ]
+    },
+    {
+      "__guid": "70574c0e-d4b5-42b7-8c4b-321fcd716e4b",
+      "Flags": 0,
+      "Name": "provence",
+      "Position": "-2096,672.0003,0.2808082",
+      "Rotation": "0,0,0.7071067,0.7071068",
+      "Scale": "1.5,1.5,1.5",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.SkinnedModelRenderer",
+          "__guid": "4f22badb-e8fe-45e9-92c8-ff57310515ba",
+          "BodyGroups": 10899,
+          "CreateBoneObjects": false,
+          "Model": "models/provence.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1",
+          "UseAnimGraph": true
+        },
+        {
+          "__type": "Sandbox.ModelPhysics",
+          "__guid": "6bacf5f3-0223-421d-9656-ac1a1bed12bc",
+          "Locking": {},
+          "Model": "models/provence.vmdl",
+          "MotionEnabled": false,
+          "Renderer": {
+            "_type": "component",
+            "component_id": "4f22badb-e8fe-45e9-92c8-ff57310515ba",
+            "go": "70574c0e-d4b5-42b7-8c4b-321fcd716e4b",
+            "component_type": "SkinnedModelRenderer"
+          },
+          "RigidbodyFlags": 0
+        }
+      ]
+    },
+    {
+      "__guid": "62b8ae5f-cb02-4d1c-ba3e-672fe40bd234",
+      "Flags": 0,
+      "Name": "PhysicsPlatform",
+      "Position": "-1273.63,528,22.6915",
+      "Scale": "2,2,0.09999993",
+      "Tags": "solid",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "67662e9e-507a-4f22-a85d-e9f0d0fbf833",
+          "__enabled": false,
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,0.9,0,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "e982ed21-92d3-47e8-8444-6c4791830e5a",
+          "__enabled": false,
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "d0b967fa-3d45-4517-bbfa-34d2cac91e3e",
+          "AngularDamping": 0,
+          "Gravity": false,
+          "LinearDamping": 0,
+          "Locking": {
+            "Pitch": true,
+            "Yaw": true,
+            "Roll": true
+          },
+          "MassOverride": 0,
+          "MotionEnabled": false,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "33d3d65e-4662-49a8-a789-8e4c1bb29000",
+          "__enabled": false,
+          "Center": "-0.000001385808,0,55.99997",
+          "IsTrigger": true,
+          "Scale": "50,50,50",
+          "Static": false
+        },
+        {
+          "__type": "Rbtrigger",
+          "__guid": "00a46989-37a9-4e9f-94d5-857eb8edbdad",
+          "__enabled": false
+        },
+        {
+          "__type": "RBC2",
+          "__guid": "f49a3596-fc84-4f82-b382-346335e52ef3",
+          "__enabled": false,
+          "rb": {
+            "_type": "component",
+            "component_id": "d0b967fa-3d45-4517-bbfa-34d2cac91e3e",
+            "go": "62b8ae5f-cb02-4d1c-ba3e-672fe40bd234",
+            "component_type": "Rigidbody"
+          },
+          "rbVector": "1,0,0",
+          "speed": 500,
+          "TimeAlive": 10
+        }
+      ]
+    },
+    {
       "__guid": "a0a9c071-4cef-4d71-b1d5-88249da9c5db",
       "Flags": 0,
-      "Name": "Object",
-      "Position": "-1127.733,233.6732,16",
+      "Name": "Companion Cube",
+      "Position": "-1120,256,25.17877",
+      "Tags": "solid",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -7879,13 +8095,13 @@
         {
           "__type": "Sandbox.Rigidbody",
           "__guid": "6c40798d-d997-47ca-b4ab-655ea8d1695b",
-          "AngularDamping": 5,
+          "AngularDamping": 1,
           "Gravity": true,
-          "LinearDamping": 0,
+          "LinearDamping": 1,
           "Locking": {},
           "MassOverride": 0,
           "MotionEnabled": true,
-          "RigidbodyFlags": 0,
+          "RigidbodyFlags": "DisableCollisionSounds",
           "StartAsleep": false
         },
         {
@@ -7895,82 +8111,6 @@
           "Model": "models/companioncube.vmdl",
           "Static": false,
           "Surface": "surfaces/concrete.surface"
-        }
-      ]
-    },
-    {
-      "__guid": "0d38d646-b68f-43fd-8b0c-541a4543ea2b",
-      "Flags": 0,
-      "Name": "PhysicsPlatform",
-      "Position": "-1264,528,32",
-      "Scale": "2,2,0.09999993",
-      "Tags": "solid",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "f83a0746-cc37-4ba4-890e-a45e25ab7018",
-          "__enabled": false,
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,0.9,0,1"
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "4194e2a4-6b1d-431c-bbdc-a9f4e3fed0f8",
-          "__enabled": false,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "c2c0b478-4fc8-4c99-8b42-93b3c91ad75f",
-          "__enabled": false,
-          "AngularDamping": 0,
-          "Gravity": false,
-          "LinearDamping": 0,
-          "Locking": {
-            "Pitch": true,
-            "Yaw": true,
-            "Roll": true
-          },
-          "MassOverride": 0,
-          "MotionEnabled": false,
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
-        },
-        {
-          "__type": "RigidBodyController",
-          "__guid": "18ba9f3e-8a17-4b40-a55d-83629984dc95",
-          "__enabled": false,
-          "rb": {
-            "_type": "component",
-            "component_id": "c2c0b478-4fc8-4c99-8b42-93b3c91ad75f",
-            "go": "0d38d646-b68f-43fd-8b0c-541a4543ea2b",
-            "component_type": "Rigidbody"
-          },
-          "rbVector": "1,0,0",
-          "speed": 5000,
-          "TimeAlive": 0.1
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "9b435dcb-c249-42ee-bdbe-17530f3d72a2",
-          "__enabled": false,
-          "Center": "-0.000001385808,0,55.99997",
-          "IsTrigger": true,
-          "Scale": "50,50,50",
-          "Static": false
-        },
-        {
-          "__type": "Rbtrigger",
-          "__guid": "896ad8ec-bffb-4699-af8a-523404179c5a",
-          "__enabled": false
         }
       ]
     }
@@ -7996,13 +8136,15 @@
       "IncludedBodies": ""
     }
   },
-  "Title": "Godray",
+  "Title": "godray",
   "Description": "",
-  "LastSaved": "2024-06-12T21:05:20.6633198-04:00",
+  "LastSaved": "2024-06-25T22:16:01.323525-04:00",
   "ResourceVersion": 1,
   "__references": [
     "baik.soccerball",
     "ele.dev_measure_blue",
+    "ibrs.ark_platinum",
+    "ibrs.ark_provence",
     "jodiscontent.spray2",
     "sundayservice.dustmotes",
     "synthlestudios.companioncube",

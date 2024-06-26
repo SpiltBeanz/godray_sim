@@ -1,4 +1,5 @@
 using Sandbox;
+using Sandbox.Citizen;
 
 public sealed class CameraMovement : Component
 {
@@ -11,6 +12,7 @@ public sealed class CameraMovement : Component
 	// Variables
 
 	public bool IsFirstPerson => Distance == 0f;
+	public bool HasClothes;
 	private Vector3 CurrentOffset = Vector3.Zero;
 	private CameraComponent Camera;
 	private ModelRenderer BodyRenderer;
@@ -21,7 +23,7 @@ public sealed class CameraMovement : Component
 	}
 
 	protected override void OnUpdate()
-	{
+	{	
 		// Rotate the head base on mouse movement
 		var eyeAngles = Head.Transform.Rotation.Angles();
 		eyeAngles.pitch += Input.MouseDelta.y * 0.1f;
@@ -31,7 +33,7 @@ public sealed class CameraMovement : Component
 		Head.Transform.Rotation = eyeAngles.ToRotation();
 
 		// Set the current camera offset
-		var targetOffset = Vector3.Zero;
+		var targetOffset = Vector3.Up * 6;
 		if(Player.IsCrouching) targetOffset += Vector3.Down * 32f;
 		CurrentOffset = Vector3.Lerp( CurrentOffset, targetOffset, Time.Delta * 10f );
 
@@ -40,29 +42,30 @@ public sealed class CameraMovement : Component
 		{
 			if (Distance == 1000f) return;
 			Distance += 50f;
-			GiveClothes();
 		}
 		else if (Input.MouseWheel.y > 0 )
 			{
 				if (Distance <= 0) return;
 				Distance -= 50f;
-			}
-		
+			}	
 
 		if(Camera is not null)
 		{
 			var camPos = Head.Transform.Position + CurrentOffset;
 			if(!IsFirstPerson)
 			{
+				GiveClothes();
 				// Perform a trace backwards to see where we can safely place the camera
 				var camForward = eyeAngles.ToRotation().Forward;
-				var camTrace = Scene.Trace.Ray(camPos, camPos - (camForward * Distance))
-					.WithoutTags( "player", "trigger")
+				var camTrace = Scene.Trace.Ray(camPos, camPos - (camForward * Distance) )
+				
+					.WithoutTags( "player", "trigger", "nocollide")
+					.Size(5)
 					.Run();
-
+					
 					if(camTrace.Hit)
 					{
-						camPos = camTrace.HitPosition + camTrace.Normal;
+						camPos = (camTrace.HitPosition + camTrace.Normal);
 					}
 					else
 					{
@@ -71,32 +74,46 @@ public sealed class CameraMovement : Component
 
 					// Show the body if not in first person
 					BodyRenderer.RenderType = ModelRenderer.ShadowRenderType.On;
+					// Gizmo draws for editor debugging. 
+					var draw = Gizmo.Draw;
+					if (Application.IsEditor && Input.Down("Reload"))
+					{
+						draw.Line(camPos, camPos - (camForward * -Distance));
+						draw.LineCylinder(camPos, camPos - (camForward * -Distance), 5f,5f, 10);
+					}		
 			}
 			else
 			{
-				// Hide the body if in first person
+				// Hide the body if in first person, show shadows//
+				HasClothes = false;
 				BodyRenderer.RenderType = ModelRenderer.ShadowRenderType.ShadowsOnly;
 				// Hide the clothes/hair if in first person
 				var renderType = (!IsProxy && IsFirstPerson) ? ModelRenderer.ShadowRenderType.ShadowsOnly : ModelRenderer.ShadowRenderType.On;
-					foreach (var modelRenderer in Body.Components.GetAll<ModelRenderer>())
-						{
-    						modelRenderer.RenderType = renderType;
-						}
+				foreach (var modelRenderer in Body.Components.GetAll<ModelRenderer>())
+				{
+    				modelRenderer.RenderType = renderType;
+				}
+				
 			}
-
 			// Set the position of the camera to our calc position
 			Camera.Transform.Position = camPos;
 			Camera.Transform.Rotation = eyeAngles.ToRotation();
-
 		}
+		  
 	}
 	void GiveClothes()
 	{
 		// Give player clothes for Mom
-		if (Body.Components.TryGet<SkinnedModelRenderer>( out var model ))
-		{
-			var clothing = ClothingContainer.CreateFromLocalUser();
-			clothing.Apply(model);
-		}
+		if (Body.Components.TryGet<SkinnedModelRenderer>( out var model ) && !IsFirstPerson)
+		{	
+			if(HasClothes) return;
+			else 
+			{
+				var clothing = ClothingContainer.CreateFromLocalUser();
+				clothing.Apply(model);
+				HasClothes = true;
+				Log.Info(model);	
+			}
+		}		
 	}
 }

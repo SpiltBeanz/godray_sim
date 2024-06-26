@@ -6,7 +6,7 @@
       "Flags": 0,
       "Name": "Player",
       "Position": "-1344,352,-12.60211",
-      "Tags": "player",
+      "Tags": "player,noblockaudio",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -15,7 +15,7 @@
           "__type": "Sandbox.CharacterController",
           "__guid": "cd37cfd7-0cb9-41ba-956f-2554dde3b148",
           "Acceleration": 10,
-          "Bounciness": 0.3,
+          "Bounciness": 0.1,
           "GroundAngle": 45,
           "Height": 72,
           "IgnoreLayers": "player",
@@ -663,17 +663,17 @@
                                                   "Children": [
                                                     {
                                                       "__guid": "0e1058ee-158f-4e19-8824-d31814549361",
-                                                      "Flags": 1028,
+                                                      "Flags": 4,
                                                       "Name": "finger_index_1_R",
-                                                      "Position": "2.454618,-0.08219197,0.06652915",
-                                                      "Rotation": "-0.02897967,0.1177489,-0.05006678,0.991357",
+                                                      "Position": "2.283287,0.00003004074,-0.00004577637",
+                                                      "Rotation": "0.000002681852,0.2335186,-0.000001687651,0.9723524",
                                                       "Enabled": true,
                                                       "NetworkMode": 2,
                                                       "NetworkInterpolation": true,
                                                       "Children": [
                                                         {
                                                           "__guid": "b2cb56d3-058a-4649-8069-729d22049e46",
-                                                          "Flags": 1028,
+                                                          "Flags": 4,
                                                           "Name": "finger_index_2_R",
                                                           "Position": "1.594409,0.000009834766,-0.0001422167",
                                                           "Rotation": "0.000004664063,0.0137646,0.0000004470348,0.9999054",
@@ -719,7 +719,7 @@
                                                       "Children": [
                                                         {
                                                           "__guid": "e0aa843c-d80e-4a60-a5c3-847cff21cd52",
-                                                          "Flags": 1028,
+                                                          "Flags": 4,
                                                           "Name": "finger_middle_2_R",
                                                           "Position": "1.682989,0.00003806502,-0.0001312494",
                                                           "Rotation": "0.00001382828,0.04822434,-0.00003579259,0.9988366",
@@ -765,10 +765,10 @@
                                                       "Children": [
                                                         {
                                                           "__guid": "28e46653-d3cd-4371-8547-352e6ad9d84a",
-                                                          "Flags": 1028,
+                                                          "Flags": 4,
                                                           "Name": "finger_ring_2_R",
-                                                          "Position": "1.537509,-0.002368388,0.01808023",
-                                                          "Rotation": "0.00001201034,0.05039278,0.000008583069,0.9987299",
+                                                          "Position": "1.535355,0.00007724762,-0.0001106262",
+                                                          "Rotation": "0.00001203122,0.05039274,0.000008564154,0.9987296",
                                                           "Enabled": true,
                                                           "NetworkMode": 2,
                                                           "NetworkInterpolation": true
@@ -1381,7 +1381,7 @@
               "TargetEye": "None",
               "Viewport": "0,0,1,1",
               "ZFar": 100000,
-              "ZNear": 0.1
+              "ZNear": 1
             },
             {
               "__type": "CameraMovement",
@@ -1401,6 +1401,40 @@
                 "go": "c5bafb56-f677-45a3-955e-964023d5d32b",
                 "component_type": "PlayerMovement"
               }
+            },
+            {
+              "__type": "Sandbox.AmbientOcclusion",
+              "__guid": "49e36984-26a4-4119-8681-a6cbbfdf484a",
+              "Intensity": 16,
+              "Quality": "Low",
+              "Radius": 20
+            },
+            {
+              "__type": "InfoRay",
+              "__guid": "db3048f2-bb32-4fcd-841f-e3d217b7cb13",
+              "Camera": {
+                "_type": "gameobject",
+                "go": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "8a03fa0f-d6d8-43d3-a6b1-65452a25a73c",
+          "Flags": 0,
+          "Name": "Pusher",
+          "Position": "0,0,32.85472",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SphereCollider",
+              "__guid": "e03854b3-5dd4-4849-9c76-1dd9663ad4ef",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Radius": 23.399994,
+              "Static": false
             }
           ]
         }
@@ -1528,8 +1562,8 @@
         {
           "__guid": "3eb4c6e4-8ec2-4342-9e72-44c2487867e3",
           "Flags": 0,
-          "Name": "Hurt Cube",
-          "Position": "807.5074,63.2225,-409.1859",
+          "Name": "Hurt Trigger",
+          "Position": "789.4312,63.22244,-409.1859",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Scale": "3,1,1",
           "Tags": "triggerinvis",
@@ -1563,7 +1597,7 @@
         {
           "__guid": "fbdd0f26-7f78-4ff0-a3ef-5da1333266e3",
           "Flags": 0,
-          "Name": "Heal Cube",
+          "Name": "Heal Trigger",
           "Position": "555.4821,62.97974,-100.5153",
           "Rotation": "-0.00000005711168,0.9238796,-0.00000005711167,0.3826833",
           "Scale": "1.5,2.999999,30.60003",
@@ -1598,7 +1632,7 @@
         {
           "__guid": "69efca19-fbe4-4d66-9e22-efbde63ef98d",
           "Flags": 0,
-          "Name": "Heal Cube",
+          "Name": "Heal Trigger",
           "Position": "3548.632,62.97974,-100.5153",
           "Rotation": "-0.00000005711168,0.9238796,-0.00000005711167,0.3826833",
           "Scale": "1.5,2.999999,30.60003",
@@ -1633,7 +1667,7 @@
         {
           "__guid": "fda2b679-3c2f-4875-a066-4401faba330e",
           "Flags": 0,
-          "Name": "Hurt Cube",
+          "Name": "Hurt Trigger",
           "Position": "3764.392,63.22241,-409.1859",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Scale": "3,1,1",
@@ -1668,8 +1702,9 @@
         {
           "__guid": "1d3a079c-d628-4530-9691-18b924ad013b",
           "Flags": 0,
-          "Name": "Coins",
+          "Name": "Sunscreen Bottles",
           "Position": "58.15906,32.02911,-76.85686",
+          "Tags": "nocollide",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -1760,7 +1795,7 @@
               "__guid": "b90a03ea-bd14-4b46-8685-a946c2fa36f0",
               "Flags": 0,
               "Name": "Sunscreen",
-              "Position": "1425.323,30.95059,-423.6583",
+              "Position": "1409.323,30.95059,-423.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -1842,7 +1877,7 @@
               "__guid": "0604c156-58a2-4531-923f-b230458b0dfc",
               "Flags": 0,
               "Name": "Sunscreen",
-              "Position": "2401.323,46.95059,-231.6583",
+              "Position": "2377.323,46.95059,-231.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -1924,7 +1959,7 @@
               "__guid": "f77270c1-9cc1-455c-aa55-3f7657594c1e",
               "Flags": 0,
               "Name": "Sunscreen",
-              "Position": "2577.323,67.05606,-231.6583",
+              "Position": "2553.323,67.05606,-231.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -2006,7 +2041,7 @@
               "__guid": "d6d03179-7442-4ded-ab7a-d525a3d00d6b",
               "Flags": 0,
               "Name": "Sunscreen",
-              "Position": "2577.323,222.9506,-231.6583",
+              "Position": "2553.323,222.9506,-231.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -2088,7 +2123,7 @@
               "__guid": "8074c67c-7885-4cfb-b708-b0fcc984cacc",
               "Flags": 0,
               "Name": "Sunscreen",
-              "Position": "2407.726,211.2993,-231.6583",
+              "Position": "2383.726,211.2993,-231.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -2173,6 +2208,7 @@
           "Flags": 0,
           "Name": "Bounce Clouds",
           "Position": "482.2466,-915.0981,19.14761",
+          "Tags": "nocollide",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -2304,7 +2340,7 @@
               "__guid": "610ce630-dd2d-45c9-91be-784c3a7269e1",
               "Flags": 0,
               "Name": "Cloud Bounce Pad",
-              "Position": "2297.235,1074.078,-414.5839",
+              "Position": "2265.304,1074.078,-414.5839",
               "Scale": "0.3,0.3,0.3",
               "Tags": "trigger",
               "Enabled": true,
@@ -2473,6 +2509,7 @@
       "Flags": 0,
       "Name": "Small Platforms",
       "Position": "-1433.767,545.7427,171.7368",
+      "Tags": "nocollide",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -2708,6 +2745,7 @@
       "Flags": 0,
       "Name": "Large platforms",
       "Position": "-1433.767,545.7427,171.7368",
+      "Tags": "nocollide",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -2716,7 +2754,7 @@
           "__guid": "a386364d-3520-4ace-a04d-c398ac1b52d6",
           "Flags": 0,
           "Name": "Large Plat",
-          "Position": "857.7667,-193.7427,-187.7368",
+          "Position": "841.767,-193.7427,-187.7368",
           "Scale": "2,3,0.09999993",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2772,7 +2810,7 @@
           "__guid": "504e2538-8ba7-4f02-a935-ce8381aa7791",
           "Flags": 0,
           "Name": "Large Plat",
-          "Position": "1753.767,-193.7427,-603.7368",
+          "Position": "1737.767,-193.7427,-603.7368",
           "Scale": "2,3,0.09999993",
           "Enabled": true,
           "NetworkMode": 2,
@@ -3047,51 +3085,12 @@
               "Static": false
             }
           ]
-        }
-      ]
-    },
-    {
-      "__guid": "bac78ed3-aa4f-4a26-92b0-eafd28f7f096",
-      "Flags": 0,
-      "Name": "Safety Platforms",
-      "Position": "439.4659,900.4214,-184.1239",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Children": [
-        {
-          "__guid": "a64b4b3a-e67c-4661-810a-cbfc40a62b7d",
-          "Flags": 0,
-          "Name": "Win Plat",
-          "Position": "3945.684,-452.4214,-55.87613",
-          "Scale": "5,5,0.09999993",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "005b623a-fad6-4ec8-8e24-42053c5b7945",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "1,0.93333,0,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "39b32747-55b9-4304-943d-005855e5c8fc",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50,50",
-              "Static": false
-            }
-          ]
         },
         {
           "__guid": "90f50d6f-77ec-4ef7-be6f-f3128f8408cc",
           "Flags": 0,
           "Name": "Large Cloud",
-          "Position": "952.3961,-444.2029,-150.5886",
+          "Position": "2793.698,-89.5242,-506.4493",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -3116,7 +3115,35 @@
               "__guid": "74eeb822-1cdf-4f0b-9ca6-2661d688b2f0",
               "MoveDistance": "0,0,10",
               "ReverseAnimation": true,
-              "TimeToMove": 2
+              "TimeToMove": 1.5
+            }
+          ]
+        },
+        {
+          "__guid": "a64b4b3a-e67c-4661-810a-cbfc40a62b7d",
+          "Flags": 0,
+          "Name": "Win Plat",
+          "Position": "5802.917,-97.74268,-411.7368",
+          "Scale": "5,5,0.09999992",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "005b623a-fad6-4ec8-8e24-42053c5b7945",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.93333,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "39b32747-55b9-4304-943d-005855e5c8fc",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
             }
           ]
         }
@@ -3251,6 +3278,7 @@
       "Position": "-1072,256,16.00018",
       "Rotation": "0,-0.7071067,0,0.7071068",
       "Scale": "1,1,0.09999993",
+      "Tags": "nocollide",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -3286,7 +3314,7 @@
       "Name": "PhysicsPlatform",
       "Position": "-1264,496,16",
       "Scale": "1,1,0.09999993",
-      "Tags": "solid",
+      "Tags": "solid,nocollide",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -3313,11 +3341,7 @@
           "AngularDamping": 0,
           "Gravity": false,
           "LinearDamping": 0,
-          "Locking": {
-            "Pitch": true,
-            "Yaw": true,
-            "Roll": true
-          },
+          "Locking": {},
           "MassOverride": 0,
           "MotionEnabled": false,
           "RigidbodyFlags": 0,
@@ -3344,7 +3368,6 @@
             "go": "9fbebf37-d397-44a9-a494-7e6011247654",
             "component_type": "Rigidbody"
           },
-          "rbVector": "0,0,0",
           "speed": 500,
           "TimeMoving": 4
         },
@@ -3418,7 +3441,7 @@
       "__guid": "bc0fa5b9-30eb-4398-986a-1011c2e9e117",
       "Flags": 0,
       "Name": "ExitDoor",
-      "Position": "4512,448.0018,-240",
+      "Position": "4496,448.0018,-240",
       "Rotation": "0,0,-1,0.0000001947072",
       "Scale": "1,1,1.1",
       "Enabled": true,
@@ -3477,7 +3500,7 @@
           "__guid": "d08c4873-00c8-4974-9ff3-44e29623dad7",
           "Flags": 0,
           "Name": "WorldPanel",
-          "Position": "16.93604,-0.000006595136,53.0508",
+          "Position": "32,-0.00001246126,53.0508",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -3524,9 +3547,9 @@
       "IncludedBodies": ""
     }
   },
-  "Title": "Godray3",
+  "Title": "godray3",
   "Description": "Platformer",
-  "LastSaved": "2024-06-17T23:04:22.742577-04:00",
+  "LastSaved": "2024-06-23T22:43:02.6848647-04:00",
   "ResourceVersion": 1,
   "__references": [
     "ambi.cloud_2",

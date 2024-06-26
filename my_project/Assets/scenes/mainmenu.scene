@@ -17,7 +17,7 @@
           "BackgroundColor": "0.33333,0.46275,0.52157,1",
           "ClearFlags": "All",
           "FieldOfView": 60,
-          "IsMainCamera": true,
+          "IsMainCamera": false,
           "Orthographic": false,
           "OrthographicHeight": 1204,
           "Priority": 1,
@@ -346,7 +346,7 @@
   },
   "Title": "mainmenu",
   "Description": "",
-  "LastSaved": "2024-06-13T23:35:53.9122214-04:00",
+  "LastSaved": "2024-06-24T00:29:15.417338-04:00",
   "ResourceVersion": 1,
   "__references": [
     "caro.sky_001",

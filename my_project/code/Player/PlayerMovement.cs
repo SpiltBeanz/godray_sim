@@ -124,6 +124,9 @@ public sealed class PlayerMovement : Component
 			// Apply the second half of gravity after movement
 		if ( !characterController.IsOnGround ) characterController.Velocity += gravity * Time.Delta * 0.5f;
 		else characterController.Velocity = characterController.Velocity.WithZ(0);	
+
+		// Log.Info(characterController.Velocity);
+		// Log.Info(WishVelocity);
 	}
 	void RotateBody()
 	{

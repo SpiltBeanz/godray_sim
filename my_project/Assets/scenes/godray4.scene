@@ -15,7 +15,7 @@
           "__type": "Sandbox.CharacterController",
           "__guid": "cd37cfd7-0cb9-41ba-956f-2554dde3b148",
           "Acceleration": 10,
-          "Bounciness": 0.3,
+          "Bounciness": 0.1,
           "GroundAngle": 45,
           "Height": 72,
           "IgnoreLayers": "player",
@@ -1381,7 +1381,7 @@
               "TargetEye": "None",
               "Viewport": "0,0,1,1",
               "ZFar": 100000,
-              "ZNear": 0.1
+              "ZNear": 1
             },
             {
               "__type": "CameraMovement",
@@ -2583,30 +2583,11 @@
           "AngularDamping": 0,
           "Gravity": false,
           "LinearDamping": 0,
-          "Locking": {
-            "Y": true,
-            "Z": true,
-            "Pitch": true,
-            "Yaw": true,
-            "Roll": true
-          },
+          "Locking": {},
           "MassOverride": 0,
-          "MotionEnabled": true,
+          "MotionEnabled": false,
           "RigidbodyFlags": 0,
           "StartAsleep": false
-        },
-        {
-          "__type": "RigidBodyController",
-          "__guid": "dbe84cac-2ff0-4564-ac2a-ce80e3e2497e",
-          "rb": {
-            "_type": "component",
-            "component_id": "6e85dd30-dc51-48a3-af6a-b16da70dcd83",
-            "go": "93d2b12b-42a0-4e86-af38-97f11436bdc2",
-            "component_type": "Rigidbody"
-          },
-          "rbVector": "1,0,0",
-          "speed": 500,
-          "TimeAlive": 10
         },
         {
           "__type": "Sandbox.BoxCollider",
@@ -2619,6 +2600,18 @@
         {
           "__type": "Rbtrigger",
           "__guid": "6a45316f-d76b-4f17-b790-8285596f85b8"
+        },
+        {
+          "__type": "RBC1",
+          "__guid": "f08c6331-d385-4db8-b8c2-93269588e70c",
+          "rb": {
+            "_type": "component",
+            "component_id": "6e85dd30-dc51-48a3-af6a-b16da70dcd83",
+            "go": "93d2b12b-42a0-4e86-af38-97f11436bdc2",
+            "component_type": "Rigidbody"
+          },
+          "speed": 100,
+          "TimeMoving": 10
         }
       ],
       "Children": [
@@ -2646,7 +2639,8 @@
             {
               "__type": "Worldpanel1",
               "__guid": "4062a360-6eab-4788-92cb-13ae14124823",
-              "MyStringValue": "Stand on here and Press \u0022E\u0022 to shortcut to lvl2!"
+              "MyStringValue": "Stand on here and Press \u0022E\u0022 to shortcut to lvl2!",
+              "MyStringValue2": "Hello World!"
             }
           ]
         }
@@ -2676,7 +2670,7 @@
   },
   "Title": "Godray4",
   "Description": "Platformer",
-  "LastSaved": "2024-06-11T01:32:42.0849523-04:00",
+  "LastSaved": "2024-06-23T22:43:04.1751888-04:00",
   "ResourceVersion": 1,
   "__references": [
     "ele.dev_measure_blue",

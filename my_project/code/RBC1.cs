@@ -7,18 +7,16 @@ public sealed class RBC1 : Component
 {
 	[Property] public float speed { get; set; }
 	[Property] private Rigidbody rb { get; set; }
-	[Property] public Vector3 rbVector { get; set; }
 	[Property] public float TimeMoving { get; set; }
 
 	protected override void OnFixedUpdate()
 	{
-		if (Input.Pressed( "Use" ))
+		if (Input.Pressed( "Use" ) && rb.Velocity.IsNearlyZero())
 		{
-			if (rb.Velocity.IsNearlyZero())
 			StartMoveForward(); // Object starts moving when player presses "E" if the object is not moving already //
 		}
 	}
-	public void StartMoveForward() // Rigidbody moves forward towards vector at speed //
+	public void StartMoveForward() // Rigidbody moves forward at speed //
 	{
 		rb.Velocity = Vector3.Forward  * speed;
 		Log.Info( rb.Velocity);

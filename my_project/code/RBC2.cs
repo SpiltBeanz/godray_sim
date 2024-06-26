@@ -27,8 +27,8 @@ public sealed class RBC2 : Component
 	public async void Remove()
 	{
 		await Task.DelaySeconds(TimeAlive);
-		Transform.Position = 1000;
-		await Task.DelaySeconds(.01f);
+		Transform.Position = Vector3.Up *-1000;
+		await Task.DelaySeconds(.1f);
 		GameObject.Destroy();
 	}
 }

@@ -6,7 +6,7 @@
       "Flags": 0,
       "Name": "Player",
       "Position": "-1344,352,0.04125",
-      "Tags": "player",
+      "Tags": "player,noblockaudio",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -15,7 +15,7 @@
           "__type": "Sandbox.CharacterController",
           "__guid": "cd37cfd7-0cb9-41ba-956f-2554dde3b148",
           "Acceleration": 10,
-          "Bounciness": 0.3,
+          "Bounciness": 0.1,
           "GroundAngle": 45,
           "Height": 72,
           "IgnoreLayers": "player",
@@ -1361,7 +1361,7 @@
           "Flags": 0,
           "Name": "Camera",
           "Position": "-98.69604,-15.63193,60.1612",
-          "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
+          "Rotation": "0.0001427611,0.03696684,-0.003859199,0.9993091",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -1380,8 +1380,8 @@
               "RenderTags": "",
               "TargetEye": "None",
               "Viewport": "0,0,1,1",
-              "ZFar": 100000,
-              "ZNear": 0.1
+              "ZFar": 10000,
+              "ZNear": 1
             },
             {
               "__type": "CameraMovement",
@@ -1401,6 +1401,41 @@
                 "go": "c5bafb56-f677-45a3-955e-964023d5d32b",
                 "component_type": "PlayerMovement"
               }
+            },
+            {
+              "__type": "Sandbox.AmbientOcclusion",
+              "__guid": "490f2bd5-b7ce-4688-9d24-7e72c7532e0d",
+              "__enabled": false,
+              "Intensity": 16,
+              "Quality": "Low",
+              "Radius": 20
+            },
+            {
+              "__type": "InfoRay",
+              "__guid": "934c7326-a1d4-4730-8f33-85e032da9740",
+              "Camera": {
+                "_type": "gameobject",
+                "go": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2"
+              }
+            }
+          ]
+        },
+        {
+          "__guid": "5da21dea-17e1-422c-b0aa-adac6e289f4b",
+          "Flags": 0,
+          "Name": "Pusher",
+          "Position": "0,0,31.95875",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.SphereCollider",
+              "__guid": "f626bb8d-9bc8-422c-b8f2-17c11933b704",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Radius": 23.399994,
+              "Static": false
             }
           ]
         }
@@ -1489,6 +1524,91 @@
           "NetworkInterpolation": true,
           "Children": [
             {
+              "__guid": "7c4cd8ca-66e9-48d4-bedd-416e30b13326",
+              "Flags": 0,
+              "Name": "Small Plat",
+              "Position": "-702.194,1158.94,-575.8848",
+              "Scale": "1,1,0.09999993",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "97036c72-127e-48f1-92e5-1570fa2c7630",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/dev/box.vmdl",
+                  "RenderType": "On",
+                  "Tint": "0.0902,0.0902,0.0902,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "73866391-8ce1-4db8-8328-1dad1ec1c7f2",
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "50,50,50",
+                  "Static": false
+                }
+              ]
+            },
+            {
+              "__guid": "46276e9e-42c1-4384-9d7b-afcea2a1d03f",
+              "Flags": 0,
+              "Name": "Small Plat",
+              "Position": "209.806,1259.56,-783.8848",
+              "Rotation": "0,0,0.7071067,0.7071068",
+              "Scale": "5,1,0.09999993",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "fa5af5d4-f556-46b1-b2df-74ddaf293eaa",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/dev/box.vmdl",
+                  "RenderType": "On",
+                  "Tint": "0.0902,0.0902,0.0902,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "4088a03f-3f6d-48fa-a1f9-a1869cdfdf1e",
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "50,50,50",
+                  "Static": false
+                }
+              ]
+            },
+            {
+              "__guid": "9d8bd4bd-60a8-4a21-b570-a0886a15ef0b",
+              "Flags": 0,
+              "Name": "Small Plat",
+              "Position": "-110.194,1158.94,-783.8848",
+              "Scale": "12,1,0.09999993",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "8b980351-6f52-4d26-a34e-9b9dfbba0828",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/dev/box.vmdl",
+                  "RenderType": "On",
+                  "Tint": "0.0902,0.0902,0.0902,1"
+                },
+                {
+                  "__type": "Sandbox.BoxCollider",
+                  "__guid": "77db9599-cb47-4f7d-aa29-35c33695f884",
+                  "Center": "0,0,0",
+                  "IsTrigger": false,
+                  "Scale": "50,50,50",
+                  "Static": false
+                }
+              ]
+            },
+            {
               "__guid": "003d2ab2-cc6d-49f0-9ed2-c1c36f0449a0",
               "Flags": 0,
               "Name": "Death Plane",
@@ -1528,8 +1648,8 @@
         {
           "__guid": "3eb4c6e4-8ec2-4342-9e72-44c2487867e3",
           "Flags": 0,
-          "Name": "Hurt Cube",
-          "Position": "807.5074,63.2225,-409.1859",
+          "Name": "Hurt Trigger",
+          "Position": "790.8143,63.22244,-409.1859",
           "Rotation": "0,0,0.7071067,0.7071068",
           "Scale": "3,1,1",
           "Tags": "triggerinvis",
@@ -1563,7 +1683,7 @@
         {
           "__guid": "fbdd0f26-7f78-4ff0-a3ef-5da1333266e3",
           "Flags": 0,
-          "Name": "Heal Cube",
+          "Name": "Heal Trigger",
           "Position": "555.4821,62.97974,-100.5153",
           "Rotation": "-0.00000005711168,0.9238796,-0.00000005711167,0.3826833",
           "Scale": "1.5,2.999999,30.60003",
@@ -1598,8 +1718,9 @@
         {
           "__guid": "1d3a079c-d628-4530-9691-18b924ad013b",
           "Flags": 0,
-          "Name": "Coins",
+          "Name": "Sunscreen Bottle",
           "Position": "58.15906,32.02911,-76.85686",
+          "Tags": "nocollide",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -1608,7 +1729,7 @@
               "__guid": "b90a03ea-bd14-4b46-8685-a946c2fa36f0",
               "Flags": 0,
               "Name": "Sunscreen",
-              "Position": "1425.323,30.95059,-423.6583",
+              "Position": "1409.323,30.95059,-423.6583",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
@@ -2021,15 +2142,16 @@
           "Flags": 0,
           "Name": "Bounce Pads",
           "Position": "482.2466,-915.0981,19.14761",
+          "Tags": "nocollide",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
           "Children": [
             {
-              "__guid": "ae8eb19a-5640-4a70-accc-173b29b44c52",
+              "__guid": "6766a657-ebf7-46e5-9568-8f4e5a3ff043",
               "Flags": 0,
               "Name": "Cloud Bounce Pad",
-              "Position": "-406.7645,978.078,-217.3429",
+              "Position": "-406.7645,978.0779,-217.3429",
               "Scale": "0.3000004,0.3,0.2999999",
               "Tags": "trigger",
               "Enabled": true,
@@ -2038,7 +2160,7 @@
               "Components": [
                 {
                   "__type": "Sandbox.ModelRenderer",
-                  "__guid": "dbaebd8b-65d6-4ae3-a501-909c5afaa1bd",
+                  "__guid": "9682e730-b3bd-4f7e-b191-9420455505b3",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
                   "RenderType": "On",
@@ -2046,7 +2168,7 @@
                 },
                 {
                   "__type": "Sandbox.BoxCollider",
-                  "__guid": "571105cd-da46-45df-bce0-98ab371d02ee",
+                  "__guid": "81e73abf-156b-4769-a8e4-c947cf69af2a",
                   "Center": "0,0,114.3",
                   "IsTrigger": false,
                   "Scale": "212.1,197.7,50",
@@ -2054,12 +2176,12 @@
                 },
                 {
                   "__type": "BouncePad",
-                  "__guid": "d5a61158-cafc-4c9b-8733-cdb84e3d9efb",
+                  "__guid": "5d2feef4-e10a-4e50-b564-8e160b4be311",
                   "Bounciness": 1000
                 },
                 {
                   "__type": "PlatMover",
-                  "__guid": "ac1ed535-115c-4af4-8f26-70bde008e2ec",
+                  "__guid": "16b7ec74-5469-4fde-9f3a-d28c2ff825af",
                   "MoveDistance": "0,0,12",
                   "ReverseAnimation": true,
                   "TimeToMove": 1
@@ -2103,7 +2225,7 @@
                   "__guid": "67923784-2196-4752-95bc-5931ecec46e2",
                   "MoveDistance": "0,0,7",
                   "ReverseAnimation": true,
-                  "TimeToMove": 0.5
+                  "TimeToMove": 1
                 }
               ]
             },
@@ -2157,6 +2279,7 @@
       "Flags": 0,
       "Name": "Small Platforms",
       "Position": "-1433.767,545.7427,171.7368",
+      "Tags": "nocollide",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -2252,6 +2375,7 @@
       "Flags": 0,
       "Name": "Large platforms",
       "Position": "-1433.767,545.7427,171.7368",
+      "Tags": "nocollide",
       "Enabled": true,
       "NetworkMode": 2,
       "NetworkInterpolation": true,
@@ -2260,7 +2384,7 @@
           "__guid": "a386364d-3520-4ace-a04d-c398ac1b52d6",
           "Flags": 0,
           "Name": "Large Plat",
-          "Position": "857.7667,-193.7427,-187.7368",
+          "Position": "841.767,-193.7427,-187.7368",
           "Scale": "2,3,0.09999993",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2316,7 +2440,7 @@
           "__guid": "504e2538-8ba7-4f02-a935-ce8381aa7791",
           "Flags": 0,
           "Name": "Large Plat",
-          "Position": "1753.767,-193.7427,-603.7368",
+          "Position": "1737.767,-193.7427,-603.7368",
           "Scale": "2,3,0.09999993",
           "Enabled": true,
           "NetworkMode": 2,
@@ -2417,136 +2541,6 @@
             {
               "__type": "Sandbox.BoxCollider",
               "__guid": "ceb75cdf-8bfd-4ead-92ea-0825c3adc3ea",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50,50",
-              "Static": false
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "__guid": "bac78ed3-aa4f-4a26-92b0-eafd28f7f096",
-      "Flags": 0,
-      "Name": "Safety Platforms",
-      "Position": "439.4659,900.4214,-184.1239",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Children": [
-        {
-          "__guid": "ab68f6bb-122f-4b8a-9ff2-19a301cc83c3",
-          "Flags": 0,
-          "Name": "Large Plat",
-          "Position": "952.5341,-452.4214,-55.87613",
-          "Scale": "5,6.099999,0.09999993",
-          "Tags": "trigger",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "9f7f462a-7fc8-4bfb-8a73-253c06048093",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "1,0.93333,0,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "e6ca58e5-3ace-4798-8f9e-b8dc1c534c76",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50,50",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "8eda3f37-ef2b-4110-aac9-13e373b4c480",
-          "Flags": 0,
-          "Name": "Large Plat",
-          "Position": "1079.239,-357.993,66.80141",
-          "Rotation": "0,-0.7071067,0,0.7071068",
-          "Scale": "5,2.299999,0.09999993",
-          "Tags": "trigger",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "d5ae7bf9-4e32-43c5-bb28-990d80bfb125",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "1,0.93333,0,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "4bdb7d63-5ead-449a-b8d8-05c4e8461a2a",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50,50",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "e7c1a05b-79a5-4164-92a1-7bb4eb09cea4",
-          "Flags": 0,
-          "Name": "Large Plat",
-          "Position": "1079.239,-547.4727,66.62431",
-          "Rotation": "0,-0.7071067,0,0.7071068",
-          "Scale": "5,2.299999,0.09999993",
-          "Tags": "trigger",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "d1fd0f54-6514-4b53-80b1-7f6f0d2fafca",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "1,0.93333,0,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "9aba1c72-770e-4ad5-b5f7-c507ce91f33d",
-              "Center": "0,0,0",
-              "IsTrigger": false,
-              "Scale": "50,50,50",
-              "Static": false
-            }
-          ]
-        },
-        {
-          "__guid": "3930eb1f-d360-44b8-82f4-e180848c4632",
-          "Flags": 0,
-          "Name": "Large Plat",
-          "Position": "1079.241,-452.4797,124.8497",
-          "Rotation": "-0.4999999,-0.4999999,0.5,0.5",
-          "Scale": "6.099998,2.699999,0.09999987",
-          "Tags": "trigger",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "6f3eaf1d-f1fe-441e-b6a9-e4826d464e1b",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/dev/box.vmdl",
-              "RenderType": "On",
-              "Tint": "1,0.93333,0,1"
-            },
-            {
-              "__type": "Sandbox.BoxCollider",
-              "__guid": "ae3e1442-63b6-4367-bf2c-a4d6f0161ef7",
               "Center": "0,0,0",
               "IsTrigger": false,
               "Scale": "50,50,50",
@@ -2722,8 +2716,8 @@
             "component_type": "Rigidbody"
           },
           "rbVector": "1,0,0",
-          "speed": 500,
-          "TimeAlive": 10
+          "speed": 5000,
+          "TimeAlive": 0.2
         }
       ],
       "Children": [
@@ -2782,7 +2776,7 @@
       "__guid": "10c4087c-f257-4330-9cdd-a69712498469",
       "Flags": 0,
       "Name": "ExitDoor",
-      "Position": "1518.434,448.0006,-237.1452",
+      "Position": "1504,448.0006,-237.1452",
       "Rotation": "0,0,-1,0.0000001947072",
       "Scale": "1,1,1.1",
       "Enabled": true,
@@ -2865,6 +2859,3175 @@
           ]
         }
       ]
+    },
+    {
+      "__guid": "bac78ed3-aa4f-4a26-92b0-eafd28f7f096",
+      "Flags": 0,
+      "Name": "Safety Platforms",
+      "Position": "425.0319,900.4214,-184.1239",
+      "Tags": "nocollide",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Children": [
+        {
+          "__guid": "ab68f6bb-122f-4b8a-9ff2-19a301cc83c3",
+          "Flags": 0,
+          "Name": "Large Plat",
+          "Position": "952.5341,-452.4214,-55.87613",
+          "Scale": "5,6.099999,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "9f7f462a-7fc8-4bfb-8a73-253c06048093",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.93333,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "e6ca58e5-3ace-4798-8f9e-b8dc1c534c76",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "8eda3f37-ef2b-4110-aac9-13e373b4c480",
+          "Flags": 0,
+          "Name": "Large Plat",
+          "Position": "1079.239,-357.993,66.80141",
+          "Rotation": "0,-0.7071067,0,0.7071068",
+          "Scale": "5,2.299999,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d5ae7bf9-4e32-43c5-bb28-990d80bfb125",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.93333,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "4bdb7d63-5ead-449a-b8d8-05c4e8461a2a",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "e7c1a05b-79a5-4164-92a1-7bb4eb09cea4",
+          "Flags": 0,
+          "Name": "Large Plat",
+          "Position": "1079.239,-547.4727,66.62431",
+          "Rotation": "0,-0.7071067,0,0.7071068",
+          "Scale": "5,2.299999,0.09999993",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "d1fd0f54-6514-4b53-80b1-7f6f0d2fafca",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.93333,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "9aba1c72-770e-4ad5-b5f7-c507ce91f33d",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        },
+        {
+          "__guid": "3930eb1f-d360-44b8-82f4-e180848c4632",
+          "Flags": 0,
+          "Name": "Large Plat",
+          "Position": "1079.241,-452.4797,124.8497",
+          "Rotation": "-0.4999999,-0.4999999,0.5,0.5",
+          "Scale": "6.099998,2.699999,0.09999987",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "6f3eaf1d-f1fe-441e-b6a9-e4826d464e1b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/dev/box.vmdl",
+              "RenderType": "On",
+              "Tint": "1,0.93333,0,1"
+            },
+            {
+              "__type": "Sandbox.BoxCollider",
+              "__guid": "ae3e1442-63b6-4367-bf2c-a4d6f0161ef7",
+              "Center": "0,0,0",
+              "IsTrigger": false,
+              "Scale": "50,50,50",
+              "Static": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "2e91bb52-fdbc-4763-9cab-a5dfd96cde97",
+      "Flags": 0,
+      "Name": "Vines",
+      "Position": "-973.5204,7.345461,-334.936",
+      "Rotation": "-0.7071067,-0.0000001376788,-0.7071068,0.0000001376788",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "040c2670-55da-415b-a91c-6cd986da0dda",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        }
+      ],
+      "Children": [
+        {
+          "__guid": "f9c77ec2-13d2-432e-b1cc-6d44896da0a0",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "0.7847289,16,0.0000001403205",
+          "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+          "Scale": "0.9151282,0.5652205,0.3428169",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "a8f4a6fc-3bf8-443e-977e-211de268ef18",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "3743b343-6fbc-4801-b600-831762d27bd7",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "0.7847175,-14.72447,96",
+          "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+          "Scale": "0.9151282,0.5652205,0.3428169",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c146034d-6568-4592-8dd0-4b94547903ea",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "27ee5ea0-7fb7-4ce7-b2ba-244a02970c07",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-0.00001144409,1.275527,95.99999",
+          "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fb839cf7-9b4b-4276-99d8-db814e094572",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "e1bebe1e-4a01-4d37-8d4c-fa64dee553c2",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "0.7847595,-0.8847389,0.0000004848559",
+          "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+          "Scale": "0.9151282,0.5652205,0.3428169",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "87ad4fc4-2ac5-468b-a0b1-212b4c83ec80",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "5bbbbc3d-f0a6-431e-b127-e050499d68e0",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "0.7847175,-34.47514,96.00001",
+          "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+          "Scale": "0.9151282,0.5652205,0.3428169",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "7a549235-bf6f-4b72-a436-c6c63fe2ecc6",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "6a54dd81-a43e-4aa1-850f-744750b453ce",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "0.00003051757,-16.88472,0.00000657516",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "7939f293-335b-4f3d-8653-f97252587722",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "0b4f5e06-424d-4e5a-b50f-96065f0d6614",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-0.00001144409,-18.47514,96",
+          "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fea6897e-5b9d-47c2-8177-d6527d48ee1d",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ]
+        },
+        {
+          "__guid": "86fd8c41-1f5e-480b-99b6-91e4d7e237f3",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "0.000009536743,-0.00003115315,-79.99999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "633d0557-f474-41c9-8e08-22e23b6cced4",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "98b88d33-62b7-4e39-bafe-aa3cb32ca390",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "1c7a5d6f-d126-4fa6-bf1b-412dc4d1aa09",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "54a75108-1f38-4f57-ae34-642d884cf7b0",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "33dce4fa-70a4-438c-910d-a884590c1f16",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "364c2594-8009-4c30-850d-7e5bcba4c6e3",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f74e0b36-1f12-46e8-9466-3d6caed347a4",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "617f4fee-4d07-4105-89c7-12f56727e02a",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "1560d32a-0291-49b6-be72-bc006e891e2a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "9cb929a2-3b8e-4052-a4f4-66ef2b0a2f41",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "7a6c6774-a4fc-4350-bf22-ae789d84ab59",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "89fe59a9-159f-4c6a-8c33-d23b240d3ffe",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "be7d9f7e-00e1-4c2c-9129-aeb0954bca2f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "b61f21e3-3e86-4963-b3b6-b853350b652e",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "2f3777af-c513-430e-bba6-7d7fa983607a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "514a4725-0fda-41ba-a105-f967bb99c945",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-0.000009536743,0.00003115315,79.99999",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "48061086-ffd9-479c-856b-03f6350dc265",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "80df47d8-83c7-45c0-abbc-af82c7bf751a",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "eded096c-84da-40b0-99fd-65ae97652fcc",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "0ba33746-6211-463c-9308-b1b557e9def6",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a945f3d1-4106-4b5e-81c7-a331b2a47cf0",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "48e6d2fb-7334-4fac-88f3-448b00fa5dfd",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "3f4837d3-7543-4476-933d-96581d538526",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "a0cb0e41-a909-44dc-b997-f34b0fb0e54c",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "41f921e6-b6ed-4fd8-8b3a-2352b373062f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "3b4b7632-27d5-4a5d-a9ff-daf19f54eeb1",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "c8a84958-3a57-4e5b-b5d6-31c17ca4cf96",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "00f5f908-2770-4856-a6f5-d320cdaf184c",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "21349cd9-1bec-4d08-a5b2-2fa3d73cdf40",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "75eaac05-cdee-4341-a2fe-8e507018b260",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "1c724f81-d81e-433a-822e-e534a0a736e3",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "be0e8826-bb5d-4e74-af7b-f11fde0645f3",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-0.00001941626,0.00006342603,162.8754",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "9f73d519-5bc6-46ec-940e-8fe79936774b",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "61573e8b-9dbc-463f-a021-9befc119a362",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "7ce2619a-741f-4c40-9a97-2b5bd41932c8",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "fdc67d20-f92e-40e9-91f0-4242d3cc3f78",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e9cd3ffc-5496-400c-9f12-3ca2e65ffb8e",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "9292566f-fd1d-4e9b-a334-e271c198178d",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5c415150-eda8-4786-876f-a308c3cb2397",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "a928c050-6eab-4d0d-bd1e-7b03d4a47ad0",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "39f8dac4-f797-4dba-bf1c-2a63dc8d923c",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "e73a60b1-2d18-4a8d-a417-a89af4dd83e2",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5f186878-5fc3-4077-a81e-0fce91eee616",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "e4c40501-adae-4b18-854b-89121251d0ae",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "7256e643-4b5a-4fc7-8328-105060ce77bc",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "f018bb2d-8789-41a9-a431-bc8fe260b3a1",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a5003dc8-d9f2-433d-ab4f-2dbde68f62dd",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "d6bf8205-3d56-4bc7-9d0c-87f4577f74b7",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-0.00002989362,0.00009765183,250.7659",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "c0b34739-c812-4866-91a3-de6013f41c07",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "8b1c9d65-1f97-44a3-a444-55ade73b0d17",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "54707e80-6fa8-4902-b852-caecdf8e0541",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "e4e455c4-f1c6-4ac7-84f2-ff2cefe1da02",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5508ba3b-5a30-4397-be1f-34343b85d302",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "e6f5a426-acc6-4e55-b980-e1efcf6738b9",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "9e5e72f4-57e5-4373-8d25-2195c24c83d5",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "57cca0e8-45e1-4838-81eb-d3a4b398f569",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d5ffeb08-ba5f-4b1d-b252-ff746493fa1d",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "36d055e8-7a3d-455c-a5e0-00da62fc0987",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "3f221bb5-b2b3-451f-8acc-ee4e82178bdc",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "8b76dfe5-1348-4ae0-920d-8c9222c362e1",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d5cd79af-c214-4ee8-83c8-33d8adbd73a7",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "dc01fc46-e3c9-4f88-9e55-3b658d9e05f9",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d8efbba4-3a32-44ce-80df-f9a8bc930e1f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "7aed7686-b380-4535-8b96-2434f1e280b1",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-0.00004005433,0.0001308433,336",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "4feb8f4a-1be7-4ffb-a858-1fda9dd590fe",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "09e3297c-2ffe-458f-be84-5922e21266b2",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "4e04fe03-8dbf-4258-b1d6-8a32f859858a",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "14bb9ff1-05cd-4538-a92e-0993dde45b5d",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "6916efad-821e-46f0-b923-70fd9e2b97db",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "f3e23b92-03d0-4c5e-bda1-71215e19193e",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a90ad0cd-752e-45a7-a8be-a428e127b06c",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "e9566cf8-d630-40ae-abef-9e119a2d2c00",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "9d68378a-2a9f-4b60-8e4b-b8fa82ff37f8",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "421119ea-b305-4d5e-9a24-a22de6b2fcef",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f5e61f22-54d3-4832-8f64-bc8408b4acff",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "be88b447-6be1-4695-ba5e-f03d031187c5",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "37d3e30b-8889-4e68-ac07-9d53a27f2d68",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "38bb2d4a-bec0-452d-bb84-7b99d998033e",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "17fd98c9-bf89-4c9e-a29d-a75fa9cc78cc",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "ea5694f4-b9a5-4584-add7-bf52bc4093f8",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-10.15201,-30.0045,0.0003150446",
+          "Rotation": "0.0000001788139,-0.0000002866904,-0.7071067,0.7071069",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "3720d568-a9cc-4fce-b78c-f6bf73943648",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "bd20177b-ea22-4de5-a5bd-39f03a55fff0",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "84d1dde8-50cb-4c7f-a2fe-48b54984bb8c",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "20e19ce2-8851-491f-bf5b-f89749baf861",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0b512713-3b15-4efd-bf13-18433fc5680b",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "b55580e4-8c93-41d9-8d29-56f8a250d0eb",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "c6a51b80-27d0-4984-9928-bf6d92d4f2d1",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "6993ddd2-4648-47a5-82fa-7f9742101e27",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "96b28fd3-db56-40b3-b989-2184ee1c4259",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "41fe04be-6f2a-4cfa-935d-4fe18e7ccd3b",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "d7834fb0-8f5d-48dd-958b-d6d646c33c7e",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "d5857a33-2601-4fe6-b696-2b35cc8026fe",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "edc03485-b7df-4920-bb10-348296eac177",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "b5a0a8c6-cb06-4a2b-a0ea-921c16b5d6ee",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "658623bd-6e27-4e48-9c57-df2b4d7f7b51",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "32f200b4-f9e8-43fd-94ce-27cca9515ea9",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "0.000009536743,-0.00003115315,-79.99999",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f20eff42-55bf-4cc5-9efd-66aa0769be93",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "ab8548ff-2e9d-43ae-b21c-4bf538e9fa58",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "bc633673-89a1-46a0-b763-77147a29d6ef",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "09f0796c-8a93-42f4-b428-e22ead73e44b",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "81b2851a-2f52-4889-99a7-21e2d312c750",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1bea76bc-dfea-4505-a2d2-afdbf87714f7",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "857c38c8-a869-4fb0-910f-a8b2fe02a8c4",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1d0dc630-2802-4ff9-ac07-4b7cdf2b6338",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "2cf0460c-1242-462b-9bf0-d5321746e5c0",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8bf28a7b-38b4-47fb-92ff-1e66acde9646",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "8c67e64e-b72b-4265-83cb-09e7d9279ddd",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "3f33626e-8ce0-4646-a78e-fe6e2c345a51",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "7020396b-570f-46f6-b171-315278d87f12",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "9aebb7e4-a5f0-492b-be53-1213d4cec242",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "524078fd-81ee-4ddb-b58d-4d20e8e7e201",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "045d5967-ef77-4d9a-aafe-45f461efa989",
+              "Flags": 0,
+              "Name": "Object (3)",
+              "Position": "-0.000009536743,0.00003115315,79.99999",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0b86de99-9424-4e5c-a692-83bbbb51482b",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "446f08b8-caef-41bf-a236-e4c9a7716ade",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "39956e87-c960-4cf3-8b9d-0fe5ccb588e2",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "5df740da-85e8-4bbb-89e7-dd56047b7086",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9933d2bc-fd96-4ce2-9300-55bb979ee28f",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "2ea6be10-45cf-44e6-a8ca-5ea4bf5ac0cd",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "a2b574b6-4dcd-4a36-9f0d-6dc17d9bdb41",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "b21559fb-e953-42ae-a7a6-d9c699220fb7",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "dd1cb8c4-ae18-42f6-ad88-25760a30f2f5",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "b812be47-1363-4ace-8b9e-338b03c45f28",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "6f8dca96-7cae-404e-8cb7-34679bf139c2",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "c8c53d3d-be4c-404c-a9e8-a0255e4314e5",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "25d9f402-2e40-4133-b393-3ffab8facdc3",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8f2b9953-21bc-466d-9e89-e1fd25de576b",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "e687f14a-c205-41aa-a09e-01a03caec2a3",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "709f7ae9-0168-4052-a811-6634489abc1e",
+              "Flags": 0,
+              "Name": "Object (4)",
+              "Position": "-0.00001941626,0.00006342603,162.8754",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "79762b7b-28ed-4996-8cb7-bb78715a303d",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "0a54a7bf-73ce-43fc-b0c4-51d734ac70e0",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "4783fa53-8921-4430-84dc-4fc1f4b9dee5",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "612988fa-29dc-4e2d-9531-4d00b5a73c72",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "c9077797-496d-49ba-8187-00638056da3d",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1848e277-60ef-4a63-a820-3ee9fcab0244",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "48972f61-d923-413a-9652-efcb051cfada",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "75beb0c6-8106-4a4e-964a-a4474914dc45",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "2d64cf4d-0329-4fe9-b87c-802e11bb7447",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "7e04d4ba-ac74-40b0-aad3-f63bca60ec44",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "acb3a013-0cf3-40cf-8b26-7668753c79fa",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "a117242c-5581-4250-b857-2f5b47285e2b",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "585a6e7c-357c-4289-af3a-a3eab1846040",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "5231b9b1-e7b4-45f5-90f7-12ecfd29fdb0",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "dd135071-274c-4edb-85c0-09ad73b22f04",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "19b17439-190c-4dd6-805c-8e1ea0abce45",
+              "Flags": 0,
+              "Name": "Object (5)",
+              "Position": "-0.00002989362,0.00009765183,250.7659",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "e62586ac-d296-4e0c-a9e1-9025652fe0d0",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "0d09cff5-3bbc-49ef-adcb-3c0fed11353f",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "4a74f199-e98e-42bf-be56-aa4ca18f9a3c",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8396a234-5b30-4afb-93e5-951d70fcbfc7",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9e681096-801a-4b56-aeb8-8d8f3a967584",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "79556643-6545-41bd-9958-d6379c1ff8f9",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "58f0af4b-323e-49a3-a0b2-8ecb1a947a91",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "4ca1e010-58f4-4d0a-92a7-ced07769ee27",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "805e8944-0277-4cb6-9b74-fd851bd34492",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1c60fe69-41bb-4279-b53d-7b955cd8e27a",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "eac936ad-388a-4b8e-8f1e-50070d00ee8d",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "c91dfe68-e038-4308-a574-4db82850cfe1",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "0bbbd608-f2d8-4411-85c5-2ba5b3a9ad93",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "e287fb7d-8ef6-4766-9642-86559bdeec55",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9b05ef38-f00a-4be8-8601-c2142b05911c",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "c0a24fe8-ebaa-4f32-856d-5d1db725b660",
+              "Flags": 0,
+              "Name": "Object (6)",
+              "Position": "-0.00004005433,0.0001308433,336",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "bb5705d6-773d-4778-9aea-3a1cc342d56f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "8c5c58fa-eee9-4744-8441-15db9c147a78",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "7beaf0dc-db82-4dd4-90fa-b4c588f147c8",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "09c2fd94-d8bb-4e91-9d93-761c431a15d1",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "072e7808-4ac5-4eff-87dc-b07e13eb72d6",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "3562936e-af10-47c5-9f26-8beec2af4417",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "fafb414f-bc39-4aa9-b88f-e4fb2a154c84",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "cdb94c1b-22a3-415a-ab76-3f5dce8b22ac",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "5aa671c4-f0c9-4bad-8ac0-a89fed2454ed",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "14782c69-5ff4-45a8-ab37-65e19cf1d66b",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "905672e8-5907-4bc3-8c4b-eb47025e8ad0",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "cbe68df1-b12b-4636-9fe1-e84b9b9fc7cf",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "1ea1fea5-7ce3-4e91-acf8-d7cfd12cf18c",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "23b35302-701f-4c88-a978-3ec3965a05aa",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "09ce55c5-e7a0-4afc-8ad3-45077fc57302",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "792bf7ca-5400-4a83-92bc-078c42523d7f",
+          "Flags": 0,
+          "Name": "Vines",
+          "Position": "-25.73099,11.45436,-0.000009061553",
+          "Rotation": "-0.0000001192093,0.0000002568881,0.7071067,0.7071068",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ModelRenderer",
+              "__guid": "fd3c3ff7-5860-45a7-ae14-ca58d518b147",
+              "BodyGroups": 18446744073709551615,
+              "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+              "RenderType": "On",
+              "Tint": "1,1,1,1"
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "1ad502f2-662c-4c52-a21b-ec213085701d",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847289,16,0.0000001403205",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "edb2b742-b4f8-4429-98fc-f083eb9430c9",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "6a77acdc-aed7-47d4-9e9e-4e161ccb5db7",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-14.72447,96",
+              "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "91515962-5b9b-4192-bbc2-d6cd2e077bfa",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "86738dfe-7994-4f61-a44f-2b13f12f1a80",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "-0.00001144409,1.275527,95.99999",
+              "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "39bc3318-ed37-45a7-b85e-c17d14fb3136",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "2277a85f-f414-4816-a14f-137fea3934ab",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847595,-0.8847389,0.0000004848559",
+              "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "a5ff69a8-79e7-4c1d-87db-515fc3d91a77",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "f62a16a2-a62e-4bd8-bebf-9dd6aded3a1a",
+              "Flags": 0,
+              "Name": "Object (1)",
+              "Position": "0.7847175,-34.47514,96.00001",
+              "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+              "Scale": "0.9151282,0.5652205,0.3428169",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "f765b592-0dc3-4d1e-a2f4-acfcc435cd2f",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "9c957842-7485-463b-9ee1-aca3c4eb4d40",
+              "Flags": 0,
+              "Name": "Object",
+              "Position": "0.00003051757,-16.88472,0.00000657516",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "5a538e77-1a36-4a10-98b0-aa9ddf2a8c91",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "523660ba-caeb-4871-bd28-6bce0eaaa25c",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "-0.00001144409,-18.47514,96",
+              "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "63d492f8-d882-4b29-882f-2ffe60533faa",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ]
+            },
+            {
+              "__guid": "810ec991-b00a-4a26-92f6-f54b90146000",
+              "Flags": 0,
+              "Name": "Object (2)",
+              "Position": "0.000009536743,-0.00003115315,-79.99999",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "1f6a49fa-59b4-42ff-963f-ad1b53131f05",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "50d985ab-ddba-4491-908f-be6e5e103b66",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "45d4eb2b-9177-4216-bffb-e6584257dc88",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1391f2ee-0b05-4471-97cc-44c5bf334a9d",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "c134a645-c379-4cf6-9a49-a5bb015f0765",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "7fcac999-8bf1-46e5-abe5-610380157ee9",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "e7cbfc23-dfcc-4046-a7a6-4470bd35fccf",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ddb61031-f3bb-4f4a-885f-cfb538d0668a",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "7295d83d-3e4a-41be-9262-f16e80a4f98b",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "5b963b0d-c5ad-48a3-9590-3ad8c7a3351b",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "a9f4893e-cad3-40b9-842d-91b6922f117e",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "9c741051-8e08-4aa1-9cb3-85aef3c7a22e",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "73d77142-48d0-4e0c-8b01-db6ab3b978d9",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "2a33373d-ccc4-42a7-b267-45d93ca2b5bb",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "3ce389e9-faa6-4ec3-babb-af212c99c672",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "c0618288-c921-4bbd-b419-8cdc541ce30b",
+              "Flags": 0,
+              "Name": "Object (3)",
+              "Position": "-0.000009536743,0.00003115315,79.99999",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "0296d981-62f7-4ee5-a349-6b58f55afb5d",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "e682321e-69f4-42ed-8cc7-f9a845acf494",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "174c2635-618a-4c07-98eb-cdbe94d54789",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "2079d11c-3d3a-4bb4-82a0-280fe80a218c",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "7b81e7d9-9576-4d74-bf91-ad3d4363e810",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "023330c0-5261-4b5a-9148-c908c4fdf2fd",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "92c5df2d-ae37-4b2d-93bd-2448837914af",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "0b444dac-e93f-43cf-ac64-854abddfbb5c",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "f82666e5-99a9-4509-867d-fc06ebec6da0",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "7d4f3a21-6085-40e8-b548-edebc8f87845",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "ba1ba726-1e19-46b0-8a9f-bb4085bacd03",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "02a70598-183d-4497-b2f6-b72f58d9f173",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "01d8ee17-a2b1-47fa-bdeb-4a0286cab066",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ec3e2a47-5b6c-4003-b9fe-ab327964d0f7",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9f1b8a55-e190-4fcd-8174-aa73c08c6e6e",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "3e0f70b6-ce98-4546-a619-7b3a58b19628",
+              "Flags": 0,
+              "Name": "Object (4)",
+              "Position": "-0.00001941626,0.00006342603,162.8754",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "47528139-3906-4e57-8139-57f17fbccaf4",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "d9ba0468-40ae-44b9-8af4-26895a92f1c3",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "532a6d73-8303-44cb-aed7-8323f93607e9",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "412bc9c0-e101-4fbd-952b-7e7240056d31",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "d9c0adf2-aee5-4421-9e74-f21035060393",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1cbc6d40-5398-47c6-9a3a-1439a9c88194",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9e6a9886-56db-4f06-ab31-17336e6e40ca",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ed647ce9-6513-49d8-9a8c-0e176ace97cd",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "29733a16-fbdc-4afa-88f3-44f937a93edc",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "8edc5bcd-57f5-4f0f-a178-c34d83d07649",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "6c0057cb-8f3e-4e04-8550-44a5ff053f63",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "28775f8f-6a77-4fd7-9da5-dffdacd8dd6b",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "393bc14e-7f7f-476c-b2aa-698767a3babb",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "5bbebcf6-bfda-4a85-9245-ac1e737f2836",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "22d33bf4-f84a-457e-97a9-439c45349f55",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "18d45711-e83e-4349-8182-b8157f535c53",
+              "Flags": 0,
+              "Name": "Object (5)",
+              "Position": "-0.00002989362,0.00009765183,250.7659",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "43e8bcef-b5fd-45fd-ae05-ac47211036d5",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "3217901f-da9e-47d0-baf6-7822df5a35ce",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "4dd7dc92-49eb-4c8a-94fa-26cbed85cd34",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "f57622f6-1b22-4c9d-844b-888bc57003a7",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "32b09517-4cc2-4d1e-9077-56835234ebe8",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "c72f1737-952a-4158-b968-2879266d976e",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "6746a7a2-c7c9-4f3d-b754-3fcadc3e0175",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "f5f3c36c-bf5b-4ead-b829-df0b3947ea8a",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "08debec4-842f-4813-87f9-55d5fd9b90f6",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "92b8a82c-6883-4833-ac69-cfab53019367",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "35f4781b-e59b-4bde-b09f-fb57ac23c12d",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "ac5e034c-0a53-4dd6-afda-99c25bd49e9a",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "ebd33362-6c94-49cb-8720-250713bd1cc5",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "68449634-bf7a-45cd-a18d-dbb62833e1b1",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "ff8bacc3-17c4-4bd6-899e-b7f0778cf845",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "__guid": "3fb67d09-6695-4aac-b227-48e09c875ee9",
+              "Flags": 0,
+              "Name": "Object (6)",
+              "Position": "-0.00004005433,0.0001308433,336",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.ModelRenderer",
+                  "__guid": "09ad255c-d19f-4113-bbe4-6f0749beffd4",
+                  "BodyGroups": 18446744073709551615,
+                  "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                  "RenderType": "On",
+                  "Tint": "1,1,1,1"
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "5a34309f-d06a-4600-b21a-ba0e7fa6f19f",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847289,16,0.0000001403205",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "2b99aaa9-9b57-4eda-b592-1d4db615c387",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "440d6045-c55a-4177-b9b1-52a33b9912b4",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-14.72447,96",
+                  "Rotation": "0.9238795,-0.00000001490116,0.0000001490116,-0.3826832",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "dfc8bcd1-a9e4-42ab-b66d-c855a3f85947",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "bda291c0-c33b-4f19-be42-84cbe7939e7e",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "-0.00001144409,1.275527,95.99999",
+                  "Rotation": "0.9999999,-0.000000000000007105427,0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "f4bdf47b-bb76-4add-ba92-8c2862d8c474",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "cb5a4a16-3b42-4550-b140-daecb9dd12a6",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847595,-0.8847389,0.0000004848559",
+                  "Rotation": "0.3826834,0,0.00000007450581,0.9238796",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "19909645-bd2b-46d5-b648-97b80bd0c2c2",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "db3bb25d-504e-4745-90e2-62866a50fffe",
+                  "Flags": 0,
+                  "Name": "Object (1)",
+                  "Position": "0.7847175,-34.47514,96.00001",
+                  "Rotation": "-0.9238794,-0.00000001490115,-0.0000001192093,0.3826835",
+                  "Scale": "0.9151282,0.5652205,0.3428169",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "87772616-3f98-4225-a2f0-948e768786cd",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "1df540c4-250e-40c2-9f61-fc4b64c3aa4d",
+                  "Flags": 0,
+                  "Name": "Object",
+                  "Position": "0.00003051757,-16.88472,0.00000657516",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "9ed232f6-563d-46d8-8252-eda8b4cc332b",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                },
+                {
+                  "__guid": "a47d5ccf-ef6b-4423-ad4d-7b9914455aab",
+                  "Flags": 0,
+                  "Name": "Object (2)",
+                  "Position": "-0.00001144409,-18.47514,96",
+                  "Rotation": "-0.9999999,0.000000000000007105427,-0.0000001490116,0.0000001947072",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.ModelRenderer",
+                      "__guid": "89a8f3b2-839d-40fc-a7cc-012ad07537e8",
+                      "BodyGroups": 18446744073709551615,
+                      "Model": "models/nature/ivy_fresh/ivy_fresh_07/ivy_fresh_07a.vmdl",
+                      "RenderType": "On",
+                      "Tint": "1,1,1,1"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "__guid": "2aeaff54-d29d-47f5-b293-11c0336b9ed5",
+      "Flags": 0,
+      "Name": "Companion Cube",
+      "Position": "1376,416,16.00003",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "dc8829b4-6d0c-40c2-9ea5-a71dc9c8b176",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/companioncube.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "978ab0da-ba57-4027-b18b-36a3341d0c67",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        },
+        {
+          "__type": "Sandbox.ModelCollider",
+          "__guid": "5434d3b7-37dd-40a9-a7a9-a4432e3615ac",
+          "IsTrigger": false,
+          "Model": "models/companioncube.vmdl",
+          "Static": false,
+          "Surface": "surfaces/concrete.surface"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "deae4b2a-ad8f-43d0-968b-150084496731",
+          "__enabled": false,
+          "Center": "0,0,25.1",
+          "IsTrigger": false,
+          "Scale": "57.49995,57.40001,59.59994",
+          "Static": false
+        }
+      ]
+    },
+    {
+      "__guid": "52c8b207-364c-4b74-86e1-fc51c9890c74",
+      "Flags": 0,
+      "Name": "Cube",
+      "Position": "-576,16,-192",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.ModelRenderer",
+          "__guid": "f68e4659-896f-422f-85a8-f0d273086720",
+          "BodyGroups": 18446744073709551615,
+          "Model": "models/dev/box.vmdl",
+          "RenderType": "On",
+          "Tint": "1,1,1,1"
+        },
+        {
+          "__type": "Sandbox.BoxCollider",
+          "__guid": "2ace36e2-67c7-401f-a8f2-76d0baddcdf3",
+          "Center": "0,0,0",
+          "IsTrigger": false,
+          "Scale": "50,50,50",
+          "Static": false
+        },
+        {
+          "__type": "Sandbox.Rigidbody",
+          "__guid": "3154ebe3-e6c7-4f1f-870d-a8fe08fbd6b6",
+          "AngularDamping": 0,
+          "Gravity": true,
+          "LinearDamping": 0,
+          "Locking": {},
+          "MassOverride": 0,
+          "MotionEnabled": true,
+          "RigidbodyFlags": 0,
+          "StartAsleep": false
+        }
+      ]
     }
   ],
   "SceneProperties": {
@@ -2888,16 +6051,18 @@
       "IncludedBodies": ""
     }
   },
-  "Title": "Godray2",
+  "Title": "godray2",
   "Description": "Platformer",
-  "LastSaved": "2024-06-17T23:03:48.4545375-04:00",
+  "LastSaved": "2024-06-24T00:29:18.0125796-04:00",
   "ResourceVersion": 1,
   "__references": [
     "ambi.cloud_2",
     "ambi.cloud_flat_3",
     "ele.dev_measure_blue",
+    "facepunch.ivy_fresh_07a",
     "jodiscontent.security_door",
     "jodiscontent.spray2",
+    "synthlestudios.companioncube",
     "wujekfoliarz.skyboxnowy"
   ],
   "__version": 1
