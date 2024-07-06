@@ -123,8 +123,7 @@
           "__guid": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2",
           "Flags": 0,
           "Name": "Camera",
-          "Position": "-98.69604,-15.63193,60.1612",
-          "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
+          "Position": "-48,0,64.31771",
           "Enabled": true,
           "NetworkMode": 2,
           "NetworkInterpolation": true,
@@ -139,9 +138,9 @@
               "Orthographic": false,
               "OrthographicHeight": 1204,
               "Priority": 1,
-              "RenderExcludeTags": "triggerinvis,viewmodel",
+              "RenderExcludeTags": "triggerinvis",
               "RenderTags": "",
-              "TargetEye": "None",
+              "TargetEye": "Both",
               "Viewport": "0,0,1,1",
               "ZFar": 10000,
               "ZNear": 1
@@ -168,9 +167,9 @@
                 "go": "c5bafb56-f677-45a3-955e-964023d5d32b",
                 "component_type": "PlayerMovement"
               },
-              "viewmodelcamera": {
+              "viewmodels": {
                 "_type": "gameobject",
-                "go": "31662393-a3a9-485d-ba63-d87a5f3b6521"
+                "go": "375295dd-6adf-4dae-8b81-edfba60c69ca"
               }
             },
             {
@@ -191,101 +190,70 @@
           ],
           "Children": [
             {
-              "__guid": "31662393-a3a9-485d-ba63-d87a5f3b6521",
+              "__guid": "375295dd-6adf-4dae-8b81-edfba60c69ca",
               "Flags": 0,
-              "Name": "ViewModelCamera",
-              "Position": "100.9961,-0.1654949,-1.291128",
-              "Rotation": "-0.001506223,0.01913838,-0.07844464,0.9967336",
+              "Name": "ViewModels",
+              "Position": "5.521929,0,0.18",
+              "Tags": "viewmodel",
               "Enabled": true,
               "NetworkMode": 2,
               "NetworkInterpolation": true,
-              "Components": [
-                {
-                  "__type": "Sandbox.CameraComponent",
-                  "__guid": "7a6e0b95-8f04-4eba-bf5e-b28a5562ac03",
-                  "BackgroundColor": "0.33333,0.46275,0.52157,1",
-                  "ClearFlags": "Depth, Stencil",
-                  "FieldOfView": 80,
-                  "IsMainCamera": false,
-                  "Orthographic": false,
-                  "OrthographicHeight": 1204,
-                  "Priority": 1,
-                  "RenderExcludeTags": "",
-                  "RenderTags": "viewmodel,light",
-                  "TargetEye": "None",
-                  "Viewport": "0,0,1,1",
-                  "ZFar": 10000,
-                  "ZNear": 1
-                }
-              ],
               "Children": [
                 {
-                  "__guid": "ff3cf9ec-981a-4a3a-8643-33ad75c3a928",
+                  "__guid": "68b12157-aa40-4dd4-9d71-cce092af5b54",
                   "Flags": 0,
-                  "Name": "ViewModels",
-                  "Position": "9,0,0",
-                  "Tags": "viewmodel",
+                  "Name": "Gun",
+                  "Position": "0,0,0",
                   "Enabled": true,
                   "NetworkMode": 2,
                   "NetworkInterpolation": true,
-                  "Children": [
+                  "Components": [
                     {
-                      "__guid": "5224d253-42af-42ec-bc76-455c2e188a04",
-                      "Flags": 0,
-                      "Name": "Gun",
-                      "Position": "0,0,0",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SkinnedModelRenderer",
-                          "__guid": "e0f72c9d-aad7-4d7d-9773-c6daedee8928",
-                          "BodyGroups": 17685,
-                          "CreateBoneObjects": false,
-                          "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
-                          "RenderType": "On",
-                          "Tint": "1,1,1,1",
-                          "UseAnimGraph": true
-                        },
-                        {
-                          "__type": "Animation",
-                          "__guid": "bc30e5f4-c51a-43f0-89a8-74f7e8bfb6fc",
-                          "gun": {
-                            "_type": "component",
-                            "component_id": "e0f72c9d-aad7-4d7d-9773-c6daedee8928",
-                            "go": "5224d253-42af-42ec-bc76-455c2e188a04",
-                            "component_type": "SkinnedModelRenderer"
-                          }
-                        }
-                      ]
+                      "__type": "Sandbox.SkinnedModelRenderer",
+                      "__guid": "45b10d28-bf3c-4acb-903d-923b4c11a65f",
+                      "BodyGroups": 17685,
+                      "CreateBoneObjects": false,
+                      "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1",
+                      "UseAnimGraph": true
                     },
                     {
-                      "__guid": "a7d9c9b5-acb1-49f7-968c-4b81c186132e",
-                      "Flags": 0,
-                      "Name": "Arms",
-                      "Position": "0,0,-55.37835",
-                      "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
-                      "Components": [
-                        {
-                          "__type": "Sandbox.SkinnedModelRenderer",
-                          "__guid": "40360f0e-46d9-4e63-aaa9-fbcd0b54abb6",
-                          "BodyGroups": 18446744073709551615,
-                          "BoneMergeTarget": {
-                            "_type": "component",
-                            "component_id": "e0f72c9d-aad7-4d7d-9773-c6daedee8928",
-                            "go": "5224d253-42af-42ec-bc76-455c2e188a04",
-                            "component_type": "SkinnedModelRenderer"
-                          },
-                          "CreateBoneObjects": false,
-                          "Model": "models/first_person/first_person_arms_citizen_4fingers.vmdl",
-                          "RenderType": "On",
-                          "Tint": "1,1,1,1",
-                          "UseAnimGraph": true
-                        }
-                      ]
+                      "__type": "Animation",
+                      "__guid": "f76a9eaf-71d2-4261-8436-77c86345a22d",
+                      "gun": {
+                        "_type": "component",
+                        "component_id": "45b10d28-bf3c-4acb-903d-923b4c11a65f",
+                        "go": "68b12157-aa40-4dd4-9d71-cce092af5b54",
+                        "component_type": "SkinnedModelRenderer"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "__guid": "9410bf8d-026c-4d0f-8574-30a7066e84ac",
+                  "Flags": 0,
+                  "Name": "Arms",
+                  "Position": "0,0,-55.90002",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Components": [
+                    {
+                      "__type": "Sandbox.SkinnedModelRenderer",
+                      "__guid": "ccc9a154-3623-408e-97f3-5cfa51054137",
+                      "BodyGroups": 18446744073709551615,
+                      "BoneMergeTarget": {
+                        "_type": "component",
+                        "component_id": "45b10d28-bf3c-4acb-903d-923b4c11a65f",
+                        "go": "68b12157-aa40-4dd4-9d71-cce092af5b54",
+                        "component_type": "SkinnedModelRenderer"
+                      },
+                      "CreateBoneObjects": false,
+                      "Model": "models/first_person/first_person_arms_citizen_4fingers.vmdl",
+                      "RenderType": "Off",
+                      "Tint": "1,1,1,1",
+                      "UseAnimGraph": true
                     }
                   ]
                 }

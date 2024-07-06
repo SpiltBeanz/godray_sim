@@ -7,7 +7,7 @@ public sealed class CameraMovement : Component
 	[Property] public PlayerMovement Player { get; set; }
 	[Property] public GameObject Body { get; set; }
 	[Property] public GameObject Head { get; set; }
-	[Property] public GameObject viewmodelcamera { get; set; }
+	[Property] public GameObject viewmodels { get; set; }
 	[Property] public GameObject Crosshair { get; set; }
 	[Property, Range (0f, 1000f, 0f)] public float Distance { get; set; } = 0f;
 	// Variables
@@ -22,6 +22,7 @@ public sealed class CameraMovement : Component
 		Camera = Components.Get<CameraComponent>();
 		BodyRenderer = Body.Components.Get<ModelRenderer>();
 		Crosshair.Enabled = false;
+		viewmodels.Enabled = false; 
 	}
 	protected override void OnUpdate()
 	{	
@@ -58,8 +59,6 @@ public sealed class CameraMovement : Component
 				//If we are not in first person: //
 				ApplyClothes();
 				ApplyViewModel();
-				
-				viewmodelcamera.Enabled = false; 
 				// Perform a trace backwards to see where we can safely place the camera
 				var camForward = eyeAngles.ToRotation().Forward;
 				var camTrace = Scene.Trace.Ray(camPos, camPos - (camForward * Distance) )
@@ -86,7 +85,6 @@ public sealed class CameraMovement : Component
 				//If we are in first person:
 				ApplyClothes();
 				ApplyViewModel();
-				
 				// Hide the body, show shadows//
 				BodyRenderer.RenderType = ModelRenderer.ShadowRenderType.ShadowsOnly;
 				// Hide the clothes/hair, show shadows//
@@ -132,7 +130,7 @@ public sealed class CameraMovement : Component
 			{
 				HasGun = false;
 				Log.Info($"Player has gun: {HasGun}");
-				viewmodelcamera.Enabled = false; 
+				viewmodels.Enabled = false; 
 				Crosshair.Enabled = false;
 			}
 		}	
@@ -141,7 +139,7 @@ public sealed class CameraMovement : Component
 		{
 			HasGun = true;
 			Log.Info($"Player has gun: {HasGun}");
-			viewmodelcamera.Enabled = true; 
+			viewmodels.Enabled = true; 
 			Crosshair.Enabled = true;
 		}		
 	}	
