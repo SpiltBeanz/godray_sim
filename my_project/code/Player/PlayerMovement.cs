@@ -28,6 +28,7 @@ public sealed class PlayerMovement : Component
     [Property] public GameObject Head { get; set; }
     [Property] public GameObject Body { get; set; }
 	[Property] private Rigidbody rb { get; set; }
+
 	// Member Variables
 	public Vector3 WishVelocity = Vector3.Zero;
 	public bool IsCrouching = false;
@@ -161,7 +162,7 @@ public sealed class PlayerMovement : Component
 		animationHelper.IsGrounded = characterController.IsOnGround;
 		animationHelper.WithLook(Head.Transform.Rotation.Forward, 1f, 0.75f, 0.5f);
 		animationHelper.MoveStyle = CitizenAnimationHelper.MoveStyles.Run;
-		animationHelper.DuckLevel = IsCrouching ? 1f: 0f;
+		animationHelper.DuckLevel = IsCrouching ? 1f: 0f;	
 	}
 	void UpdateCrouch()
 	{

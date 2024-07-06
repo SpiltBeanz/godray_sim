@@ -5,6 +5,7 @@
   "Ident": "my_project",
   "Tags": "god ray simulator fog explore",
   "Schema": 1,
+  "IncludeSourceFiles": false,
   "Resources": null,
   "PackageReferences": [],
   "EditorReferences": null,

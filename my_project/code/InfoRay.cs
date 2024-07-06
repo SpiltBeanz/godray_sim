@@ -32,12 +32,13 @@ public sealed class InfoRay : Component
 					if(Input.Pressed("Attack1"))
 					{
 						Log.Info($"Hit: {camTrace.GameObject} at {camTrace.EndPosition}");
+						camTrace.Body.ApplyImpulseAt( camTrace.HitPosition, camTrace.Direction * 2000f * camTrace.Body.Mass.Clamp( 0, 200 ) );
 					}	
 				}
-			else if(Input.Pressed("Attack1"))
-			{
-				Log.Info("no trace hit");
-			}	
+				else if(Input.Pressed("Attack1") && camera.IsFirstPerson)
+				{
+					Log.Info("no trace hit");
+				}	
 		}
 	}
 }

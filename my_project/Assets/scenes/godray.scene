@@ -1,11 +1,11 @@
 {
-  "__guid": "4cf78f7c-7481-4a6a-a33a-f6130bc56df5",
+  "__guid": "e09d9326-4e5b-467a-88c4-fc03f02e05b1",
   "GameObjects": [
     {
       "__guid": "c5bafb56-f677-45a3-955e-964023d5d32b",
       "Flags": 0,
       "Name": "Player",
-      "Position": "-1344,352,32",
+      "Position": "-1344,352,0",
       "Tags": "player,noblockaudio",
       "Enabled": true,
       "NetworkMode": 2,
@@ -52,7 +52,7 @@
           },
           "Coins": 0,
           "CrouchSpeed": 90,
-          "GroundControl": 4,
+          "GroundControl": 8,
           "Head": {
             "_type": "gameobject",
             "go": "773c56df-5791-4a97-8e5c-fa3aef3da085"
@@ -119,6 +119,213 @@
         }
       ],
       "Children": [
+        {
+          "__guid": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2",
+          "Flags": 0,
+          "Name": "Camera",
+          "Position": "-98.69604,-15.63193,60.1612",
+          "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.CameraComponent",
+              "__guid": "b2ddbde4-a8c1-494a-bbb2-a37c83cc8ad1",
+              "BackgroundColor": "0.33333,0.46275,0.52157,1",
+              "ClearFlags": "All",
+              "FieldOfView": 100,
+              "IsMainCamera": false,
+              "Orthographic": false,
+              "OrthographicHeight": 1204,
+              "Priority": 1,
+              "RenderExcludeTags": "triggerinvis,viewmodel",
+              "RenderTags": "",
+              "TargetEye": "None",
+              "Viewport": "0,0,1,1",
+              "ZFar": 10000,
+              "ZNear": 1
+            },
+            {
+              "__type": "CameraMovement",
+              "__guid": "db78f03f-5aca-47bb-93f0-f1f0ddd0797d",
+              "Body": {
+                "_type": "gameobject",
+                "go": "da358ca3-7ac1-4414-8caf-9d6651b338c0"
+              },
+              "Crosshair": {
+                "_type": "gameobject",
+                "go": "9687435d-f971-4e31-9939-c9e0e05a88fc"
+              },
+              "Distance": 100,
+              "Head": {
+                "_type": "gameobject",
+                "go": "773c56df-5791-4a97-8e5c-fa3aef3da085"
+              },
+              "Player": {
+                "_type": "component",
+                "component_id": "1ab8ecd5-973f-49b2-a99e-5ea3237bf350",
+                "go": "c5bafb56-f677-45a3-955e-964023d5d32b",
+                "component_type": "PlayerMovement"
+              },
+              "viewmodelcamera": {
+                "_type": "gameobject",
+                "go": "31662393-a3a9-485d-ba63-d87a5f3b6521"
+              }
+            },
+            {
+              "__type": "Sandbox.AmbientOcclusion",
+              "__guid": "f3dde9b1-fba5-439f-89a6-1c189d0d6c2a",
+              "Intensity": 10,
+              "Quality": "High",
+              "Radius": 32
+            },
+            {
+              "__type": "InfoRay",
+              "__guid": "222892ca-70cf-4a98-9ca7-b94faf13f808",
+              "Camera": {
+                "_type": "gameobject",
+                "go": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2"
+              }
+            }
+          ],
+          "Children": [
+            {
+              "__guid": "31662393-a3a9-485d-ba63-d87a5f3b6521",
+              "Flags": 0,
+              "Name": "ViewModelCamera",
+              "Position": "100.9961,-0.1654949,-1.291128",
+              "Rotation": "-0.001506223,0.01913838,-0.07844464,0.9967336",
+              "Enabled": true,
+              "NetworkMode": 2,
+              "NetworkInterpolation": true,
+              "Components": [
+                {
+                  "__type": "Sandbox.CameraComponent",
+                  "__guid": "7a6e0b95-8f04-4eba-bf5e-b28a5562ac03",
+                  "BackgroundColor": "0.33333,0.46275,0.52157,1",
+                  "ClearFlags": "Depth, Stencil",
+                  "FieldOfView": 80,
+                  "IsMainCamera": false,
+                  "Orthographic": false,
+                  "OrthographicHeight": 1204,
+                  "Priority": 1,
+                  "RenderExcludeTags": "",
+                  "RenderTags": "viewmodel,light",
+                  "TargetEye": "None",
+                  "Viewport": "0,0,1,1",
+                  "ZFar": 10000,
+                  "ZNear": 1
+                }
+              ],
+              "Children": [
+                {
+                  "__guid": "ff3cf9ec-981a-4a3a-8643-33ad75c3a928",
+                  "Flags": 0,
+                  "Name": "ViewModels",
+                  "Position": "9,0,0",
+                  "Tags": "viewmodel",
+                  "Enabled": true,
+                  "NetworkMode": 2,
+                  "NetworkInterpolation": true,
+                  "Children": [
+                    {
+                      "__guid": "5224d253-42af-42ec-bc76-455c2e188a04",
+                      "Flags": 0,
+                      "Name": "Gun",
+                      "Position": "0,0,0",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SkinnedModelRenderer",
+                          "__guid": "e0f72c9d-aad7-4d7d-9773-c6daedee8928",
+                          "BodyGroups": 17685,
+                          "CreateBoneObjects": false,
+                          "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+                          "RenderType": "On",
+                          "Tint": "1,1,1,1",
+                          "UseAnimGraph": true
+                        },
+                        {
+                          "__type": "Animation",
+                          "__guid": "bc30e5f4-c51a-43f0-89a8-74f7e8bfb6fc",
+                          "gun": {
+                            "_type": "component",
+                            "component_id": "e0f72c9d-aad7-4d7d-9773-c6daedee8928",
+                            "go": "5224d253-42af-42ec-bc76-455c2e188a04",
+                            "component_type": "SkinnedModelRenderer"
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "__guid": "a7d9c9b5-acb1-49f7-968c-4b81c186132e",
+                      "Flags": 0,
+                      "Name": "Arms",
+                      "Position": "0,0,-55.37835",
+                      "Enabled": true,
+                      "NetworkMode": 2,
+                      "NetworkInterpolation": true,
+                      "Components": [
+                        {
+                          "__type": "Sandbox.SkinnedModelRenderer",
+                          "__guid": "40360f0e-46d9-4e63-aaa9-fbcd0b54abb6",
+                          "BodyGroups": 18446744073709551615,
+                          "BoneMergeTarget": {
+                            "_type": "component",
+                            "component_id": "e0f72c9d-aad7-4d7d-9773-c6daedee8928",
+                            "go": "5224d253-42af-42ec-bc76-455c2e188a04",
+                            "component_type": "SkinnedModelRenderer"
+                          },
+                          "CreateBoneObjects": false,
+                          "Model": "models/first_person/first_person_arms_citizen_4fingers.vmdl",
+                          "RenderType": "On",
+                          "Tint": "1,1,1,1",
+                          "UseAnimGraph": true
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "__guid": "9687435d-f971-4e31-9939-c9e0e05a88fc",
+          "Flags": 0,
+          "Name": "Crosshair",
+          "Position": "0,0,0",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true,
+          "Components": [
+            {
+              "__type": "Sandbox.ScreenPanel",
+              "__guid": "5365282f-5cfc-41bc-9542-e983fd333e53",
+              "AutoScreenScale": true,
+              "Opacity": 1,
+              "Scale": 0.5,
+              "ZIndex": 100
+            },
+            {
+              "__type": "Crosshair",
+              "__guid": "203019dd-6e94-404b-b979-ecb3b3077df2"
+            }
+          ]
+        },
+        {
+          "__guid": "773c56df-5791-4a97-8e5c-fa3aef3da085",
+          "Flags": 0,
+          "Name": "Head",
+          "Position": "0,0,64",
+          "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
+          "Enabled": true,
+          "NetworkMode": 2,
+          "NetworkInterpolation": true
+        },
         {
           "__guid": "da358ca3-7ac1-4414-8caf-9d6651b338c0",
           "Flags": 0,
@@ -1358,80 +1565,6 @@
                   "UseAnimGraph": true
                 }
               ]
-            }
-          ]
-        },
-        {
-          "__guid": "773c56df-5791-4a97-8e5c-fa3aef3da085",
-          "Flags": 0,
-          "Name": "Head",
-          "Position": "0,0,64",
-          "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true
-        },
-        {
-          "__guid": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2",
-          "Flags": 0,
-          "Name": "Camera",
-          "Position": "-98.69604,-15.63193,60.1612",
-          "Rotation": "0.001506223,-0.01913838,0.07844464,0.9967336",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.CameraComponent",
-              "__guid": "b2ddbde4-a8c1-494a-bbb2-a37c83cc8ad1",
-              "BackgroundColor": "0.33333,0.46275,0.52157,1",
-              "ClearFlags": "All",
-              "FieldOfView": 100,
-              "IsMainCamera": false,
-              "Orthographic": false,
-              "OrthographicHeight": 1204,
-              "Priority": 1,
-              "RenderExcludeTags": "triggerinvis",
-              "RenderTags": "",
-              "TargetEye": "None",
-              "Viewport": "0,0,1,1",
-              "ZFar": 10000,
-              "ZNear": 1
-            },
-            {
-              "__type": "CameraMovement",
-              "__guid": "db78f03f-5aca-47bb-93f0-f1f0ddd0797d",
-              "Body": {
-                "_type": "gameobject",
-                "go": "da358ca3-7ac1-4414-8caf-9d6651b338c0"
-              },
-              "Distance": 100,
-              "Head": {
-                "_type": "gameobject",
-                "go": "773c56df-5791-4a97-8e5c-fa3aef3da085"
-              },
-              "Player": {
-                "_type": "component",
-                "component_id": "1ab8ecd5-973f-49b2-a99e-5ea3237bf350",
-                "go": "c5bafb56-f677-45a3-955e-964023d5d32b",
-                "component_type": "PlayerMovement"
-              }
-            },
-            {
-              "__type": "Sandbox.AmbientOcclusion",
-              "__guid": "f3dde9b1-fba5-439f-89a6-1c189d0d6c2a",
-              "__enabled": false,
-              "Intensity": 10,
-              "Quality": "High",
-              "Radius": 32
-            },
-            {
-              "__type": "InfoRay",
-              "__guid": "222892ca-70cf-4a98-9ca7-b94faf13f808",
-              "Camera": {
-                "_type": "gameobject",
-                "go": "75ed62be-fdcb-48f4-85a3-6905b46d0dc2"
-              }
             }
           ]
         },
@@ -5802,7 +5935,7 @@
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false,
-              "Surface": "surfaces/default.surface"
+              "Surface": "surfaces/rubber.surface"
             }
           ]
         },
@@ -5810,7 +5943,7 @@
           "__guid": "c1fa8c9e-38b9-4452-9b3f-3b2bfc154b40",
           "Flags": 0,
           "Name": "Soccer Ball",
-          "Position": "333.2574,873.1487,-440.1391",
+          "Position": "303.4895,873.1487,-440.1391",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
@@ -5843,7 +5976,7 @@
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false,
-              "Surface": "surfaces/default.surface"
+              "Surface": "surfaces/rubber.surface"
             }
           ]
         },
@@ -5851,7 +5984,7 @@
           "__guid": "78952e3b-a992-49ef-8b2a-a90d091a1809",
           "Flags": 0,
           "Name": "Soccer Ball",
-          "Position": "333.2574,873.1487,-376.139",
+          "Position": "303.4895,889.1481,-376.139",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
@@ -5884,7 +6017,7 @@
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false,
-              "Surface": "surfaces/default.surface"
+              "Surface": "surfaces/rubber.surface"
             }
           ]
         },
@@ -5892,7 +6025,7 @@
           "__guid": "4811c4c7-a503-430b-a4cd-80309aabbfb2",
           "Flags": 0,
           "Name": "Soccer Ball",
-          "Position": "381.2575,873.1494,-440.1393",
+          "Position": "351.4895,873.1494,-440.1393",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
@@ -5925,7 +6058,7 @@
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false,
-              "Surface": "surfaces/default.surface"
+              "Surface": "surfaces/rubber.surface"
             }
           ]
         },
@@ -5933,7 +6066,7 @@
           "__guid": "b670bda4-b00f-43d7-bacc-6e139a8b7953",
           "Flags": 0,
           "Name": "Soccer Ball",
-          "Position": "381.2575,873.1494,-376.1391",
+          "Position": "351.4895,857.1481,-376.1391",
           "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
           "Scale": "2,2,2",
           "Enabled": true,
@@ -5966,991 +6099,7 @@
               "IsTrigger": false,
               "Model": "models/soccerball.vmdl",
               "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "593666ca-f9e4-4f6f-a9aa-9d91f33c70e3",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "291.9498,841.1481,-408.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "f61d90bc-1995-4c02-b2c9-d08d7219c280",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "95e91534-0b29-4c0f-8a38-322b75208594",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "c3842e06-7003-4821-b5cb-d8b4a58ef0f0",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "8a7a8dae-6b14-4c7d-b213-8b93d8e8415a",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "291.9498,841.1481,-344.1389",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "2d1d87ef-4db1-4426-b2f1-c9604c90bd97",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "fd934b92-d85a-4372-91d7-a4570c1ad1ea",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "ec1a3fad-a9ac-4c0c-9736-aad6b9ff11e0",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "cc6d3471-c208-41c2-a484-444d96f17f69",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "337.7177,841.1487,-408.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "44265a96-4625-4a73-8bda-951836fdae1c",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "d0ecec28-fb00-4123-a965-0c02442c0bbc",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "609e90b5-15c0-49d8-abd0-767c9767b921",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "807d9b7e-95a8-4e38-aaa2-83a07a353752",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "337.7177,841.1487,-344.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "a4709c1d-ebd7-4333-824d-5dab3e261941",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "4f4f4642-9eab-49e9-acd6-92c6986a7b5b",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "56aa7d80-34d6-4094-b5f9-c61ee57b0f82",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "7ddbb188-acd0-4565-bffc-c84a0d5f126d",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "385.7177,841.1494,-408.1393",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "ea86564e-0d39-4b19-9b14-d853fecc13c3",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "8b38a52a-9a4d-44a0-81a6-a8f829597c6f",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "75a483da-093f-44a6-a888-a2cf9be67da3",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "938d1e8d-72dc-40cc-9ec0-aa7899d7198a",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "385.7177,841.1494,-344.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "da4786ae-a4f5-4bdb-8631-61af8112b403",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "d6b21788-6010-49dd-9a60-020a68663870",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "69c08ddb-0610-4e99-8e21-43c5c2da0714",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "88fe7d5f-b490-4aa8-9247-d548eba6cd06",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "287.4895,841.1481,-440.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "e3822c3b-987e-470c-a2c7-1828acd46033",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "6e3ff4df-6231-4daa-8f55-cf233a7aca00",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "e7d969e0-4700-4859-aa8b-5359956ef03d",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "601edaa0-8a24-4a98-bca4-b56667767647",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "287.4895,841.1481,-376.1389",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "91ea7b18-dac5-4963-89fd-ba770c5fdcd3",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "6460f407-ad25-408f-8d1e-16cad29d11f4",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "445db0cd-7ce6-48e6-8ba6-ff0c37a6c24c",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "bef121d9-ba41-44ad-a99b-518b532d41f1",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "333.2574,841.1487,-440.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "6a254d7d-9345-46c7-9dd9-b0973f9ce796",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "28230ca6-8014-4451-89f8-aba298512788",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "fbf8683b-d4cd-4ed9-8d61-cb8ba6e802a1",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "bebd93df-262f-44af-a4f5-2f30a054c073",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "333.2574,841.1487,-376.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "fabcd497-eaf9-404b-b7db-977b1bee66f9",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "b5a9340a-29cb-4b30-b046-c6bf21fa935d",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "d54a6a39-ded3-4dbe-ac8a-58c10ded4cf1",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "3eb4cc49-2bb4-4bb9-8a10-f143f22a85dd",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "381.2575,841.1494,-440.1393",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "f3ee7d79-a11c-4108-87b7-9f3053acc1d1",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "777f0bf2-31c6-4cba-96b4-849c02ab082e",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "69dcb647-a23e-4c14-a653-d84269ab0681",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "5fe45af6-b058-49e6-b100-ce14890cdb72",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "381.2575,841.1494,-376.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "a8ab3b51-30a2-465b-b51d-b1802c03fe5e",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "d8d86d16-4725-4366-a968-d9158cdeadea",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "824eafbd-989d-4ded-bee6-1a30e48a62cb",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "b4448798-e660-4405-a594-16facddbdb66",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "291.9498,809.1481,-408.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "ff079e25-1fed-4181-86e2-c664139fafc1",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "10e59417-2b27-40d3-a380-32417ce68b06",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "751e0ce7-3a95-4bdc-98c6-104159351a7a",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "8639a213-920e-4701-b990-ce36b69378c9",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "291.9498,809.1481,-344.1389",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "ac2781bf-77f0-4adf-bc6a-b9b7eb302923",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "61d85293-8c5a-45fe-a7e5-1c3ef8866fc9",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "ea8322eb-6d8c-457a-a739-05590555847c",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "45abe279-385a-4c26-80e6-9e4b33d62a7a",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "337.7177,809.1487,-408.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "cb44a9ac-6c85-460c-ac32-3a9c574f129b",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "6a065f28-a135-4c1c-835a-a91ced265458",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "d0907878-5182-4ec3-8026-82c15d94d64b",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "6a880367-6cc4-4086-99e3-046ed3bca92d",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "337.7177,809.1487,-344.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "2d5dae31-c412-48d7-902d-0c771542e5d0",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "ae5e2496-eee8-4698-9318-0e47c97e6771",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "af303ddc-f4f1-4860-ac6c-7cf80c5d92b7",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "9757d3e2-7d87-4380-b3c1-20c393ec0f27",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "385.7177,809.1494,-408.1393",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "8a2ab413-0053-4bed-be30-5a26ac339e52",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "8e78d8c7-8468-4042-be57-ae66f8995a4e",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "6bc66c83-ae2f-4afd-9f14-ef3ba6aa94d7",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "e1647278-e51f-4dcb-83dd-f450ba0589fa",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "385.7177,809.1494,-344.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "1e6b45cd-980a-4bf2-868e-f26f2fc9d430",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "554fb8c3-8e11-418d-90df-4824d84004ed",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "4da37d94-c22d-461e-bbe4-7c408f723f44",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "20dbd0e8-d3e4-4ac0-83e3-a11416617c8d",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "287.4895,809.1481,-440.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "2201af3c-4e45-4a24-bc50-68d02fef265e",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "34f66b99-b628-479e-9e69-56ef16b303bb",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "197911b9-c1cc-4301-90c2-e8d751163921",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "3d4dad24-62e3-4119-a9c7-d2bc836e2f41",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "287.4895,809.1481,-376.1389",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "fc59c534-0643-4e74-99eb-701fc16f87a8",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "e8f34ae3-259f-438c-86b9-c9a9d22ed9b7",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "c4f8dec9-ba90-43a6-86a0-4d5980947d8f",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "edd6616f-522f-4117-9ccd-2beefdcf5e0c",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "333.2574,809.1487,-440.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "f00a009b-ae11-45ef-a66a-fc63d5b0ced4",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "aa2b459a-cf13-4cdc-bc9a-9361559067a6",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "0e57a126-9854-4cf6-a112-22b7bc94cb7b",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "5f856d80-6157-47a1-b580-c8e07f15449b",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "333.2574,809.1487,-376.139",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "e7789bf3-cf15-413e-bd61-f9284efb3d44",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "37288660-2112-4c37-bfff-b450495b3c5c",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "168cd1ad-b3c1-4cd2-899a-26ebac69c9be",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "8223a422-4bc7-46d4-b5cd-54ac86d1b59f",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "381.2575,809.1494,-440.1393",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "e6ab6c6b-ea27-4e7f-8eb5-8e6c9004bc25",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "84e8202e-614f-4306-8a4f-f4f86066ad33",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "8aa2b5e2-222e-499d-a866-f0aae9190601",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
-            }
-          ]
-        },
-        {
-          "__guid": "978527f4-fbd0-411f-ae65-fad28b11bdab",
-          "Flags": 0,
-          "Name": "Soccer Ball",
-          "Position": "381.2575,809.1494,-376.1391",
-          "Rotation": "-0.9474995,-0.000007081509,-0.0000008050548,-0.3197573",
-          "Scale": "2,2,2",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.ModelRenderer",
-              "__guid": "27ed6337-4681-4f54-a983-df67898f93b7",
-              "BodyGroups": 18446744073709551615,
-              "Model": "models/soccerball.vmdl",
-              "RenderType": "On",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.Rigidbody",
-              "__guid": "41a8c87b-d964-4c47-9010-b3d2ee3aaf1a",
-              "AngularDamping": 0,
-              "Gravity": true,
-              "LinearDamping": 0,
-              "Locking": {},
-              "MassOverride": 0,
-              "MotionEnabled": true,
-              "RigidbodyFlags": 0,
-              "StartAsleep": false
-            },
-            {
-              "__type": "Sandbox.ModelCollider",
-              "__guid": "f2df178d-8bdf-4110-99df-db0f3fc3eda5",
-              "IsTrigger": false,
-              "Model": "models/soccerball.vmdl",
-              "Static": false,
-              "Surface": "surfaces/default.surface"
+              "Surface": "surfaces/rubber.surface"
             }
           ]
         }
@@ -6965,43 +6114,6 @@
       "NetworkMode": 2,
       "NetworkInterpolation": true,
       "Children": [
-        {
-          "__guid": "0e1175e9-ced6-4a1a-87ca-5f54139836ce",
-          "Flags": 0,
-          "Name": "2D Skybox",
-          "Position": "667.4822,-209.0203,-36.51519",
-          "Tags": "skybox",
-          "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
-          "Components": [
-            {
-              "__type": "Sandbox.SkyBox2D",
-              "__guid": "231e9467-7cda-4760-8432-edd7d0ecbc32",
-              "SkyMaterial": "materials/skybox/skybox_day_01.vmat",
-              "Tint": "1,1,1,1"
-            },
-            {
-              "__type": "Sandbox.EnvmapProbe",
-              "__guid": "1c213f7c-bb2a-4e10-928f-9f14d164058d",
-              "Texture": "textures/cubemaps/default2.vtex",
-              "Bounds": {
-                "Mins": "-512,-512,-512",
-                "Maxs": "512,512,512"
-              },
-              "DelayBetweenUpdates": 0.1,
-              "Feathering": 0.02,
-              "FrameInterval": 5,
-              "MaxDistance": 512,
-              "Projection": "Sphere",
-              "RenderDynamically": false,
-              "TintColor": "1,1,1,1",
-              "UpdateStrategy": "OnEnabled",
-              "ZFar": 4096,
-              "ZNear": 16
-            }
-          ]
-        },
         {
           "__guid": "8424b411-f21a-4a35-b088-5611c5bee822",
           "Flags": 0,
@@ -7080,7 +6192,7 @@
               "FogStrength": 1,
               "LightColor": "0.91373,0.98039,1,1",
               "Shadows": true,
-              "SkyColor": "0.64749,0.85149,0.95349,1"
+              "SkyColor": "0,0,0,0"
             }
           ]
         },
@@ -7885,6 +6997,7 @@
             {
               "__type": "Sandbox.ModelRenderer",
               "__guid": "737ffd1d-a523-4803-9a1e-783a4df931e7",
+              "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "MaterialOverride": "materials/default/white.vmat",
               "Model": "models/dev/plane.vmdl",
@@ -7907,23 +7020,6 @@
           ]
         }
       ]
-    },
-    {
-      "__guid": "6ac1cb1b-7599-4980-90a0-862901c446ba",
-      "Flags": 0,
-      "Name": "Map Instance",
-      "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
-      "Components": [
-        {
-          "__type": "Sandbox.MapInstance",
-          "__guid": "a70678eb-3c19-4c31-8e2e-3c48aeca3326",
-          "MapName": "testmapsbox",
-          "UseMapFromLaunch": false
-        }
-      ],
-      "Children": []
     },
     {
       "__guid": "c7468e6d-f610-4f81-8db9-2ca815cc10bd",
@@ -8099,7 +7195,7 @@
           "Gravity": true,
           "LinearDamping": 1,
           "Locking": {},
-          "MassOverride": 0,
+          "MassOverride": 2000,
           "MotionEnabled": true,
           "RigidbodyFlags": "DisableCollisionSounds",
           "StartAsleep": false
@@ -8113,6 +7209,25 @@
           "Surface": "surfaces/concrete.surface"
         }
       ]
+    },
+    {
+      "__guid": "fafbaa3f-b9a8-4212-82ac-f7bf97947a18",
+      "Flags": 0,
+      "Name": "Map",
+      "Enabled": true,
+      "NetworkMode": 2,
+      "NetworkInterpolation": true,
+      "Components": [
+        {
+          "__type": "Sandbox.MapInstance",
+          "__guid": "59cd5f3f-2384-42e3-93c8-7c89dd787019",
+          "__version": 1,
+          "MapName": "maps/testmapsbox.vmap",
+          "NoOrigin": false,
+          "UseMapFromLaunch": false
+        }
+      ],
+      "Children": []
     }
   ],
   "SceneProperties": {
@@ -8138,11 +7253,11 @@
   },
   "Title": "godray",
   "Description": "",
-  "LastSaved": "2024-06-25T22:16:01.323525-04:00",
   "ResourceVersion": 1,
   "__references": [
     "baik.soccerball",
     "ele.dev_measure_blue",
+    "facepunch.v_usp",
     "ibrs.ark_platinum",
     "ibrs.ark_provence",
     "jodiscontent.spray2",
