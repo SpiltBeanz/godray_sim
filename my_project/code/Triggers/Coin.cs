@@ -6,14 +6,10 @@ public sealed class Coin : Component, Component.ITriggerListener
 
 	public void OnTriggerEnter( Collider other )
 	{
-		
-
-		
-
 		var player = other.Components.Get<PlayerMovement>();
 		if ( player != null )
 		{
-			player.Coins += 1;
+			player.Ammo += 5;
 			player.Armor += Amount;
 			player.Armor = Math.Clamp( player.Armor, 0, player.MaxArmor );
 			GameObject.Destroy();
@@ -22,13 +18,5 @@ public sealed class Coin : Component, Component.ITriggerListener
 			Sandbox.Services.Stats.Increment( "bottles-collected", 1 );
 			Log.Info("Bottle collected!");
 		}
-
-		
-
-	}
-
-	public void OnTriggerExit( Collider other )
-	{
-		
 	}
 }

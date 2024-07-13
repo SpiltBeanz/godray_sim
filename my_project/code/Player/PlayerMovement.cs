@@ -11,7 +11,8 @@ public sealed class PlayerMovement : Component
 	[Property] public float MinHealth { get; set; } = 0f;
 	[Property] public float Armor { get; set; } = 0f;
 	[Property] public float MaxArmor { get; set; } = 100f;
-	[Property] public int Coins { get; set; } = 0;
+	[Property] public int Ammo { get; set; } = 0;
+	[Property] public int AmmoinMag { get; set; } = 0;
 	public TimeSince TimeAlive { get; set; } = 0f;
 	[Property] public List<string> Items { get; set; } = new List<string> {"literaly anything"};
 	public int ActiveSlot = 0;
@@ -27,12 +28,15 @@ public sealed class PlayerMovement : Component
 	// Object References
     [Property] public GameObject Head { get; set; }
     [Property] public GameObject Body { get; set; }
+	[Property] public CameraMovement Camera { get; set; }
 	[Property] private Rigidbody rb { get; set; }
 
 	// Member Variables
 	public Vector3 WishVelocity = Vector3.Zero;
 	public bool IsCrouching = false;
 	public bool IsSprinting = false;
+	public bool OutofAmmo = false;
+	public bool MagEmpty;
 	public bool RBmoving = false;
 	private CharacterController characterController;
 	private CitizenAnimationHelper animationHelper;
@@ -64,7 +68,7 @@ public sealed class PlayerMovement : Component
 		// Set our rigidbody moving state 
 		if (rb.Velocity != 0 ) RBmoving = true;
 		else RBmoving = false;
-		
+
 		RotateBody();
 		UpdateAnimations();
 	}

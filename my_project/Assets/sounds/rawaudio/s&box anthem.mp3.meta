@@ -1,0 +1,25 @@
+{
+  "loop": false,
+  "start": 0,
+  "end": 0,
+  "rate": 44100,
+  "compress": false,
+  "bitrate": 256,
+  "publish": {
+    "Enabled": true,
+    "ProjectConfig": {
+      "Title": "s\u0026box anthem",
+      "Type": "asset",
+      "Org": "scrat",
+      "Ident": "sboxanthem",
+      "Schema": 0,
+      "IncludeSourceFiles": false,
+      "Resources": null,
+      "PackageReferences": null,
+      "EditorReferences": null,
+      "Metadata": {
+        "SingleAssetSource": "sounds/rawaudio/s\u0026box anthem.mp3"
+      }
+    }
+  }
+}

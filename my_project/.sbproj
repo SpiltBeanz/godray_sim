@@ -3,7 +3,6 @@
   "Type": "game",
   "Org": "scrat",
   "Ident": "my_project",
-  "Tags": "god ray simulator fog explore",
   "Schema": 1,
   "IncludeSourceFiles": false,
   "Resources": null,

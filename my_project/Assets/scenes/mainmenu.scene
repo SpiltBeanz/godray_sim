@@ -8,8 +8,6 @@
       "Position": "149.995,149.995,-212.125",
       "Tags": "maincamera",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Components": [
         {
           "__type": "Sandbox.CameraComponent",
@@ -27,6 +25,47 @@
           "Viewport": "0,0,1,1",
           "ZFar": 10000,
           "ZNear": 10
+        },
+        {
+          "__type": "Sandbox.Tonemapping",
+          "__guid": "d9e9dbeb-8ea7-426f-9fed-48b57b54066a",
+          "__version": 1,
+          "ExposureBias": 2,
+          "ExposureCompensation": 0,
+          "ExposureMethod": "RGB",
+          "MaximumExposure": 3,
+          "MinimumExposure": 0.25,
+          "Mode": "Legacy",
+          "Rate": 0.25
+        },
+        {
+          "__type": "Sandbox.Bloom",
+          "__guid": "0e726554-e9a2-4213-889f-7242eb939d9e",
+          "BloomColor": {
+            "color": [
+              {
+                "c": "1,1,1,1"
+              },
+              {
+                "t": 1,
+                "c": "1,1,1,1"
+              }
+            ],
+            "alpha": []
+          },
+          "BloomCurve": [
+            {
+              "y": 0.5
+            },
+            {
+              "x": 1,
+              "y": 1
+            }
+          ],
+          "Mode": "Additive",
+          "Strength": 1.28,
+          "Threshold": 0,
+          "ThresholdWidth": 0.39
         }
       ]
     },
@@ -36,8 +75,6 @@
       "Name": "Menu Environment",
       "Position": "146.6504,179.1378,76.02621",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "8017ad9f-46a1-484f-81f9-e5f87e9d667b",
@@ -46,8 +83,6 @@
           "Position": "3.344604,-29.14284,-288.1512",
           "Tags": "skybox",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SkyBox2D",
@@ -65,8 +100,6 @@
           "Rotation": "0.5196104,0.4065713,-0.5848736,0.4718345",
           "Tags": "light_directional,light",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.DirectionalLight",
@@ -87,8 +120,6 @@
           "Rotation": "0,0,-1,0.0000001947072",
           "Tags": "particles",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ModelRenderer",
@@ -116,8 +147,6 @@
               "Rotation": "0,0,1,0.0000001947072",
               "Tags": "light_point,light",
               "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.PointLight",
@@ -138,8 +167,6 @@
               "Position": "63.99899,-95.99917,-16",
               "Rotation": "0,0,1,0.0000001947072",
               "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "Sandbox.VolumetricFogVolume",
@@ -162,8 +189,6 @@
           "Position": "867.3256,-435.1378,-300.0262",
           "Rotation": "-0.1305262,0,0,0.9914449",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.VolumetricFogVolume",
@@ -184,8 +209,6 @@
           "Position": "867.3256,-1091.138,-300.0262",
           "Rotation": "-0.1722514,0,0,0.9850532",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.VolumetricFogVolume",
@@ -205,8 +228,6 @@
           "Name": "Music",
           "Position": "1018.667,240.6041,66.80482",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.SoundPointComponent",
@@ -243,8 +264,6 @@
       "Name": "UI",
       "Position": "328.7384,105.9405,-225.1542",
       "Enabled": true,
-      "NetworkMode": 2,
-      "NetworkInterpolation": true,
       "Children": [
         {
           "__guid": "c6a21755-ec91-4239-b65d-ada81fd4fd57",
@@ -252,8 +271,6 @@
           "Name": "Screen UI",
           "Position": "-178.7434,44.0545,13.02921",
           "Enabled": true,
-          "NetworkMode": 2,
-          "NetworkInterpolation": true,
           "Components": [
             {
               "__type": "Sandbox.ScreenPanel",
@@ -271,8 +288,6 @@
               "Name": "Main Menu",
               "Position": "0,0,0",
               "Enabled": true,
-              "NetworkMode": 2,
-              "NetworkInterpolation": true,
               "Components": [
                 {
                   "__type": "MainMenuPanel",
@@ -286,8 +301,6 @@
                   "Name": "Button Panel",
                   "Position": "52.88271,-19.60219,51.6403",
                   "Enabled": true,
-                  "NetworkMode": 2,
-                  "NetworkInterpolation": true,
                   "Components": [
                     {
                       "__type": "Sandbox.ScreenPanel",
@@ -305,8 +318,6 @@
                       "Name": "Buttons",
                       "Position": "0,0,0",
                       "Enabled": true,
-                      "NetworkMode": 2,
-                      "NetworkInterpolation": true,
                       "Components": [
                         {
                           "__type": "Buttons",

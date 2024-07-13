@@ -4,16 +4,14 @@
 
 <root>
 
-	<div class="titles">@("Vitaman Deez™")
+	<div class="titles">@("(Ammo) Vitaman Deez™")
 		<p>@("Time spent simulating God Rays")</p>
 	</div>
 
-
 	<div class="vitals">
-		<p>🔆🧴 @Player.Coins</p>
+		<p>🔆🧴 @Player.Ammo : @Player.AmmoinMag </p>
 		<p>⏱️@GetTimeString()</p>
 	</div>
-
 
 	<div class="healthbars">
 		<div class ="healthbar">
@@ -40,7 +38,6 @@
 				{
 					<p>@Player.Items[i]</p>
 				}
-
 			</div>
 		}
 	</div>
@@ -51,15 +48,6 @@
 {
 	[Property] PlayerMovement Player { get; set; }
 
-	@* Panel ArmorFill { get; set; }
-
-	protected override void OnUpdate()
-	{
-		base.OnUpdate();
-
-		ArmorFill.Style.Width = Length.Percent( Player.Armor / Player.MaxArmor * 100f );
-	} *@
-	
 	string GetTimeString()
 	{
 		var time = Player.TimeAlive;
@@ -70,6 +58,6 @@
 
 	protected override int BuildHash()
 	{
-		return System.HashCode.Combine( Player.Coins, GetTimeString(), Player.Health, Player.Armor, Player.ActiveSlot, "Vitamin Deez™", "Time spent simulating God Rays" );
+		return System.HashCode.Combine( Player.Ammo,Player.AmmoinMag, GetTimeString(), Player.Health, Player.Armor, Player.ActiveSlot, "Vitamin Deez™", "Time spent simulating God Rays" );
 	} 
 }
