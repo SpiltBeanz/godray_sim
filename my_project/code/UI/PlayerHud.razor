@@ -13,7 +13,7 @@
 		<p>⏱️@GetTimeString()</p>
 	</div>
 
-	<div class="healthbars">
+	@* <div class="healthbars">
 		<div class ="healthbar">
 			<div class="inner">
 				<div class="fill" style="width: @(Player.Health / Player.MaxHealth * 100f)%"></div>
@@ -26,11 +26,11 @@
 				<div class="fill" style="width: @(Player.Armor / Player.MaxArmor * 100f)%"></div>
 				<p>🧴@Player.Armor</p>
 			</div>
-		</div>
+		</div> *@
 
 	</div>
 
-	<div class="hotbar">
+	@* <div class="hotbar">
 		@for(int i=0; i<Player.Slots; i++)
 		{
 			<div class="slot @((Player.ActiveSlot == i) ? "active" : "")">
@@ -40,7 +40,7 @@
 				}
 			</div>
 		}
-	</div>
+	</div> *@
 			
 </root>
 

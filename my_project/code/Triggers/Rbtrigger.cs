@@ -8,14 +8,11 @@ public sealed class Rbtrigger : Component, Component.ITriggerListener
 	{
 		var player = other.Components.Get<PlayerMovement>();
 		
-
 		 if(other.GameObject.Tags.Has("player") && player != null)
 		{
-			
 			istouchingplatform = true;
 			Log.Info ( istouchingplatform);
 			player.GameObject.Tags.Add("onplatform");
-			
 		}
 
 	}
@@ -29,9 +26,6 @@ public sealed class Rbtrigger : Component, Component.ITriggerListener
 			istouchingplatform = false;
 			Log.Info ( istouchingplatform );
 			player.GameObject.Tags.Remove("onplatform");
-			
 		}
-
 	}
-
 }

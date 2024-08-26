@@ -9,7 +9,7 @@ public sealed class InfoRay : Component
     {
 		var camAngles = Camera.Transform.Rotation.Angles();
 		var camera = Components.Get<CameraMovement>();
-		if(Camera is not null && Input.Down("Attack1"))
+		if(Camera != null && Input.Down("Attack1") && camera.IsFirstPerson)
 		{
 			var camForward = camAngles.ToRotation().Forward;
 			var startPos = Camera.Transform.Position;
@@ -21,26 +21,21 @@ public sealed class InfoRay : Component
 			// .HitTriggers()
 			.Run();
 					
-				if(camTrace.Hit && camera.IsFirstPerson)
+			if(camTrace.Hit )
+			{
+				endPos = (camTrace.HitPosition);
+				// Gizmo draws for editor debugging.
+				var draw = Gizmo.Draw;
+
+				if (Application.IsEditor)
 				{
-					endPos = (camTrace.HitPosition);
-					// Gizmo draws for editor debugging.
-					var draw = Gizmo.Draw;
-					if (Application.IsEditor)
-					{
 					draw.Color = Color.Red;
 					draw.LineThickness = 2;
 					draw.Line(startPos + Vector3.Down, endPos);
 					draw.LineCylinder(startPos, endPos + camTrace.Normal, 5f,5f, 10);	
-					}
-
-					if(Input.Pressed("Attack1")&& !Player.MagEmpty && !gun.Reloading)
-					{
-						Log.Info($"Hit: {camTrace.GameObject} at {camTrace.EndPosition}");
-						camTrace.Body.ApplyImpulseAt( camTrace.HitPosition, camTrace.Direction * 2000f * camTrace.Body.Mass.Clamp( 0, 200 ) );
-					}	
-				}
-				else if(Input.Pressed("Attack1") && camera.IsFirstPerson)
+				}	
+			}
+			else if(Input.Pressed("Attack1"))
 			{
 				Log.Info("no trace hit");
 			}	

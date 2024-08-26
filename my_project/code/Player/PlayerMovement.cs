@@ -49,6 +49,7 @@ public sealed class PlayerMovement : Component
 	protected override void OnStart()
 	{
 		GiveClothes();
+		Mouse.Visible = false;
 	}
 	protected override void OnUpdate()
 	{
@@ -65,12 +66,14 @@ public sealed class PlayerMovement : Component
 		{
 			ActiveSlot = ((ActiveSlot + Math.Sign( Input.MouseWheel.y )) % Slots) + Slots;
 		}
+		
+		RotateBody();
+		UpdateAnimations();
 		// Set our rigidbody moving state 
+		if (rb == null) return;
 		if (rb.Velocity != 0 ) RBmoving = true;
 		else RBmoving = false;
 
-		RotateBody();
-		UpdateAnimations();
 	}
 	protected override void OnFixedUpdate()
 	{

@@ -79,12 +79,6 @@
           "MaxForce": 50,
           "MaxHealth": 100,
           "MinHealth": 0,
-          "rb": {
-            "_type": "component",
-            "component_id": "d0b967fa-3d45-4517-bbfa-34d2cac91e3e",
-            "go": "62b8ae5f-cb02-4d1c-ba3e-672fe40bd234",
-            "component_type": "Rigidbody"
-          },
           "RunSpeed": 290,
           "Speed": 160
         },
@@ -186,6 +180,7 @@
             {
               "__type": "Sandbox.AmbientOcclusion",
               "__guid": "f3dde9b1-fba5-439f-89a6-1c189d0d6c2a",
+              "FalloffDistance": 1,
               "Intensity": 5,
               "Quality": "High",
               "Radius": 32
@@ -263,6 +258,11 @@
               "MinimumExposure": 0.5,
               "Mode": "Legacy",
               "Rate": 1
+            },
+            {
+              "__type": "Sandbox.Sharpen",
+              "__guid": "2bcbda83-63fa-4f9a-be5d-33e74dfd4813",
+              "Scale": 0.1
             }
           ],
           "Children": [
@@ -351,7 +351,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 0.5,
-              "ZIndex": 100
+              "ZIndex": 99
             },
             {
               "__type": "Crosshair",
@@ -688,7 +688,7 @@
                                             },
                                             {
                                               "__guid": "ab5e5a4e-964c-4cc4-a59c-0b690391cf38",
-                                              "Flags": 0,
+                                              "Flags": 4,
                                               "Name": "hand_R_to_L_ikrule",
                                               "Position": "-28.15186,11.30969,27.26417",
                                               "Rotation": "-0.2772723,-0.6901741,-0.00000002980232,0.6684159",
@@ -922,7 +922,7 @@
                                             },
                                             {
                                               "__guid": "06941609-8a73-432b-b38e-6313d6aa504b",
-                                              "Flags": 0,
+                                              "Flags": 4,
                                               "Name": "hand_L_to_R_ikrule",
                                               "Position": "-28.15177,11.30991,-27.26431",
                                               "Rotation": "0.2772729,0.6901738,0.000000372529,0.6684158",
@@ -1157,14 +1157,14 @@
             },
             {
               "__guid": "7ef276c7-0e8b-4a3f-a82d-6c79bcc3c682",
-              "Flags": 0,
+              "Flags": 4,
               "Name": "root_IK",
               "Position": "1.266602,0,0",
               "Enabled": true,
               "Children": [
                 {
                   "__guid": "293106b1-fc5f-4e4c-9d04-849ab00e776d",
-                  "Flags": 0,
+                  "Flags": 4,
                   "Name": "hand_R_IK_target",
                   "Position": "0.6939679,-20.39471,39.24799",
                   "Rotation": "0.2871271,0.2142481,-0.5281312,0.7698917",
@@ -1172,7 +1172,7 @@
                 },
                 {
                   "__guid": "62579d0b-de51-494c-af62-404aa93a13ee",
-                  "Flags": 0,
+                  "Flags": 4,
                   "Name": "hand_L_IK_target",
                   "Position": "0.694096,20.39468,39.24792",
                   "Rotation": "0.7698929,0.5281296,-0.2142482,0.2871266",
@@ -1180,14 +1180,14 @@
                 },
                 {
                   "__guid": "255f5ce5-9d46-44bd-98d0-0f3c1a8161e5",
-                  "Flags": 0,
+                  "Flags": 4,
                   "Name": "aim_matrix_02a",
                   "Position": "4.638916,-0.0000006912522,9.8425",
                   "Enabled": true,
                   "Children": [
                     {
                       "__guid": "71feb642-840b-457e-824d-c700be77b6d9",
-                      "Flags": 0,
+                      "Flags": 4,
                       "Name": "aim_matrix_02b",
                       "Position": "3.937012,-0.0000000000002519786,-0.000001430209",
                       "Enabled": true
@@ -1196,14 +1196,14 @@
                 },
                 {
                   "__guid": "c3b9130b-6586-4d21-84f2-8a09681f157d",
-                  "Flags": 0,
+                  "Flags": 4,
                   "Name": "aim_matrix_01",
                   "Position": "4.638916,-0.0000006912522,11.811",
                   "Enabled": true
                 },
                 {
                   "__guid": "fe130b8d-a081-44e5-9ff0-990c76ee6df9",
-                  "Flags": 0,
+                  "Flags": 4,
                   "Name": "foot_R_IK_target",
                   "Position": "-0.8840337,-4.427399,3.807913",
                   "Rotation": "0.6508947,0.2762884,-0.2762876,0.6508964",
@@ -1211,7 +1211,7 @@
                 },
                 {
                   "__guid": "f971f68e-f456-401e-bafc-a89dce6da62e",
-                  "Flags": 0,
+                  "Flags": 4,
                   "Name": "foot_L_IK_target",
                   "Position": "-0.8840324,4.427399,3.807924",
                   "Rotation": "0.650896,0.276287,-0.2762895,0.6508948",
@@ -1465,7 +1465,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
-              "ZIndex": 100
+              "ZIndex": 99
             },
             {
               "__type": "PlayerHud",
@@ -1492,7 +1492,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
-              "ZIndex": 50
+              "ZIndex": 100
             },
             {
               "__type": "PauseMenu",
@@ -3586,8 +3586,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3625,8 +3627,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3664,8 +3668,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3703,8 +3709,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3742,8 +3750,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3781,8 +3791,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3820,8 +3832,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3859,8 +3873,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3898,8 +3914,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3937,8 +3955,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -3976,8 +3996,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4015,8 +4037,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4054,8 +4078,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4093,8 +4119,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4132,8 +4160,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4171,8 +4201,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4210,8 +4242,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4249,8 +4283,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4288,8 +4324,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4327,8 +4365,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4366,8 +4406,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4405,8 +4447,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4444,8 +4488,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4483,8 +4529,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4522,8 +4570,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4561,8 +4611,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4600,8 +4652,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4639,8 +4693,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4678,8 +4734,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4717,8 +4775,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4756,8 +4816,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4795,8 +4857,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4834,8 +4898,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4873,8 +4939,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4912,8 +4980,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4951,8 +5021,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -4990,8 +5062,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5029,8 +5103,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5068,8 +5144,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5107,8 +5185,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5146,8 +5226,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5185,8 +5267,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5224,8 +5308,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5263,8 +5349,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5302,8 +5390,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5341,8 +5431,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5380,8 +5472,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5419,8 +5513,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5458,8 +5554,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 1,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             }
@@ -5489,8 +5587,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 0,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             },
@@ -5528,8 +5628,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 0,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             },
@@ -5567,8 +5669,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 0,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             },
@@ -5606,8 +5710,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 0,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             },
@@ -5645,8 +5751,10 @@
               "Gravity": true,
               "LinearDamping": 0,
               "Locking": {},
+              "MassCenterOverride": "0,0,0",
               "MassOverride": 0,
               "MotionEnabled": true,
+              "OverrideMassCenter": false,
               "RigidbodyFlags": 0,
               "StartAsleep": false
             },
@@ -6449,7 +6557,7 @@
               "ReflectionOverride": false,
               "Reflections": false,
               "Repeat": true,
-              "SoundEvent": "sounds/lovelydayloopcarson.sound",
+              "SoundEvent": "sounds/backgroundmusic.sound",
               "SoundOverride": false,
               "StopOnNew": false,
               "TargetMixer": {
@@ -6506,6 +6614,7 @@
           "__type": "Sandbox.MapInstance",
           "__guid": "59cd5f3f-2384-42e3-93c8-7c89dd787019",
           "__version": 1,
+          "EnableCollision": true,
           "MapName": "maps/testmapsbox.vmap",
           "NoOrigin": false,
           "UseMapFromLaunch": false
@@ -6544,149 +6653,6 @@
       ]
     },
     {
-      "__guid": "c7468e6d-f610-4f81-8db9-2ca815cc10bd",
-      "Flags": 0,
-      "Name": "platinum",
-      "Position": "-495.9999,0.00006866462,55.23772",
-      "Rotation": "0,0,0.7071069,-0.7071066",
-      "Scale": "1.5,1.5,1.5",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.SkinnedModelRenderer",
-          "__guid": "b8e6c5e0-27ad-414c-9f8d-f496b7ae8f17",
-          "BodyGroups": 2796203,
-          "CreateBoneObjects": false,
-          "Model": "models/platinum.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1",
-          "UseAnimGraph": true
-        },
-        {
-          "__type": "Sandbox.ModelPhysics",
-          "__guid": "2aaa060d-c6bf-4a14-99aa-543ba9610c64",
-          "Locking": {},
-          "Model": "models/platinum.vmdl",
-          "MotionEnabled": false,
-          "Renderer": {
-            "_type": "component",
-            "component_id": "b8e6c5e0-27ad-414c-9f8d-f496b7ae8f17",
-            "go": "c7468e6d-f610-4f81-8db9-2ca815cc10bd",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "RigidbodyFlags": 0
-        }
-      ]
-    },
-    {
-      "__guid": "70574c0e-d4b5-42b7-8c4b-321fcd716e4b",
-      "Flags": 0,
-      "Name": "provence",
-      "Position": "-2096,672.0003,0.2808082",
-      "Rotation": "0,0,0.7071067,0.7071068",
-      "Scale": "1.5,1.5,1.5",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.SkinnedModelRenderer",
-          "__guid": "4f22badb-e8fe-45e9-92c8-ff57310515ba",
-          "BodyGroups": 10899,
-          "CreateBoneObjects": false,
-          "Model": "models/provence.vmdl",
-          "RenderType": "On",
-          "Tint": "1,1,1,1",
-          "UseAnimGraph": true
-        },
-        {
-          "__type": "Sandbox.ModelPhysics",
-          "__guid": "6bacf5f3-0223-421d-9656-ac1a1bed12bc",
-          "Locking": {},
-          "Model": "models/provence.vmdl",
-          "MotionEnabled": false,
-          "Renderer": {
-            "_type": "component",
-            "component_id": "4f22badb-e8fe-45e9-92c8-ff57310515ba",
-            "go": "70574c0e-d4b5-42b7-8c4b-321fcd716e4b",
-            "component_type": "SkinnedModelRenderer"
-          },
-          "RigidbodyFlags": 0
-        }
-      ]
-    },
-    {
-      "__guid": "62b8ae5f-cb02-4d1c-ba3e-672fe40bd234",
-      "Flags": 0,
-      "Name": "PhysicsPlatform",
-      "Position": "-1273.63,528,22.6915",
-      "Scale": "2,2,0.09999993",
-      "Tags": "solid",
-      "Enabled": true,
-      "Components": [
-        {
-          "__type": "Sandbox.ModelRenderer",
-          "__guid": "67662e9e-507a-4f22-a85d-e9f0d0fbf833",
-          "__enabled": false,
-          "BodyGroups": 18446744073709551615,
-          "Model": "models/dev/box.vmdl",
-          "RenderType": "On",
-          "Tint": "1,0.9,0,1"
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "e982ed21-92d3-47e8-8444-6c4791830e5a",
-          "__enabled": false,
-          "Center": "0,0,0",
-          "IsTrigger": false,
-          "Scale": "50,50,50",
-          "Static": false
-        },
-        {
-          "__type": "Sandbox.Rigidbody",
-          "__guid": "d0b967fa-3d45-4517-bbfa-34d2cac91e3e",
-          "AngularDamping": 0,
-          "Gravity": false,
-          "LinearDamping": 0,
-          "Locking": {
-            "Pitch": true,
-            "Yaw": true,
-            "Roll": true
-          },
-          "MassOverride": 0,
-          "MotionEnabled": false,
-          "RigidbodyFlags": 0,
-          "StartAsleep": false
-        },
-        {
-          "__type": "Sandbox.BoxCollider",
-          "__guid": "33d3d65e-4662-49a8-a789-8e4c1bb29000",
-          "__enabled": false,
-          "Center": "-0.000001385808,0,55.99997",
-          "IsTrigger": true,
-          "Scale": "50,50,50",
-          "Static": false
-        },
-        {
-          "__type": "Rbtrigger",
-          "__guid": "00a46989-37a9-4e9f-94d5-857eb8edbdad",
-          "__enabled": false
-        },
-        {
-          "__type": "RBC2",
-          "__guid": "f49a3596-fc84-4f82-b382-346335e52ef3",
-          "__enabled": false,
-          "rb": {
-            "_type": "component",
-            "component_id": "d0b967fa-3d45-4517-bbfa-34d2cac91e3e",
-            "go": "62b8ae5f-cb02-4d1c-ba3e-672fe40bd234",
-            "component_type": "Rigidbody"
-          },
-          "rbVector": "1,0,0",
-          "speed": 500,
-          "TimeAlive": 10
-        }
-      ]
-    },
-    {
       "__guid": "a0a9c071-4cef-4d71-b1d5-88249da9c5db",
       "Flags": 0,
       "Name": "Companion Cube",
@@ -6709,8 +6675,10 @@
           "Gravity": true,
           "LinearDamping": 1,
           "Locking": {},
+          "MassCenterOverride": "0,0,0",
           "MassOverride": 2000,
           "MotionEnabled": true,
+          "OverrideMassCenter": false,
           "RigidbodyFlags": "DisableCollisionSounds",
           "StartAsleep": false
         },
@@ -6753,8 +6721,6 @@
     "baik.soccerball",
     "ele.dev_measure_blue",
     "facepunch.v_usp",
-    "ibrs.ark_platinum",
-    "ibrs.ark_provence",
     "jodiscontent.spray2",
     "sundayservice.dustmotes",
     "synthlestudios.companioncube",

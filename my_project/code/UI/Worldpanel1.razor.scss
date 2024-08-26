@@ -16,17 +16,18 @@ Worldpanel1
 	{
         
 		font-size: 64px;
-		font-family: Poppins;
-		color: #00ff21;
+		font-family: Arial, Helvetica, sans-serif;
+		color: #ffb300;
         background-color: #0008;
         flex-direction: column;
-        border-radius: 20px;
+        text-stroke: 4px black;
+        border-radius: 15px;
         overflow: hidden;
         padding: 10px 20px;
         justify-content: center;
         align-items: center;
         //backdrop-filter: blur( 2px ); - doesn't work on world panels!?!?!?
-        gap: 20px;
+        gap: 0px;
 		
 		
 	}

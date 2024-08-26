@@ -1,0 +1,15 @@
+{
+  "AlbedoImage": "materials/forest_ground_needles.png",
+  "RoughnessImage": "materials/default/default_rough.tga",
+  "NormalImage": "materials/default/default_normal.tga",
+  "HeightImage": "materials/forrest_ground_03_ao_1k.jpg",
+  "AOImage": "materials/default/default_ao.tga",
+  "UVScale": 2,
+  "UVRotation": 0,
+  "Metalness": 0,
+  "NormalStrength": 1,
+  "HeightBlendStrength": 2.03,
+  "Surface": "surfaces/grass.surface",
+  "__references": [],
+  "__version": 0
+}
