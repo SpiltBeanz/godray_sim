@@ -251,6 +251,7 @@
               "__type": "Sandbox.Tonemapping",
               "__guid": "d9e9dbeb-8ea7-426f-9fed-48b57b54066a",
               "__version": 1,
+              "AutoExposureEnabled": true,
               "ExposureBias": 2,
               "ExposureCompensation": 0,
               "ExposureMethod": "RGB",
@@ -287,6 +288,13 @@
                       "BodyGroups": 17685,
                       "CreateBoneObjects": false,
                       "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+                      "Morphs": {},
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": true,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1",
                       "UseAnimGraph": true
@@ -328,6 +336,13 @@
                       },
                       "CreateBoneObjects": false,
                       "Model": "models/first_person/first_person_arms_citizen_4fingers.vmdl",
+                      "Morphs": {},
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": true,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1",
                       "UseAnimGraph": true
@@ -351,6 +366,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 0.5,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 99
             },
             {
@@ -382,6 +398,13 @@
               "CreateBoneObjects": true,
               "MaterialGroup": "default",
               "Model": "models/citizen/citizen.vmdl",
+              "Morphs": {},
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1239,6 +1262,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/hair/eyelashes/models/eyelashes.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1265,6 +1295,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/jacket/suitjacket/suitjacket.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1291,6 +1328,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/trousers/smarttrousers/smarttrousers.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1317,6 +1361,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1343,6 +1394,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/hair/hair_shortscruffy/models/hair_shortscruffy.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.95625,0.75604,0.53652,1",
                   "UseAnimGraph": true
@@ -1369,6 +1427,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/glasses/stylish_glasses/models/stylish_glasses_black.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1395,6 +1460,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/hair/eyebrows/models/eyebrows.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.64599,0.4573,0.35912,1",
                   "UseAnimGraph": true
@@ -1465,6 +1537,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 99
             },
             {
@@ -1492,6 +1565,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 100
             },
             {
@@ -1524,6 +1598,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "1,0,0,1"
             },
@@ -1557,6 +1637,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "1,0,0,1"
             },
@@ -1590,6 +1676,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "1,0,0,1"
             },
@@ -1623,6 +1715,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "1,0,0,1"
             },
@@ -1657,6 +1755,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "1,0,0,1"
             },
@@ -1691,6 +1795,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "0.03333,1,0,1"
             },
@@ -1724,6 +1834,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "0.03333,1,0,1"
             },
@@ -1755,6 +1871,12 @@
               "__guid": "12b70d5a-9d59-44e0-9d7b-4cce47d76951",
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -1782,6 +1904,12 @@
                   "__guid": "14e58524-ea39-457a-8826-9478ee2aeb16",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/dev/box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1816,6 +1944,12 @@
               "__guid": "80f11854-81af-4ddf-9c45-69cbeb01b334",
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -1843,6 +1977,12 @@
                   "__guid": "77378fcf-5b66-417a-bbe2-21090827f563",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/dev/box.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1883,6 +2023,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1916,6 +2062,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1938,6 +2090,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1959,6 +2117,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1992,6 +2156,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2014,6 +2184,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2035,6 +2211,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2068,6 +2250,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2090,6 +2278,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2111,6 +2305,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2144,6 +2344,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2166,6 +2372,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2187,6 +2399,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2220,6 +2438,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2242,6 +2466,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2263,6 +2493,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2296,6 +2532,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2318,6 +2560,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2339,6 +2587,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2372,6 +2626,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2394,6 +2654,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2415,6 +2681,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2448,6 +2720,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2470,6 +2748,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2491,6 +2775,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2524,6 +2814,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2546,6 +2842,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2567,6 +2869,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2600,6 +2908,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2622,6 +2936,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2643,6 +2963,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2676,6 +3002,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2698,6 +3030,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2719,6 +3057,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2752,6 +3096,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2774,6 +3124,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2795,6 +3151,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2828,6 +3190,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2850,6 +3218,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2871,6 +3245,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2904,6 +3284,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2926,6 +3312,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2947,6 +3339,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2980,6 +3378,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3002,6 +3406,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3023,6 +3433,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3056,6 +3472,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3078,6 +3500,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3099,6 +3527,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3132,6 +3566,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3154,6 +3594,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3175,6 +3621,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3208,6 +3660,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3230,6 +3688,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3251,6 +3715,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3284,6 +3754,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3306,6 +3782,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3327,6 +3809,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3360,6 +3848,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3382,6 +3876,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3403,6 +3903,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3436,6 +3942,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3458,6 +3970,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3479,6 +3997,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -3512,6 +4036,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3534,6 +4064,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -3568,6 +4104,12 @@
               "__guid": "7ec54a40-5a8b-42c0-9ca4-1b2077dcedc8",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3609,6 +4151,12 @@
               "__guid": "268db25a-a561-42f7-ac32-bb843dabdcb8",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3650,6 +4198,12 @@
               "__guid": "d60399da-db43-451d-a157-7d99e95ef334",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3691,6 +4245,12 @@
               "__guid": "3496d6ca-2305-4a0b-a9cf-e20bbc616ef5",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3732,6 +4292,12 @@
               "__guid": "da2b1a3d-2025-4b91-9bab-455c97caf46f",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3773,6 +4339,12 @@
               "__guid": "d9e8d6d7-8820-463e-925f-89fbd13406e9",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3814,6 +4386,12 @@
               "__guid": "199addcb-e11b-4343-91b3-4c0b017fb899",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3855,6 +4433,12 @@
               "__guid": "d81d9e82-df40-4b98-b06e-b3b04b88c940",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3896,6 +4480,12 @@
               "__guid": "f5e07626-5457-4b59-8abc-e50d2f4f9299",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3937,6 +4527,12 @@
               "__guid": "669e1800-a0f6-461a-b8fa-77387a466924",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -3978,6 +4574,12 @@
               "__guid": "48780c39-e367-4089-a8fc-c959ca99ca1d",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4019,6 +4621,12 @@
               "__guid": "724f9343-539f-40d5-aef2-87553ce39344",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4060,6 +4668,12 @@
               "__guid": "5462ab52-8fdc-4466-9780-3c2dbe12a1e5",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4101,6 +4715,12 @@
               "__guid": "e36d61eb-d79c-4cc9-a160-1f02f39d28c5",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4142,6 +4762,12 @@
               "__guid": "2dba1f7d-3802-40e5-b33c-838a3d18c439",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4183,6 +4809,12 @@
               "__guid": "1afdf2d4-ec9c-4490-a77e-437ecc9eda8b",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4224,6 +4856,12 @@
               "__guid": "cd32be5c-6c0f-4ba8-83f7-a5493cc96e81",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4265,6 +4903,12 @@
               "__guid": "8bc22399-e097-4cfd-a3c7-5d3fdd3d6944",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4306,6 +4950,12 @@
               "__guid": "d6457e85-11ee-4fd0-8f73-07edbd00b51c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4347,6 +4997,12 @@
               "__guid": "f3595da6-a254-4279-bfbe-97503b76aa29",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4388,6 +5044,12 @@
               "__guid": "e1aaa509-ad33-4e2b-97fa-691718e6ce89",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4429,6 +5091,12 @@
               "__guid": "2546e186-b244-4fd4-a761-375204ead6ef",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4470,6 +5138,12 @@
               "__guid": "bb2a165c-7bfd-4d7c-9aa8-deb450572d61",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4511,6 +5185,12 @@
               "__guid": "144249d9-d5fe-4a28-b240-531527f02602",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4552,6 +5232,12 @@
               "__guid": "b2de73c9-c0ea-443f-b18a-a7fef6cc0b65",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4593,6 +5279,12 @@
               "__guid": "46552b19-de2f-413c-8673-2d1d187d9b7f",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4634,6 +5326,12 @@
               "__guid": "232d3b31-7ea3-47de-8f6c-077707591916",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4675,6 +5373,12 @@
               "__guid": "672c513f-b0c5-4c7d-b26f-3436eae5de74",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4716,6 +5420,12 @@
               "__guid": "2f233a0f-bfc7-48c1-83ab-ddf146e48c07",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4757,6 +5467,12 @@
               "__guid": "2d451317-6ee3-4fa0-a6c4-cbdd069327b8",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4798,6 +5514,12 @@
               "__guid": "af4b93ac-0d00-4549-9b3f-2da4d617855c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4839,6 +5561,12 @@
               "__guid": "25fa09b6-01e7-49d3-9bb8-5ef420f92c8a",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4880,6 +5608,12 @@
               "__guid": "7190a8a8-55ac-4802-8ca6-877d8180ebae",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4921,6 +5655,12 @@
               "__guid": "62afa806-f59b-4912-93bf-4404530f7c89",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -4962,6 +5702,12 @@
               "__guid": "d0a74f00-a0d7-4296-ba55-9b3e7e5fcf31",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5003,6 +5749,12 @@
               "__guid": "f49bad02-8b5c-418c-a2ad-443e2450562e",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5044,6 +5796,12 @@
               "__guid": "4b840902-4f8b-45b1-a829-7588378c4e70",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5085,6 +5843,12 @@
               "__guid": "db2a5678-b622-4f0a-a66f-474d3a3fcf62",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5126,6 +5890,12 @@
               "__guid": "3dba5480-f80a-40de-b0e5-fc2bd20aad97",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5167,6 +5937,12 @@
               "__guid": "87b32cfb-b716-4698-8587-8108a6f2e94c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5208,6 +5984,12 @@
               "__guid": "29abc198-69ee-4fc9-87e4-4f7fc0aa77f3",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5249,6 +6031,12 @@
               "__guid": "622f1349-3019-4cba-aed2-3c12a74aa817",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5290,6 +6078,12 @@
               "__guid": "d622a91d-58cd-44eb-bae1-3e5c1be78a57",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5331,6 +6125,12 @@
               "__guid": "d71f9033-e179-4286-8b1d-ce85efeac0f7",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5372,6 +6172,12 @@
               "__guid": "23302084-8829-4ff8-9b4b-40f6aa1e01f3",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5413,6 +6219,12 @@
               "__guid": "3c2ea12a-31d5-4125-8adf-653eac88c84d",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5454,6 +6266,12 @@
               "__guid": "db6cc25b-2126-49da-9bb9-0270a107b97c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5495,6 +6313,12 @@
               "__guid": "5f3c0df8-9247-4c60-9b76-72a829d11980",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5536,6 +6360,12 @@
               "__guid": "0d22ac1c-4708-4449-abf4-8a5b728c4f70",
               "BodyGroups": 18446744073709551615,
               "Model": "models/citizen_props/beachball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5577,6 +6407,12 @@
               "__guid": "bcc66e92-76a3-43ba-bfa3-0a0eb277542a",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5618,6 +6454,12 @@
               "__guid": "ecb3639a-e571-4c1a-8a8a-c473f89f3826",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5659,6 +6501,12 @@
               "__guid": "4a4a3fba-2d91-45ff-8e39-9fbffe6e9eda",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5700,6 +6548,12 @@
               "__guid": "164ab309-92a6-4042-b458-91d9f8f10359",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5741,6 +6595,12 @@
               "__guid": "53321059-a24a-4002-9c84-3aebf09cfa29",
               "BodyGroups": 18446744073709551615,
               "Model": "models/soccerball.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -5898,6 +6758,12 @@
                       "__guid": "dcb70e46-6be1-4b8b-8655-b7b43a7758dd",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -5961,6 +6827,12 @@
                       "__guid": "fbcb309f-d5d0-4a04-ae3e-7b8e9cf49b11",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6024,6 +6896,12 @@
                       "__guid": "76a1d1fa-1c93-4f47-a585-bc000207b507",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6087,6 +6965,12 @@
                       "__guid": "8ab057f7-fe12-4b2d-8a6f-02ce1ae4a21d",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6130,6 +7014,12 @@
                       "__guid": "36770ed8-66fe-4232-a9a3-ac23c770af18",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6173,6 +7063,12 @@
                       "__guid": "117e2579-4785-4fee-8cee-972bd1f2ce9c",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6225,6 +7121,12 @@
                       "__guid": "34594df5-80b3-4eb7-89aa-b07a0eb82158",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6288,6 +7190,12 @@
                       "__guid": "77e97d77-0a28-40d9-a137-9b829c9b2d76",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6351,6 +7259,12 @@
                       "__guid": "5b1c8b83-c998-4de6-93fd-decfdc6b4264",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6414,6 +7328,12 @@
                       "__guid": "26667f57-768c-4136-90c5-de70b3cc6672",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6457,6 +7377,12 @@
                       "__guid": "012fcf4f-6425-4512-ad1c-b48f578cae02",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6500,6 +7426,12 @@
                       "__guid": "07701ffa-7403-492a-bfc9-09157bfea82d",
                       "BodyGroups": 18446744073709551615,
                       "Model": "models/foreguard/lighting/walllight01.vmdl",
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1"
                     }
@@ -6561,8 +7493,8 @@
               "SoundOverride": false,
               "StopOnNew": false,
               "TargetMixer": {
-                "Name": "unknown",
-                "Id": "00000000-0000-0000-0000-000000000000"
+                "Name": "music",
+                "Id": "86e1cb18-a5fd-496c-9e83-f6a8fa87a045"
               },
               "Volume": 0.1
             }
@@ -6584,6 +7516,12 @@
               "BodyGroups": 18446744073709551615,
               "MaterialOverride": "materials/default/white.vmat",
               "Model": "models/dev/plane.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "0,0.66667,1,1"
             },
@@ -6617,6 +7555,8 @@
           "EnableCollision": true,
           "MapName": "maps/testmapsbox.vmap",
           "NoOrigin": false,
+          "OnMapLoaded": null,
+          "OnMapUnloaded": null,
           "UseMapFromLaunch": false
         }
       ],
@@ -6665,6 +7605,12 @@
           "__guid": "e548be87-6509-424f-a001-e66357eede25",
           "BodyGroups": 18446744073709551615,
           "Model": "models/companioncube.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "RenderType": "On",
           "Tint": "1,1,1,1"
         },
@@ -6726,5 +7672,6 @@
     "synthlestudios.companioncube",
     "tridge.walllight01"
   ],
+  "IsValid": true,
   "__version": 1
 }

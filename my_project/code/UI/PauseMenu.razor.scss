@@ -7,7 +7,7 @@ PauseMenu
 	bottom: 0;
 	background-color: rgba(black, 0.7);
 	pointer-events: all;
-	color: rgb(132, 134, 254);
+	color: rgb(0, 191, 255);
 	font-family: Poppins;
 	font-size: 64px;
 	font-weight: bold;
@@ -40,17 +40,17 @@ PauseMenu
 
 			&.menu
 			{
-				background-color: rgb(255, 0, 0);
+				background-color: rgb(0, 191, 255);
 				&:active
 				{
-					sound-in: fart;
+					sound-in: ui.button.press;
 				}
 			}
 
 			&:hover
 			{
 				sound-in: ui.button.over;
-				background-color: rgb(166, 166, 166);
+				background-color: rgb(0, 255, 0);
 				transform: scale(1.1);
 				cursor: pointer;
 				color: rgb(0, 0, 0);
@@ -67,6 +67,10 @@ PauseMenu
 				&:active
 				{
 					sound-in: fart;
+				}
+				&:hover
+				{
+					background-color: rgb(0, 255, 0);
 				}
 			}
 

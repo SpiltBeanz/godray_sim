@@ -30,6 +30,7 @@
           "__type": "Sandbox.Tonemapping",
           "__guid": "d9e9dbeb-8ea7-426f-9fed-48b57b54066a",
           "__version": 1,
+          "AutoExposureEnabled": true,
           "ExposureBias": 2,
           "ExposureCompensation": 0,
           "ExposureMethod": "RGB",
@@ -126,6 +127,12 @@
               "__guid": "08cbed2d-bafe-4972-b456-7e4c58062dd0",
               "BodyGroups": 1,
               "Model": "models/props_skybox/sunnoon.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "1,1,1,1"
             },
@@ -249,8 +256,8 @@
               "SoundOverride": false,
               "StopOnNew": false,
               "TargetMixer": {
-                "Name": "unknown",
-                "Id": "00000000-0000-0000-0000-000000000000"
+                "Name": "music",
+                "Id": "86e1cb18-a5fd-496c-9e83-f6a8fa87a045"
               },
               "Volume": 1
             }
@@ -278,6 +285,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 99
             }
           ],
@@ -308,6 +316,7 @@
                       "AutoScreenScale": true,
                       "Opacity": 1,
                       "Scale": 1,
+                      "ScaleStrategy": "ConsistentHeight",
                       "ZIndex": 100
                     }
                   ],
@@ -363,5 +372,6 @@
     "fish.bomb_explosion_smoke",
     "tfassets.sunnoon"
   ],
+  "IsValid": true,
   "__version": 1
 }

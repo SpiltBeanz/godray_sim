@@ -20,7 +20,7 @@ Buttons
 	{
 		font-size: 128px;
 		font-weight: bolder;
-		color: rgb(132, 134, 254);
+		color: rgb(0, 191, 255);
 		text-stroke: 10px black;
 	}
 
@@ -41,17 +41,21 @@ Buttons
 
 			&.sfx
 			{
-				background-color: rgb(255, 0, 0);
+				background-color: rgb(0, 191, 255);
+				&:hover
+				{
+					background-color: rgb(0, 255, 0);
+				}
 				&:active
 				{
-					sound-in: fart;
+					sound-in: ui.button.press;
 				}
 			}
 
 			&:hover
 			{
 				sound-in: ui.button.over;
-				background-color: rgb(166, 166, 166);
+				background-color: rgb(0, 255, 0);
 				transform: scale(1.1);
 				cursor: pointer;
 				color: rgb(0, 0, 0);

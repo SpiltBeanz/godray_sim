@@ -1,53 +1,45 @@
 {
   "publish": {
-    "Allowed": true,
     "Enabled": true,
     "ProjectConfig": {
       "Title": "Scrat\u0027s Test Map",
       "Type": "map",
       "Org": "scrat",
       "Ident": "testmapsbox",
-      "Tags": "test map",
       "Schema": 0,
-      "HasAssets": false,
-      "AssetsPath": null,
+      "IncludeSourceFiles": false,
       "Resources": null,
-      "HasCode": false,
-      "CodePath": null,
       "PackageReferences": [],
       "EditorReferences": [
-        "matek.dev_grid_orange#46465",
-        "fpopium.plaster_ceiling_a#48492",
-        "gbonn.concretetiledfloor#49286",
-        "magikarp.orange3#34275",
-        "caro.citynight#28309",
-        "semxy.bowieskybox#24718",
-        "tiled.brickwall#42137",
-        "caro.sky_001#27739",
-        "facepunch.sconce_wall_light#42946",
-        "saandy.ceiling_light03#41435",
-        "tfassets.light_cone_farm_32#22752",
-        "mdlresrc.rtx_4090cube#22474",
         "synthlestudios.companioncube#24689",
         "goose.g_tilesdamaged8u#9632",
-        "snakecoil.pool_tile_big#35981",
+        "gbonn.concretetiledfloor#49286",
+        "saandy.ceiling_light03#41435",
+        "facepunch.concrete_hs_01#28793",
+        "magikarp.orange3#34275",
+        "facepunch.marble_a_hs#19109",
+        "facepunch.wood_painted_black_a_hs#28973",
+        "duccsoft.stone_tile#16666",
+        "facepunch.sconce_wall_light#42946",
+        "facepunch.wood_varnished_a_hs#28977",
+        "andiq.tiles020#12710",
         "exorealms.ceramic_tile_white02#44368",
         "sundayservice.fancytile_01#43886",
-        "tameranian.bnw_tiles#9973",
-        "mapperskai.tiled1#10773",
-        "facepunch.walker#45101",
-        "facepunch.concrete_hs_01#28793",
+        "snakecoil.pool_tile_big#35981",
+        "facepunch.wood_plank_hs_01#33582",
+        "sugmatextures.stonetilefloor3#35103",
         "facepunch.metal_painted_cyan_a_hs#28951",
-        "facepunch.wood_painted_black_a_hs#28973",
-        "facepunch.wood_varnished_a_hs#28977",
-        "facepunch.marble_a_hs#19109",
-        "facepunch.wood_plank_hs_01#33582"
+        "caro.sky_001#27739",
+        "mapperskai.tiled1#10773",
+        "stardrive.rope_barrier_a#26473"
       ],
+      "IsWhitelistDisabled": false,
       "Metadata": {
         "SingleAssetSource": "maps/testmapsbox.vmap",
         "GameSupport": [
           "facepunch.walker"
-        ]
+        ],
+        "ParentPackage": "scrat.my_project"
       }
     }
   }

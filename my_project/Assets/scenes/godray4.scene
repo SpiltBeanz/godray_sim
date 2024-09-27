@@ -256,6 +256,7 @@
               "__type": "Sandbox.Tonemapping",
               "__guid": "d9e9dbeb-8ea7-426f-9fed-48b57b54066a",
               "__version": 1,
+              "AutoExposureEnabled": true,
               "ExposureBias": 2,
               "ExposureCompensation": 0,
               "ExposureMethod": "RGB",
@@ -292,6 +293,13 @@
                       "BodyGroups": 17685,
                       "CreateBoneObjects": false,
                       "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
+                      "Morphs": {},
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": true,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1",
                       "UseAnimGraph": true
@@ -333,6 +341,13 @@
                       },
                       "CreateBoneObjects": false,
                       "Model": "models/first_person/first_person_arms_citizen_4fingers.vmdl",
+                      "Morphs": {},
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": true,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "RenderType": "Off",
                       "Tint": "1,1,1,1",
                       "UseAnimGraph": true
@@ -356,6 +371,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 0.5,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 99
             },
             {
@@ -387,6 +403,13 @@
               "CreateBoneObjects": true,
               "MaterialGroup": "default",
               "Model": "models/citizen/citizen.vmdl",
+              "Morphs": {},
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1",
               "UseAnimGraph": true
@@ -1244,6 +1267,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/hair/eyelashes/models/eyelashes.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1270,6 +1300,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/jacket/suitjacket/suitjacket.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1296,6 +1333,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/trousers/smarttrousers/smarttrousers.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1322,6 +1366,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/shoes/boots/models/black_boots.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1348,6 +1399,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/hair/hair_shortscruffy/models/hair_shortscruffy.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.95625,0.75604,0.53652,1",
                   "UseAnimGraph": true
@@ -1374,6 +1432,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/glasses/stylish_glasses/models/stylish_glasses_black.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1",
                   "UseAnimGraph": true
@@ -1400,6 +1465,13 @@
                   },
                   "CreateBoneObjects": false,
                   "Model": "models/citizen_clothes/hair/eyebrows/models/eyebrows.vmdl",
+                  "Morphs": {},
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.64599,0.4573,0.35912,1",
                   "UseAnimGraph": true
@@ -1470,6 +1542,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 99
             },
             {
@@ -1497,6 +1570,7 @@
               "AutoScreenScale": true,
               "Opacity": 1,
               "Scale": 1,
+              "ScaleStrategy": "ConsistentHeight",
               "ZIndex": 100
             },
             {
@@ -1536,6 +1610,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/default/white.vmat",
                   "Model": "models/dev/plane.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0,0,0.1814,1"
                 },
@@ -1572,6 +1652,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "0.03333,1,0,1"
             },
@@ -1606,6 +1692,12 @@
               "__enabled": false,
               "BodyGroups": 18446744073709551615,
               "Model": "models/dev/box.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "Off",
               "Tint": "0.03333,1,0,1"
             },
@@ -1637,6 +1729,12 @@
               "BodyGroups": 18446744073709551615,
               "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
               "Model": "models/spray2.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -1670,6 +1768,12 @@
                   "CutoffAngleSoftness": 5,
                   "Material": "materials/decals/default.vmat",
                   "Mod2XBlending": false,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "Size": "64,64,32",
                   "TintColor": "1,1,1,1",
                   "TriPlanar": false
@@ -1692,6 +1796,12 @@
                   "CutoffAngleSoftness": 5,
                   "Material": "materials/decals/default.vmat",
                   "Mod2XBlending": false,
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "Size": "64,64,32",
                   "TintColor": "1,1,1,1",
                   "TriPlanar": false
@@ -1711,6 +1821,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1744,6 +1860,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1766,6 +1888,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1787,6 +1915,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1820,6 +1954,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1842,6 +1982,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1863,6 +2009,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1896,6 +2048,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1918,6 +2076,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1939,6 +2103,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -1972,6 +2142,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -1994,6 +2170,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2015,6 +2197,12 @@
                   "BodyGroups": 18446744073709551615,
                   "MaterialOverride": "materials/dev/dev_measure_blue.vmat",
                   "Model": "models/spray2.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2048,6 +2236,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2070,6 +2264,12 @@
                       "CutoffAngleSoftness": 5,
                       "Material": "materials/decals/default.vmat",
                       "Mod2XBlending": false,
+                      "RenderOptions": {
+                        "GameLayer": true,
+                        "OverlayLayer": false,
+                        "BloomLayer": false,
+                        "AfterUILayer": false
+                      },
                       "Size": "64,64,32",
                       "TintColor": "1,1,1,1",
                       "TriPlanar": false
@@ -2102,6 +2302,12 @@
                   "__guid": "14e58524-ea39-457a-8826-9478ee2aeb16",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2141,6 +2347,12 @@
                   "__guid": "6ebe7bbc-b555-468a-8b06-1c82364286b9",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2180,6 +2392,12 @@
                   "__guid": "fb0f0cb6-9c11-491d-819c-c9a9a3342d86",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2219,6 +2437,12 @@
                   "__guid": "2b6d625d-1817-406c-92a7-4d2fdc923131",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.43256,0.43256,0.43256,1"
                 },
@@ -2258,6 +2482,12 @@
                   "__guid": "e11f588d-bb42-48cd-96be-d1d40eeda77c",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "1,1,1,1"
                 },
@@ -2297,6 +2527,12 @@
                   "__guid": "f3bbe09f-537d-4809-952f-bd8bb16d6530",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.14419,0.14419,0.14419,1"
                 },
@@ -2336,6 +2572,12 @@
                   "__guid": "91a05407-1130-41aa-b28a-80c88a639aef",
                   "BodyGroups": 18446744073709551615,
                   "Model": "models/sand_valley/fly_island/cloud_flat_3.vmdl",
+                  "RenderOptions": {
+                    "GameLayer": true,
+                    "OverlayLayer": false,
+                    "BloomLayer": false,
+                    "AfterUILayer": false
+                  },
                   "RenderType": "On",
                   "Tint": "0.29847,0.87907,0.84036,1"
                 },
@@ -2448,8 +2690,8 @@
               "SoundOverride": false,
               "StopOnNew": false,
               "TargetMixer": {
-                "Name": "unknown",
-                "Id": "00000000-0000-0000-0000-000000000000"
+                "Name": "music",
+                "Id": "86e1cb18-a5fd-496c-9e83-f6a8fa87a045"
               },
               "Volume": 1
             }
@@ -2563,6 +2805,12 @@
               "InteractionRange": 1,
               "LookAtCamera": true,
               "PanelSize": "3517.206,512",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderScale": 1,
               "VerticalAlign": "Center"
             },
@@ -2587,6 +2835,12 @@
               "__guid": "8effba87-53ee-4a3d-aac1-ff930a612a0f",
               "BodyGroups": 18446744073709551615,
               "Model": "models/sand_valley/fly_island/cloud_2.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "0.99535,0.89581,0,1"
             }
@@ -2608,6 +2862,12 @@
           "__guid": "87e20789-347e-442b-85d9-acff9ec437e2",
           "BodyGroups": 18446744073709551615,
           "Model": "models/security_door.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "RenderType": "On",
           "Tint": "1,1,1,1"
         },
@@ -2664,6 +2924,12 @@
               "InteractionRange": 1,
               "LookAtCamera": true,
               "PanelSize": "3517.206,512",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderScale": 1,
               "VerticalAlign": "Center"
             },
@@ -2692,6 +2958,12 @@
           "__guid": "12442957-c945-4ea7-8108-3d46335b5591",
           "BodyGroups": 18446744073709551615,
           "Model": "models/dev/box.vmdl",
+          "RenderOptions": {
+            "GameLayer": true,
+            "OverlayLayer": false,
+            "BloomLayer": false,
+            "AfterUILayer": false
+          },
           "RenderType": "On",
           "Tint": "1,0,0,1"
         },
@@ -2728,6 +3000,12 @@
               "InteractionRange": 1,
               "LookAtCamera": true,
               "PanelSize": "3517.206,512",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderScale": 1,
               "VerticalAlign": "Center"
             },
@@ -2787,6 +3065,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/forest/tree_1.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2806,6 +3085,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/forest/tree_1.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2826,6 +3106,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/forest/tree_1.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2845,6 +3126,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/forest/tree_5.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2864,6 +3146,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/forest/tree_5.vmdl",
+                  "StartAsleep": false,
                   "Tint": "0.95183,0.99535,0.93979,1"
                 }
               ]
@@ -2884,6 +3167,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/8riv_wildbush_b02.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2904,6 +3188,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/8riv_wildbush_b02.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2924,6 +3209,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/8riv_wildbush_b02.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2944,6 +3230,7 @@
                   "Health": 0,
                   "IsStatic": true,
                   "Model": "models/8riv_wildbush_b02.vmdl",
+                  "StartAsleep": false,
                   "Tint": "1,1,1,1"
                 }
               ]
@@ -2970,6 +3257,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -2989,6 +3277,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3009,6 +3298,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3028,6 +3318,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3047,6 +3338,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3067,6 +3359,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3087,6 +3380,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3107,6 +3401,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3127,6 +3422,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3156,6 +3452,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3175,6 +3472,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3183,7 +3481,7 @@
                   "__guid": "5dfa4f88-50a2-4b8e-90a8-22769362da5c",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-860.0887,840.0671,-355.757",
+                  "Position": "-860.0881,840.0673,-355.757",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -3195,6 +3493,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3214,6 +3513,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3233,6 +3533,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3253,6 +3554,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3273,6 +3575,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3293,6 +3596,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3313,6 +3617,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3341,6 +3646,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3360,6 +3666,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3380,6 +3687,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3399,6 +3707,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3418,6 +3727,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3438,6 +3748,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3458,6 +3769,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3478,6 +3790,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3498,6 +3811,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3527,6 +3841,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3546,6 +3861,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3566,6 +3882,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3585,6 +3902,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3604,6 +3922,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3624,6 +3943,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3644,6 +3964,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3664,6 +3985,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3684,6 +4006,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3712,6 +4035,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3731,6 +4055,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3751,6 +4076,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3770,6 +4096,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3789,6 +4116,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3809,6 +4137,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3829,6 +4158,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3849,6 +4179,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3869,6 +4200,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3897,6 +4229,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3916,6 +4249,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3936,6 +4270,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3955,6 +4290,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3974,6 +4310,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -3994,6 +4331,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4014,6 +4352,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4034,6 +4373,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4054,6 +4394,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4082,6 +4423,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4101,6 +4443,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4121,6 +4464,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4140,6 +4484,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4159,6 +4504,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4179,6 +4525,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4199,6 +4546,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4219,6 +4567,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4239,6 +4588,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4268,6 +4618,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4287,6 +4638,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4307,6 +4659,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4326,6 +4679,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4345,6 +4699,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4365,6 +4720,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4385,6 +4741,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4405,6 +4762,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4425,6 +4783,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4443,7 +4802,7 @@
                   "__guid": "921007fc-a04f-46cd-9f54-b7957272082f",
                   "Flags": 0,
                   "Name": "tree_1 (2)",
-                  "Position": "-653.3378,-177.5285,-339.475",
+                  "Position": "-653.3381,-177.5282,-339.475",
                   "Rotation": "-0.03160075,-0.006601741,0.2043894,0.9783572",
                   "Enabled": true,
                   "Components": [
@@ -4454,6 +4813,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4473,6 +4833,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4481,7 +4842,7 @@
                   "__guid": "9ea021fc-1273-4368-a9c7-38ef2c7ca9cf",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.3334,510.4742,-371.475",
+                  "Position": "-653.3328,510.4748,-371.475",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -4493,6 +4854,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4512,6 +4874,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4520,7 +4883,7 @@
                   "__guid": "e3549e38-3157-44af-be35-06e9693d5cad",
                   "Flags": 0,
                   "Name": "tree_5 (2)",
-                  "Position": "-829.3353,238.4753,-339.475",
+                  "Position": "-829.3353,238.4763,-339.475",
                   "Rotation": "0,0,0.2605045,0.9654726",
                   "Enabled": true,
                   "Components": [
@@ -4531,6 +4894,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4551,6 +4915,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4571,6 +4936,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4591,6 +4957,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4599,7 +4966,7 @@
                   "__guid": "34748adf-853d-404f-a381-49bad61a663f",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (2)",
-                  "Position": "-740.5702,277.9094,-329.6137",
+                  "Position": "-740.5702,277.9101,-329.6137",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.2,0.2,0.2",
                   "Enabled": true,
@@ -4611,6 +4978,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4640,6 +5008,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4659,6 +5028,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4679,6 +5049,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4698,6 +5069,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4717,6 +5089,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4737,6 +5110,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4757,6 +5131,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4777,6 +5152,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4797,6 +5173,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4815,7 +5192,7 @@
                   "__guid": "fd2e0ce1-ad59-4cb5-aee1-7b8883d0a612",
                   "Flags": 0,
                   "Name": "tree_1 (2)",
-                  "Position": "-652.4965,-179.4559,-372.0398",
+                  "Position": "-652.4969,-179.455,-372.0398",
                   "Rotation": "-0.03160075,-0.006601741,0.2043894,0.9783572",
                   "Enabled": true,
                   "Components": [
@@ -4826,6 +5203,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4845,6 +5223,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4853,7 +5232,7 @@
                   "__guid": "da620160-f46a-451a-b53c-75cec474b4fa",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.3336,510.4749,-371.475",
+                  "Position": "-653.3333,510.4757,-371.475",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -4865,6 +5244,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4884,6 +5264,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4892,7 +5273,7 @@
                   "__guid": "e88878b6-bc3f-4010-b1d3-080890eab02c",
                   "Flags": 0,
                   "Name": "tree_5 (2)",
-                  "Position": "-829.3356,238.4739,-339.475",
+                  "Position": "-829.3354,238.4747,-339.475",
                   "Rotation": "0,0,0.2605045,0.9654726",
                   "Enabled": true,
                   "Components": [
@@ -4903,6 +5284,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4923,6 +5305,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4931,7 +5314,7 @@
                   "__guid": "29bbada9-8e9b-47ec-8f00-3218b900d784",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (3)",
-                  "Position": "-820.3595,-73.4054,-338.8169",
+                  "Position": "-820.3598,-73.40436,-338.8169",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.5,0.5,0.5",
                   "Enabled": true,
@@ -4943,6 +5326,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4963,6 +5347,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -4983,6 +5368,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5012,6 +5398,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5031,6 +5418,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5039,7 +5427,7 @@
                   "__guid": "c748b938-d658-4154-9a37-96f63462c1de",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.3315,510.4749,-371.475",
+                  "Position": "-653.3308,510.4756,-371.475",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -5051,6 +5439,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5070,6 +5459,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5089,6 +5479,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5109,6 +5500,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5117,7 +5509,7 @@
                   "__guid": "344f442f-e72d-4e26-aec1-d97b1f84b6c2",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (3)",
-                  "Position": "-820.4855,-73.52612,-342.3011",
+                  "Position": "-820.4861,-73.52539,-342.3011",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.5,0.5,0.5",
                   "Enabled": true,
@@ -5129,6 +5521,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5149,6 +5542,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5169,6 +5563,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5198,6 +5593,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5217,6 +5613,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5225,7 +5622,7 @@
                   "__guid": "547cff8a-4faa-43cf-a671-5c5a65d83cdd",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.3322,510.4743,-371.475",
+                  "Position": "-653.3316,510.4749,-371.475",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -5237,6 +5634,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5256,6 +5654,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5275,6 +5674,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5295,6 +5695,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5315,6 +5716,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5335,6 +5737,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5355,6 +5758,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5384,6 +5788,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5403,6 +5808,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5411,7 +5817,7 @@
                   "__guid": "2845fd9c-a3e8-47e8-88df-6b04c1da8c51",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.3319,510.4746,-371.475",
+                  "Position": "-653.3313,510.4752,-371.475",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -5423,6 +5829,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5442,6 +5849,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5450,7 +5858,7 @@
                   "__guid": "806dfa73-eb34-45ca-a1fe-7ce9bfb75028",
                   "Flags": 0,
                   "Name": "tree_5 (2)",
-                  "Position": "-829.3348,238.4732,-355.475",
+                  "Position": "-829.3344,238.4737,-355.475",
                   "Rotation": "0,0,0.2605045,0.9654726",
                   "Enabled": true,
                   "Components": [
@@ -5461,6 +5869,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5481,6 +5890,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5501,6 +5911,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5521,6 +5932,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5541,6 +5953,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5559,7 +5972,7 @@
                   "__guid": "76da7294-a221-4932-8559-84b478b65b6a",
                   "Flags": 0,
                   "Name": "tree_1 (2)",
-                  "Position": "-652.3635,-179.7587,-377.1145",
+                  "Position": "-652.3638,-179.7584,-377.1145",
                   "Rotation": "-0.03160075,-0.006601741,0.2043894,0.9783572",
                   "Enabled": true,
                   "Components": [
@@ -5570,6 +5983,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5589,6 +6003,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5597,7 +6012,7 @@
                   "__guid": "31a79c18-50f4-4df4-a190-29e6bca27c23",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.3319,510.4764,-371.475",
+                  "Position": "-653.3312,510.4771,-371.475",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -5609,6 +6024,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5628,6 +6044,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5647,6 +6064,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5667,6 +6085,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5687,6 +6106,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5707,6 +6127,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5727,6 +6148,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5756,6 +6178,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5775,6 +6198,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5783,7 +6207,7 @@
                   "__guid": "b49b03b9-37a8-4da3-be0a-df8ee77b6c5a",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.6396,510.969,-387.3055",
+                  "Position": "-653.6392,510.97,-387.3055",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -5795,6 +6219,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5814,6 +6239,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5822,7 +6248,7 @@
                   "__guid": "8b13e40b-eace-435e-b3cd-2d6b8a628522",
                   "Flags": 0,
                   "Name": "tree_5 (2)",
-                  "Position": "-829.3353,238.4781,-339.475",
+                  "Position": "-829.3351,238.4791,-339.475",
                   "Rotation": "0,0,0.2605045,0.9654726",
                   "Enabled": true,
                   "Components": [
@@ -5833,6 +6259,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5853,6 +6280,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5861,7 +6289,7 @@
                   "__guid": "53339039-fe9f-442b-ac60-ef0b0aecc10a",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (3)",
-                  "Position": "-822.4266,-75.47281,-397.5764",
+                  "Position": "-822.4266,-75.47208,-397.5764",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.5,0.5,0.5",
                   "Enabled": true,
@@ -5873,6 +6301,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5881,7 +6310,7 @@
                   "__guid": "f319d2f9-7326-4e7d-8cbf-d343b5737e08",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (1)",
-                  "Position": "-446.5262,164.6608,-335.9801",
+                  "Position": "-446.5262,164.6611,-335.9801",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.2,0.2,0.2",
                   "Enabled": true,
@@ -5893,6 +6322,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5913,6 +6343,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5942,6 +6373,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5961,6 +6393,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -5969,7 +6402,7 @@
                   "__guid": "f717fcfb-27d7-463d-bd38-b3d6b2783a30",
                   "Flags": 0,
                   "Name": "tree_1 (1)",
-                  "Position": "-653.6382,510.9682,-387.3055",
+                  "Position": "-653.6375,510.9688,-387.3055",
                   "Rotation": "0.01761064,0.005066405,0.2764296,0.9608595",
                   "Scale": "1,1,1.3",
                   "Enabled": true,
@@ -5981,6 +6414,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6000,6 +6434,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6019,6 +6454,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6039,6 +6475,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6047,7 +6484,7 @@
                   "__guid": "d00fa53e-33e0-43b7-8745-61ca9f50909c",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (3)",
-                  "Position": "-821.9836,-75.03091,-384.9686",
+                  "Position": "-821.9843,-75.03021,-384.9686",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.5,0.5,0.5",
                   "Enabled": true,
@@ -6059,6 +6496,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6079,6 +6517,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6087,7 +6526,7 @@
                   "__guid": "3fd0a5d3-86cf-48d9-8cc3-c435c6fa3bf3",
                   "Flags": 0,
                   "Name": "8riv_wildbush_b02 (2)",
-                  "Position": "-740.5693,277.9106,-329.6137",
+                  "Position": "-740.5687,277.9113,-329.6137",
                   "Rotation": "-0.009519815,0.02298287,0.3825658,0.9235933",
                   "Scale": "0.2,0.2,0.2",
                   "Enabled": true,
@@ -6099,6 +6538,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6128,6 +6568,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6147,6 +6588,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6167,6 +6609,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6186,6 +6629,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6205,6 +6649,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6225,6 +6670,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6245,6 +6691,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6265,6 +6712,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6285,6 +6733,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6314,6 +6763,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6333,6 +6783,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6353,6 +6804,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6372,6 +6824,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6391,6 +6844,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6411,6 +6865,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6431,6 +6886,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6451,6 +6907,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6471,6 +6928,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6500,6 +6958,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6519,6 +6978,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6539,6 +6999,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_1.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6558,6 +7019,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6577,6 +7039,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/forest/tree_5.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6597,6 +7060,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6617,6 +7081,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6637,6 +7102,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6657,6 +7123,7 @@
                       "Health": 0,
                       "IsStatic": true,
                       "Model": "models/8riv_wildbush_b02.vmdl",
+                      "StartAsleep": false,
                       "Tint": "1,1,1,1"
                     }
                   ]
@@ -6681,6 +7148,7 @@
           "Health": 0,
           "IsStatic": true,
           "Model": "models/forest/tree_5.vmdl",
+          "StartAsleep": false,
           "Tint": "1,1,1,1"
         }
       ]
@@ -6725,6 +7193,12 @@
               "__guid": "566cfb31-2a14-4055-8cf8-96b88a24201c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -6774,6 +7248,12 @@
               "__guid": "5d96b894-5ecf-49d0-8397-4cb6a732fe64",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -6823,6 +7303,12 @@
               "__guid": "c0f26506-d06e-46c5-b501-b6e8c552a4fe",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -6871,6 +7357,12 @@
               "__guid": "133ee762-56c5-446b-80ba-e25b1ba60906",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -6920,6 +7412,12 @@
               "__guid": "c4a0507a-f3b3-4e22-9179-f7885afc07ad",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -6969,6 +7467,12 @@
               "__guid": "9f02e3ac-7929-42c8-953e-242a3f4aa73c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7017,6 +7521,12 @@
               "__guid": "8698bdb7-fff0-4b96-8e32-ceabad4f36e9",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7066,6 +7576,12 @@
               "__guid": "87081eff-b229-4112-8fd4-b5d824e21319",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7115,6 +7631,12 @@
               "__guid": "eba74e13-ce36-4f4b-8ae3-f6169a61a06e",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7163,6 +7685,12 @@
               "__guid": "a443db33-65cd-4d2a-a23f-ec4e36d1fcdf",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7212,6 +7740,12 @@
               "__guid": "e7135c62-bcbf-4252-a7e1-1f27b72a4a2e",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7261,6 +7795,12 @@
               "__guid": "0ff27392-fe8c-4a0d-80b5-ae9877bf152f",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7309,6 +7849,12 @@
               "__guid": "648f75ff-428d-4011-9022-39ccdbdcd987",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7358,6 +7904,12 @@
               "__guid": "a837072f-bcdc-496e-947a-0d801a181cb9",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7407,6 +7959,12 @@
               "__guid": "b1df86bd-e8e3-4ade-a734-5a1ae347937d",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7455,6 +8013,12 @@
               "__guid": "b33188a9-bbe4-4ea7-acdc-a25c5e84651d",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7504,6 +8068,12 @@
               "__guid": "163b0410-c399-4967-89b3-32c609af6576",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7553,6 +8123,12 @@
               "__guid": "61e033fd-7a63-4332-8d7e-fd03f418cea1",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7601,6 +8177,12 @@
               "__guid": "750cb28a-c35a-4565-a071-14f89ac595b6",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7650,6 +8232,12 @@
               "__guid": "3826c7e7-cbd9-494a-afeb-b4dbff222e02",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7699,6 +8287,12 @@
               "__guid": "a2d6e412-0964-455e-8369-e6c65706010a",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7747,6 +8341,12 @@
               "__guid": "f5ad9a36-4a86-4fc7-b4c7-831fb5e62fca",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7796,6 +8396,12 @@
               "__guid": "486203c3-dc99-4311-ad8e-776802c8f2bb",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7845,6 +8451,12 @@
               "__guid": "62af3305-f63f-4102-8d7b-6ba5ac83ee71",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7893,6 +8505,12 @@
               "__guid": "e9782202-3a29-4382-bf4d-e4ed74224a40",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7941,6 +8559,12 @@
               "__guid": "da09ee2c-e306-4ebf-b314-9f011693dcdf",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -7990,6 +8614,12 @@
               "__guid": "324e4ecb-b6ec-49a3-a2d0-8e0fb7a02766",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8039,6 +8669,12 @@
               "__guid": "f34cf1dd-3843-4bac-b2ba-159594502600",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8087,6 +8723,12 @@
               "__guid": "98f31091-7ad4-4e61-9e56-0a4624c820f4",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8136,6 +8778,12 @@
               "__guid": "930a9dac-df2c-42a2-ac8b-acdcf7896222",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8185,6 +8833,12 @@
               "__guid": "2a8cafa1-7b35-4080-a7c6-4c82c9d71f65",
               "BodyGroups": 18446744073709551615,
               "Model": "models/companioncube.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8242,6 +8896,12 @@
               "__guid": "89b655b4-f83c-4406-a2dc-b0951edd8081",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8267,6 +8927,12 @@
               "__guid": "e1474767-d69f-404c-b363-8db77eed2e8a",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8292,6 +8958,12 @@
               "__guid": "aaee670a-67d9-4247-bb80-4906dc6630f5",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8325,6 +8997,12 @@
               "__guid": "71ca2276-113f-4e33-b089-2c47e51ab766",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -8342,6 +9020,12 @@
               "__guid": "9d3a9c75-f995-47c9-956c-14d4240c0069",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -8359,6 +9043,12 @@
               "__guid": "92300114-1c69-4d14-a72e-ef4104a17b62",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -8376,6 +9066,12 @@
               "__guid": "4dc1b8a2-973d-423a-a8d8-1178f6ea297c",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -8393,6 +9089,12 @@
               "__guid": "d3143907-e17e-44ae-bff6-e1ff3803f055",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -8410,6 +9112,12 @@
               "__guid": "aa4c02dc-bebc-42ab-875d-af573e29d992",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             }
@@ -8428,6 +9136,12 @@
               "__guid": "52d4b0e8-8d85-4cec-a9d2-cd6709913b9f",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8454,6 +9168,12 @@
               "__guid": "61b69160-c395-4a4b-a0d6-6ef55d3a756e",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8479,6 +9199,12 @@
               "__guid": "d7424365-5167-4ed3-992d-5704a295e98b",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8504,6 +9230,12 @@
               "__guid": "1ce17ad5-1066-492b-951a-026452884130",
               "BodyGroups": 18446744073709551615,
               "Model": "models/rust_nature/rocks/rock_quarry_small_b.vmdl",
+              "RenderOptions": {
+                "GameLayer": true,
+                "OverlayLayer": false,
+                "BloomLayer": false,
+                "AfterUILayer": false
+              },
               "RenderType": "On",
               "Tint": "1,1,1,1"
             },
@@ -8558,5 +9290,6 @@
     "synthlestudios.companioncube",
     "wujekfoliarz.skyboxnowy"
   ],
+  "IsValid": true,
   "__version": 1
 }
