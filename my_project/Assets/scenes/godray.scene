@@ -279,18 +279,17 @@
                   "__guid": "68b12157-aa40-4dd4-9d71-cce092af5b54",
                   "Flags": 0,
                   "Name": "Gun",
-                  "Position": "0,0,0",
                   "Enabled": true,
                   "Components": [
                     {
                       "__type": "Sandbox.SkinnedModelRenderer",
                       "__guid": "45b10d28-bf3c-4acb-903d-923b4c11a65f",
-                      "BodyGroups": 17685,
+                      "BodyGroups": 17987,
                       "CreateBoneObjects": false,
                       "Model": "models/weapons/sbox_pistol_usp/v_usp.vmdl",
                       "Morphs": {},
                       "RenderOptions": {
-                        "GameLayer": true,
+                        "GameLayer": false,
                         "OverlayLayer": true,
                         "BloomLayer": false,
                         "AfterUILayer": false
@@ -338,7 +337,7 @@
                       "Model": "models/first_person/first_person_arms_citizen_4fingers.vmdl",
                       "Morphs": {},
                       "RenderOptions": {
-                        "GameLayer": true,
+                        "GameLayer": false,
                         "OverlayLayer": true,
                         "BloomLayer": false,
                         "AfterUILayer": false
@@ -357,7 +356,6 @@
           "__guid": "9687435d-f971-4e31-9939-c9e0e05a88fc",
           "Flags": 0,
           "Name": "Crosshair",
-          "Position": "0,0,0",
           "Enabled": true,
           "Components": [
             {
@@ -387,7 +385,6 @@
           "__guid": "da358ca3-7ac1-4414-8caf-9d6651b338c0",
           "Flags": 0,
           "Name": "Body",
-          "Position": "0,0,0",
           "Tags": "body",
           "Enabled": true,
           "Components": [
@@ -723,7 +720,6 @@
                                           "__guid": "06e23b5d-6eba-4d18-920a-32d0bc11251f",
                                           "Flags": 4,
                                           "Name": "arm_lower_L_twist0",
-                                          "Position": "0,0,0",
                                           "Enabled": true
                                         },
                                         {
@@ -737,7 +733,6 @@
                                           "__guid": "8733d5a7-9c42-42d7-94f2-6f2308095176",
                                           "Flags": 4,
                                           "Name": "arm_elbow_helper_L",
-                                          "Position": "0,0,0",
                                           "Rotation": "0.0000003278255,-0.00000005960464,-0.7577646,0.6525283",
                                           "Enabled": true
                                         }
@@ -747,7 +742,6 @@
                                       "__guid": "e53bbdfa-c05f-4e40-ac46-e8ee47e7c27f",
                                       "Flags": 4,
                                       "Name": "arm_upper_L_twist0",
-                                      "Position": "0,0,0",
                                       "Enabled": true
                                     },
                                     {
@@ -964,14 +958,12 @@
                                           "__guid": "42cad313-f3f3-4f37-8a13-14d2637da91d",
                                           "Flags": 4,
                                           "Name": "arm_lower_R_twist0",
-                                          "Position": "0,0,0",
                                           "Enabled": true,
                                           "Children": [
                                             {
                                               "__guid": "7d9c88e3-49f4-412c-a6f2-c3532b37ab95",
                                               "Flags": 4,
                                               "Name": "arm_elbow_helper_R",
-                                              "Position": "0,0,0",
                                               "Rotation": "0.0000007692941,-0.0000002412072,-0.7577677,0.6525243",
                                               "Enabled": true
                                             }
@@ -983,7 +975,6 @@
                                       "__guid": "c9183754-bb80-4971-a8e1-4b615614adaf",
                                       "Flags": 4,
                                       "Name": "arm_upper_R_twist0",
-                                      "Position": "0,0,0",
                                       "Enabled": true
                                     },
                                     {
@@ -1056,14 +1047,12 @@
                           "__guid": "a3df3bde-b953-4baa-a515-523ff5138518",
                           "Flags": 4,
                           "Name": "leg_lower_R_twist0",
-                          "Position": "0,0,0",
                           "Enabled": true
                         },
                         {
                           "__guid": "ca3cc2b1-966a-4afb-a196-e9d188687033",
                           "Flags": 4,
                           "Name": "leg_knee_helper_R",
-                          "Position": "0,0,0",
                           "Rotation": "0.0000009241048,-0.000001251698,0.7135268,0.7006278",
                           "Enabled": true
                         }
@@ -1080,7 +1069,6 @@
                       "__guid": "7fd9641f-d7e4-4ce1-90f1-61bb7d05ef3b",
                       "Flags": 4,
                       "Name": "leg_upper_R_twist0",
-                      "Position": "0,0,0",
                       "Rotation": "-0.00000005960464,0,0.000003039837,1",
                       "Enabled": true
                     },
@@ -1088,7 +1076,6 @@
                       "__guid": "b9d6ced9-8c6c-4b77-9f65-128c264467c4",
                       "Flags": 4,
                       "Name": "leg_glute_helper_R",
-                      "Position": "0,0,0",
                       "Rotation": "-0.000001056968,-0.0000006258488,-0.7071052,0.7071084",
                       "Enabled": true
                     }
@@ -1139,14 +1126,12 @@
                           "__guid": "46a1fa61-0ec6-41cc-b322-9dca68d749e8",
                           "Flags": 4,
                           "Name": "leg_lower_L_twist0",
-                          "Position": "0,0,0",
                           "Enabled": true
                         },
                         {
                           "__guid": "8c9ec7df-a394-4dfe-99d4-f73384bd39f8",
                           "Flags": 4,
                           "Name": "leg_knee_helper_L",
-                          "Position": "0,0,0",
                           "Rotation": "-0.000003013527,-0.00000166893,0.7135276,0.700627",
                           "Enabled": true
                         }
@@ -1163,14 +1148,12 @@
                       "__guid": "e6a0b980-8bd8-4c00-abd2-0ddfd356db0f",
                       "Flags": 4,
                       "Name": "leg_upper_L_twist0",
-                      "Position": "0,0,0",
                       "Enabled": true
                     },
                     {
                       "__guid": "93591f96-9dd0-4688-8da3-ac37ed2b4c4f",
                       "Flags": 4,
                       "Name": "leg_glute_helper_L",
-                      "Position": "0,0,0",
                       "Rotation": "-0.000001011624,-0.0000006854534,-0.7071055,0.707108",
                       "Enabled": true
                     }
@@ -1246,7 +1229,6 @@
               "__guid": "b0faead7-18ea-48c9-a868-026ab8e80410",
               "Flags": 0,
               "Name": "Clothing - eyelashes",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1279,7 +1261,6 @@
               "__guid": "fb0651b4-8b39-4ab2-bef4-176808a541b8",
               "Flags": 0,
               "Name": "Clothing - jacket.suit",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1312,7 +1293,6 @@
               "__guid": "5bf1ab8e-ce9e-4803-bd28-297b682c36c0",
               "Flags": 0,
               "Name": "Clothing - trousers.smart",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1345,7 +1325,6 @@
               "__guid": "86026730-0714-4f65-934c-06421162ac3c",
               "Flags": 0,
               "Name": "Clothing - black_boots",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1378,7 +1357,6 @@
               "__guid": "b25c497c-51a6-4349-b99e-eebbf19c4952",
               "Flags": 0,
               "Name": "Clothing - hair_shortscruffy_brown",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1411,7 +1389,6 @@
               "__guid": "3b789606-bdea-4817-a1bf-fd79d29cb11c",
               "Flags": 0,
               "Name": "Clothing - stylish_glasses_black",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1444,7 +1421,6 @@
               "__guid": "96118b97-971a-4efd-b7f5-7d365658d022",
               "Flags": 0,
               "Name": "Clothing - eyebrows",
-              "Position": "0,0,0",
               "Tags": "clothing",
               "Enabled": true,
               "Components": [
@@ -1556,7 +1532,6 @@
           "__guid": "a4272d33-3818-48c3-95f6-c3b8426fd7ff",
           "Flags": 0,
           "Name": "Menu",
-          "Position": "0,0,0",
           "Enabled": true,
           "Components": [
             {
@@ -7644,6 +7619,7 @@
     "MaxFixedUpdates": 5,
     "NetworkFrequency": 60,
     "NetworkInterpolation": true,
+    "PhysicsSubSteps": 1,
     "ThreadedAnimation": true,
     "TimeScale": 0,
     "UseFixedUpdate": true,
@@ -7664,13 +7640,13 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [
-    "baik.soccerball",
-    "ele.dev_measure_blue",
-    "facepunch.v_usp",
-    "jodiscontent.spray2",
-    "sundayservice.dustmotes",
-    "synthlestudios.companioncube",
-    "tridge.walllight01"
+    "baik.soccerball#19459",
+    "ele.dev_measure_blue#26648",
+    "facepunch.v_usp#64712",
+    "jodiscontent.spray2#24115",
+    "sundayservice.dustmotes#43166",
+    "synthlestudios.companioncube#24689",
+    "tridge.walllight01#31535"
   ],
   "IsValid": true,
   "__version": 1

@@ -1,0 +1,1266 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>package.base</name>
+    </assembly>
+    <members>
+        <member name="T:Sandbox.Citizen.CitizenAnimationHelper">
+            <summary>
+            Used to control the Citizen animation state. You don't have to use this to animate your citizen avatar, but our
+            aim is to put everything you need in this class, so you can easily see what variables are available.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.Target">
+            <summary>
+            The skinned model renderer that we'll apply all parameters to.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.EyeSource">
+            <summary>
+            Where are the eyes of our character?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.Height">
+            <summary>
+            How tall are we?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.LookAtEnabled">
+            <summary>
+            Are we looking at something? Useful for stuff like cutscenes, where you want an NPC to stare at you.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.LookAt">
+            <summary>
+            Which GameObject should we be looking at?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IkLeftHand">
+            <summary>
+            IK will try to place the limb where this GameObject is in the world.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IkRightHand">
+            <inheritdoc cref="P:Sandbox.Citizen.CitizenAnimationHelper.IkLeftHand"/>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IkLeftFoot">
+            <inheritdoc cref="P:Sandbox.Citizen.CitizenAnimationHelper.IkLeftHand"/>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IkRightFoot">
+            <inheritdoc cref="P:Sandbox.Citizen.CitizenAnimationHelper.IkLeftHand"/>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.EyeWorldTransform">
+            <summary>
+            The transform of the eyes, in world space. This is worked out from EyeSource is it's set.
+            </summary>
+        </member>
+        <member name="M:Sandbox.Citizen.CitizenAnimationHelper.WithLook(Vector3,System.Single,System.Single,System.Single)">
+            <summary>
+            Have the player look at this point in the world
+            </summary>
+        </member>
+        <member name="M:Sandbox.Citizen.CitizenAnimationHelper.WithVelocity(Vector3)">
+            <summary>
+            Have the player animate moving with a set velocity (this doesn't move them! Your character controller is responsible for that)
+            </summary>
+            <param name="Velocity"></param>
+        </member>
+        <member name="M:Sandbox.Citizen.CitizenAnimationHelper.WithWishVelocity(Vector3)">
+            <summary>
+            Animates the wish for the character to move in a certain direction. For example, when in the air, your character will swing their arms in that direction.
+            </summary>
+            <param name="Velocity"></param>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.AimAngle">
+            <summary>
+            Where are we aiming?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.AimEyesWeight">
+            <summary>
+            The weight of the aim angle, but specifically for the Citizen's eyes.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.AimHeadWeight">
+            <summary>
+            The weight of the aim angle, but specifically for the Citizen's head.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.AimBodyWeight">
+            <summary>
+            The weight of the aim angle, but specifically for the Citizen's body.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.MoveRotationSpeed">
+            <summary>
+            How much the character is rotating in degrees per second, this controls feet shuffling.
+            If rotating clockwise this should be positive, if rotating counter-clockwise this should be negative.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.DuckLevel">
+            <summary>
+            The scale of being ducked (crouched) (0 - 1)
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.VoiceLevel">
+            <summary>
+            How loud are we talking?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IsSitting">
+            <summary>
+            Are we sitting down?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IsGrounded">
+            <summary>
+            Are we on the ground?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IsSwimming">
+            <summary>
+            Are we swimming?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IsClimbing">
+            <summary>
+            Are we climbing?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IsNoclipping">
+            <summary>
+            Are we noclipping?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.IsWeaponLowered">
+            <summary>
+            Is the weapon lowered? By default, this'll happen when the character hasn't been shooting for a while.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.HoldType">
+            <summary>
+            What kind of weapon are we holding?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.Handedness">
+            <summary>
+            What's the handedness of our weapon? Left handed, right handed, or both hands? This is only supported by some holdtypes, like Pistol, HoldItem.
+            </summary>
+        </member>
+        <member name="M:Sandbox.Citizen.CitizenAnimationHelper.TriggerJump">
+            <summary>
+            Triggers a jump animation
+            </summary>
+        </member>
+        <member name="M:Sandbox.Citizen.CitizenAnimationHelper.TriggerDeploy">
+            <summary>
+            Triggers a weapon deploy animation
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.MoveStyle">
+            <summary>
+            We can force the model to walk or run, or let it decide based on the speed.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.SpecialMove">
+            <summary>
+            We can force the model to have a specific movement state, instead of just running around.
+            <see cref="F:Sandbox.Citizen.CitizenAnimationHelper.SpecialMoveStyle.LedgeGrab"/> is good for shimmying across a ledge.
+            <see cref="F:Sandbox.Citizen.CitizenAnimationHelper.SpecialMoveStyle.Roll"/> is good for a platformer game where the character is rolling around continuously.
+            <see cref="F:Sandbox.Citizen.CitizenAnimationHelper.SpecialMoveStyle.Slide"/> is good for a shooter game or a platformer where the character is sliding.
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.Sitting">
+            <summary>
+            How are we sitting down?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.SittingOffsetHeight">
+            <summary>
+            How far up are we sitting down from the floor?
+            </summary>
+        </member>
+        <member name="P:Sandbox.Citizen.CitizenAnimationHelper.SittingPose">
+            <summary>
+            From 0-1, how much are we actually sitting down.
+            </summary>
+        </member>
+        <member name="P:Sandbox.NetworkHelper.StartServer">
+            <summary>
+            Create a server (if we're not joining one)
+            </summary>
+        </member>
+        <member name="P:Sandbox.NetworkHelper.PlayerPrefab">
+            <summary>
+            The prefab to spawn for the player to control.
+            </summary>
+        </member>
+        <member name="P:Sandbox.NetworkHelper.SpawnPoints">
+            <summary>
+            A list of points to choose from randomly to spawn the player in. If not set, we'll spawn at the
+            location of the NetworkHelper object.
+            </summary>
+        </member>
+        <member name="M:Sandbox.NetworkHelper.OnActive(Sandbox.Connection)">
+            <summary>
+            A client is fully connected to the server. This is called on the host.
+            </summary>
+        </member>
+        <member name="M:Sandbox.NetworkHelper.FindSpawnLocation">
+            <summary>
+            Find the most appropriate place to respawn
+            </summary>
+        </member>
+        <member name="T:Sandbox.SandboxBaseExtensions">
+            <summary>
+            Extensions for Model
+            </summary>
+            <summary>
+            Extensions for Surfaces
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.GetAllData``1(Sandbox.Model)">
+            <summary>
+            Returns all game data nodes that derive from given class/interface, and are present on the model. Does NOT support data nodes that allow multiple entries.
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.Add(Sandbox.VertexBuffer,Vector3)">
+            <summary>
+            Add a vertex using this position and everything else from Default
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.Add(Sandbox.VertexBuffer,Vector3,Vector2)">
+            <summary>
+            Add a vertex using this position and UV, and everything else from Default
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.AddTriangle(Sandbox.VertexBuffer,Sandbox.Vertex,Sandbox.Vertex,Sandbox.Vertex)">
+            <summary>
+            Add a triangle to the vertex buffer. Will include indices if they're enabled.
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.AddQuad(Sandbox.VertexBuffer,Sandbox.Rect)">
+            <summary>
+            Add a quad to the vertex buffer. Will include indices if they're enabled.
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.AddQuad(Sandbox.VertexBuffer,Sandbox.Vertex,Sandbox.Vertex,Sandbox.Vertex,Sandbox.Vertex)">
+            <summary>
+            Add a quad to the vertex buffer. Will include indices if they're enabled.
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.AddQuad(Sandbox.VertexBuffer,Vector3,Vector3,Vector3,Vector3)">
+            <summary>
+            Add a quad to the vertex buffer. Will include indices if they're enabled.
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.AddQuad(Sandbox.VertexBuffer,Ray,Vector3,Vector3)">
+            <summary>
+            Add a quad to the vertex buffer. Will include indices if they're enabled.
+            </summary>
+        </member>
+        <member name="M:Sandbox.SandboxBaseExtensions.AddCube(Sandbox.VertexBuffer,Vector3,Vector3,Rotation,Color32)">
+            <summary>
+            Add a cube to the vertex buffer. Will include indices if they're enabled.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.Button">
+            <summary>
+            A simple button <see cref="T:Sandbox.UI.Panel"/>.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Button.TextLabel">
+            <summary>
+            The <see cref="T:Sandbox.UI.Label"/> that displays <see cref="P:Sandbox.UI.Button.Text"/>.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Button.IconPanel">
+            <summary>
+            The <see cref="F:Sandbox.UI.Button.IconPanel"/> that displays <see cref="P:Sandbox.UI.Button.Icon"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Button.Disabled">
+            <summary>
+            The button is disabled for some reason
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Button.Text">
+            <summary>
+            Text for the button.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Button.DeleteText">
+            <summary>
+            Deletes the <see cref="P:Sandbox.UI.Button.Text"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Button.Icon">
+            <summary>
+            Icon for the button.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Button.DeleteIcon">
+            <summary>
+            Deletes the <see cref="P:Sandbox.UI.Button.Icon"/>.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Button.SetText(System.String)">
+            <summary>
+            Set the text for the button. Calls <c>Text = value</c>
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Button.Click">
+            <summary>
+            Imitate the button being clicked.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Construct.ButtonConstructor.Button(Sandbox.UI.Construct.PanelCreator,System.String,System.Action)">
+            <summary>
+            Create a button with given text and on-click action.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Construct.ButtonConstructor.Button(Sandbox.UI.Construct.PanelCreator,System.String,System.String,System.Action)">
+            <summary>
+            Create a button with given text, CSS class name and on-click action.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Construct.ButtonConstructor.ButtonWithIcon(Sandbox.UI.Construct.PanelCreator,System.String,System.String,System.String,System.Action)">
+            <summary>
+            Create a button with given text, icon, CSS class name and on-click action.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Construct.IconPanelConstructor.Icon(Sandbox.UI.Construct.PanelCreator,System.String,System.String)">
+            <summary>
+            Create and return an icon (panel) with given icon and optionally given CSS classes.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Construct.TextEntryConstructor.TextEntry(Sandbox.UI.Construct.PanelCreator,System.String)">
+            <summary>
+            Creates and returns a text entry with predefined text already entered.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.ButtonGroup">
+            <summary>
+            A group of side-by-side buttons one of which can be selected.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.ButtonGroup.ValueChanged">
+            <summary>
+            Called when the value has been changed.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.ButtonGroup.Value">
+            <summary>
+            The selected option value.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.ButtonGroup.Options">
+            <summary>
+            Options to show in this button group.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.ButtonGroup.ButtonClass">
+            <summary>
+            CSS Class(es) to add to child buttons.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.ButtonGroup.AddButton(System.String,System.Action)">
+            <summary>
+            Adds a button to this group.
+            </summary>
+            <param name="value">The button's label.</param>
+            <param name="action">Called <c>onclick</c>.</param>
+        </member>
+        <member name="M:Sandbox.UI.ButtonGroup.AddButtonActive(System.String,System.Action{System.Boolean})">
+            <summary>
+            Adds a button to this button group with <c>startactive</c> and <c>stopactive</c> callbacks
+            </summary>
+            <param name="value">The button's label</param>
+            <param name="action">Called on <c>startactive</c> with parameter of <see langword="true"/> and <c>stopactive</c> with parameter of <see langword="false"/>.</param>
+        </member>
+        <member name="P:Sandbox.UI.ButtonGroup.SelectedButton">
+            <summary>
+            The selected button panel.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.Checkbox">
+            <summary>
+            A simple checkbox <see cref="T:Sandbox.UI.Panel"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Checkbox.ValueChanged">
+            <summary>
+            Called when the checked state has been changed.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Checkbox.CheckMark">
+            <summary>
+            The checkmark icon. Although no guarantees it's an icon!
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Checkbox.isChecked">
+            <summary>
+            Use <see cref="P:Sandbox.UI.Checkbox.Checked"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Checkbox.Checked">
+            <summary>
+            Returns true if this checkbox is checked.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Checkbox.Value">
+            <summary>
+            Returns true if this checkbox is checked.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Checkbox.Label">
+            <summary>
+            The <see cref="T:Sandbox.UI.Label"/> that displays <see cref="P:Sandbox.UI.Checkbox.LabelText"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Checkbox.LabelText">
+            <summary>
+            Text for the checkbox label.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Checkbox.OnValueChanged">
+            <summary>
+            Called when <see cref="P:Sandbox.UI.Checkbox.Value"/> changes.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Checkbox.UpdateState">
+            <summary>
+            Called to update visuals of the checkbox. By default this applies <c>checked</c> CSS class.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.NavHostPanel">
+            <summary>
+            A panel that acts like a website. A single page is always visible
+            but it will cache other views that you visit, and allow forward/backward navigation.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.NavHostPanel.CurrentPanel">
+            <summary>
+            The currently visible panel
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.NavHostPanel.CurrentUrl">
+            <summary>
+            The Url we're currently viewing
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.NavHostPanel.CurrentQuery">
+            <summary>
+            The query part of the url
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.NavHostPanel.DefaultUrl">
+            <summary>
+            The Url we should go to when one isn't set
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.NavHostPanel.NavigatorCanvas">
+            <summary>
+            The panel in which we should create our pages
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.OnParametersSet">
+            <summary>
+            Called after initialization
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.OnTemplateSlot(Sandbox.Html.INode,System.String,Sandbox.UI.Panel)">
+            <summary>
+            This sucks this sucks this sucks
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.AddDestination(System.String,System.Type)">
+            <summary>
+            Instead of finding pages by attributes, we can fill them in manually here
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.Navigate(System.String,System.Boolean)">
+            <summary>
+            Navigate to the passed url
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.FindTarget(System.String,System.String)">
+            <summary>
+            Find a panel that can be created for this url
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.GoBackUntilNot(System.String)">
+            <summary>
+            Keep pressing the back button until our url doesn't match the passed wildcard string
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.GoBack">
+            <summary>
+            To back to the previous page. Return true on success.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavHostPanel.GoForward">
+            <summary>
+            Go forward, return true on success
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.INavigatorPage">
+            <summary>
+            When applied to a page of a navigator, this will receive
+            callbacks when the page is made visible and closed
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.NavigationExtensions.Navigate(Sandbox.UI.Panel,System.String)">
+            <summary>
+            Find the closest navigatorPanel ancestor and navigate to the given url
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.NavLinkPanel">
+            <summary>
+            A panel that will navigate to an href but also have .active class if href is active
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.DropDown">
+            <summary>
+            A UI control which provides multiple options via a dropdown box.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.DropDown.DropdownIndicator">
+            <summary>
+            The icon of an arrow pointing down on the right of the element.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.DropDown.ValueChanged">
+            <summary>
+            Called when the value has been changed,
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.DropDown.BuildOptions">
+            <summary>
+            Called just before opening, allows options to be dynamic
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.DropDown.Options">
+            <summary>
+            The options to show on click. You can edit these directly via this property.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.DropDown.Value">
+            <summary>
+            The current string value. This is useful to have if Selected is null.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.DropDown.Selected">
+            <summary>
+            The currently selected option.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.DropDown.PopulateOptionsFromType(System.Type)">
+            <summary>
+            Given the type, populate options. This is useful if you're an enum type.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.DropDown.Open">
+            <summary>
+            Open the dropdown.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.DropDown.Select(Sandbox.UI.Option,System.Boolean)">
+            <summary>
+            Select an option.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.DropDown.Select(System.String,System.Boolean)">
+            <summary>
+            Select an option by value string.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.Field">
+            <summary>
+            A field in a form, usually contains a label and a control
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.FieldControl">
+            <summary>
+            A field in a form, usually contains a label and a control
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.IconPanel">
+            <summary>
+            A panel containing an icon, typically a <a href="https://fonts.google.com/icons">material icon</a>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.ItemWidth">
+            <summary>
+            The fixed width of each item. If it is lower than 0 then we'll stretch to fill the size.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.ItemHeight">
+            <summary>
+            The fixed height of each item.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.AutoColumns">
+            <summary>
+            Should we update Columns automatically?
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.Columns">
+            <summary>
+            How many columns should we have?
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.Rect">
+            <summary>
+            The Rect of this layout. Set via Update.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.ScrollOffset">
+            <summary>
+            Where the top of the visible space is
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.GridLayout.Justify">
+            <summary>
+            How columns should be justified
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.GridLayout.Update(Sandbox.UI.Box,System.Single,System.Single,Sandbox.UI.Justify)">
+            <summary>
+            Update specifics of this layout. Returns true if we're dirty.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.GridLayout.GetVisibleRange(System.Int32@,System.Int32@)">
+            <summary>
+            Get the range of cells that are visible
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.GridLayout.GetPosition(System.Int32)">
+            <summary>
+            Get the position of this cell
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.GridLayout.Position(System.Int32,Sandbox.UI.Panel)">
+            <summary>
+            Move this panel into the position. This will set the Left/Top/Width/Height on the panel
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.GridLayout.GetHeight(System.Int32)">
+            <summary>
+            Get the full height if we have this many items
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.Tests.VirtualScrollPanel">
+             <summary>
+             Scroll panel that creates its contents as they become visible
+            
+             TODO: we need to let panels know, or recreate them, when Data changes
+            
+             </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.VirtualScrollPanel.HasData(System.Int32)">
+            <summary>
+            Return true if we have this data slot
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Tests.VirtualScrollPanel.OnCreateCell">
+            <summary>
+            Create a new panel. You should add a child to the passed panel (which is the cell).
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Tests.BaseVirtualScrollPanel`1.HasData(System.Int32)">
+            <summary>
+            Return true if we have this data slot
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.Option">
+            <summary>
+            An option for a <see cref="T:Sandbox.UI.DropDown"/> or <see cref="T:Sandbox.UI.ButtonGroup"/>.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Option.Title">
+            <summary>
+            The user-friendly text to show.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Option.Icon">
+            <summary>
+            Icon for this option.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Option.Tooltip">
+            <summary>
+            Tooltip for this option.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Option.Value">
+            <summary>
+            The internal value for this option.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.CloseAll(Sandbox.UI.Panel)">
+            <summary>
+            Close all <see cref="T:Sandbox.UI.Popup"/> instances except for the given one.
+            </summary>
+            <param name="exceptThisOne">If set, this popup with not be closed.</param>
+        </member>
+        <member name="M:Sandbox.UI.Popup.ClosePopupsEvent(System.Object)">
+            <summary>
+            Event listener for <c>ui.closepopups</c>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Popup.PopupSource">
+            <summary>
+            Which panel triggered this popup. Set by <see cref="M:Sandbox.UI.Popup.SetPositioning(Sandbox.UI.Panel,Sandbox.UI.Popup.PositionMode,System.Single)"/> or the constructor.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Popup.SelectedChild">
+            <summary>
+            Currently selected option in the popup. Used internally for keyboard navigation.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Popup.Position">
+            <summary>
+            Positioning mode for this popup.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Popup.PopupSourceOffset">
+            <summary>
+            Offset away from <see cref="P:Sandbox.UI.Popup.PopupSource"/> based on <see cref="P:Sandbox.UI.Popup.Position"/>.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.Popup.PositionMode">
+            <summary>
+            Dictates where a <see cref="T:Sandbox.UI.Popup"/> is positioned.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.PositionMode.Left">
+            <summary>
+            To the left of the source panel, centered.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.PositionMode.LeftBottom">
+            <summary>
+            To the left of the source panel, aligned to the bottom.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.PositionMode.AboveLeft">
+            <summary>
+            Above the source panel, aligned to the left.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.PositionMode.BelowLeft">
+            <summary>
+            Below the source panel, aliging on the left. Do not stretch to size of <see cref="P:Sandbox.UI.Popup.PopupSource"/>.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.PositionMode.BelowCenter">
+            <summary>
+            Below the source panel, centered horizontally.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.PositionMode.BelowStretch">
+            <summary>
+            Below the source panel, stretch to the width of the <see cref="P:Sandbox.UI.Popup.PopupSource"/>.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.#ctor(Sandbox.UI.Panel,Sandbox.UI.Popup.PositionMode,System.Single)">
+            <inheritdoc cref="M:Sandbox.UI.Popup.SetPositioning(Sandbox.UI.Panel,Sandbox.UI.Popup.PositionMode,System.Single)"/>
+        </member>
+        <member name="M:Sandbox.UI.Popup.SetPositioning(Sandbox.UI.Panel,Sandbox.UI.Popup.PositionMode,System.Single)">
+            <summary>
+            Sets <see cref="P:Sandbox.UI.Popup.PopupSource"/>, <see cref="P:Sandbox.UI.Popup.Position"/> and <see cref="P:Sandbox.UI.Popup.PopupSourceOffset"/>.
+            Applies relevant CSS classes.
+            </summary>
+            <param name="sourcePanel">Which panel triggered this popup.</param>
+            <param name="position">Desired positioning mode.</param>
+            <param name="offset">Offset away from the <paramref name="sourcePanel"/>.</param>
+        </member>
+        <member name="F:Sandbox.UI.Popup.Header">
+            <summary>
+            Header panel that holds <see cref="F:Sandbox.UI.Popup.TitleLabel"/> and <see cref="F:Sandbox.UI.Popup.IconPanel"/>.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.TitleLabel">
+            <summary>
+            Label that dispalys <see cref="P:Sandbox.UI.Popup.Title"/>.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.Popup.IconPanel">
+            <summary>
+            Panel that dispalys <see cref="P:Sandbox.UI.Popup.Icon"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Popup.Title">
+            <summary>
+            If set, will add an unselectable header with given text and <see cref="P:Sandbox.UI.Popup.Icon"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.Popup.Icon">
+            <summary>
+            If set, will add an unselectable header with given icon and <see cref="P:Sandbox.UI.Popup.Title"/>.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.Success">
+            <summary>
+            Closes all panels, marks this one as a success and closes it.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.Failure">
+            <summary>
+            Closes all panels, marks this one as a failure and closes it.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.AddOption(System.String,System.Action)">
+            <summary>
+            Add an option to this popup with given text and click action.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.AddOption(System.String,System.String,System.Action)">
+            <summary>
+            Add an option to this popup with given text, icon and click action.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.Popup.MoveSelection(System.Int32)">
+            <summary>
+            Move selection in given direction.
+            </summary>
+            <param name="dir">Positive numbers move selection downwards, negative - upwards.</param>
+        </member>
+        <member name="T:Sandbox.UI.PopupButton">
+            <summary>
+            A button that opens a <see cref="F:Sandbox.UI.PopupButton.Popup"/> panel.
+            Useless on its own - you need to implement Open
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.PopupButton.Popup">
+            <summary>
+            The opened <see cref="T:Sandbox.UI.Popup"/>.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.PopupButton.Open">
+            <summary>
+            Open a popup. You should set <see cref="F:Sandbox.UI.PopupButton.Popup"/> here.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.SplitContainer">
+            <summary>
+            A control that has two panes with a splitter in between. You can drag the splitter to change the size of the two panels.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SplitContainer.Left">
+            <summary>
+            The left, or top panel. Has class "split-left".
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SplitContainer.Right">
+            <summary>
+            The left, or bottom panel. Has class "split-right".
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SplitContainer.Splitter">
+            <summary>
+            The splitter control
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.SplitContainer.MinimumFractionLeft">
+            <summary>
+            The smallest the left section can be as a fraction (0-1). Also controls the largest the right section can be.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.SplitContainer.MinimumFractionRight">
+            <summary>
+            The smallest the right section can be as a fraction (0-1). Also controls the largest the left section can be.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SplitContainer.IsDragging">
+            <summary>
+            Returns true if splitter is being dragged
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SplitContainer.Vertical">
+            <summary>
+            Should this be laid out vertically? If you set this to vertical you should
+            mentally change Left to Top and Right to Bottom.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SplitContainer.FractionCookie">
+            <summary>
+            We can save the position of this splitter in a cookie. To do that set this
+            (or "cookie" in a template). We'll automatically save and restore from the cookie.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SplitContainer.StartDragging(Sandbox.UI.PanelEvent)">
+            <summary>
+            The splitter has been pressed
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SplitContainer.StopDragging(Sandbox.UI.PanelEvent)">
+            <summary>
+            The splitter has been released
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SplitContainer.OnMouseMove(Sandbox.UI.MousePanelEvent)">
+            <summary>
+            If we're dragging then position the split where the mouse is.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SplitContainer.UpdateSplitFraction(System.Single)">
+            <summary>
+            Sets the split fraction to this value. Will automatically adjust the value
+            according to MinimumFraction parameters, and will save the new value to cookie.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SplitContainer.OnTemplateSlot(Sandbox.Html.INode,System.String,Sandbox.UI.Panel)">
+            <summary>
+            You can create child panels in the template by setting attributes
+            on them, like slot="left" to make that panel appear in the left panel.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.TabContainer">
+             <summary>
+             A container with tabs, allowing you to switch between different sheets.
+            
+             You can position the tabs by adding the class tabs-bottom, tabs-left, tabs-right (default is tabs top)
+             </summary>
+        </member>
+        <member name="P:Sandbox.UI.TabContainer.TabsContainer">
+            <summary>
+            A control housing the tabs
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TabContainer.SheetContainer">
+            <summary>
+            A control housing the sheets
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.TabContainer.Tabs">
+            <summary>
+            Access to the pages on this control
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TabContainer.TabCookie">
+            <summary>
+            If a cookie is set then the selected tab will be saved and restored.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TabContainer.NoBody">
+            <summary>
+            If true we will act as a tab bar and have no body.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TabContainer.ActiveTab">
+            <summary>
+            The tab that is active
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TabContainer.AddTab(Sandbox.UI.Panel,System.String,System.String,System.String)">
+            <summary>
+            Add a tab to the sheet.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TabContainer.SwitchTab(Sandbox.UI.TabContainer.Tab,System.Boolean)">
+            <summary>
+            Switch to a specific tab.
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.TabContainer.Tab">
+            <summary>
+            Holds a Tab button and a Page for each sheet on the TabControl.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TabContainer.Tab.Active">
+            <summary>
+            Change appearance based on active status
+            </summary>
+        </member>
+        <member name="T:Sandbox.UI.TextEntry">
+            <summary>
+            A <see cref="T:Sandbox.UI.Panel"/> that the user can enter text into.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.AutoComplete">
+            <summary>
+            If you hook a method up here we'll do autocomplete on it.
+            Return a list if strings for given string input.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.UpdateAutoComplete">
+            <summary>
+            Open the auto complete popup with values from <see cref="P:Sandbox.UI.TextEntry.AutoComplete"/>.
+            Close the popup if we have no auto complete entries.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.UpdateAutoComplete(System.Object[])">
+            <summary>
+            Open the auto complete popup with given values.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.DestroyAutoComplete">
+            <summary>
+            Close and delete the auto complete popup panel.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.AutoCompleteSelectionChanged">
+            <summary>
+            Auto complete selection has changed. Update the text entry text to that selected value.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.AutoCompleteCancel">
+            <summary>
+            Auto complete was canceled, restore text to what it was before we started, and remove the auto complete popup.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.HistoryMaxItems">
+            <summary>
+            Maximum amount of items <see cref="M:Sandbox.UI.TextEntry.AddToHistory(System.String)"/> will keep.
+            Oldest items will be discarded as new ones are added.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.HistoryCookie">
+            <summary>
+            If set, the history of this text entry will be stored and restored using this key in the local <see cref="P:Sandbox.Internal.GlobalGameNamespace.Cookie"/>.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.AddToHistory(System.String)">
+            <summary>
+            Add given string to the history of this text entry. 
+            The history can be accessed by the player by pressing up and down arrows with an empty text entry.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.ClearHistory">
+            <summary>
+            Clear the input history that was previously added via <see cref="M:Sandbox.UI.TextEntry.AddToHistory(System.String)"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.IconPanel">
+            <summary>
+            The <see cref="T:Sandbox.UI.IconPanel"/> that displays <see cref="P:Sandbox.UI.TextEntry.Icon"/>
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Icon">
+            <summary>
+            If set, will display a <a href="https://fonts.google.com/icons">material icon</a> at the end of the text entry.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Placeholder">
+            <summary>
+            Text to display when the text entry is empty. Typically a very short description of the expected contents or function of the text entry.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.MinLength">
+            <summary>
+            If set, visually signals when the input text is shorter than this value. Will also set <see cref="P:Sandbox.UI.TextEntry.HasValidationErrors"/> accordingly.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.MaxLength">
+            <summary>
+            If set, visually signals when the input text is longer than this value. Will also set <see cref="P:Sandbox.UI.TextEntry.HasValidationErrors"/> accordingly.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.CharacterRegex">
+            <summary>
+            If set, will block the input of any character that doesn't match. Will also set <see cref="P:Sandbox.UI.TextEntry.HasValidationErrors"/> accordingly.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.StringRegex">
+            <summary>
+            If set, <see cref="P:Sandbox.UI.TextEntry.HasValidationErrors"/> will return true if doesn't match regex.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Numeric">
+            <summary>
+            When set to true, ensures only numeric values can be typed. Also applies <see cref="M:Sandbox.UI.TextEntry.FixNumeric"/> on text.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.HasValidationErrors">
+            <summary>
+            If true then this control has validation errors and the input shouldn't be accepted.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.UpdateValidation">
+            <summary>
+            Update the validation state of this control.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.CanEnterCharacter(System.Char)">
+            <summary>
+            Called when a character is typed by the player.
+            </summary>
+            <param name="c">The typed character to test.</param>
+            <returns> Return true to allow the character to be typed.</returns>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.OnTextEdited">
+            <summary>
+            Called when the text of this text entry is changed.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Label">
+            <summary>
+            The <see cref="P:Sandbox.UI.TextEntry.Label"/> that contains the text of this text entry.
+            TODO PAINDAY: This should be protected or internal, no?
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Disabled">
+            <summary>
+            Is the text entry disabled?
+            If disabled, will add a "disabled" class and prevent focus.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Text">
+            <summary>
+            Access to the raw text in the text entry.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Value">
+            <summary>
+            The value of the text entry. Returns <see cref="P:Sandbox.UI.TextEntry.Text"/>, but does special logic when setting text.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.TextLength">
+            <inheritdoc cref="P:Sandbox.UI.Label.TextLength"/>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.CaretPosition">
+            <inheritdoc cref="P:Sandbox.UI.Label.CaretPosition"/>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.AllowEmojiReplace">
+            <summary>
+            Whether to allow automatic replacement of emoji codes with their actual unicode emoji characters. See <see cref="T:Sandbox.UI.Emoji"/>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.AcceptsImeInput">
+            <summary>
+            Allow <a href="https://en.wikipedia.org/wiki/Input_method">IME input</a> when this is focused.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.NumberFormat">
+            <summary>
+            Affects formatting of the text when <see cref="P:Sandbox.UI.TextEntry.Numeric"/> is enabled. Accepts any format that is supported by <see cref="M:System.Single.ToString(System.String)"/>. <a href="https://learn.microsoft.com/en-us/dotnet/standard/base-types/custom-numeric-format-strings">See examples here</a>.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Multiline">
+            <summary>
+            Makes it possible to enter new lines into the text entry. (By pressing the Enter key, which no longer acts as the submit key)
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.CaretColor">
+            <summary>
+            Color of the text cursor/caret, the blinking line at which newly typed characters are inserted.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.MinValue">
+            <summary>
+            If we're numeric, this is the lowest numeric value allowed
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.MaxValue">
+            <summary>
+            If we're numeric, this is the highest numeric value allowed
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.PrefixLabel">
+            <summary>
+            The <see cref="P:Sandbox.UI.TextEntry.Label"/> that shows <see cref="P:Sandbox.UI.TextEntry.Prefix"/> text.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Prefix">
+            <summary>
+            If set, will display given text before the text entry box.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.SuffixLabel">
+            <summary>
+            The <see cref="P:Sandbox.UI.TextEntry.Label"/> that shows <see cref="P:Sandbox.UI.TextEntry.Suffix"/> text.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.TextEntry.Suffix">
+            <summary>
+            If set, will display given text after the text entry box.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.OnValueChanged">
+            <summary>
+            Called when the text entry's value changes.
+            </summary>
+        </member>
+        <member name="F:Sandbox.UI.TextEntry.TimeSinceNotInFocus">
+            <summary>
+            Keep tabs of when we were focused so we can flash the caret relative to that time.
+            We want the caret to be visible immediately on focus
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.TextEntry.FixNumeric">
+            <summary>
+            Called to ensure the <see cref="P:Sandbox.UI.TextEntry.Text"/> is absolutely in the correct format, in this case - a valid number format.
+            </summary>
+            <returns>The correctly formatted version of <see cref="P:Sandbox.UI.TextEntry.Text"/>.</returns>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.Max">
+            <summary>
+            The right side of the slider.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.Min">
+            <summary>
+            The left side of the slider.
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.Step">
+            <summary>
+            If set to 1, value will be rounded to 1's
+            If set to 10, value will be rounded to 10's
+            If set to 0.1, value will be rounded to 0.1's
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.ShowRange">
+            <summary>
+            Show the range values above the slider
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.ShowValueTooltip">
+            <summary>
+            When changing the value show the tooltip
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.ShowTextEntry">
+            <summary>
+            When changing the value show the tooltip
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.SliderControl.NumberFormat">
+            <summary>
+            How to display numbers in this control
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SliderControl.ScreenPosToValue(Vector2)">
+            <summary>
+            Convert a screen position to a value. The value is clamped, but not snapped.
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SliderControl.OnMouseMove(Sandbox.UI.MousePanelEvent)">
+            <summary>
+            If we move the mouse while we're being pressed then set the value
+            </summary>
+        </member>
+        <member name="M:Sandbox.UI.SliderControl.OnMouseDown(Sandbox.UI.MousePanelEvent)">
+            <summary>
+            On mouse press jump to that position
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.PackageCard.OnLaunch">
+            <summary>
+            Called when the icon part of the card is pressed
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.PackageCard.OnMenu">
+            <summary>
+            Called when the icon part of the card is right clicked
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.PackageCard.OnOrg">
+            <summary>
+            Called when the org name is pressed
+            </summary>
+        </member>
+    </members>
+</doc>

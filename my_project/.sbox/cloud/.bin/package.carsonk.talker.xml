@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>package.carsonk.talker</name>
+    </assembly>
+    <members>
+        <member name="M:Scenebox.DynamicTextureComponent.UpdateTextureData(System.ReadOnlySpan{System.Byte},Vector2)">
+            <summary>
+            Updates the input texture with the given data, creating a new texture if the
+            dimensions are different.
+            </summary>
+        </member>
+        <member name="M:Scenebox.DynamicTextureComponent.InitializeTexture(Vector2)">
+            <summary>
+            Create a new inpuit texture with the given size, disposing the previous texture.
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.Max">
+            <summary>
+            The right side of the slider.
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.Min">
+            <summary>
+            The left side of the slider.
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.Step">
+            <summary>
+            If set to 1, value will be rounded to 1's
+            If set to 10, value will be rounded to 10's
+            If set to 0.1, value will be rounded to 0.1's
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.ShowRange">
+            <summary>
+            Show the range values above the slider
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.ShowValueTooltip">
+            <summary>
+            When changing the value show the tooltip
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.ShowTextEntry">
+            <summary>
+            When changing the value show the tooltip
+            </summary>
+        </member>
+        <member name="P:Scenebox.UI.SliderControl.NumberFormat">
+            <summary>
+            How to display numbers in this control
+            </summary>
+        </member>
+        <member name="M:Scenebox.UI.SliderControl.ScreenPosToValue(Vector2)">
+            <summary>
+            Convert a screen position to a value. The value is clamped, but not snapped.
+            </summary>
+        </member>
+        <member name="M:Scenebox.UI.SliderControl.OnMouseMove(Sandbox.UI.MousePanelEvent)">
+            <summary>
+            If we move the mouse while we're being pressed then set the value
+            </summary>
+        </member>
+        <member name="M:Scenebox.UI.SliderControl.OnMouseDown(Sandbox.UI.MousePanelEvent)">
+            <summary>
+            On mouse press jump to that position
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.AssetCard.OnLaunch">
+            <summary>
+            Called when the icon part of the card is pressed
+            </summary>
+        </member>
+        <member name="P:Sandbox.UI.AssetCard.OnMenu">
+            <summary>
+            Called when the icon part of the card is right clicked
+            </summary>
+        </member>
+    </members>
+</doc>

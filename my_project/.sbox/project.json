@@ -1,0 +1,77 @@
+{
+  "scene.lastopened": {
+    "Value": "[\u0022scenes/mainmenu.scene\u0022]",
+    "Timeout": 1730942157,
+    "DeleteAt": 0
+  },
+  "gizmo.settings": {
+    "Value": "{\u0022EditMode\u0022:\u0022position\u0022,\u0022Selection\u0022:true,\u0022ViewMode\u0022:\u00223d\u0022,\u0022GizmosEnabled\u0022:true,\u0022GizmoScale\u0022:1,\u0022GridSpacing\u0022:16,\u0022SnapToGrid\u0022:true,\u0022SnapToAngles\u0022:true,\u0022AngleSpacing\u0022:15,\u0022GlobalSpace\u0022:false,\u0022DebugActionGraphs\u0022:false}",
+    "Timeout": 1730942274,
+    "DeleteAt": 0
+  },
+  "expand.c5bafb56-f677-45a3-955e-964023d5d32b.PlayerFootsteps": {
+    "Value": "false",
+    "Timeout": 1730003483,
+    "DeleteAt": 0
+  },
+  "expand.c5bafb56-f677-45a3-955e-964023d5d32b.CapsuleCollider": {
+    "Value": "false",
+    "Timeout": 1730003483,
+    "DeleteAt": 0
+  },
+  "scenes/godray3.scene.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-642.1232,551.0566,235.0919\u0022,\u0022CameraRotation\u0022:\u0022-0.002099384,0.1001651,0.02084921,0.9947501\u0022,\u0022View\u0022:0,\u0022RenderMode\u0022:0,\u0022WireframeMode\u0022:false,\u0022EnablePostProcessing\u0022:true,\u0022ShowGrid\u0022:true,\u0022GridOpacity\u0022:0.2,\u0022GridAxis\u0022:0,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1729998035,
+    "DeleteAt": 0
+  },
+  ".Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-1283.413,393.2487,63.81737\u0022,\u0022CameraRotation\u0022:\u0022-0.006937854,-0.00368113,-0.8833313,0.4686835\u0022,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1730732768,
+    "DeleteAt": 0
+  },
+  "scenes/godray.scene.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-1342.625,170.8034,64.89903\u0022,\u0022CameraRotation\u0022:\u0022-0.07012497,0.1222105,0.4927268,0.858701\u0022,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1730783205,
+    "DeleteAt": 0
+  },
+  "scenes/godray2.scene.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-1283.413,393.2487,63.81737\u0022,\u0022CameraRotation\u0022:\u0022-0.006937854,-0.00368113,-0.8833313,0.4686835\u0022,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1730623862,
+    "DeleteAt": 0
+  },
+  "scenes/mainmenu.scene.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-1283.413,393.2487,63.81737\u0022,\u0022CameraRotation\u0022:\u0022-0.006937854,-0.00368113,-0.8833313,0.4686835\u0022,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1730942274,
+    "DeleteAt": 0
+  },
+  "scenes/godray4.scene.Viewport0": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-2059.755,505.5533,264.9268\u0022,\u0022CameraRotation\u0022:\u0022-0.001345087,-0.01301758,-0.1027724,0.9946188\u0022,\u0022View\u0022:0,\u0022RenderMode\u0022:0,\u0022WireframeMode\u0022:false,\u0022EnablePostProcessing\u0022:true,\u0022ShowGrid\u0022:true,\u0022GridOpacity\u0022:0.2,\u0022GridAxis\u0022:0,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1729998135,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History.AssetsBrowser.ViewMode": {
+    "Value": "1",
+    "Timeout": 1730942157,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History.AssetsBrowser.ShowJunkFiles": {
+    "Value": "false",
+    "Timeout": 1730942157,
+    "DeleteAt": 0
+  },
+  "AssetBrowser.History.AssetsBrowser.ShowRecursiveFiles": {
+    "Value": "false",
+    "Timeout": 1730942157,
+    "DeleteAt": 0
+  },
+  "SceneView.Viewport0.Settings": {
+    "Value": "{\u0022CameraPosition\u0022:\u0022-1283.413,393.2487,63.81737\u0022,\u0022CameraRotation\u0022:\u0022-0.006937854,-0.00368113,-0.8833313,0.4686835\u0022,\u0022View\u0022:0,\u0022RenderMode\u0022:0,\u0022WireframeMode\u0022:false,\u0022EnablePostProcessing\u0022:true,\u0022ShowGrid\u0022:true,\u0022GridOpacity\u0022:0.2,\u0022GridAxis\u0022:0,\u0022CameraOrthoHeight\u0022:5418.5073}",
+    "Timeout": 1730942274,
+    "DeleteAt": 0
+  },
+  "SceneView.Layout": {
+    "Value": "{\u0022Layout\u0022:0,\u0022SplitterState\u0022:[]}",
+    "Timeout": 1730942274,
+    "DeleteAt": 0
+  }
+}

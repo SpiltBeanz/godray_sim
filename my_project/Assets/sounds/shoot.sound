@@ -13,7 +13,7 @@
   "OcclusionRadius": 64,
   "DistanceAttenuation": true,
   "__references": [
-    "mdlresrc.toolgunshoot"
+    "mdlresrc.toolgunshoot#10038"
   ],
   "__version": 0
 }

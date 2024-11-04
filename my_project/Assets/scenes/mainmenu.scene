@@ -368,9 +368,9 @@
   "Description": "",
   "ResourceVersion": 1,
   "__references": [
-    "caro.sky_001",
-    "fish.bomb_explosion_smoke",
-    "tfassets.sunnoon"
+    "caro.sky_001#27739",
+    "fish.bomb_explosion_smoke#42575",
+    "tfassets.sunnoon#23351"
   ],
   "IsValid": true,
   "__version": 1

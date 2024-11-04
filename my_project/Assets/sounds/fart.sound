@@ -16,6 +16,6 @@
   "ResourceVersion": 0,
   "__version": 0,
   "__references": [
-    "survivalz.fart"
+    "survivalz.fart#43109"
   ]
 }
